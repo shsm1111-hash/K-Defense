@@ -32,7 +32,7 @@
   const nCountries = counted.length;
   const nQty = counted.reduce((s, o) => s + Number(o.qty), 0);
   const spec = (k) => D.specs.find((s) => s.key === k);
-  const q3 = D.finance.find((f) => f.quarter === '3Q26');
+  const bl = D.ir.backlog[D.ir.backlog.length - 1];
   const unit = new Map(D.contracts.map((c) => [c.id, c.unit_comparable && c.value_krw_eok != null ? Math.round(c.value_krw_eok / c.qty) : null]));
 
   // 머리
@@ -45,7 +45,7 @@
     ['수출 계약국', nCountries, '개국', '미국 시제 계약 제외'],
     ['수출 계약 수량', fmt(nQty), '문', '완성 자주포, 면허생산 포함'],
     ['세계 자주포 수출 점유율', spec('market_share').value, '', 'SIPRI 집계 인용 보도'],
-    ['지상방산 수주잔고', q3.backlog_jo, '조원', `한화에어로 3Q26 말 · 수출 비중 ${q3.backlog_export_pct}%`],
+    ['지상방산 수주잔고', bl.backlog_jo, '조원', `한화에어로 ${bl.period} · 수출 비중 ${bl.export_pct}% (IR)`],
   ];
   $('kpis').replaceChildren(...kpis.map(([l, v, u, n]) => {
     const k = el('div', 'kpi'); const vv = el('div', 'kpi-v', v); if (u) vv.append(el('small', null, u));
@@ -239,26 +239,8 @@
     });
   }
   function drawFin() {
-    const host = $('fin'); const rows = D.finance; const W = host.clientWidth || 420; const H = 220;
-    const svg = S('svg', { viewBox: `0 0 ${W} ${H}`, height: H }); host.replaceChildren(svg);
-    const ymax = 30; const ticks = [0, 10, 20, 30]; const ml = measure(svg, ticks.map((t) => t + '%')) + 10; const mt = 22; const mb = 26;
-    const y = (v) => mt + (H - mb - mt) * (1 - v / ymax);
-    const bandW = (W - 6 - ml) / rows.length; const bw = Math.min(32, bandW * 0.6);
-    ticks.forEach((t) => { svg.append(S('line', { x1: ml, x2: W - 6, y1: y(t), y2: y(t), class: 'grid' })); const tx = S('text', { x: ml - 6, y: y(t), 'dominant-baseline': 'middle', 'text-anchor': 'end' }); tx.textContent = t + '%'; svg.append(tx); });
-    const tp = tip(host);
-    rows.forEach((r, i) => {
-      const cx = ml + bandW * i + bandW / 2;
-      const g = S('g');
-      g.append(S('rect', { x: cx - bw / 2, y: y(r.opm_pct), width: bw, height: Math.max(1, y(0) - y(r.opm_pct)), rx: 3, fill: 'var(--c1)' }));
-      const v = S('text', { x: cx, y: y(r.opm_pct) - 6, 'text-anchor': 'middle', class: 'vlab' }); v.textContent = r.opm_pct + '%'; g.append(v);
-      const q = S('text', { x: cx, y: H - 8, 'text-anchor': 'middle' }); q.textContent = r.quarter; g.append(q);
-      g.append(S('rect', { x: cx - bandW / 2, y: mt, width: bandW, height: H - mb - mt, fill: 'transparent' }));
-      g.addEventListener('mousemove', (e) => tp.show(e, [`${r.quarter} 지상방산`, `영업이익률 ${r.opm_pct}%`,
-        r.revenue_eok != null ? `매출 ${fmt(r.revenue_eok)}억 · 영업이익 ${fmt(r.op_eok)}억` : '매출·영업이익 개별 미표기',
-        r.export_share_pct != null ? `수출 비중 ${r.export_share_pct}%` : '수출 비중 미표기']));
-      g.addEventListener('mouseleave', () => tp.hide());
-      svg.append(g);
-    });
+    window.drawIR($('fin'), D.ir);
+    $('backlog').replaceChildren(...D.ir.backlog.map((b) => { const tr = el('tr'); tr.append(td(b.period, 'nowrap'), td(Number(b.backlog_jo).toFixed(1), 'num'), td(b.export_pct + '%', 'num')); return tr; }));
   }
   ['engine', 'K10'].forEach((k) => { const p = photo(k); const w = el('div'); w.append(p.fig, p.cap); $('supply-photos').append(w); });
   const comp = (id, g) => $(id).replaceChildren(...D.components.filter((c) => c.group === g).map((c) => { const tr = el('tr'); tr.append(td(c.part, 'strong'), td(c.maker), td(c.detail, 'hide-sm'), tierTd(c.tier)); return tr; }));

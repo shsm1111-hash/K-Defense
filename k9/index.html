@@ -124,11 +124,18 @@
         <div class="card-body chart" id="unit"></div>
       </article>
       <article class="card">
-        <h2>지상방산 영업이익률</h2>
-        <p class="note">한화에어로스페이스 지상방산 부문, 분기별. K9 단독 원가는 공개되지 않아 부문 이익률로 수익성을 가늠합니다. 막대에 올리면 매출과 수출 비중이 보입니다.</p>
+        <h2>한화에어로스페이스 지상방산 실적</h2>
+        <p class="note">분기별 매출(막대: 진한색 수출, 연한색 내수, 억원)과 영업이익률(선, 오른쪽 축). K9 단독 원가는 공개되지 않아 부문 실적으로 수익성을 가늠합니다. 회사 IR 실적발표 자료 기준이며, 막대에 올리면 수치와 출처 자료가 보입니다.</p>
+        <div class="swatches"><span><i style="background:var(--c1)"></i>수출 매출</span><span><i style="background:var(--c2)"></i>내수 매출</span><span><i style="background:var(--c4);height:3px"></i>영업이익률</span></div>
         <div class="card-body chart" id="fin"></div>
       </article>
     </div>
+    <article class="card">
+      <h2>지상방산 수주잔고</h2>
+      <p class="note">한화에어로스페이스 IR 실적발표 자료 기준. 수출 비중이 계속 높아지고 있습니다.</p>
+      <div class="card-body tbl-wrap"><table class="tbl"><thead><tr><th>시점</th><th class="num">수주잔고(조원)</th><th class="num">수출 비중</th></tr></thead><tbody id="backlog"></tbody></table></div>
+      <p class="note"><a href="https://www.hanwhaaerospace.com/kor/ir/earning-release.do" target="_blank" rel="noopener">출처: 한화에어로스페이스 IR 실적발표</a></p>
+    </article>
     <article class="card">
       <h2>원가는 어떻게 읽나</h2>
       <ul class="guide card-body">
@@ -175,6 +182,7 @@
     <ul id="credits"></ul>
   </footer>
 </div>
+<script src="../assets/ir-chart.js"></script>
 <script src="../assets/k9.js"></script>
 </body>
 </html>

@@ -1,0 +1,165 @@
+{
+ "company": "한화에어로스페이스",
+ "segment": "지상방산",
+ "unit": "억원",
+ "source": {
+  "name": "한화에어로스페이스 IR 실적발표 자료",
+  "url": "https://www.hanwhaaerospace.com/kor/ir/earning-release.do"
+ },
+ "note": "3Q26 IR 자료의 분기 실적표 기준. 4Q24 수출·내수 구분은 4Q25 IR 자료의 수정치를 사용. 영업이익률과 수출 비중은 IR 수치로 계산.",
+ "quarters": [
+  {
+   "quarter": "1Q24",
+   "revenue_eok": 6553,
+   "op_eok": -39,
+   "opm_pct": -0.6,
+   "export_eok": 3031,
+   "domestic_eok": 3521,
+   "export_share_pct": 46.3,
+   "ir_doc": "1Q25 IR Presentation",
+   "tier": "확정"
+  },
+  {
+   "quarter": "2Q24",
+   "revenue_eok": 13296,
+   "op_eok": 2600,
+   "opm_pct": 19.6,
+   "export_eok": 7585,
+   "domestic_eok": 5712,
+   "export_share_pct": 57.0,
+   "ir_doc": "1Q25 IR Presentation",
+   "tier": "확정"
+  },
+  {
+   "quarter": "3Q24",
+   "revenue_eok": 16560,
+   "op_eok": 4399,
+   "opm_pct": 26.6,
+   "export_eok": 9731,
+   "domestic_eok": 6829,
+   "export_share_pct": 58.8,
+   "ir_doc": "3Q25 IR Presentation",
+   "tier": "확정"
+  },
+  {
+   "quarter": "4Q24",
+   "revenue_eok": 33654,
+   "op_eok": 8720,
+   "opm_pct": 25.9,
+   "export_eok": 18214,
+   "domestic_eok": 15440,
+   "export_share_pct": 54.1,
+   "ir_doc": "4Q25 IR Presentation",
+   "tier": "확정"
+  },
+  {
+   "quarter": "1Q25",
+   "revenue_eok": 11575,
+   "op_eok": 3019,
+   "opm_pct": 26.1,
+   "export_eok": 7525,
+   "domestic_eok": 4050,
+   "export_share_pct": 65.0,
+   "ir_doc": "4Q25 IR Presentation",
+   "tier": "확정"
+  },
+  {
+   "quarter": "2Q25",
+   "revenue_eok": 17732,
+   "op_eok": 5225,
+   "opm_pct": 29.5,
+   "export_eok": 10834,
+   "domestic_eok": 6898,
+   "export_share_pct": 61.1,
+   "ir_doc": "4Q25 IR Presentation",
+   "tier": "확정"
+  },
+  {
+   "quarter": "3Q25",
+   "revenue_eok": 21098,
+   "op_eok": 5725,
+   "opm_pct": 27.1,
+   "export_eok": 11970,
+   "domestic_eok": 9129,
+   "export_share_pct": 56.7,
+   "ir_doc": "3Q26 IR Presentation",
+   "tier": "확정"
+  },
+  {
+   "quarter": "4Q25",
+   "revenue_eok": 30926,
+   "op_eok": 6043,
+   "opm_pct": 19.5,
+   "export_eok": 16288,
+   "domestic_eok": 14637,
+   "export_share_pct": 52.7,
+   "ir_doc": "3Q26 IR Presentation",
+   "tier": "확정"
+  },
+  {
+   "quarter": "1Q26",
+   "revenue_eok": 12211,
+   "op_eok": 2087,
+   "opm_pct": 17.1,
+   "export_eok": 6514,
+   "domestic_eok": 5697,
+   "export_share_pct": 53.3,
+   "ir_doc": "3Q26 IR Presentation",
+   "tier": "확정"
+  },
+  {
+   "quarter": "2Q26",
+   "revenue_eok": 21075,
+   "op_eok": 5330,
+   "opm_pct": 25.3,
+   "export_eok": 12324,
+   "domestic_eok": 8751,
+   "export_share_pct": 58.5,
+   "ir_doc": "3Q26 IR Presentation",
+   "tier": "확정"
+  },
+  {
+   "quarter": "3Q26",
+   "revenue_eok": 12455,
+   "op_eok": 217,
+   "opm_pct": 1.7,
+   "export_eok": 5936,
+   "domestic_eok": 6519,
+   "export_share_pct": 47.7,
+   "ir_doc": "3Q26 IR Presentation",
+   "tier": "확정"
+  }
+ ],
+ "backlog": [
+  {
+   "period": "2023말",
+   "backlog_jo": 27.9,
+   "export_pct": 66
+  },
+  {
+   "period": "2024말",
+   "backlog_jo": 32.4,
+   "export_pct": 68
+  },
+  {
+   "period": "1Q25",
+   "backlog_jo": 31.4,
+   "export_pct": 65
+  },
+  {
+   "period": "3Q25",
+   "backlog_jo": 31.0,
+   "export_pct": 67
+  },
+  {
+   "period": "2025말",
+   "backlog_jo": 37.2,
+   "export_pct": 71
+  },
+  {
+   "period": "3Q26",
+   "backlog_jo": 35.0,
+   "export_pct": 74
+  }
+ ]
+}

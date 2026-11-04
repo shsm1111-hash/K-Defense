@@ -1,5 +1,6 @@
 (async () => {
-  const D = await fetch('../data/k9.json').then((r) => r.json());
+  const D = await fetch(document.body.dataset.data).then((r) => r.json());
+  const M = D.meta; const U = M.unit_word;
   const $ = (id) => document.getElementById(id);
   const el = (t, c, x) => { const e = document.createElement(t); if (c) e.className = c; if (x != null) e.textContent = String(x); return e; };
   const fmt = (n) => Number(n).toLocaleString('ko-KR');
@@ -39,14 +40,16 @@
   const h = photo('hero');
   $('hero-photo').append(h.fig.firstChild);
   $('hero-photo').parentElement.append(h.cap);
-  $('lede').textContent = `국방과학연구소와 한화에어로스페이스가 독자 개발한 자주포로, 세계 자주포 수출 시장의 ${spec('market_share').value}를 차지하는 K방산 대표 수출 무기체계입니다. 지금까지 ${nCountries}개국과 완성 자주포 ${fmt(nQty)}문을 계약했고, 다음 무대는 자동장전 개량형 K9A2와 미국 시장입니다.`;
-  const kpis = [
-    ['국군 배치', spec('domestic_qty').value, '', 'K9·K9A1 전 계열'],
-    ['수출 계약국', nCountries, '개국', '미국 시제 계약 제외'],
-    ['수출 계약 수량', fmt(nQty), '문', '완성 자주포, 면허생산 포함'],
-    ['세계 자주포 수출 점유율', spec('market_share').value, '', 'SIPRI 집계 인용 보도'],
-    ['지상방산 수주잔고', bl.backlog_jo, '조원', `한화에어로 ${bl.period} · 수출 비중 ${bl.export_pct}% (IR)`],
-  ];
+  const fill = (t) => t.replace(/\{countries\}/g, nCountries).replace(/\{qty\}/g, fmt(nQty)).replace(/\{spec:(\w+)\}/g, (_, k) => (spec(k) ? spec(k).value : ''));
+  $('lede').textContent = fill(M.lede);
+  const kpiVal = (k) => {
+    if (k.src === 'countries') return [nCountries, '개국'];
+    if (k.src === 'qty') return [fmt(nQty), U];
+    if (k.src === 'backlog') return [Number(bl.backlog_jo).toFixed(bl.backlog_jo < 10 ? 2 : 1), '조원'];
+    if (k.src && k.src.startsWith('spec:')) return [spec(k.src.slice(5)).value, ''];
+    return [k.value, k.unit || ''];
+  };
+  const kpis = M.kpis.map((k) => { const [v, u] = kpiVal(k); return [k.label, v, u, fill(k.note || '').replace('{backlog_period}', bl.period).replace('{backlog_export}', bl.export_pct == null ? '' : ` · 수출 비중 ${bl.export_pct}%`)]; });
   $('kpis').replaceChildren(...kpis.map(([l, v, u, n]) => {
     const k = el('div', 'kpi'); const vv = el('div', 'kpi-v', v); if (u) vv.append(el('small', null, u));
     k.append(el('div', 'kpi-l', l), vv, el('div', 'kpi-n', n)); return k;
@@ -145,9 +148,9 @@
   function drawOps() {
     const rows = [...D.operators].sort((a, b) => b.qty - a.qty);
     hbar($('opbars'), rows, {
-      label: (r) => r.country, value: (r) => r.qty, valText: (r) => fmt(r.qty) + '문', color: (r) => ST[r.status],
+      label: (r) => r.country, value: (r) => r.qty, valText: (r) => fmt(r.qty) + U, color: (r) => ST[r.status],
       isSel: (r) => r.country === sel, onClick: (r) => pick(r.country),
-      tip: (r) => [r.country + ' · ' + r.status, fmt(r.qty) + '문' + (r.qty_note ? ' (' + r.qty_note + ')' : ''), r.local_name],
+      tip: (r) => [r.country + ' · ' + r.status, fmt(r.qty) + U + (r.qty_note ? ' (' + r.qty_note + ')' : ''), r.local_name],
     });
   }
   function drawDetail() {
@@ -159,15 +162,15 @@
     const chips = el('div', 'dt-chips'); const st = el('span', 'chip st', r.status); st.style.setProperty('--c', ST[r.status]);
     chips.append(st, el('span', 'chip plain', r.region)); if (r.nato) chips.append(el('span', 'chip plain', 'NATO')); parts.push(chips);
     const dl = el('dl', 'dt-facts');
-    [['계약 수량', fmt(r.qty) + '문' + (r.qty_note ? ' · ' + r.qty_note : '')], ['첫 계약', r.first_year], ['생산 방식', r.mode]].forEach(([k, v]) => dl.append(el('dt', null, k), el('dd', null, v)));
+    [['계약 수량', fmt(r.qty) + U + (r.qty_note ? ' · ' + r.qty_note : '')], ['첫 계약', r.first_year], ['생산 방식', r.mode]].forEach(([k, v]) => dl.append(el('dt', null, k), el('dd', null, v)));
     parts.push(dl);
     const sec = (title, text, t) => { const s = el('div', 'dt-sec'); const h3 = el('h3', null, title); if (t) h3.append(chip(t)); s.append(h3, el('p', null, text)); return s; };
-    parts.push(sec('왜 K9이 필요했나', r.why, r.tier));
+    parts.push(sec(`왜 ${M.short}이(가) 필요했나`, r.why, r.tier));
     if (r.diff) parts.push(sec('이 나라만의 조건 (현지화·기술이전·요구사항)', r.diff, '해설'));
     const hs = el('div', 'dt-sec'); hs.append(el('h3', null, '수출 사업 타임라인'));
     const ol = el('ol', 'mini');
     D.contracts.filter((c) => c.country === r.country).forEach((c) => {
-      const li = el('li'); const b = el('div'); const st2 = el('strong', null, `${c.variant} · ${fmt(c.qty)}문 `); st2.append(chip(c.tier));
+      const li = el('li'); const b = el('div'); const st2 = el('strong', null, `${c.variant} · ${fmt(c.qty)}${U} `); st2.append(chip(c.tier));
       b.append(st2, el('p', null, `${c.value_orig} — ${c.scope}`)); li.append(el('span', 'd', c.date), b); ol.append(li);
     });
     hs.append(ol); parts.push(hs);
@@ -240,9 +243,9 @@
   }
   function drawFin() {
     window.drawIR($('fin'), D.ir);
-    $('backlog').replaceChildren(...D.ir.backlog.map((b) => { const tr = el('tr'); tr.append(td(b.period, 'nowrap'), td(Number(b.backlog_jo).toFixed(1), 'num'), td(b.export_pct + '%', 'num')); return tr; }));
+    $('backlog').replaceChildren(...D.ir.backlog.map((b) => { const tr = el('tr'); tr.append(td(b.period, 'nowrap'), td(Number(b.backlog_jo).toFixed(1), 'num'), td(b.export_pct == null ? '미공개' : b.export_pct + '%', 'num')); return tr; }));
   }
-  ['engine', 'K10'].forEach((k) => { const p = photo(k); const w = el('div'); w.append(p.fig, p.cap); $('supply-photos').append(w); });
+  (M.supply_photos || []).forEach((k) => { const p = photo(k); if (!p) return; const w = el('div'); w.append(p.fig, p.cap); $('supply-photos').append(w); });
   const comp = (id, g) => $(id).replaceChildren(...D.components.filter((c) => c.group === g).map((c) => { const tr = el('tr'); tr.append(td(c.part, 'strong'), td(c.maker), td(c.detail, 'hide-sm'), tierTd(c.tier)); return tr; }));
   comp('comp-dom', '국내 핵심 구성품'); comp('comp-loc', '해외 현지 생산');
 

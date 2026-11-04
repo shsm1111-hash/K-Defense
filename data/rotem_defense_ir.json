@@ -1,0 +1,133 @@
+{
+ "company": "현대로템",
+ "segment": "방산 부문(AD&RH, 옛 디펜스솔루션)",
+ "unit": "억원",
+ "source": {
+  "name": "현대로템 IR자료실 실적발표",
+  "url": "https://www.hyundai-rotem.co.kr/ko/invest/ir/list.do"
+ },
+ "note": "2026년 2분기부터 방산 부문 이름이 디펜스솔루션에서 AD&RH(방산·항공우주·수소)로 바뀌며 과거 실적이 일부 재분류됨(예: 1Q26 매출 8,040억 → 8,196억). 1Q25는 1Q26 IR의 디펜스솔루션 기준. 현대로템 IR은 부문별 수출·내수 매출을 따로 공개하지 않음. 2024년 이전은 부문 영업이익이 공개되지 않아 제외.",
+ "quarters": [
+  {
+   "quarter": "1Q25",
+   "revenue_eok": 6580,
+   "op_eok": 1939,
+   "opm_pct": 29.5,
+   "export_eok": null,
+   "domestic_eok": null,
+   "export_share_pct": null,
+   "ir_doc": "현대로템 1Q26 IR (디펜스솔루션 기준)",
+   "tier": "확정"
+  },
+  {
+   "quarter": "2Q25",
+   "revenue_eok": 7613,
+   "op_eok": 2479,
+   "opm_pct": 32.6,
+   "export_eok": null,
+   "domestic_eok": null,
+   "export_share_pct": null,
+   "ir_doc": "현대로템 2Q26 IR",
+   "tier": "확정"
+  },
+  {
+   "quarter": "3Q25",
+   "revenue_eok": 9361,
+   "op_eok": 2638,
+   "opm_pct": 28.2,
+   "export_eok": null,
+   "domestic_eok": null,
+   "export_share_pct": null,
+   "ir_doc": "현대로템 3Q26 IR",
+   "tier": "확정"
+  },
+  {
+   "quarter": "4Q25",
+   "revenue_eok": 8599,
+   "op_eok": 2507,
+   "opm_pct": 29.2,
+   "export_eok": null,
+   "domestic_eok": null,
+   "export_share_pct": null,
+   "ir_doc": "현대로템 3Q26 IR",
+   "tier": "확정"
+  },
+  {
+   "quarter": "1Q26",
+   "revenue_eok": 8196,
+   "op_eok": 2199,
+   "opm_pct": 26.8,
+   "export_eok": null,
+   "domestic_eok": null,
+   "export_share_pct": null,
+   "ir_doc": "현대로템 3Q26 IR",
+   "tier": "확정"
+  },
+  {
+   "quarter": "2Q26",
+   "revenue_eok": 9189,
+   "op_eok": 2248,
+   "opm_pct": 24.5,
+   "export_eok": null,
+   "domestic_eok": null,
+   "export_share_pct": null,
+   "ir_doc": "현대로템 3Q26 IR",
+   "tier": "확정"
+  },
+  {
+   "quarter": "3Q26",
+   "revenue_eok": 8412,
+   "op_eok": 2360,
+   "opm_pct": 28.1,
+   "export_eok": null,
+   "domestic_eok": null,
+   "export_share_pct": null,
+   "ir_doc": "현대로템 3Q26 IR",
+   "tier": "확정"
+  }
+ ],
+ "backlog": [
+  {
+   "period": "2023말",
+   "backlog_jo": 5.43,
+   "export_pct": null
+  },
+  {
+   "period": "2024말",
+   "backlog_jo": 3.87,
+   "export_pct": null
+  },
+  {
+   "period": "2025말",
+   "backlog_jo": 10.52,
+   "export_pct": null
+  },
+  {
+   "period": "2Q26",
+   "backlog_jo": 9.82,
+   "export_pct": null
+  },
+  {
+   "period": "3Q26",
+   "backlog_jo": 9.52,
+   "export_pct": null
+  }
+ ],
+ "annual_revenue": [
+  {
+   "year": 2024,
+   "revenue_eok": 23652
+  },
+  {
+   "year": 2025,
+   "revenue_eok": 32153
+  }
+ ],
+ "key_orders": [
+  {
+   "date": "2025.8",
+   "name": "폴란드 K2전차 2차 이행계약",
+   "value_eok": 89814
+  }
+ ]
+}

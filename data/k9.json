@@ -1437,5 +1437,51 @@
     "export_pct": 74
    }
   ]
+ },
+ "meta": {
+  "name": "K9 자주포",
+  "short": "K9",
+  "alias": "K9 Thunder",
+  "maker": "한화에어로스페이스",
+  "eyebrow": "지상 화력 · 155mm 궤도형 자주곡사포",
+  "lede": "국방과학연구소와 한화에어로스페이스가 독자 개발한 자주포로, 세계 자주포 수출 시장의 {spec:market_share}를 차지하는 K방산 대표 수출 무기체계입니다. 지금까지 {countries}개국과 완성 자주포 {qty}문을 계약했고, 다음 무대는 자동장전 개량형 K9A2와 미국 시장입니다.",
+  "why_note": "면허생산 자주포로는 북한 장사정포를 상대하기 어려웠습니다.",
+  "spec_note": "K9A1 기준, 괄호 안은 개량형 K9A2.",
+  "version_note": "같은 차체 위에서 개량을 거듭했습니다. 개량형이 곧 다음 수출 상품이 됩니다.",
+  "unit_word": "문",
+  "unit_desc": "완성 자주포",
+  "segment_short": "지상방산",
+  "backlog_note": "수출 비중이 계속 높아지고 있습니다.",
+  "supply_photos": [
+   "engine",
+   "K10"
+  ],
+  "kpis": [
+   {
+    "label": "국군 배치",
+    "src": "spec:domestic_qty",
+    "note": "K9·K9A1 전 계열"
+   },
+   {
+    "label": "수출 계약국",
+    "src": "countries",
+    "note": "미국 시제 계약 제외"
+   },
+   {
+    "label": "수출 계약 수량",
+    "src": "qty",
+    "note": "완성 자주포, 면허생산 포함"
+   },
+   {
+    "label": "세계 자주포 수출 점유율",
+    "src": "spec:market_share",
+    "note": "SIPRI 집계 인용 보도"
+   },
+   {
+    "label": "지상방산 수주잔고",
+    "src": "backlog",
+    "note": "한화에어로 {backlog_period}{backlog_export} (IR)"
+   }
+  ]
  }
 }

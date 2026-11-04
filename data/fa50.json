@@ -1,0 +1,1625 @@
+{
+ "updated": "2026-11-04",
+ "meta": {
+  "name": "FA-50 경공격기",
+  "short": "FA-50",
+  "alias": "KAI T-50 Golden Eagle / FA-50 Fighting Eagle",
+  "maker": "한국항공우주산업(KAI)",
+  "eyebrow": "항공 · 초음속 고등훈련기·경전투기",
+  "purpose": "T-50은 전투기 조종사를 길러내는 초음속 고등훈련기이고, FA-50은 같은 기체에 레이더와 무장을 더한 경전투기다. 훈련과 실전을 한 기종으로 해결하고, 값비싼 주력 전투기를 보조하거나 대신하는 것이 목적이다.",
+  "lede": "FA-50은 한국 첫 초음속기 T-50에서 태어난 경전투기다. T-50 계열은 {countries}개국과 {qty}대 수출 계약을 맺어 한국 항공기 수출의 대표 기종이 됐다. 다만 맞춤형 고급 사양을 요구한 폴란드 FA-50PL은 미국산 레이더·미사일 통합 문제로 약 2년 늦어지고 있다.",
+  "why_note": "F-16로 이어 줄 국산 초음속 훈련기와, 노후 F-5를 대체할 값싼 경전투기가 함께 필요했다",
+  "why_title": "왜 FA-50이 필요했나",
+  "spec_note": "FA-50 Block 10(국군형) 기준, 수출형 차이는 괄호와 버전표 참고",
+  "version_note": "T-50(훈련) → TA-50(레이더·기관포) → FA-50 Block 10 → AESA·공중급유를 더한 Block 20 수출형으로 진화",
+  "unit_word": "대",
+  "unit_desc": "항공기",
+  "kpis": [
+   {
+    "label": "국군 배치",
+    "value": "142",
+    "unit": "대",
+    "note": "T-50 50·T-50B 10·TA-50 22·FA-50 60"
+   },
+   {
+    "label": "국군 FA-50",
+    "value": "60",
+    "unit": "대",
+    "note": "F-5 대체 경전투기"
+   },
+   {
+    "label": "수출 계약 수량",
+    "src": "qty",
+    "note": "T-50 계열 전체, 후속지원 계약 제외"
+   },
+   {
+    "label": "수출 계약국",
+    "src": "countries",
+    "note": "인니·이라크·필리핀·태국·폴란드·말레이시아"
+   },
+   {
+    "label": "KAI 수주잔고",
+    "src": "backlog",
+    "note": "한국항공우주산업 {backlog_period}{backlog_export} (IR)"
+   }
+  ],
+  "segment_short": "KAI",
+  "backlog_note": "수출 비중은 완제기 수출 수주잔고 기준(기체구조물 제외). 3Q25 5조 8,439억원, 3Q26 6조 1,930억원.",
+  "supply_photos": []
+ },
+ "features": [
+  {
+   "title": "한국 첫 초음속 항공기",
+   "detail": "2002년 첫 비행. 록히드마틴과 함께 개발해 마하 1.5까지 낸다."
+  },
+  {
+   "title": "한 기체, 여러 역할",
+   "detail": "훈련기(T-50) → 전술입문기(TA-50) → 경전투기(FA-50)로 장비만 더해 파생시켰다."
+  },
+  {
+   "title": "F-16과 닮은 조종석",
+   "detail": "F-16과 비슷한 비행 특성과 조종석이라 F-16·F-35 조종사 양성에 적합하고, F-16과 부품 공통성이 높다."
+  },
+  {
+   "title": "블록 20의 AESA·공중급유",
+   "detail": "수출형 Block 20은 PhantomStrike AESA 레이더, 공중급유, 표적지시 포드, BVR 미사일을 넣어 전투기 능력을 키웠다."
+  },
+  {
+   "title": "실전 검증",
+   "detail": "필리핀(2017 마라위 등)과 태국(2025 캄보디아 분쟁)에서 실제 폭격 임무를 했다."
+  },
+  {
+   "title": "빠른 납기",
+   "detail": "폴란드 FA-50GF 12대를 계약 약 15개월 만에 모두 인도했다."
+  }
+ ],
+ "contracts": [
+  {
+   "id": "C01",
+   "country": "인도네시아",
+   "date": "2011.05",
+   "year": 2011,
+   "qty": 16.0,
+   "qty_note": "T-50 계열 첫 수출. 2013.09~2014.01 인도",
+   "variant": "T-50i (고등훈련기)",
+   "value_krw_eok": null,
+   "value_orig": "약 $4억",
+   "scope": "T-50i 16대와 교육·군수지원",
+   "unit_comparable": true,
+   "tier": "보도",
+   "source_name": "Korea Times(2026.07) / Wikipedia",
+   "source_url": "https://www.koreatimes.co.kr/southkorea/defense/20260716/kai-completes-delivery-of-6-t-50i-trainer-jets-to-indonesia"
+  },
+  {
+   "id": "C02",
+   "country": "이라크",
+   "date": "2013.12",
+   "year": 2013,
+   "qty": 24.0,
+   "qty_note": "2017.03~2019.11 인도. 현지 기지 치안 문제로 인도가 늦어짐",
+   "variant": "T-50IQ (훈련·경공격 겸용)",
+   "value_krw_eok": 11000.0,
+   "value_orig": "약 $11억 (약 1.1조원)",
+   "scope": "T-50IQ 24대와 조종사·정비사 교육, 군수지원 포함 패키지",
+   "unit_comparable": false,
+   "tier": "보도",
+   "source_name": "뉴스토마토 / 파이낸셜뉴스(2026.07)",
+   "source_url": "https://www.fnnews.com/news/202607080825431795"
+  },
+  {
+   "id": "C03",
+   "country": "필리핀",
+   "date": "2014.03",
+   "year": 2014,
+   "qty": 12.0,
+   "qty_note": "2015.11~2017.05 인도. 2025.03 야간 작전 중 1대 추락",
+   "variant": "FA-50PH (Block 10급)",
+   "value_krw_eok": null,
+   "value_orig": "189억 페소 (약 $4.21억)",
+   "scope": "FA-50PH 12대와 교육·군수지원",
+   "unit_comparable": true,
+   "tier": "보도",
+   "source_name": "Wikipedia(필리핀 국방부 발표 인용) / Defense News",
+   "source_url": "https://www.defensenews.com/global/asia-pacific/2025/06/05/philippines-orders-12-more-fa-50-combat-jets-from-south-korea/"
+  },
+  {
+   "id": "C04",
+   "country": "태국",
+   "date": "2015.09",
+   "year": 2015,
+   "qty": 4.0,
+   "qty_note": "1차 계약. 태국 공군 401비행대대",
+   "variant": "T-50TH",
+   "value_krw_eok": null,
+   "value_orig": "공개 금액 확인 못 함",
+   "scope": "T-50TH 4대",
+   "unit_comparable": false,
+   "tier": "보도",
+   "source_name": "더구루",
+   "source_url": "https://www.theguru.co.kr/news/article.html?no=74983"
+  },
+  {
+   "id": "C05",
+   "country": "태국",
+   "date": "2017.07",
+   "year": 2017,
+   "qty": 8.0,
+   "qty_note": "2차 추가 도입(내각 승인 후 계약)",
+   "variant": "T-50TH",
+   "value_krw_eok": null,
+   "value_orig": "공개 금액 확인 못 함",
+   "scope": "T-50TH 8대",
+   "unit_comparable": false,
+   "tier": "보도",
+   "source_name": "FlightGlobal(2017.07)",
+   "source_url": "https://www.flightglobal.com/thailand-orders-eight-additional-t-50th-trainers/124770.article"
+  },
+  {
+   "id": "C06",
+   "country": "태국",
+   "date": "2021",
+   "year": 2021,
+   "qty": 2.0,
+   "qty_note": "3차 추가분. 2024.07~08 인도로 총 14대 완성",
+   "variant": "T-50TH (태국 요구 개량형)",
+   "value_krw_eok": 800.0,
+   "value_orig": "약 800억원",
+   "scope": "T-50TH 2대",
+   "unit_comparable": true,
+   "tier": "보도",
+   "source_name": "더구루(2024.07)",
+   "source_url": "https://www.theguru.co.kr/news/article.html?no=74983"
+  },
+  {
+   "id": "C07",
+   "country": "인도네시아",
+   "date": "2021.07",
+   "year": 2021,
+   "qty": 6.0,
+   "qty_note": "2026.02 첫 2대, 2026.07 6대 모두 인도 완료(누적 22대)",
+   "variant": "T-50i (추가분)",
+   "value_krw_eok": null,
+   "value_orig": "약 $2.4억",
+   "scope": "T-50i 6대. 공급기간 2021.12~2024.10으로 잡혔으나 실제 인도는 2026년",
+   "unit_comparable": true,
+   "tier": "보도",
+   "source_name": "Tempo(2021.07) / Korea Times(2026.07)",
+   "source_url": "https://en.tempo.co/amp/1485964/govt-secures-240m-trainer-jets-deal-with-south-koreas-kai"
+  },
+  {
+   "id": "C08",
+   "country": "이라크",
+   "date": "2021.11",
+   "year": 2021,
+   "qty": 0,
+   "qty_note": "기체 추가 없음. 기존 24대 후속운영지원(CLS)",
+   "variant": "T-50IQ 후속지원",
+   "value_krw_eok": 4266.0,
+   "value_orig": "약 $3.6억 (4,266억원)",
+   "scope": "2022.01부터 3년간 기체 정비·수리, 부품 군수지원, 신규 조종사·정비사 교육. KAI 인력 현지 파견",
+   "unit_comparable": false,
+   "tier": "보도",
+   "source_name": "FlightGlobal / 파이낸셜뉴스",
+   "source_url": "https://flightglobal.com/defence/kai-secures-360-million-deal-to-support-iraqi-t-50iqs/146311.article"
+  },
+  {
+   "id": "C09",
+   "country": "폴란드",
+   "date": "2022.09",
+   "year": 2022,
+   "qty": 48.0,
+   "qty_note": "2022.07.27 기본계약 → 2022.09.16 실행계약. FA-50GF 12대(2023년 인도 완료) + FA-50PL 36대(2027년 중반~2029년 초)",
+   "variant": "FA-50GF 12 + FA-50PL 36",
+   "value_krw_eok": null,
+   "value_orig": "약 $30억 (보도상 '4조원대')",
+   "scope": "기체 48대, 교육훈련, 군수지원. 폴란드 내 물류허브 설립 추진. 2026.01 부속합의로 FA-50PL 인도 일정 약 2년 연기",
+   "unit_comparable": true,
+   "tier": "보도",
+   "source_name": "데일리안 / KED Global",
+   "source_url": "https://www.dailian.co.kr/news/view/1153666/"
+  },
+  {
+   "id": "C10",
+   "country": "말레이시아",
+   "date": "2023.05",
+   "year": 2023,
+   "qty": 18.0,
+   "qty_note": "2023.02 선정·계약 → 2023.05 최종 서명. 2026.10.30 첫 2대 인도",
+   "variant": "FA-50M (Block 20)",
+   "value_krw_eok": 12000.0,
+   "value_orig": "약 $9.2억 (RM 40.8억, 약 1.2조원)",
+   "scope": "FA-50M 18대와 교육·후속지원. 2차분 18대(총 36대) 가능성이 함께 거론",
+   "unit_comparable": true,
+   "tier": "보도",
+   "source_name": "뉴시스(2023.05) / FMT",
+   "source_url": "https://www.newsis.com/view/NISX20230523_0002313006"
+  },
+  {
+   "id": "C11",
+   "country": "필리핀",
+   "date": "2025.06",
+   "year": 2025,
+   "qty": 12.0,
+   "qty_note": "2025.06.02 서명. 2028년 첫 인도, 2대씩 나눠 2030년까지",
+   "variant": "FA-50PH Block 20 (일부 보도는 'Block 70')",
+   "value_krw_eok": 10000.0,
+   "value_orig": "약 $7억 (약 1조원)",
+   "scope": "기체 12대와 공대공·공대지 무장(수량 비공개). 공중급유, AESA 레이더, 가시권 밖(BVR) 미사일 능력 포함",
+   "unit_comparable": true,
+   "tier": "보도",
+   "source_name": "한국경제 / Defense News",
+   "source_url": "https://www.hankyung.com/article/2025060433587"
+  },
+  {
+   "id": "C12",
+   "country": "필리핀",
+   "date": "2025.12",
+   "year": 2025,
+   "qty": 0,
+   "qty_note": "기체 추가 없음. 기존 FA-50PH 11대 성능개량",
+   "variant": "FA-50PH 성능개량",
+   "value_krw_eok": 930.0,
+   "value_orig": "약 930억원 (직전 연도 매출의 2.5%)",
+   "scope": "2029년까지 정밀유도무장 강화, 항속·작전지속 능력, 네트워크 합동작전 능력 개선과 후속 군수지원",
+   "unit_comparable": false,
+   "tier": "확정",
+   "source_name": "KAI 공시 보도(이투데이, 2025.12.26)",
+   "source_url": "https://www.etoday.co.kr/news/view/2539898"
+  }
+ ],
+ "operators": [
+  {
+   "country": "인도네시아",
+   "region": "동남아",
+   "first_year": 2011,
+   "qty": 22.0,
+   "qty_note": "2011년 16대 + 2021년 6대. 사고로 일부 손실(2015·2020·2022)",
+   "local_name": "T-50i",
+   "mode": "완제품 수입",
+   "status": "운용 중",
+   "counted": true,
+   "nato": false,
+   "why": "노후한 영국제 호크 Mk.53 훈련기를 바꿀 초음속 고등훈련기가 필요했다. 이미 KT-1 기본훈련기를 쓰고 있어 KT-1 → T-50으로 이어지는 한국식 훈련 체계를 그대로 들일 수 있었다. KF-21 공동개발 참여국이기도 하다.",
+   "diff": "T-50 계열 첫 해외 고객. 초기분은 레이더 없는 순수 훈련기 형상이었다. 2021년 추가 6대는 인도네시아 국내 부품 활용 확대를 조건으로 내세웠다. KT-1 20대를 포함해 한국산 항공기 42대를 운용한다.",
+   "tier": "보도",
+   "photo": "id"
+  },
+  {
+   "country": "이라크",
+   "region": "중동",
+   "first_year": 2013,
+   "qty": 24.0,
+   "qty_note": "2019.11까지 24대 인도 완료",
+   "local_name": "T-50IQ",
+   "mode": "완제품 수입 + KAI 현지 후속지원",
+   "status": "운용 중",
+   "counted": true,
+   "nato": false,
+   "why": "미국에서 F-16IQ를 들여오면서 F-16으로 넘어가기 전 단계의 고등훈련기가 필요했다. 동시에 IS(이슬람국가) 대응에 쓸 가벼운 공격 능력도 원했다.",
+   "diff": "훈련기와 경공격기 역할을 함께 하는 TA-50 기반 파생형. 치안 문제로 인도가 늦어졌고, 2021년 약 $3.6억 후속운영지원 계약으로 KAI 교관·정비사가 현지에서 정비와 교육을 맡는다. 엔진은 한국(한화에어로스페이스 창원)으로 가져와 창정비한다. 단좌형·Block 20에 관심을 보인다는 보도가 있다.",
+   "tier": "보도",
+   "photo": null
+  },
+  {
+   "country": "필리핀",
+   "region": "동남아",
+   "first_year": 2014,
+   "qty": 24.0,
+   "qty_note": "2014년 12대(1대 2025.03 추락 손실) + 2025년 Block 20 12대(2028~2030 인도)",
+   "local_name": "FA-50PH",
+   "mode": "정부 간(G2G) 완제품 수입",
+   "status": "운용 중",
+   "counted": true,
+   "nato": false,
+   "why": "2005년 F-5를 모두 퇴역시킨 뒤 10년 가까이 제트 전투기가 없었다. 남중국해 영유권 갈등이 커지는데 비싼 F-16을 살 예산은 부족했다. FA-50은 '살 수 있는 초음속 전투기'였다.",
+   "diff": "1차분은 엘타 EL/M-2032 기계식 레이더의 Block 10급. 마라위 전투(2017) 등 실전에서 폭격 임무를 했다. 2025년 2차분 12대는 공중급유, AESA 레이더, BVR 미사일을 넣은 Block 20으로 제2 전투비행대대를 만든다. 기존 11대도 2029년까지 성능개량(930억원).",
+   "tier": "보도",
+   "photo": "ph"
+  },
+  {
+   "country": "태국",
+   "region": "동남아",
+   "first_year": 2015,
+   "qty": 14.0,
+   "qty_note": "2015년 4 + 2017년 8 + 2021년 2. 401비행대대 16대 목표로 2대 추가 계획",
+   "local_name": "T-50TH",
+   "mode": "완제품 수입",
+   "status": "운용 중",
+   "counted": true,
+   "nato": false,
+   "why": "노후한 L-39 훈련기를 바꾸고, F-16·그리펜으로 가기 전 조종사를 길러낼 고등훈련기가 필요했다.",
+   "diff": "훈련기지만 태국 요구로 레이더·레이더경보수신기(RWR)·자체방어장비 등을 붙인 개량을 받았다. 2025.12 캄보디아와의 국경 분쟁에서 폭탄 4발을 투하해 T-50TH 첫 실전을 기록했다. 태국 항공산업체(TAI)와 정비 협력.",
+   "tier": "보도",
+   "photo": null
+  },
+  {
+   "country": "폴란드",
+   "region": "유럽",
+   "first_year": 2022,
+   "qty": 48.0,
+   "qty_note": "FA-50GF 12대 인도 완료(2023). FA-50PL 36대는 2027년 중반~2029년 초",
+   "local_name": "FA-50GF / FA-50PL",
+   "mode": "완제품 수입 + 현지 정비 협력(WZL-2 협의)",
+   "status": "운용 중",
+   "counted": true,
+   "nato": true,
+   "why": "2022년 우크라이나 전쟁으로 MiG-29를 우크라이나에 넘기고 Su-22도 퇴역시켜야 해 전투기 공백이 생겼다. F-16·F-35와 같은 NATO 무장·데이터링크를 쓰면서 빨리 받을 수 있는 훈련·경전투기가 필요했다.",
+   "diff": "두 단계로 나뉜다. 1단계 FA-50GF(Gap Filler) 12대는 한국군 형상에 가깝게 계약 10개월 만에 인도됐다(초도분 EGI 미적용, 임시 무장 AIM-9P/L). 2단계 FA-50PL 36대는 레이시온 PhantomStrike AESA, 공중급유, 스나이퍼 표적지시 포드, 헬멧 장착 조준기, 대용량 외부 연료탱크, AIM-9X·AIM-120 통합을 요구해 개발 부담이 커졌다. 2026.01 부속합의로 인도가 약 2년 늦춰졌다. GF를 PL급으로 바꾸는 개량은 2025년 말 '비용 대비 효과 낮음'으로 취소. 보증기간 후 정비는 비드고슈치 WZL-2가 주계약자, KAI가 하청을 맡는 구조로 협의 중.",
+   "tier": "보도",
+   "photo": "pl"
+  },
+  {
+   "country": "말레이시아",
+   "region": "동남아",
+   "first_year": 2023,
+   "qty": 18.0,
+   "qty_note": "2026.10.30 첫 2대 인도. 2027.04까지 6대, 2028년 초 완료",
+   "local_name": "FA-50M",
+   "mode": "완제품 수입",
+   "status": "납품 중",
+   "counted": true,
+   "nato": false,
+   "why": "1990년대 도입한 영국제 호크 훈련·경공격기(2028년 퇴역 예정)를 바꾸고, 남중국해(사바·사라왁) 초계 능력을 높여야 했다. 인도 테자스, 파키스탄 JF-17, 튀르키예 휘르제트 등과 경쟁해 이겼다.",
+   "diff": "Block 20 형상. PhantomStrike AESA 레이더(기본형 EL/M-2032 대체), 프로브식 공중급유, 스나이퍼 표적지시 포드를 넣는다. 공대공은 AIM-9 기본이며 AIM-9X·AIM-120은 통합 미확정(KAI가 2026년 BVR 통합 추가 제안). 조종사 6명 등 57명이 한국에서 교육받았고 쿠안탄 15비행대대가 운용한다.",
+   "tier": "보도",
+   "photo": null
+  }
+ ],
+ "timeline": [
+  {
+   "date": "1992",
+   "category": "배경",
+   "title": "KTX-2(고등훈련기) 사업 시작",
+   "detail": "KT-1 기본훈련기 다음 단계로, 공군 조종사를 F-16 같은 전투기로 이어 줄 국산 초음속 훈련기를 만들기로 했다.",
+   "tier": "보도"
+  },
+  {
+   "date": "1995",
+   "category": "배경",
+   "title": "예산 문제로 사업 일시 중단",
+   "detail": "재정경제원이 재원 부족을 이유로 사업을 멈췄다. 이후 록히드마틴 참여로 다시 살아났다.",
+   "tier": "보도"
+  },
+  {
+   "date": "1997.10",
+   "category": "개발",
+   "title": "T-50 체계개발 착수",
+   "detail": "KAI(당시 삼성항공 중심)와 록히드마틴이 공동 개발. 개발비는 정부 70%, KAI 17%, 록히드마틴 13%로 나눠 냈다.",
+   "tier": "보도"
+  },
+  {
+   "date": "2002.08",
+   "category": "개발",
+   "title": "T-50 첫 비행",
+   "detail": "한국이 개발한 첫 초음속 항공기. 이듬해 초음속 비행에 성공해 한국은 세계 12번째 초음속기 개발국이 됐다.",
+   "tier": "보도"
+  },
+  {
+   "date": "2003.12",
+   "category": "양산",
+   "title": "T-50 첫 양산 계약 25대",
+   "detail": "2005~2009년 인도 조건. 이후 T-50 50대, 곡예비행용 T-50B 10대로 늘었다.",
+   "tier": "보도"
+  },
+  {
+   "date": "2005.02",
+   "category": "양산",
+   "title": "T-50 공군 전력화",
+   "detail": "2005.02.22 실전 배치. 공군 비행교육 체계의 마지막 단계(고등비행교육)를 국산기가 맡게 됐다.",
+   "tier": "보도"
+  },
+  {
+   "date": "2008.12",
+   "category": "개발",
+   "title": "FA-50 체계개발 착수",
+   "detail": "노후 F-5E/F를 대체할 경공격기로, 레이더·무장을 갖춘 TA-50을 한 단계 더 발전시켰다. 2013년 전력화 목표.",
+   "tier": "보도"
+  },
+  {
+   "date": "2011",
+   "category": "개발",
+   "title": "TA-50 전력화 · FA-50 시제기 첫 비행",
+   "detail": "전술입문훈련기 TA-50(22대)이 배치되고, FA-50 시제기가 처음 날았다.",
+   "tier": "보도"
+  },
+  {
+   "date": "2011.05",
+   "category": "수출",
+   "title": "인도네시아 T-50i 16대 계약",
+   "detail": "약 $4억. T-50 계열 첫 수출이자 한국 초음속기 첫 수출.",
+   "tier": "보도"
+  },
+  {
+   "date": "2013",
+   "category": "개발",
+   "title": "FA-50 개발 완료·양산 배치 시작",
+   "detail": "공군에 FA-50 60대가 차례로 배치돼 F-5를 대체하기 시작했다.",
+   "tier": "보도"
+  },
+  {
+   "date": "2013.12",
+   "category": "수출",
+   "title": "이라크 T-50IQ 24대 계약",
+   "detail": "약 $11억. 훈련·경공격을 겸하는 형상.",
+   "tier": "보도"
+  },
+  {
+   "date": "2014.03",
+   "category": "수출",
+   "title": "필리핀 FA-50PH 12대 계약",
+   "detail": "189억 페소(약 $4.2억). FA-50의 첫 수출.",
+   "tier": "보도"
+  },
+  {
+   "date": "2015.09",
+   "category": "수출",
+   "title": "태국 T-50TH 선정·4대 계약",
+   "detail": "L-39 대체 고등훈련기. 이후 2017년 8대, 2021년 2대 추가.",
+   "tier": "보도"
+  },
+  {
+   "date": "2017.05",
+   "category": "실전",
+   "title": "필리핀 FA-50PH 마라위 전투 투입",
+   "detail": "IS 연계 무장세력과의 시가전에서 폭격 지원. T-50 계열 첫 실전.",
+   "tier": "보도"
+  },
+  {
+   "date": "2018.09",
+   "category": "수출",
+   "title": "미 공군 고등훈련기(APT) 사업 탈락",
+   "detail": "록히드마틴과 함께 T-50A를 냈지만 보잉·사브의 T-7A가 이겼다. 미국 시장 첫 도전 실패.",
+   "tier": "확정"
+  },
+  {
+   "date": "2019.11",
+   "category": "수출",
+   "title": "이라크 T-50IQ 24대 인도 완료",
+   "detail": "치안 문제로 2017년에야 인도가 시작됐다.",
+   "tier": "보도"
+  },
+  {
+   "date": "2021.07",
+   "category": "수출",
+   "title": "인도네시아 T-50i 6대 추가 계약",
+   "detail": "약 $2.4억.",
+   "tier": "보도"
+  },
+  {
+   "date": "2021.11",
+   "category": "수출",
+   "title": "이라크 후속운영지원 계약",
+   "detail": "약 $3.6억(4,266억원). 3년간 정비·부품·교육.",
+   "tier": "보도"
+  },
+  {
+   "date": "2022.07",
+   "category": "수출",
+   "title": "폴란드 기본계약",
+   "detail": "우크라이나 전쟁 뒤 K2·K9·천무와 함께 맺은 '방산 패키지' 중 하나. 7.27 기본계약.",
+   "tier": "보도"
+  },
+  {
+   "date": "2022.09",
+   "category": "수출",
+   "title": "폴란드 FA-50 48대 실행계약",
+   "detail": "약 $30억. FA-50GF 12대 + FA-50PL 36대.",
+   "tier": "보도"
+  },
+  {
+   "date": "2023.02",
+   "category": "수출",
+   "title": "말레이시아 FA-50 선정",
+   "detail": "경쟁기종 테자스·JF-17·휘르제트 등을 제쳤다. 5월 18대 최종 서명(약 $9.2억).",
+   "tier": "보도"
+  },
+  {
+   "date": "2023.05",
+   "category": "개량",
+   "title": "레이시온 PhantomStrike AESA 레이더 선정",
+   "detail": "FA-50 Block 20용. 폴란드 FA-50PL·말레이시아 FA-50M에 들어간다. 같은 해 LIG넥스원도 FA-50용 국산 AESA 시제품을 공개.",
+   "tier": "보도"
+  },
+  {
+   "date": "2023.12",
+   "category": "수출",
+   "title": "폴란드 FA-50GF 12대 인도 완료",
+   "detail": "2023.07 첫 도착 이후 계약 15개월 만에 12대 전량 인도. KAI 수출 사상 가장 빠른 납품.",
+   "tier": "보도"
+  },
+  {
+   "date": "2024.05",
+   "category": "개량",
+   "title": "단좌형 FA-50 개발 국책과제",
+   "detail": "정부 290억원 포함 총 494억원, 2028년까지. 단좌형, 국산 자동 지면충돌방지장치, 항속거리 최대 30% 증가.",
+   "tier": "확정"
+  },
+  {
+   "date": "2024.08",
+   "category": "수출",
+   "title": "태국 T-50TH 14대 인도 완료",
+   "detail": "401비행대대 16대 목표 중 14대 확보.",
+   "tier": "보도"
+  },
+  {
+   "date": "2025.03",
+   "category": "실전",
+   "title": "필리핀 FA-50PH 1대 추락",
+   "detail": "야간 반군 작전 중 산악지대에 추락해 조종사 2명 순직. 기체 결함은 아니라는 결론.",
+   "tier": "보도"
+  },
+  {
+   "date": "2025.06",
+   "category": "수출",
+   "title": "필리핀 FA-50 Block 20 12대 추가 계약",
+   "detail": "약 $7억(약 1조원). 2028~2030 인도.",
+   "tier": "보도"
+  },
+  {
+   "date": "2025.10",
+   "category": "개량",
+   "title": "PhantomStrike 첫 양산 레이더 KAI 인도",
+   "detail": "2025.10.20 사천 도착. 8월 시험용 장비가 먼저 와서 통합 시험 중.",
+   "tier": "보도"
+  },
+  {
+   "date": "2025.12",
+   "category": "실전",
+   "title": "태국 T-50TH 첫 실전",
+   "detail": "2025.12.24 캄보디아 국경 분쟁에서 폭탄 4발 투하.",
+   "tier": "보도"
+  },
+  {
+   "date": "2025.12",
+   "category": "수출",
+   "title": "필리핀 FA-50PH 성능개량 계약",
+   "detail": "약 930억원. 기존 11대, 2029년까지.",
+   "tier": "확정"
+  },
+  {
+   "date": "2026.01",
+   "category": "수출",
+   "title": "폴란드 FA-50PL 인도 일정 연기 부속합의",
+   "detail": "2026.01.09 서명. 첫 인도 2027년 중반, 36대 완료 2029년 초로 약 2년 연기. 1.13에는 미국과 AIM-9X 통합 지원 협정.",
+   "tier": "보도"
+  },
+  {
+   "date": "2026.04",
+   "category": "수출",
+   "title": "록히드마틴, 미 해군 훈련기(UJTS) 입찰 불참",
+   "detail": "TF-50N으로 KAI와 함께 낼 예정이었으나 '미국산 부품 비중 요구' 등을 이유로 철수. T-50의 미 해군 수출 길이 막혔다.",
+   "tier": "보도"
+  },
+  {
+   "date": "2026.07",
+   "category": "수출",
+   "title": "인도네시아 T-50i 6대 인도 완료",
+   "detail": "누적 22대.",
+   "tier": "보도"
+  },
+  {
+   "date": "2026.10",
+   "category": "개량",
+   "title": "폴란드 FA-50PL AIM-120 통합 승인 보도",
+   "detail": "AIM-120C-5/C-7/C-8 통합 인증이 미국 승인 뒤 진행된다는 보도. BVR 능력의 전제.",
+   "tier": "보도"
+  },
+  {
+   "date": "2026.10",
+   "category": "수출",
+   "title": "말레이시아 FA-50M 첫 2대 인도",
+   "detail": "2026.10.30 라부안 기지 도착. 11월 중순 쿠안탄에서 공식 인수식.",
+   "tier": "보도"
+  }
+ ],
+ "specs": [
+  {
+   "key": "length",
+   "group": "제원",
+   "item": "길이 / 날개폭 / 높이",
+   "value": "13.14m / 9.45m(날개끝 미사일 포함) / 4.82m",
+   "num": 13.14,
+   "tier": "보도"
+  },
+  {
+   "key": "mtow",
+   "group": "제원",
+   "item": "최대 이륙중량",
+   "value": "FA-50 약 12.2t (T-50 훈련기 약 10.7t)",
+   "num": 12215.0,
+   "tier": "보도"
+  },
+  {
+   "key": "engine",
+   "group": "제원",
+   "item": "엔진",
+   "value": "GE F404-GE-102 터보팬 1기, 애프터버너 시 약 78.7kN (한화에어로스페이스 면허생산)",
+   "num": 78.7,
+   "tier": "보도"
+  },
+  {
+   "key": "speed",
+   "group": "제원",
+   "item": "최고속도",
+   "value": "마하 1.5 (고도 약 9km에서 시속 약 1,840km)",
+   "num": 1.5,
+   "tier": "보도"
+  },
+  {
+   "key": "range",
+   "group": "제원",
+   "item": "전투행동반경 / 페리 항속",
+   "value": "약 440~450km / 약 1,851km",
+   "num": 444.0,
+   "tier": "보도"
+  },
+  {
+   "key": "ceiling",
+   "group": "제원",
+   "item": "실용상승한도",
+   "value": "약 14.6km",
+   "num": 14630.0,
+   "tier": "보도"
+  },
+  {
+   "key": "g",
+   "group": "제원",
+   "item": "하중 한계",
+   "value": "+8G / -3G",
+   "num": 8.0,
+   "tier": "보도"
+  },
+  {
+   "key": "crew",
+   "group": "제원",
+   "item": "승무원",
+   "value": "2명(앞뒤 직렬 복좌). 단좌형은 개발 중",
+   "num": 2.0,
+   "tier": "확정"
+  },
+  {
+   "key": "gun",
+   "group": "제원",
+   "item": "기관포",
+   "value": "M197 20mm 3총열 기관포, 205발 (TA-50·FA-50)",
+   "num": 20.0,
+   "tier": "보도"
+  },
+  {
+   "key": "hardpoints",
+   "group": "제원",
+   "item": "무장 장착",
+   "value": "외부 장착대 7곳, 최대 약 5.4t (공식 정의는 나라마다 다름)",
+   "num": 7.0,
+   "tier": "보도"
+  },
+  {
+   "key": "radar",
+   "group": "제원",
+   "item": "레이더",
+   "value": "FA-50 Block 10: 엘타 EL/M-2032 기계식 / Block 20: 레이시온 PhantomStrike AESA",
+   "num": null,
+   "tier": "보도"
+  },
+  {
+   "key": "domestic_qty",
+   "group": "규모",
+   "item": "국군 배치 (T-50 계열 전체)",
+   "value": "T-50 50대 + T-50B 10대 + TA-50 22대 + FA-50 60대 = 142대",
+   "num": 142.0,
+   "tier": "보도"
+  },
+  {
+   "key": "domestic_fa50",
+   "group": "규모",
+   "item": "국군 FA-50",
+   "value": "60대 (F-5 대체)",
+   "num": 60.0,
+   "tier": "보도"
+  },
+  {
+   "key": "export_qty",
+   "group": "규모",
+   "item": "수출 계약 대수 (6개국)",
+   "value": "인니 22 + 이라크 24 + 필리핀 24 + 태국 14 + 폴란드 48 + 말레이시아 18 = 150대",
+   "num": 150.0,
+   "tier": "추정"
+  },
+  {
+   "key": "dev_share",
+   "group": "규모",
+   "item": "T-50 개발비 분담",
+   "value": "정부 70% · KAI 17% · 록히드마틴 13%",
+   "num": null,
+   "tier": "보도"
+  },
+  {
+   "key": "domestic_unit",
+   "group": "단가",
+   "item": "국군 FA-50 조달 단가(참고)",
+   "value": "대당 약 300억원 안팎으로 흔히 인용됨. 공식 대당 가격은 확인 못 함",
+   "num": 300.0,
+   "tier": "추정"
+  },
+  {
+   "key": "export_unit_pl",
+   "group": "단가",
+   "item": "폴란드 대당 평균",
+   "value": "$30억 ÷ 48대 ≈ 대당 $6,250만 (교육·군수지원 포함, 1,400원/달러 환산 약 875억원)",
+   "num": 875.0,
+   "tier": "추정"
+  },
+  {
+   "key": "export_unit_my",
+   "group": "단가",
+   "item": "말레이시아 대당 평균",
+   "value": "$9.2억 ÷ 18대 ≈ 대당 $5,100만 (약 716억원)",
+   "num": 716.0,
+   "tier": "추정"
+  },
+  {
+   "key": "export_unit_ph25",
+   "group": "단가",
+   "item": "필리핀 2025 대당 평균",
+   "value": "$7억 ÷ 12대 ≈ 대당 $5,800만 (무장 포함, 약 817억원)",
+   "num": 817.0,
+   "tier": "추정"
+  },
+  {
+   "key": "export_unit_ph14",
+   "group": "단가",
+   "item": "필리핀 2014 대당 평균",
+   "value": "$4.21억 ÷ 12대 ≈ 대당 $3,500만",
+   "num": null,
+   "tier": "추정"
+  },
+  {
+   "key": "export_unit_iq",
+   "group": "단가",
+   "item": "이라크 대당 평균",
+   "value": "$11억 ÷ 24대 ≈ 대당 $4,600만 (교육·지원 포함)",
+   "num": null,
+   "tier": "추정"
+  }
+ ],
+ "versions": [
+  {
+   "v": "T-50",
+   "photo": "t50",
+   "period": "2005~",
+   "stage": "공군 운용 중",
+   "crew": "2명",
+   "rof": "무장 없음(훈련용). 훈련용 무장 장착 가능",
+   "loading": "-",
+   "fcs": "레이더 없음. 디지털 비행제어(FBW), F-16과 비슷한 조종석",
+   "mobility": "F404 1기, 마하 1.5",
+   "weight": "최대 이륙 약 10.7t",
+   "users": "한국 50대",
+   "tier": "보도"
+  },
+  {
+   "v": "T-50B",
+   "photo": null,
+   "period": "2010~",
+   "stage": "공군 운용 중 (블랙이글스)",
+   "crew": "2명",
+   "rof": "무장 없음",
+   "loading": "곡예비행용 연막 장치",
+   "fcs": "T-50과 동일",
+   "mobility": "T-50과 동일",
+   "weight": "약 10.7t",
+   "users": "한국 10대",
+   "tier": "보도"
+  },
+  {
+   "v": "TA-50 (전술입문훈련기)",
+   "photo": "ta50",
+   "period": "2011~",
+   "stage": "공군 운용 중",
+   "crew": "2명",
+   "rof": "20mm 기관포, AIM-9 단거리 공대공, 일반 폭탄",
+   "loading": "외부 장착대 7곳",
+   "fcs": "엘타 EL/M-2032 레이더, 데이터링크",
+   "mobility": "T-50과 동일",
+   "weight": "T-50보다 약간 무거움",
+   "users": "한국 22대",
+   "tier": "보도"
+  },
+  {
+   "v": "FA-50 Block 10",
+   "photo": "hero",
+   "period": "2013~",
+   "stage": "공군 운용 중",
+   "crew": "2명",
+   "rof": "20mm 기관포, AIM-9, AGM-65 매버릭, JDAM·KGGB 유도폭탄, 확산탄",
+   "loading": "외부 최대 약 5.4t",
+   "fcs": "EL/M-2032, 전술데이터링크(Link-16), 레이더경보·채프/플레어, 긴 레이돔",
+   "mobility": "F404, 내부 연료 증가",
+   "weight": "최대 이륙 약 12.2t",
+   "users": "한국 60대",
+   "tier": "보도"
+  },
+  {
+   "v": "FA-50 Block 20",
+   "photo": null,
+   "period": "2026~ (수출형 기준)",
+   "stage": "말레이시아 인도 시작, 필리핀·폴란드 생산·개발 중",
+   "crew": "2명",
+   "rof": "Block 10 무장 + AIM-9X·AIM-120 등 BVR 미사일 통합 목표, 타우러스 KEPD 350K-2 통합 언급",
+   "loading": "대용량(300갤런) 외부 연료탱크 로드맵",
+   "fcs": "PhantomStrike AESA(GaN, 공랭식) 또는 LIG넥스원 ESR-500A 후보, 스나이퍼 표적지시 포드",
+   "mobility": "프로브식 공중급유 추가",
+   "weight": "약 12.2t+",
+   "users": "말레이시아·필리핀(2차)·폴란드(PL)",
+   "tier": "보도"
+  },
+  {
+   "v": "T-50i",
+   "photo": "id",
+   "period": "2013~",
+   "stage": "인도네시아 운용 중",
+   "crew": "2명",
+   "rof": "초기분 무장 거의 없음(훈련용)",
+   "loading": "-",
+   "fcs": "초기분 레이더 없음",
+   "mobility": "T-50과 동일",
+   "weight": "약 10.7t",
+   "users": "인도네시아 22대",
+   "tier": "보도"
+  },
+  {
+   "v": "T-50IQ",
+   "photo": null,
+   "period": "2017~",
+   "stage": "이라크 운용 중",
+   "crew": "2명",
+   "rof": "20mm 기관포, 공대공·공대지 무장 (TA-50급)",
+   "loading": "외부 장착대 7곳",
+   "fcs": "EL/M-2032 레이더",
+   "mobility": "T-50과 동일",
+   "weight": "TA-50급",
+   "users": "이라크 24대",
+   "tier": "보도"
+  },
+  {
+   "v": "FA-50PH (1차)",
+   "photo": "ph",
+   "period": "2015~",
+   "stage": "필리핀 운용 중",
+   "crew": "2명",
+   "rof": "AIM-9, AGM-65, 일반·유도폭탄. 실전 폭격 다수",
+   "loading": "외부 장착대 7곳",
+   "fcs": "EL/M-2032. 2029년까지 정밀무장·네트워크 성능개량",
+   "mobility": "F404",
+   "weight": "FA-50 Block 10급",
+   "users": "필리핀 11대(1대 손실)",
+   "tier": "보도"
+  },
+  {
+   "v": "FA-50PH Block 20 (2차)",
+   "photo": null,
+   "period": "2028~2030 인도",
+   "stage": "계약·생산 준비",
+   "crew": "2명",
+   "rof": "BVR 공대공 미사일 능력, 공대지 무장 패키지 포함",
+   "loading": "-",
+   "fcs": "AESA 레이더(기종 확정 보도 엇갈림)",
+   "mobility": "공중급유",
+   "weight": "-",
+   "users": "필리핀 12대",
+   "tier": "보도"
+  },
+  {
+   "v": "T-50TH",
+   "photo": null,
+   "period": "2018~",
+   "stage": "태국 운용 중",
+   "crew": "2명",
+   "rof": "훈련 무장, 2025.12 실전 폭격",
+   "loading": "-",
+   "fcs": "태국 요구로 레이더·RWR·자체방어장비 추가",
+   "mobility": "T-50과 동일",
+   "weight": "-",
+   "users": "태국 14대",
+   "tier": "보도"
+  },
+  {
+   "v": "FA-50GF (Gap Filler)",
+   "photo": "pl",
+   "period": "2023~",
+   "stage": "폴란드 운용 중",
+   "crew": "2명",
+   "rof": "임시 AIM-9P(임차)·AIM-9L/I-1, 20mm 기관포",
+   "loading": "-",
+   "fcs": "EL/M-2032, 초도분 EGI 미적용. PL급 개량 계획은 2025년 취소",
+   "mobility": "F404",
+   "weight": "FA-50 Block 10급",
+   "users": "폴란드 12대",
+   "tier": "보도"
+  },
+  {
+   "v": "FA-50PL",
+   "photo": null,
+   "period": "2027 중반~2029 초 인도",
+   "stage": "개발·통합 시험 중 (약 2년 지연)",
+   "crew": "2명",
+   "rof": "AIM-9X(2026.01 미국과 통합 협정), AIM-120C-5/C-7/C-8 통합 예정",
+   "loading": "대용량 외부 연료탱크",
+   "fcs": "PhantomStrike AESA, AN/AAQ-33 스나이퍼 포드, 헬멧 장착 조준기, NATO 데이터링크",
+   "mobility": "프로브식 공중급유",
+   "weight": "-",
+   "users": "폴란드 36대",
+   "tier": "보도"
+  },
+  {
+   "v": "FA-50M",
+   "photo": null,
+   "period": "2026.10~2028 초",
+   "stage": "말레이시아 납품 중",
+   "crew": "2명",
+   "rof": "AIM-9 기본, GBU-12·JDAM·AGM-65. AIM-9X·AIM-120은 통합 미확정",
+   "loading": "외부 장착대 7곳",
+   "fcs": "PhantomStrike AESA, 스나이퍼 포드",
+   "mobility": "프로브식 공중급유",
+   "weight": "-",
+   "users": "말레이시아 18대",
+   "tier": "보도"
+  },
+  {
+   "v": "TF-50 / FA-50 Block 70 (미국 제안형)",
+   "photo": null,
+   "period": "2018~2026 (제안)",
+   "stage": "제안 단계 → 미국 사업 연속 무산",
+   "crew": "2명",
+   "rof": "미국 훈련·전술기 시장용 무장 패키지",
+   "loading": "-",
+   "fcs": "미국식 항전, 대형 조종석 디스플레이·헬멧 조준기 등 고급 수출형 묶음",
+   "mobility": "공중급유 등",
+   "weight": "-",
+   "users": "미국 APT(2018 탈락), UJTS(2026 록히드 불참)로 미채택",
+   "tier": "보도"
+  },
+  {
+   "v": "F-50 / 단좌형 FA-50",
+   "photo": null,
+   "period": "2026 시제기 → 2028 개발 완료 목표",
+   "stage": "개발 중",
+   "crew": "1명",
+   "rof": "AESA, 중거리 공대공 미사일, 유럽제 미사일 가능성 보도",
+   "loading": "뒷좌석 자리에 연료 추가, 동체 재설계",
+   "fcs": "AESA, 국산 자동 지면충돌방지장치",
+   "mobility": "항속 최대 30% 증가, 공중급유",
+   "weight": "-",
+   "users": "이집트·이라크 등 관심 보도",
+   "tier": "보도"
+  }
+ ],
+ "components": [
+  {
+   "id": "P01",
+   "group": "국내 핵심 구성품",
+   "part": "체계종합 (설계·조립)",
+   "maker": "한국항공우주산업(KAI)",
+   "detail": "경남 사천 공장. T-50 계열 전 기종 설계·최종조립과 수출 후속지원",
+   "tier": "확정"
+  },
+  {
+   "id": "P02",
+   "group": "국내 핵심 구성품",
+   "part": "공동개발·비행제어·항전 설계",
+   "maker": "록히드마틴(미국)",
+   "detail": "개발비 13% 분담. 항전·디지털 비행제어 설계 협력, 미국 시장 마케팅 파트너(2026 UJTS 불참)",
+   "tier": "보도"
+  },
+  {
+   "id": "P03",
+   "group": "국내 핵심 구성품",
+   "part": "엔진 (F404-GE-102)",
+   "maker": "GE에어로스페이스 원설계 / 한화에어로스페이스 면허생산",
+   "detail": "옛 삼성테크윈이 엔진과 디지털 엔진제어(FADEC) 면허생산. 이라크 T-50IQ 엔진 창정비도 창원에서 수행",
+   "tier": "보도"
+  },
+  {
+   "id": "P04",
+   "group": "국내 핵심 구성품",
+   "part": "레이더 (Block 10: EL/M-2032)",
+   "maker": "엘타(IAI, 이스라엘)",
+   "detail": "TA-50·FA-50 Block 10의 기계식 사격통제 레이더",
+   "tier": "보도"
+  },
+  {
+   "id": "P05",
+   "group": "국내 핵심 구성품",
+   "part": "AESA 레이더 (Block 20: PhantomStrike)",
+   "maker": "레이시온(RTX, 미국)",
+   "detail": "2023.05 선정, 2025.10 첫 양산품 인도. 질화갈륨(GaN), 공랭식, 150파운드 미만. 미국 정부 FMS 아닌 상업 수출(DCS) 승인",
+   "tier": "보도"
+  },
+  {
+   "id": "P06",
+   "group": "국내 핵심 구성품",
+   "part": "국산 AESA 레이더 (ESR-500A)",
+   "maker": "LIG넥스원",
+   "detail": "2023 시제품 공개. 송수신 모듈 약 500개 공랭식. 2025.10부터 네덜란드 항공우주센터 시험기로 약 2년 비행시험. 국산 레이더면 레이더 부분 미국 수출허가가 필요 없음",
+   "tier": "보도"
+  },
+  {
+   "id": "P07",
+   "group": "국내 핵심 구성품",
+   "part": "항전·다기능 시현기·전자전",
+   "maker": "한화시스템(옛 삼성탈레스) · LIG넥스원",
+   "detail": "항전 장비, 다기능 시현기(MFD), 전자전·레이더경보 장비",
+   "tier": "보도"
+  },
+  {
+   "id": "P08",
+   "group": "국내 핵심 구성품",
+   "part": "관성항법(EGI)·전파고도계",
+   "maker": "하니웰(미국)",
+   "detail": "H-764G GPS/INS. 폴란드 GF 초도분은 EGI 미적용으로 인도",
+   "tier": "보도"
+  },
+  {
+   "id": "P09",
+   "group": "국내 핵심 구성품",
+   "part": "전방시현기(HUD)",
+   "maker": "도담시스템스",
+   "detail": "조종석 HUD",
+   "tier": "보도"
+  },
+  {
+   "id": "P10",
+   "group": "국내 핵심 구성품",
+   "part": "임무컴퓨터 운영체제",
+   "maker": "MDS테크",
+   "detail": "실시간 운영체제(NEOS)와 CPU",
+   "tier": "보도"
+  },
+  {
+   "id": "P11",
+   "group": "국내 핵심 구성품",
+   "part": "착륙장치",
+   "maker": "현대위아",
+   "detail": "주·전방 착륙장치",
+   "tier": "보도"
+  },
+  {
+   "id": "P12",
+   "group": "국내 핵심 구성품",
+   "part": "20mm 기관포 (M197)",
+   "maker": "제너럴다이내믹스(미국)",
+   "detail": "3총열 개틀링형, 205발",
+   "tier": "보도"
+  },
+  {
+   "id": "P13",
+   "group": "국내 핵심 구성품",
+   "part": "표적지시 포드 · 공중급유 프로브",
+   "maker": "록히드마틴(스나이퍼) · 코범(Cobham)",
+   "detail": "Block 20·FA-50PL·FA-50M에 추가되는 장비",
+   "tier": "보도"
+  },
+  {
+   "id": "P14",
+   "group": "국내 핵심 구성품",
+   "part": "국산 무장 통합",
+   "maker": "LIG넥스원 · 한화에어로스페이스",
+   "detail": "2026.02 사우디 WDS에서 KAI와 FA-50·KF-21 국산 공대공·공대지 무장 통합·공동 마케팅 MOU",
+   "tier": "보도"
+  },
+  {
+   "id": "P15",
+   "group": "해외 현지 생산",
+   "part": "폴란드 FA-50 후속 정비",
+   "maker": "WZL-2(비드고슈치)",
+   "detail": "KAI 감사를 통과해 보증기간 후 정비 사업 주계약자로 추천됨(KAI는 하청). 2026.06 기준 계약 전",
+   "tier": "보도"
+  },
+  {
+   "id": "P16",
+   "group": "해외 현지 생산",
+   "part": "폴란드 F404 엔진 정비",
+   "maker": "GE에어로스페이스 · WZL-2",
+   "detail": "2026.09 F404-GE-102 정비 지원 검토 MOU",
+   "tier": "보도"
+  },
+  {
+   "id": "P17",
+   "group": "해외 현지 생산",
+   "part": "이라크 현지 후속지원",
+   "maker": "KAI 현지 지원팀",
+   "detail": "2021 CLS 계약으로 교관 조종사·정비사 파견, 현지 정비·교육",
+   "tier": "보도"
+  },
+  {
+   "id": "P18",
+   "group": "해외 현지 생산",
+   "part": "태국 정비 협력",
+   "maker": "태국 항공산업(TAI)",
+   "detail": "T-50TH 정비(MRO) 지원 협력",
+   "tier": "보도"
+  },
+  {
+   "id": "P19",
+   "group": "해외 현지 생산",
+   "part": "이집트 현지 조립 (구상)",
+   "maker": "아랍산업화기구(AOI) 헬완 공장",
+   "detail": "100대 계약 시 약 70대 현지 조립 구상. 2023 협력 합의, 본계약 미체결",
+   "tier": "보도"
+  }
+ ],
+ "roadmap": [
+  {
+   "id": "R01",
+   "when": "2026.10~2028 초",
+   "item": "말레이시아 FA-50M 18대 인도",
+   "detail": "2027.04까지 6대, 2028년 초 완료. 호크는 2028년 퇴역",
+   "status": "진행",
+   "tier": "보도"
+  },
+  {
+   "id": "R02",
+   "when": "2027 중반~2029 초",
+   "item": "폴란드 FA-50PL 36대 인도",
+   "detail": "첫 9대 2027.07 예정 보도. PhantomStrike·공중급유·AIM-9X 통합 완료가 전제",
+   "status": "진행",
+   "tier": "보도"
+  },
+  {
+   "id": "R03",
+   "when": "2026~2027",
+   "item": "FA-50PL AIM-120 통합",
+   "detail": "AIM-120C-5/C-7/C-8 인증 진행 보도(2026.10). 별도 협정 필요",
+   "status": "진행",
+   "tier": "보도"
+  },
+  {
+   "id": "R04",
+   "when": "2028~2030",
+   "item": "필리핀 FA-50 Block 20 12대 인도",
+   "detail": "2028년 첫 인도, 2대씩 나눠 2030년까지",
+   "status": "계획",
+   "tier": "보도"
+  },
+  {
+   "id": "R05",
+   "when": "~2029",
+   "item": "필리핀 기존 FA-50PH 성능개량",
+   "detail": "11대, 약 930억원",
+   "status": "진행",
+   "tier": "확정"
+  },
+  {
+   "id": "R06",
+   "when": "2026 시제기 → 2028",
+   "item": "단좌형 FA-50(F-50) 개발",
+   "detail": "정부 과제 494억원. 동체 재설계, AESA, 중거리 미사일, 항속 30% 증가",
+   "status": "진행",
+   "tier": "보도"
+  },
+  {
+   "id": "R07",
+   "when": "2025.10~약 2년",
+   "item": "LIG넥스원 국산 AESA 비행시험",
+   "detail": "FA-50 수출형에 미국 레이더 대안 제공 목표",
+   "status": "진행",
+   "tier": "보도"
+  },
+  {
+   "id": "R08",
+   "when": "미정",
+   "item": "폴란드 FA-50 후속 정비 계약",
+   "detail": "WZL-2 주계약·KAI 하청 구조, LRU 현지 정비",
+   "status": "협상",
+   "tier": "보도"
+  },
+  {
+   "id": "R09",
+   "when": "2026~",
+   "item": "국산 무장 통합 패키지",
+   "detail": "LIG넥스원·한화에어로스페이스와 FA-50 무장 통합·공동 마케팅",
+   "status": "협력",
+   "tier": "보도"
+  },
+  {
+   "id": "R10",
+   "when": "미정",
+   "item": "영국 공군 호크 후속 훈련기",
+   "detail": "KAI가 T-50 제안, 레드애로우 곡예기 겸용. 영국 현지 생산 파트너 물색 중",
+   "status": "경쟁",
+   "tier": "보도"
+  },
+  {
+   "id": "R11",
+   "when": "미정",
+   "item": "이집트 FA-50 36~100대",
+   "detail": "1차 36대 약 $10억, 70대 현지 조립 구상",
+   "status": "협상",
+   "tier": "보도"
+  }
+ ],
+ "pipeline": [
+  {
+   "id": "Q1",
+   "country": "이집트",
+   "opportunity": "알파젯·K-8E 대체 경전투기",
+   "scale": "1차 36대, 최대 100대 (약 70대 헬완 현지 조립)",
+   "stage": "협상",
+   "updated": "2026.09",
+   "note": "2025.03 '서명 임박' 보도 후 1년 넘게 미체결. 단좌형 요구 보도. F-16과 부품 공통성 약 70%가 장점",
+   "tier": "보도",
+   "value_krw_eok": 14000.0,
+   "value_usd_eok": 10.0,
+   "value_basis": "언론 추정",
+   "value_note": "1차 36대 기준 약 $10억(Army Recognition·ADF·Aero News Journal), 원화는 1,400원/달러 환산"
+  },
+  {
+   "id": "Q2",
+   "country": "말레이시아",
+   "opportunity": "2차분 18대(총 36대)",
+   "scale": "18대",
+   "stage": "검토",
+   "updated": "2026.10",
+   "note": "2023년 계약 때 2차분 가능성이 거론됐으나, 2026.10 국방장관은 '더 발전된 전투기' 2차분 공급국을 정하지 않았다고 밝혀 FA-50 확정 아님",
+   "tier": "보도",
+   "value_krw_eok": null,
+   "value_usd_eok": null,
+   "value_basis": "언론 추정",
+   "value_note": "2차분 사업비 발표·추정 보도 없음(1차 18대는 $9.2억)"
+  },
+  {
+   "id": "Q3",
+   "country": "태국",
+   "opportunity": "T-50TH 2대 추가",
+   "scale": "2대 (401비행대대 16대 완성)",
+   "stage": "계획",
+   "updated": "2024.07",
+   "note": "국방백서상 2025~2029년 구매 계획. 계약 체결 보도 확인 못 함",
+   "tier": "보도",
+   "value_krw_eok": null,
+   "value_usd_eok": null,
+   "value_basis": "언론 추정",
+   "value_note": "추가분 금액 보도 없음(참고: 2021년 2대 약 800억원)"
+  },
+  {
+   "id": "Q4",
+   "country": "영국",
+   "opportunity": "공군 호크 후속 고등훈련기",
+   "scale": "수량 미정 (레드애로우 곡예기 겸용)",
+   "stage": "경쟁",
+   "updated": "2026.07",
+   "note": "KAI가 FIA 2026에서 T-50 제안. 영국 내 생산 가능하다며 현지 파트너 물색",
+   "tier": "보도",
+   "value_krw_eok": 6804.0,
+   "value_usd_eok": 4.86,
+   "value_basis": "언론 추정",
+   "value_note": "Shephard 관련 기사 제목의 '$4.86억 영국 훈련기 소요' 기준, 범위 불명확. 원화는 1,400원/달러 환산"
+  },
+  {
+   "id": "Q5",
+   "country": "이라크",
+   "opportunity": "단좌형·Block 20 추가 도입",
+   "scale": "미정",
+   "stage": "관심 표명",
+   "updated": "2025.09",
+   "note": "단좌형 FA-50 개발 배경으로 이집트와 함께 이라크 요구가 거론됨. 공식 협상 확인 안 됨",
+   "tier": "보도",
+   "value_krw_eok": null,
+   "value_usd_eok": null,
+   "value_basis": "언론 추정",
+   "value_note": "사업 규모 보도 없음"
+  },
+  {
+   "id": "Q6",
+   "country": "슬로바키아",
+   "opportunity": "훈련·경전투기",
+   "scale": "미정",
+   "stage": "관심 표명(정체)",
+   "updated": "2022",
+   "note": "2022년 KAI가 공급 추진 보도 이후 진전 확인 못 함",
+   "tier": "보도",
+   "value_krw_eok": null,
+   "value_usd_eok": null,
+   "value_basis": "언론 추정",
+   "value_note": "사업 규모 보도 없음"
+  }
+ ],
+ "notes": [
+  {
+   "id": "B1",
+   "kind": "배경",
+   "order": 1,
+   "title": "F-16로 가는 다리가 없었다",
+   "detail": "1990년대 공군은 초음속 고등훈련을 미국제 T-38 등에 기댔다. KT-1로 기본훈련을 국산화한 다음 단계로, F-16·F-15K로 바로 이어지는 초음속 훈련기를 직접 만들기로 했다."
+  },
+  {
+   "id": "B2",
+   "kind": "배경",
+   "order": 2,
+   "title": "록히드마틴과 손잡은 이유",
+   "detail": "한국은 초음속기 설계 경험이 없었다. KF-16 면허생산 인연이 있던 록히드마틴이 개발비 13%를 대고 비행제어·항전을 도와, F-16과 닮은 조종석과 비행 특성을 갖게 됐다."
+  },
+  {
+   "id": "B3",
+   "kind": "배경",
+   "order": 3,
+   "title": "늙은 F-5를 바꿀 값싼 전투기",
+   "detail": "공군의 F-5E/F는 1970~80년대 기체라 빨리 바꿔야 했다. 이미 있는 T-50 생산 라인에 레이더·무장을 붙인 FA-50이 새 전투기보다 싸고 빨랐다."
+  },
+  {
+   "id": "B4",
+   "kind": "배경",
+   "order": 4,
+   "title": "'살 수 있는 전투기' 시장",
+   "detail": "F-16·그리펜은 비싸고 오래 기다려야 한다. 필리핀·말레이시아처럼 예산이 적은 나라, 폴란드처럼 급한 나라가 '훈련도 되고 싸움도 되는' FA-50을 골랐다."
+  },
+  {
+   "id": "S1",
+   "kind": "공부",
+   "order": 1,
+   "title": "훈련기 → 전투기로 이어지는 가족",
+   "detail": "T-50(훈련) → TA-50(전술입문, 레이더·기관포) → FA-50(경전투기)로 같은 기체에 장비를 더해 간다. 같은 라인에서 만들어 값과 정비 부담이 줄어드는 '파생형 전략'이다."
+  },
+  {
+   "id": "S2",
+   "kind": "공부",
+   "order": 2,
+   "title": "블록 10과 블록 20의 차이",
+   "detail": "Block 10은 기계식 레이더(EL/M-2032)와 단거리 미사일 중심. Block 20은 AESA 레이더, 공중급유, 표적지시 포드, 가시권 밖(BVR) 미사일을 더해 '진짜 전투기'에 가까워진다."
+  },
+  {
+   "id": "S3",
+   "kind": "공부",
+   "order": 3,
+   "title": "미국 부품이 많다는 양면성",
+   "detail": "엔진(GE F404), 레이더(PhantomStrike), 미사일(AIM-9X·AIM-120)이 미국산이라 성능과 NATO 호환성은 좋지만, 통합·수출에 미국 승인이 필요해 일정이 늦어질 수 있다. 폴란드 FA-50PL 지연이 대표 사례다."
+  },
+  {
+   "id": "S4",
+   "kind": "공부",
+   "order": 4,
+   "title": "폴란드 두 단계 계약의 교훈",
+   "detail": "GF 12대는 한국군 형상 그대로라 10개월 만에 왔지만, 새 요구를 잔뜩 넣은 PL 36대는 약 2년 늦어졌다. '빨리 받기'와 '맞춤형'은 서로 대가가 따른다."
+  },
+  {
+   "id": "S5",
+   "kind": "공부",
+   "order": 5,
+   "title": "나라마다 다른 FA-50",
+   "detail": "같은 기체라도 이라크는 현지 정비 지원, 필리핀은 실전 폭격과 공중급유, 태국은 훈련기에 레이더 추가, 폴란드는 NATO 무장, 이집트는 현지 조립을 요구한다. 수출 조건이 곧 형상 차이다."
+  },
+  {
+   "id": "S6",
+   "kind": "공부",
+   "order": 6,
+   "title": "미국 시장의 벽",
+   "detail": "2018년 미 공군 훈련기 사업에서 보잉 T-7에 졌고, 2026년에는 미국산 부품 비중 요구 등으로 록히드마틴이 미 해군 사업 입찰을 포기했다. 국산 레이더·단좌형은 이런 의존을 줄이려는 시도다."
+  }
+ ],
+ "photos": {
+  "hero": {
+   "src": "https://commons.wikimedia.org/wiki/Special:FilePath/FA-50%20fighting%20Eagle%20on%20the%20Runway.jpg?width=960",
+   "page": "https://commons.wikimedia.org/wiki/File:FA-50_fighting_Eagle_on_the_Runway.jpg",
+   "by": "대한민국 공군·KAI",
+   "lic": "CC BY 2.0",
+   "cap": "활주로의 FA-50"
+  },
+  "t50": {
+   "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Aircraft%20of%20the%20Black%20Eagles%20T-50.jpg?width=960",
+   "page": "https://commons.wikimedia.org/wiki/File:Aircraft_of_the_Black_Eagles_T-50.jpg",
+   "by": "Slam",
+   "lic": "CC BY-SA 3.0",
+   "cap": "블랙이글스 T-50"
+  },
+  "ta50": {
+   "src": "https://commons.wikimedia.org/wiki/Special:FilePath/2012.7.27%20%EA%B3%B5%EA%B5%B0%20T-50%EC%A0%84%EB%A0%A5%ED%99%94%20Rep.of%20Korea%20Air%20Force%20T-50%20%287655222040%29.jpg?width=960",
+   "page": "https://commons.wikimedia.org/wiki/File:2012.7.27_%EA%B3%B5%EA%B5%B0_T-50%EC%A0%84%EB%A0%A5%ED%99%94_Rep.of_Korea_Air_Force_T-50_%287655222040%29.jpg",
+   "by": "대한민국 국군",
+   "lic": "CC BY-SA 2.0",
+   "cap": "TA-50 전력화 행사 (2012)"
+  },
+  "pl": {
+   "src": "https://commons.wikimedia.org/wiki/Special:FilePath/FA-50%20PAF%205001%20at%20NATO%20Days%202023.jpg?width=960",
+   "page": "https://commons.wikimedia.org/wiki/File:FA-50_PAF_5001_at_NATO_Days_2023.jpg",
+   "by": "Boevaya mashina",
+   "lic": "CC BY-SA 3.0 DE",
+   "cap": "폴란드 공군 FA-50GF (2023)"
+  },
+  "ph": {
+   "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Philippine%20Air%20Force%20FA-50PH.jpg?width=960",
+   "page": "https://commons.wikimedia.org/wiki/File:Philippine_Air_Force_FA-50PH.jpg",
+   "by": "Senior Airman Mitchell Corley (미 공군)",
+   "lic": "Public domain",
+   "cap": "필리핀 공군 FA-50PH"
+  },
+  "id": {
+   "src": "https://commons.wikimedia.org/wiki/Special:FilePath/KAI%20T-50i%20in%20Indonesia.jpg?width=960",
+   "page": "https://commons.wikimedia.org/wiki/File:KAI_T-50i_in_Indonesia.jpg",
+   "by": "Korea Aerospace Industries",
+   "lic": "CC BY 2.0",
+   "cap": "인도네시아 공군 T-50i"
+  }
+ },
+ "ir": {
+  "company": "한국항공우주산업(KAI)",
+  "segment": "회사 전체",
+  "unit": "억원",
+  "source": {
+   "name": "KAI IR 자료실 실적발표",
+   "url": "https://www.koreaaero.com/KO/Ir/EarningRelease.aspx"
+  },
+  "labels": {
+   "export": "완제기 수출",
+   "domestic": "국내 사업",
+   "other": "기체구조물 등"
+  },
+  "note": "KAI는 사업부문별 영업이익을 공개하지 않아 회사 전체 실적을 씁니다. 매출은 국내사업(KF-21·FA-50 국내 납품 등), 완제기 수출(FA-50 등), 기체구조물(보잉·에어버스 부품)으로 나뉩니다. 기체구조물 막대에는 연결조정을 포함했습니다. 각 분기는 같은 분기 또는 이듬해 같은 분기 IR 자료의 수치입니다.",
+  "quarters": [
+   {
+    "quarter": "1Q24",
+    "revenue_eok": 7399,
+    "op_eok": 480,
+    "opm_pct": 6.5,
+    "export_eok": 906,
+    "domestic_eok": 4386,
+    "other_eok": 2107,
+    "export_share_pct": 12.2,
+    "ir_doc": "KAI 1Q25 IR Report",
+    "tier": "확정"
+   },
+   {
+    "quarter": "2Q24",
+    "revenue_eok": 8918,
+    "op_eok": 743,
+    "opm_pct": 8.3,
+    "export_eok": 1506,
+    "domestic_eok": 4982,
+    "other_eok": 2430,
+    "export_share_pct": 16.9,
+    "ir_doc": "KAI 2Q25 IR Report",
+    "tier": "확정"
+   },
+   {
+    "quarter": "3Q24",
+    "revenue_eok": 9072,
+    "op_eok": 763,
+    "opm_pct": 8.4,
+    "export_eok": 2434,
+    "domestic_eok": 4426,
+    "other_eok": 2212,
+    "export_share_pct": 26.8,
+    "ir_doc": "KAI 3Q25 IR Report",
+    "tier": "확정"
+   },
+   {
+    "quarter": "4Q24",
+    "revenue_eok": 10948,
+    "op_eok": 421,
+    "opm_pct": 3.8,
+    "export_eok": 1558,
+    "domestic_eok": 7274,
+    "other_eok": 2116,
+    "export_share_pct": 14.2,
+    "ir_doc": "KAI 4Q25 IR Report",
+    "tier": "확정"
+   },
+   {
+    "quarter": "1Q25",
+    "revenue_eok": 6993,
+    "op_eok": 468,
+    "opm_pct": 6.7,
+    "export_eok": 1711,
+    "domestic_eok": 3221,
+    "other_eok": 2061,
+    "export_share_pct": 24.5,
+    "ir_doc": "KAI 1Q26 IR Report",
+    "tier": "확정"
+   },
+   {
+    "quarter": "2Q25",
+    "revenue_eok": 8284,
+    "op_eok": 852,
+    "opm_pct": 10.3,
+    "export_eok": 2273,
+    "domestic_eok": 3632,
+    "other_eok": 2379,
+    "export_share_pct": 27.4,
+    "ir_doc": "KAI 2Q26 IR Report",
+    "tier": "확정"
+   },
+   {
+    "quarter": "3Q25",
+    "revenue_eok": 7021,
+    "op_eok": 602,
+    "opm_pct": 8.6,
+    "export_eok": 1638,
+    "domestic_eok": 2693,
+    "other_eok": 2690,
+    "export_share_pct": 23.3,
+    "ir_doc": "KAI 3Q26 IR Report",
+    "tier": "확정"
+   },
+   {
+    "quarter": "4Q25",
+    "revenue_eok": 14667,
+    "op_eok": 770,
+    "opm_pct": 5.2,
+    "export_eok": 3650,
+    "domestic_eok": 7554,
+    "other_eok": 3463,
+    "export_share_pct": 24.9,
+    "ir_doc": "KAI 4Q25 IR Report",
+    "tier": "확정"
+   },
+   {
+    "quarter": "1Q26",
+    "revenue_eok": 10927,
+    "op_eok": 671,
+    "opm_pct": 6.1,
+    "export_eok": 3071,
+    "domestic_eok": 5479,
+    "other_eok": 2378,
+    "export_share_pct": 28.1,
+    "ir_doc": "KAI 1Q26 IR Report",
+    "tier": "확정"
+   },
+   {
+    "quarter": "2Q26",
+    "revenue_eok": 11679,
+    "op_eok": 484,
+    "opm_pct": 4.1,
+    "export_eok": 3633,
+    "domestic_eok": 4965,
+    "other_eok": 3081,
+    "export_share_pct": 31.1,
+    "ir_doc": "KAI 2Q26 IR Report",
+    "tier": "확정"
+   },
+   {
+    "quarter": "3Q26",
+    "revenue_eok": 10643,
+    "op_eok": 794,
+    "opm_pct": 7.5,
+    "export_eok": 2914,
+    "domestic_eok": 4937,
+    "other_eok": 2792,
+    "export_share_pct": 27.4,
+    "ir_doc": "KAI 3Q26 IR Report",
+    "tier": "확정"
+   }
+  ],
+  "backlog": [
+   {
+    "period": "1Q25",
+    "backlog_jo": 24.26,
+    "export_pct": null
+   },
+   {
+    "period": "2Q25",
+    "backlog_jo": 26.67,
+    "export_pct": null
+   },
+   {
+    "period": "3Q25",
+    "backlog_jo": 26.27,
+    "export_pct": 22
+   },
+   {
+    "period": "1Q26",
+    "backlog_jo": 26.55,
+    "export_pct": null
+   },
+   {
+    "period": "2Q26",
+    "backlog_jo": 25.75,
+    "export_pct": null
+   },
+   {
+    "period": "3Q26",
+    "backlog_jo": 26.29,
+    "export_pct": 24
+   }
+  ],
+  "backlog_note": "수출 비중은 완제기 수출 수주잔고 기준(기체구조물 제외). 3Q25 5조 8,439억원, 3Q26 6조 1,930억원."
+ }
+}

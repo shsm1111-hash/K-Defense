@@ -1,0 +1,861 @@
+{
+ "updated": "2026-11-04",
+ "meta": {
+  "name": "L-SAM 장거리 지대공 유도무기",
+  "short": "L-SAM",
+  "alias": "L-SAM (Long-range Surface-to-Air Missile)",
+  "maker": "LIG넥스원 · 한화에어로스페이스 · 한화시스템 (개발 국방과학연구소)",
+  "eyebrow": "방공 · 탄도탄 요격 체계 (KAMD 상층)",
+  "purpose": "북한 탄도미사일을 떨어지는 마지막 단계의 높은 고도(약 40~60km)에서 먼저 요격하는 장거리 지대공 무기다. 하층의 패트리엇·천궁-II보다 먼저 쏴서 요격 기회를 한 번 더 만든다. 대항공기탄으로 항공기·순항미사일도 막는다.",
+  "lede": "L-SAM은 국방과학연구소가 10년간 약 1조 2,000억원을 들여 개발한 '한국형 사드'다. 2025년 11월 양산 계약을 마쳤고 이르면 2027년 공군에 배치된다. 아직 수출 계약은 없지만 2026년 9월 UAE와 주요조건에 합의해 첫 수출을 앞두고 있다.",
+  "why_note": "하층뿐이던 미사일 방어에 우리가 직접 운용하는 상층을 더하기 위해",
+  "why_title": "왜 L-SAM이 필요했나",
+  "spec_note": "상세 제원은 대부분 비공개라 정부 발표와 언론 보도 기준으로 정리했다",
+  "version_note": "ABM과 AAM 두 탄으로 시작해 L-SAM-II에서 고고도·활공단계 요격탄으로 확장된다",
+  "unit_word": "포대",
+  "unit_desc": "포대(레이더 1·통제소 2·발사대 4로 구성)",
+  "kpis": [
+   {
+    "label": "요격 고도",
+    "value": "40~60",
+    "unit": "km",
+    "note": "ABM 기준 보도치. 정부 공식 표현은 '40km 이상'"
+   },
+   {
+    "label": "양산 총사업비",
+    "value": "1조 7,302",
+    "unit": "억원",
+    "note": "2025~2030년, 2025.1 방추위 의결 보도"
+   },
+   {
+    "label": "2025 양산 계약 합계",
+    "value": "1조 2,266",
+    "unit": "억원",
+    "note": "한화에어로 7,054 + 한화시스템 3,573 + LIG넥스원 1,639"
+   },
+   {
+    "label": "개발비",
+    "value": "1조 2,000",
+    "unit": "억원",
+    "note": "2015~2024년, 국방부 발표"
+   },
+   {
+    "label": "LIG 수주잔고",
+    "src": "backlog",
+    "note": "LIG디펜스앤에어로스페이스 {backlog_period}{backlog_export} (IR)"
+   }
+  ],
+  "segment_short": "LIG",
+  "backlog_note": "회사는 수주잔고의 50% 이상이 수출사업이라고 밝힘. 천궁-II 수출분(UAE 약 2.7조, 사우디 약 4.3조, 이라크 약 3.7조원)이 반영돼 있음.",
+  "supply_photos": [
+   "kamd"
+  ]
+ },
+ "features": [
+  {
+   "title": "종말단계 상층 방어",
+   "detail": "PAC-3·천궁-II 위, 사드 아래 고도를 맡는 한국 최초의 상층 요격체계다."
+  },
+  {
+   "title": "직격요격(Hit-to-Kill)",
+   "detail": "파편으로 터뜨리지 않고 탄도탄에 직접 부딪쳐 파괴한다."
+  },
+  {
+   "title": "국산 DACS·이중펄스 모터",
+   "detail": "공기 희박한 고도에서 옆으로 분사해 방향을 트는 장치와 두 번 점화하는 로켓모터를 국내 기술로 만들었다."
+  },
+  {
+   "title": "두 종류의 탄",
+   "detail": "대탄도탄(ABM)과 대항공기(AAM) 유도탄을 한 포대에서 함께 운용한다."
+  },
+  {
+   "title": "S밴드 AESA 다기능레이더",
+   "detail": "한화시스템 레이더가 수백 km 밖 표적을 탐지·추적하고 유도탄을 이끈다."
+  },
+  {
+   "title": "L-SAM-II로 진화",
+   "detail": "더 높은 고도 요격탄과 극초음속 활공체 요격탄을 2030년대까지 개발한다."
+  }
+ ],
+ "contracts": [],
+ "operators": [],
+ "timeline": [
+  {
+   "date": "2006~2008",
+   "category": "배경",
+   "title": "북한 탄도미사일 위협 본격화",
+   "detail": "2006년 북한의 첫 핵실험과 노동·스커드 미사일 시험이 이어지며, 하층 방어(PAC-2)만으로는 부족하다는 지적이 커졌다. 한국형 미사일방어(KAMD) 구상이 이때부터 구체화됐다.",
+   "tier": "해설"
+  },
+  {
+   "date": "2009~2014",
+   "category": "배경",
+   "title": "장기 소요 결정과 선행연구",
+   "detail": "국방개혁 기본계획에 장거리 지대공 유도무기가 반영되고 장기 소요 결정, 기술성숙도 평가, 선행연구, 사업타당성 조사, 사업추진 기본전략 승인이 차례로 이뤄졌다.",
+   "tier": "보도"
+  },
+  {
+   "date": "2015.12",
+   "category": "개발",
+   "title": "탐색개발 착수",
+   "detail": "국방과학연구소(ADD) 주관으로 탐색개발 시작(~2019.10). 핵심은 직격요격 비행체와 위치·자세 제어장치(DACS) 같은 국내에 없던 기술 확보였다.",
+   "tier": "보도"
+  },
+  {
+   "date": "2018.11",
+   "category": "개발",
+   "title": "시험발사 실패",
+   "detail": "두 차례 연기 끝에 진행된 시험발사가 실패했다. 이후 원인을 보완해 체계개발로 넘어갔다.",
+   "tier": "보도"
+  },
+  {
+   "date": "2019.12",
+   "category": "개발",
+   "title": "체계개발 착수",
+   "detail": "2024년 11월까지 이어진 체계개발. LIG넥스원이 체계종합과 대항공기탄(AAM), 한화가 대탄도탄(ABM), 한화시스템이 다기능레이더를 맡았다.",
+   "tier": "보도"
+  },
+  {
+   "date": "2022.02",
+   "category": "개발",
+   "title": "태안 비행시험",
+   "detail": "충남 태안 안흥시험장에서 유도탄이 예정된 궤적대로 비행하는지 확인하는 시험을 했다.",
+   "tier": "보도"
+  },
+  {
+   "date": "2022.11",
+   "category": "개발",
+   "title": "첫 표적 요격 성공",
+   "detail": "ABM과 AAM을 함께 쏘는 첫 요격시험에서 표적 명중에 성공했다고 알려졌다.",
+   "tier": "보도"
+  },
+  {
+   "date": "2023.04",
+   "category": "개량",
+   "title": "L-SAM-II 사업추진기본전략 의결",
+   "detail": "방위사업추진위원회가 고고도 요격탄과 활공단계 요격탄을 함께 개발하는 L-SAM-II 기본전략을 의결. 2035년까지 약 2조 7,100억원 규모로 보도됐다.",
+   "tier": "보도"
+  },
+  {
+   "date": "2023.05.30",
+   "category": "개발",
+   "title": "4차 요격시험 공개",
+   "detail": "국방장관이 참관한 가운데 탄도탄 표적 요격을 처음 언론에 공개했다. 탐지·추적부터 정밀 유도 요격까지 핵심 성능을 확인했다고 ADD가 발표했다.",
+   "tier": "확정"
+  },
+  {
+   "date": "2024.05",
+   "category": "개발",
+   "title": "전투용 적합 판정",
+   "detail": "운용시험평가를 통과해 실제 군에서 쓸 수 있다는 판정을 받았다.",
+   "tier": "확정"
+  },
+  {
+   "date": "2024.10",
+   "category": "개발",
+   "title": "규격화 완료",
+   "detail": "양산에 필요한 설계·규격을 확정했다.",
+   "tier": "보도"
+  },
+  {
+   "date": "2024.11.29",
+   "category": "개발",
+   "title": "체계개발 종료",
+   "detail": "ADD 대전청사에서 개발 종료 행사. 2015년부터 약 1조 2,000억원이 들었다고 국방부가 밝혔다.",
+   "tier": "확정"
+  },
+  {
+   "date": "2025.01",
+   "category": "양산",
+   "title": "양산계획 의결",
+   "detail": "제166회 방위사업추진위원회가 양산계획(안)을 의결. 2030년까지 약 1조 7,302억원 규모로 알려졌다.",
+   "tier": "보도"
+  },
+  {
+   "date": "2025.01.14",
+   "category": "개량",
+   "title": "L-SAM-II 고고도 요격탄 체계개발 착수",
+   "detail": "ADD에서 착수회의. 2028년까지 약 5,677억원을 들여 개발하며, 방어 범위는 L-SAM의 3~4배를 목표로 한다. 국내 19개 업체 참여.",
+   "tier": "확정"
+  },
+  {
+   "date": "2025.02",
+   "category": "수출",
+   "title": "IDEX 2025에서 해외 첫 공개",
+   "detail": "아부다비 방산전시회에서 한화가 L-SAM을 처음 해외에 선보이고, UAE 국영 방산그룹 EDGE와 협력을 논의했다.",
+   "tier": "보도"
+  },
+  {
+   "date": "2025.04.28",
+   "category": "양산",
+   "title": "웨이비스 레이더 부품 수주",
+   "detail": "웨이비스가 한화시스템에 L-SAM 다기능레이더용 질화갈륨(GaN) 고출력증폭보드를 265억원어치 공급(2027년 말까지)하는 계약을 공시.",
+   "tier": "확정"
+  },
+  {
+   "date": "2025.05~06",
+   "category": "개량",
+   "title": "L-SAM-II 업체별 개발 계약",
+   "detail": "LIG넥스원 체계종합 시제 987억원(5.14), 한화시스템 다기능레이더 547억원(5.26), 한화에어로스페이스 1,986억원(6.10). 모두 2028년까지.",
+   "tier": "확정"
+  },
+  {
+   "date": "2025.10.02",
+   "category": "양산",
+   "title": "한화시스템 다기능레이더 양산 계약",
+   "detail": "방위사업청과 3,573억원 계약(2030.12.31까지). 2024년 매출의 12.74%.",
+   "tier": "확정"
+  },
+  {
+   "date": "2025.11.20",
+   "category": "수출",
+   "title": "한화-EDGE 양해각서",
+   "detail": "UAE EDGE와 한화가 방공 협력 양해각서를 맺었다고 보도됐다.",
+   "tier": "보도"
+  },
+  {
+   "date": "2025.11.27",
+   "category": "양산",
+   "title": "LIG넥스원 양산 계약",
+   "detail": "통제소와 대항공기 유도탄(AAM) 등 1,639억원 규모, 2030년까지 납품.",
+   "tier": "확정"
+  },
+  {
+   "date": "2025.11.28",
+   "category": "양산",
+   "title": "한화에어로스페이스 양산 계약",
+   "detail": "대탄도탄 유도탄(ABM)과 발사대 등 7,054억원 규모, 2030년까지 납품. 이로써 체계 3사 양산 계약이 모두 체결됐다.",
+   "tier": "확정"
+  },
+  {
+   "date": "2026.01",
+   "category": "수출",
+   "title": "도하 전시회 패키지 제안",
+   "detail": "LIG넥스원이 카타르 도하 전시회에서 천궁-II와 L-SAM을 묶은 다층 방공 패키지를 소개했다.",
+   "tier": "보도"
+  },
+  {
+   "date": "2026.03",
+   "category": "수출",
+   "title": "벨기에 BEDEX 2026 전시",
+   "detail": "브뤼셀 전시회에서 한화가 벨기에 총리·국방장관, NATO 사무총장에게 L-SAM을 소개했다.",
+   "tier": "보도"
+  },
+  {
+   "date": "2026.05",
+   "category": "수출",
+   "title": "폴란드 소개",
+   "detail": "바르샤바 Defence24 Days(5.6~7)와 지역 통합방공 회의(5.21~22)에서 한화가 L-SAM을 발표했다.",
+   "tier": "보도"
+  },
+  {
+   "date": "2026.09.16",
+   "category": "수출",
+   "title": "UAE EDGE와 주요조건합의서(텀시트)",
+   "detail": "한화(한화시스템 주도)와 EDGE가 L-SAM, 천궁-II 추가분, 천무를 포함한 통합방공 협력 텀시트에 서명. 현지 합작법인과 단계적 현지생산을 논의한다. 본계약은 아직 아니다.",
+   "tier": "보도"
+  },
+  {
+   "date": "2027~",
+   "category": "양산",
+   "title": "국군 전력화 시작(예정)",
+   "detail": "이르면 2027년부터 공군에 배치될 것으로 보도됐다. 정부는 '2020년대 후반 전력화'로 표현한다.",
+   "tier": "보도"
+  }
+ ],
+ "specs": [
+  {
+   "key": "role",
+   "group": "제원",
+   "item": "방어 역할",
+   "value": "종말단계 상층 방어. PAC-3·천궁-II(하층) 위, 주한미군 사드보다 아래 고도를 맡는다. 먼저 L-SAM이 쏘고, 놓치면 하층이 다시 쏜다",
+   "num": null,
+   "tier": "확정"
+  },
+  {
+   "key": "altitude",
+   "group": "제원",
+   "item": "요격 고도(ABM)",
+   "value": "약 40~60km (정부는 '40km 이상'만 공개, 일부 보도 50~60km·40~70km)",
+   "num": 60.0,
+   "tier": "보도"
+  },
+  {
+   "key": "range",
+   "group": "제원",
+   "item": "최대 교전거리",
+   "value": "약 150km 안팎 (대항공기탄 기준 보도. 상세 제원 비공개)",
+   "num": 150.0,
+   "tier": "보도"
+  },
+  {
+   "key": "missiles",
+   "group": "제원",
+   "item": "유도탄 종류",
+   "value": "대탄도탄 유도탄(ABM)과 대항공기 유도탄(AAM) 2종을 따로 운용",
+   "num": 2.0,
+   "tier": "확정"
+  },
+  {
+   "key": "abm_tech",
+   "group": "제원",
+   "item": "ABM 핵심 기술",
+   "value": "2단 추진 + 직격요격 비행체(KV). 이중펄스 로켓모터, 위치·자세 제어장치(DACS), 적외선 영상탐색기, 요격 직전 분리되는 앞덮개. 원통형 캐니스터에서 핫 런칭",
+   "num": null,
+   "tier": "보도"
+  },
+  {
+   "key": "aam_tech",
+   "group": "제원",
+   "item": "AAM 특징",
+   "value": "천궁 계열 Ku밴드 레이더 탐색기를 개량해 적용. 항공기·무인기·순항미사일 대응. 사각형 발사관(향후 함정용과 공통화 고려)",
+   "num": null,
+   "tier": "보도"
+  },
+  {
+   "key": "radar",
+   "group": "제원",
+   "item": "다기능레이더(MFR)",
+   "value": "S밴드 능동위상배열(AESA), 질화갈륨(GaN) 송신 소자. 탄도탄 탐지거리 약 310km 이상으로 알려짐",
+   "num": 310.0,
+   "tier": "보도"
+  },
+  {
+   "key": "battery",
+   "group": "제원",
+   "item": "1개 포대 구성",
+   "value": "다기능레이더 1, 교전통제소 1, 작전통제소 1, ABM 발사대 2, AAM 발사대 2",
+   "num": 5.0,
+   "tier": "보도"
+  },
+  {
+   "key": "operator",
+   "group": "제원",
+   "item": "운용군",
+   "value": "대한민국 공군 (미사일방어사령부)",
+   "num": null,
+   "tier": "해설"
+  },
+  {
+   "key": "domestic_qty",
+   "group": "규모",
+   "item": "국군 배치 규모",
+   "value": "포대 수·탄 수량 비공개. 2025.11 양산 착수, 2030년까지 납품 예정",
+   "num": null,
+   "tier": "보도"
+  },
+  {
+   "key": "dev_cost",
+   "group": "규모",
+   "item": "개발비",
+   "value": "약 1조 2,000억원 (2015~2024, 탐색개발+체계개발)",
+   "num": 12000.0,
+   "tier": "확정"
+  },
+  {
+   "key": "prod_budget",
+   "group": "규모",
+   "item": "양산 총사업비",
+   "value": "약 1조 7,302억원 (2025~2030, 방추위 의결 보도)",
+   "num": 17302.0,
+   "tier": "보도"
+  },
+  {
+   "key": "prod_contracts",
+   "group": "규모",
+   "item": "2025년 양산 계약 합계",
+   "value": "1조 2,266억원 = 한화에어로 7,054억(ABM·발사대) + 한화시스템 3,573억(레이더) + LIG넥스원 1,639억(통제소·AAM)",
+   "num": 12266.0,
+   "tier": "추정"
+  },
+  {
+   "key": "lsam2_budget",
+   "group": "규모",
+   "item": "L-SAM-II 사업비",
+   "value": "총 약 2조 7,100억원(2035년까지, 2023 의결 보도). 이 중 고고도 요격탄 체계개발 약 5,677억원(~2028)",
+   "num": 27100.0,
+   "tier": "보도"
+  },
+  {
+   "key": "domestic_unit",
+   "group": "단가",
+   "item": "국군 조달 단가",
+   "value": "포대당·발당 단가 미공개(양산 수량이 비공개라 나눌 수 없음). 참고로 양산 총사업비는 약 1조 7,302억원",
+   "num": null,
+   "tier": "해설"
+  },
+  {
+   "key": "uae_est",
+   "group": "단가",
+   "item": "UAE 수출 추정(참고)",
+   "value": "증권사 추정 4개 포대 약 4조 5,000억원 → 포대당 약 1조 1,250억원 (교육·군수지원 포함 추정치, 계약 전)",
+   "num": 11250.0,
+   "tier": "추정"
+  }
+ ],
+ "versions": [
+  {
+   "v": "L-SAM ABM (대탄도탄 유도탄)",
+   "photo": "hero",
+   "period": "2015~2024 개발, 2025~2030 양산",
+   "stage": "양산 중 (2027~ 전력화 예정)",
+   "crew": "포대 단위 운용 (인원 비공개)",
+   "rof": "탄도미사일 종말단계 상층 직격요격, 고도 약 40~60km",
+   "loading": "원통형 캐니스터, 핫 런칭. 발사대 차량 탑재(탑재 발수 비공개)",
+   "fcs": "다기능레이더 유도 + 적외선 영상탐색기, DACS로 직격 비행체 미세 조종",
+   "mobility": "2단 고체 추진(이중펄스) + 직격 비행체",
+   "weight": "비공개",
+   "users": "한국 공군 (양산 중)",
+   "tier": "보도"
+  },
+  {
+   "v": "L-SAM AAM (대항공기 유도탄)",
+   "photo": "model",
+   "period": "2015~2024 개발, 2025~2030 양산",
+   "stage": "양산 중 (2027~ 전력화 예정)",
+   "crew": "포대 단위 운용",
+   "rof": "항공기·무인기·순항미사일 요격, 최대 교전거리 약 150km 보도",
+   "loading": "사각형 발사관 (함정용 공통화 고려)",
+   "fcs": "천궁 계열 Ku밴드 능동 레이더 탐색기 개량형",
+   "mobility": "이중펄스 고체 로켓모터, 카나드 형상",
+   "weight": "비공개",
+   "users": "한국 공군 (양산 중)",
+   "tier": "보도"
+  },
+  {
+   "v": "L-SAM 포대 (블록 I 체계)",
+   "photo": null,
+   "period": "2025~2030 양산",
+   "stage": "양산 중",
+   "crew": "비공개",
+   "rof": "1포대 = ABM 발사대 2 + AAM 발사대 2로 탄도탄·항공기 동시 대응",
+   "loading": "발사대 4대(ABM 2·AAM 2)",
+   "fcs": "S밴드 AESA 다기능레이더 1, 교전통제소 1, 작전통제소 1. KAMD 작전통제소·하층 체계와 연동",
+   "mobility": "차량 탑재 이동식",
+   "weight": "비공개",
+   "users": "한국",
+   "tier": "보도"
+  },
+  {
+   "v": "L-SAM-II 고고도 요격탄",
+   "photo": null,
+   "period": "2025~2028 체계개발 → 2030년대 양산 예정",
+   "stage": "체계개발 중",
+   "crew": "미정",
+   "rof": "L-SAM보다 높은 고도(성층권 위, 사드급 고도 목표)에서 탄도탄 요격. 방어 범위 L-SAM의 3~4배",
+   "loading": "미정",
+   "fcs": "신형 다기능레이더(한화시스템, 탐지거리 확대·위협 판별 강화)",
+   "mobility": "더 강력한 추진기관, DACS(10개 추력 조절 밸브) 개량",
+   "weight": "미정",
+   "users": "한국 (계획)",
+   "tier": "보도"
+  },
+  {
+   "v": "L-SAM-II 활공단계 요격탄",
+   "photo": null,
+   "period": "2030년대 (L-SAM-II 사업 2035년까지)",
+   "stage": "개발 계획",
+   "crew": "미정",
+   "rof": "극초음속 활공체처럼 낮게 활공하며 기동하는 표적을 활공 구간에서 요격",
+   "loading": "미정",
+   "fcs": "미정",
+   "mobility": "미정",
+   "weight": "미정",
+   "users": "한국 (계획)",
+   "tier": "보도"
+  },
+  {
+   "v": "수출형 (UAE 제안안)",
+   "photo": null,
+   "period": "협상 중",
+   "stage": "텀시트 (2026.9)",
+   "crew": "미정",
+   "rof": "국군형 기반 예상",
+   "loading": "미정",
+   "fcs": "UAE 기존 천궁-II와 통합방공망으로 연동하는 구성 논의",
+   "mobility": "미정",
+   "weight": "미정",
+   "users": "UAE (계약 전)",
+   "tier": "보도"
+  }
+ ],
+ "components": [
+  {
+   "id": "P01",
+   "group": "국내 핵심 구성품",
+   "part": "연구개발 주관",
+   "maker": "국방과학연구소(ADD)",
+   "detail": "2015~2024 탐색·체계개발 주관. L-SAM-II도 주관",
+   "tier": "확정"
+  },
+  {
+   "id": "P02",
+   "group": "국내 핵심 구성품",
+   "part": "체계종합·통제소·대항공기탄(AAM)",
+   "maker": "LIG넥스원(LIG D&A)",
+   "detail": "개발 단계 체계종합. 양산에서 교전·작전통제소와 AAM 납품(1,639억원). AAM 탐색기·유도조종·구동장치 담당",
+   "tier": "확정"
+  },
+  {
+   "id": "P03",
+   "group": "국내 핵심 구성품",
+   "part": "대탄도탄 유도탄(ABM)·발사대",
+   "maker": "한화에어로스페이스",
+   "detail": "ABM 체계개발 담당(DACS·측추력기·탄두·로켓모터). 양산에서 ABM과 발사대 납품(7,054억원)",
+   "tier": "확정"
+  },
+  {
+   "id": "P04",
+   "group": "국내 핵심 구성품",
+   "part": "다기능레이더(MFR)",
+   "maker": "한화시스템",
+   "detail": "S밴드 AESA 레이더. 양산 3,573억원(2030.12까지)",
+   "tier": "확정"
+  },
+  {
+   "id": "P05",
+   "group": "국내 핵심 구성품",
+   "part": "레이더 고출력증폭보드",
+   "maker": "웨이비스",
+   "detail": "GaN RF 반도체 기반 송신 증폭보드. 2016년부터 개발 참여, 초도양산분 265억원(2027년 말까지)",
+   "tier": "확정"
+  },
+  {
+   "id": "P06",
+   "group": "국내 핵심 구성품",
+   "part": "L-SAM-II 협력업체",
+   "maker": "국내 19개 업체",
+   "detail": "2025.1 체계개발 착수 시 참여. 개별 업체 명단은 공개되지 않음",
+   "tier": "보도"
+  }
+ ],
+ "roadmap": [
+  {
+   "id": "R1",
+   "when": "2025~2030",
+   "item": "L-SAM 양산·납품",
+   "detail": "3사 양산 계약 기준 2030년까지 ABM·AAM·발사대·레이더·통제소 납품",
+   "status": "진행",
+   "tier": "확정"
+  },
+  {
+   "id": "R2",
+   "when": "2027~2020년대 후반",
+   "item": "국군 전력화",
+   "detail": "이르면 2027년부터 공군 배치. 상층(L-SAM)+하층(PAC-3·천궁-II) 다층 방어 완성",
+   "status": "진행",
+   "tier": "보도"
+  },
+  {
+   "id": "R3",
+   "when": "2025~2028",
+   "item": "L-SAM-II 고고도 요격탄 체계개발",
+   "detail": "약 5,677억원. LIG넥스원 체계종합, 한화에어로 유도탄·발사대, 한화시스템 레이더",
+   "status": "진행",
+   "tier": "확정"
+  },
+  {
+   "id": "R4",
+   "when": "~2035",
+   "item": "L-SAM-II 활공단계 요격탄",
+   "detail": "극초음속 활공체 대응 요격탄. L-SAM-II 총사업 약 2조 7,100억원 안에서 개발",
+   "status": "계획",
+   "tier": "보도"
+  },
+  {
+   "id": "R5",
+   "when": "2030년대",
+   "item": "L-SAM-II 양산·배치",
+   "detail": "개발 완료 뒤 양산. 방어 범위 3~4배 확대",
+   "status": "계획",
+   "tier": "보도"
+  },
+  {
+   "id": "R6",
+   "when": "2026~",
+   "item": "UAE 본계약·합작법인",
+   "detail": "텀시트 후속으로 수량·가격, 현지 합작법인, 단계적 현지생산 협상",
+   "status": "협상",
+   "tier": "보도"
+  },
+  {
+   "id": "R7",
+   "when": "2026~",
+   "item": "유럽 시장 개척",
+   "detail": "폴란드·벨기에 등에 '빠른 납기·가격 경쟁력'으로 소개. 구체적 입찰은 아직 확인 안 됨",
+   "status": "구상",
+   "tier": "보도"
+  },
+  {
+   "id": "R8",
+   "when": "2026~",
+   "item": "중동 패키지 마케팅",
+   "detail": "천궁-II 운용국(사우디·이라크 등)에 상층 방어용 후속 제안 가능성",
+   "status": "구상",
+   "tier": "해설"
+  }
+ ],
+ "pipeline": [
+  {
+   "id": "Q1",
+   "country": "UAE",
+   "opportunity": "통합방공망 L-SAM 도입 (첫 수출)",
+   "scale": "증권사 추정 4개 포대. 천궁-II 추가분·천무와 함께 묶인 통합방공 협력",
+   "stage": "주요조건합의(텀시트)",
+   "updated": "2026.10",
+   "note": "2026.9.16 한화-EDGE 텀시트 서명, 10월 협력 강화 발표. 수량·금액 미공개, 현지 합작법인·단계적 현지생산 논의 중. 정부 승인 절차 남음",
+   "tier": "보도",
+   "value_krw_eok": 45000.0,
+   "value_usd_eok": 32.1,
+   "value_basis": "언론 추정",
+   "value_note": "L-SAM 4개 포대 기준 유진투자증권 추정 4조 5,000억원(달러는 1,400원/달러 환산). 한-UAE 방산 협력 틀 전체는 약 350억 달러로 보도"
+  },
+  {
+   "id": "Q2",
+   "country": "사우디아라비아",
+   "opportunity": "상층 탄도탄 방어 추가 도입",
+   "scale": "미정",
+   "stage": "관심 표명",
+   "updated": "2026.10",
+   "note": "양산 전부터 관심 보도. 천궁-II 10개 포대 계약국이라 연동 장점. 2026.10 한-사우디 투자포럼에서 K방산 현지생산 카드 제시",
+   "tier": "보도",
+   "value_krw_eok": null,
+   "value_usd_eok": null,
+   "value_basis": "언론 추정",
+   "value_note": "L-SAM 사업 규모 추정치 없음"
+  },
+  {
+   "id": "Q3",
+   "country": "폴란드",
+   "opportunity": "상층 방공 보강 (Wisła·Narew 계열 다층 방공과의 연계 가능성)",
+   "scale": "미정",
+   "stage": "마케팅",
+   "updated": "2026.05",
+   "note": "Defence24 Days·IAMD 회의에서 발표. Wisła(패트리엇)·Narew(CAMM) 사업과 공식 연결된 입찰은 확인되지 않음",
+   "tier": "보도",
+   "value_krw_eok": null,
+   "value_usd_eok": null,
+   "value_basis": "언론 추정",
+   "value_note": "알려진 사업비·추정치 없음"
+  },
+  {
+   "id": "Q4",
+   "country": "벨기에",
+   "opportunity": "NATO 방공 강화용 장거리 방공",
+   "scale": "미정",
+   "stage": "마케팅",
+   "updated": "2026.03",
+   "note": "BEDEX 2026에서 국방장관이 큰 관심을 보였다고 한화가 밝힘",
+   "tier": "보도",
+   "value_krw_eok": null,
+   "value_usd_eok": null,
+   "value_basis": "언론 추정",
+   "value_note": "알려진 사업비·추정치 없음"
+  }
+ ],
+ "notes": [
+  {
+   "id": "B1",
+   "kind": "배경",
+   "order": 1,
+   "title": "하층만 있던 미사일 방어",
+   "detail": "2010년대까지 한국의 탄도탄 방어는 고도 40km 아래를 맡는 패트리엇(PAC-2·3)과 천궁-II뿐이었다. 한 번 놓치면 다시 쏠 기회가 거의 없었다."
+  },
+  {
+   "id": "B2",
+   "kind": "배경",
+   "order": 2,
+   "title": "늘어나는 북한 미사일",
+   "detail": "북한은 스커드·노동에 이어 KN-23처럼 낮게 날다 솟구치는 미사일, 다탄두 동시 발사까지 늘렸다. 더 높은 곳에서 먼저 한 번 더 요격할 층이 필요했다."
+  },
+  {
+   "id": "B3",
+   "kind": "배경",
+   "order": 3,
+   "title": "사드에 기댈 수 없는 사정",
+   "detail": "주한미군 사드는 미군 자산이라 한국이 운용·배치를 정하지 못하고, 2017년 배치 때 중국과 외교 갈등도 겪었다. 우리 손으로 운용하는 상층 체계가 필요했다."
+  },
+  {
+   "id": "B4",
+   "kind": "배경",
+   "order": 4,
+   "title": "국산화의 문턱, 직격요격",
+   "detail": "탄도탄을 직접 부딪쳐 부수는 직격요격과 DACS는 미국·이스라엘 등 소수 나라만 가진 기술이다. L-SAM은 이 기술을 처음 국산화하는 사업이었다."
+  },
+  {
+   "id": "S1",
+   "kind": "공부",
+   "order": 1,
+   "title": "층으로 막는 KAMD",
+   "detail": "위에서부터 사드(미군, 40~150km), L-SAM(40~60km), PAC-3·천궁-II(40km 아래), 장사정포 요격체계(LAMD)가 겹쳐 있다. 위층이 먼저 쏘고 놓치면 아래층이 다시 쏜다."
+  },
+  {
+   "id": "S2",
+   "kind": "공부",
+   "order": 2,
+   "title": "탄이 두 가지인 이유",
+   "detail": "ABM은 아주 빠른 탄도탄을 대기 희박한 높은 곳에서 직접 들이받는 탄, AAM은 비행기·순항미사일을 레이더 탐색기로 쫓는 탄이다. 표적 성격이 달라 한 포대에 두 종류 발사대를 함께 둔다."
+  },
+  {
+   "id": "S3",
+   "kind": "공부",
+   "order": 3,
+   "title": "DACS가 뭐길래",
+   "detail": "공기가 거의 없는 고도에서는 날개로 방향을 틀 수 없다. 그래서 작은 로켓 분사구를 옆으로 뿜어 몸체를 밀고 자세를 잡는다. 이것이 위치·자세 제어장치(DACS)다."
+  },
+  {
+   "id": "S4",
+   "kind": "공부",
+   "order": 4,
+   "title": "양산 계약을 보는 법",
+   "detail": "2025년 계약 금액은 한화에어로 7,054억, 한화시스템 3,573억, LIG넥스원 1,639억원. 금액이 큰 쪽이 가장 비싼 ABM 탄과 발사대를 맡았다. 포대 수는 비공개라 단가는 계산할 수 없다."
+  },
+  {
+   "id": "S5",
+   "kind": "공부",
+   "order": 5,
+   "title": "L-SAM-II는 무엇이 다른가",
+   "detail": "요격 고도를 사드급으로 올려 방어 범위를 3~4배 넓히는 고고도 요격탄과, 극초음속 활공체를 활공 구간에서 잡는 활공단계 요격탄 두 가지를 만든다."
+  },
+  {
+   "id": "S6",
+   "kind": "공부",
+   "order": 6,
+   "title": "수출의 첫 문은 UAE",
+   "detail": "천궁-II를 이미 쓰고 2026년 이란 공격을 겪은 UAE가 상층 방어를 더하려 한다. 2026년 9월 텀시트는 본계약 전 단계라 아직 수출 실적은 없다."
+  }
+ ],
+ "photos": {
+  "hero": {
+   "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Long-range%20Surface-to-Air%20Missile.jpg?width=960",
+   "page": "https://commons.wikimedia.org/wiki/File:Long-range_Surface-to-Air_Missile.jpg",
+   "by": "방위사업청",
+   "lic": "공공누리 제1유형",
+   "cap": "L-SAM 탄도탄 요격 시험 (2023)"
+  },
+  "model": {
+   "src": "https://commons.wikimedia.org/wiki/Special:FilePath/A%20scale%20model%20of%20L-SAM%27s%20surface-to-air%20missile.jpg?width=960",
+   "page": "https://commons.wikimedia.org/wiki/File:A_scale_model_of_L-SAM%27s_surface-to-air_missile.jpg",
+   "by": "dooyeol Choi Music travel",
+   "lic": "CC BY 3.0",
+   "cap": "L-SAM 유도탄 축소 모형"
+  },
+  "kamd": {
+   "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20concept%20of%20Korean%20Air%20and%20Missile%20Defense.jpg?width=960",
+   "page": "https://commons.wikimedia.org/wiki/File:The_concept_of_Korean_Air_and_Missile_Defense.jpg",
+   "by": "방위사업청",
+   "lic": "공공누리 제1유형",
+   "cap": "한국형 다층 미사일 방어 개념도"
+  }
+ },
+ "ir": {
+  "company": "LIG디펜스앤에어로스페이스(옛 LIG넥스원)",
+  "segment": "회사 전체",
+  "unit": "억원",
+  "source": {
+   "name": "LIG디펜스앤에어로스페이스 IR자료",
+   "url": "https://www.ligdefenseaerospace.com/ir/irResourceList.do"
+  },
+  "labels": {
+   "export": "수출",
+   "domestic": "국내(개발·양산)"
+  },
+  "note": "방산 전문기업이라 회사 전체 실적이 곧 방산 실적입니다. 수출·국내 구분은 4Q25부터 IR 자료에 분기 단위로 나옵니다(2025년 1~3분기는 합계만 공개). 2026년 3분기 IR 자료는 아직 홈페이지에 올라오지 않았습니다(2026.11.4 확인).",
+  "quarters": [
+   {
+    "quarter": "1Q25",
+    "revenue_eok": 9076,
+    "op_eok": 1136,
+    "opm_pct": 12.5,
+    "export_eok": null,
+    "domestic_eok": null,
+    "export_share_pct": null,
+    "ir_doc": "LIG 1Q25 실적 IR",
+    "tier": "확정"
+   },
+   {
+    "quarter": "2Q25",
+    "revenue_eok": 9454,
+    "op_eok": 776,
+    "opm_pct": 8.2,
+    "export_eok": null,
+    "domestic_eok": null,
+    "export_share_pct": null,
+    "ir_doc": "LIG 2Q25 실적 IR",
+    "tier": "확정"
+   },
+   {
+    "quarter": "3Q25",
+    "revenue_eok": 10492,
+    "op_eok": 896,
+    "opm_pct": 8.5,
+    "export_eok": null,
+    "domestic_eok": null,
+    "export_share_pct": null,
+    "ir_doc": "LIG 3Q25 실적 IR",
+    "tier": "확정"
+   },
+   {
+    "quarter": "4Q25",
+    "revenue_eok": 14048,
+    "op_eok": 387,
+    "opm_pct": 2.8,
+    "export_eok": 3850,
+    "domestic_eok": 10198,
+    "export_share_pct": 27.4,
+    "ir_doc": "LIG 2025 연간 실적 IR",
+    "tier": "확정"
+   },
+   {
+    "quarter": "1Q26",
+    "revenue_eok": 11679,
+    "op_eok": 1711,
+    "opm_pct": 14.7,
+    "export_eok": 4052,
+    "domestic_eok": 7627,
+    "export_share_pct": 34.7,
+    "ir_doc": "LIG 1Q26 실적 IR",
+    "tier": "확정"
+   },
+   {
+    "quarter": "2Q26",
+    "revenue_eok": 11101,
+    "op_eok": 1057,
+    "opm_pct": 9.5,
+    "export_eok": 2818,
+    "domestic_eok": 8283,
+    "export_share_pct": 25.4,
+    "ir_doc": "LIG 2Q26 실적 IR",
+    "tier": "확정"
+   }
+  ],
+  "backlog": [
+   {
+    "period": "2024말",
+    "backlog_jo": 20.05,
+    "export_pct": null
+   },
+   {
+    "period": "1Q25",
+    "backlog_jo": 22.89,
+    "export_pct": null
+   },
+   {
+    "period": "2Q25",
+    "backlog_jo": 23.47,
+    "export_pct": null
+   },
+   {
+    "period": "2025말",
+    "backlog_jo": 26.25,
+    "export_pct": null
+   },
+   {
+    "period": "2Q26",
+    "backlog_jo": 24.58,
+    "export_pct": null
+   }
+  ],
+  "backlog_note": "회사는 수주잔고의 50% 이상이 수출사업이라고 밝힘. 천궁-II 수출분(UAE 약 2.7조, 사우디 약 4.3조, 이라크 약 3.7조원)이 반영돼 있음."
+ }
+}

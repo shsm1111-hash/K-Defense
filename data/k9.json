@@ -994,7 +994,8 @@
    "value_krw_eok": null,
    "value_usd_eok": null,
    "value_basis": null,
-   "value_note": "공개·보도된 사업 규모를 아직 확인하지 못함 (추가 조사 중)"
+   "value_note": "3차 실행계약(EC3) 금액·수량 미공개(2026.9 협상 중, K9A2 현지생산 논의) — 참고: 2차 실행계약 152문 약 3조4,500억원($26억), 메트로신문",
+   "source_url": "https://www.metroseoul.co.kr/article/20260902500504"
   },
   {
    "id": "Q2",
@@ -1005,10 +1006,11 @@
    "updated": "2026.10",
    "note": "L&T 현지 생산 방식 유지 전망",
    "tier": "보도",
-   "value_krw_eok": null,
-   "value_usd_eok": null,
-   "value_basis": null,
-   "value_note": "공개·보도된 사업 규모를 아직 확인하지 못함 (추가 조사 중)"
+   "value_krw_eok": 36540,
+   "value_usd_eok": 26.1,
+   "value_basis": "언론 추정",
+   "value_note": "K9 Vajra-T 300문 이상 약 ₹23,000크로르(₹88/USD 가정 환산, 원화는 1,400원 환산), 국방소식통 인용 Asianet Newsable(2026.6) — 2026.10 DAC 승인(335문)은 ₹2.12라크크로르 일괄로 개별 금액 미공개(ThePrint)",
+   "source_url": "https://newsable.asianetnews.com/india/indian-army-plans-23000-crore-deal-for-additional-300-k9-vajra-guns-biggest-artillery-procurement-decades-articleshow-n0b9pgg"
   },
   {
    "id": "Q3",
@@ -1019,10 +1021,11 @@
    "updated": "2026.08",
    "note": "세계 최대 방산 시장 진입 여부를 가를 사업",
    "tier": "확정",
-   "value_krw_eok": null,
-   "value_usd_eok": null,
-   "value_basis": null,
-   "value_note": "공개·보도된 사업 규모를 아직 확인하지 못함 (추가 조사 중)"
+   "value_krw_eok": 50260,
+   "value_usd_eok": 35.9,
+   "value_basis": "언론 추정",
+   "value_note": "차륜형 MTC(K9MH) 본사업 약 500문 추정 $35.9억(원화 환산), Shephard(2026.8) — 시제는 6문 $1.003억·옵션 포함 최대 $2.629억, 국내 업계 추정 10조원($71.4억, 코리아헤럴드), 궤도형 M109 대체 최대 670문 $80억(Shephard 전망)",
+   "source_url": "https://www.shephardmedia.com/news/landwarfareintl/hanwha-debuts-with-us-army-deal-worth-potentially-36-billion-and-positions-for-8-billion-m109-replac/"
   },
   {
    "id": "Q4",
@@ -1036,7 +1039,8 @@
    "value_krw_eok": null,
    "value_usd_eok": null,
    "value_basis": null,
-   "value_note": "공개·보도된 사업 규모를 아직 확인하지 못함 (추가 조사 중)"
+   "value_note": "Gen5와 K9 제조·판매 독점 협력(TA) 체결(유로사토리 2026.6)이나 금액·물량 미공개 — 한·UAE 방산 $350억 포괄합의는 별개, 더구루",
+   "source_url": "https://www.theguru.co.kr/news/article.html?no=103365"
   },
   {
    "id": "Q5",
@@ -1050,7 +1054,8 @@
    "value_krw_eok": null,
    "value_usd_eok": null,
    "value_basis": null,
-   "value_note": "공개·보도된 사업 규모를 아직 확인하지 못함 (추가 조사 중)"
+   "value_note": "사우디 K9·천무 패키지 금액 보도 없음 — 한화 현지생산 협상만 보도(Bloomberg/The Star, 2025.4)",
+   "source_url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2025/04/29/hanwha-in-advanced-talks-over-arms-production-for-saudi-arabia"
   },
   {
    "id": "Q6",
@@ -1064,7 +1069,8 @@
    "value_krw_eok": null,
    "value_usd_eok": null,
    "value_basis": null,
-   "value_note": "공개·보도된 사업 규모를 아직 확인하지 못함 (추가 조사 중)"
+   "value_note": "추가 도입 금액 보도 없음 — 참고: 1차 20문 약 $2.5억(약 3,500억원), Army Recognition",
+   "source_url": "https://www.armyrecognition.com/archives/archives-land-defense/defense-news-army-2025/vietnam-signs-historic-250-million-contract-with-south-korea-for-20-k9-self-propelled-howitzers"
   }
  ],
  "notes": [

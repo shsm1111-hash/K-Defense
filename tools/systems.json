@@ -1,0 +1,239 @@
+{
+ "k21": {
+  "ir": "hanwha_land_ir.json",
+  "segment_short": "지상방산",
+  "photos": {
+   "hero": [
+    "2014.4.1 육군 수도기계화보병사단 K-21 장갑차 사격집중훈련 Republic of Korea Army (13592630584).jpg",
+    "대한민국 국군",
+    "CC BY-SA 2.0",
+    "수도기계화보병사단의 K21 사격 훈련 (2014)"
+   ],
+   "XK21": [
+    "2007 Seoul Air Show 025.JPG",
+    "Rheo1905",
+    "CC BY-SA 3.0",
+    "2007년 공개 당시 K21"
+   ],
+   "turret": [
+    "Turret of the K21.jpg",
+    "Luthercho",
+    "CC BY-SA 4.0",
+    "K21 포탑(40mm 기관포)"
+   ]
+  },
+  "version_photos": {
+   "XK21 시제": "XK21",
+   "K21 2·3차 양산": "hero"
+  },
+  "supply_photos": [
+   "turret"
+  ]
+ },
+ "cheongwang": {
+  "ir": "hanwha_systems_ir.json",
+  "segment_short": "한화시스템",
+  "photos": {
+   "hero": [
+    "Hanwha laser anti-aircraft weapon.webp",
+    "독서하는 자",
+    "CC BY-SA 4.0",
+    "한화의 레이저 대공무기 시험 장면"
+   ]
+  },
+  "version_photos": {
+   "블록-I 초기 양산 (천광)": "hero"
+  }
+ },
+ "lsam": {
+  "ir": "lig_ir.json",
+  "segment_short": "LIG",
+  "photos": {
+   "hero": [
+    "Long-range Surface-to-Air Missile.jpg",
+    "방위사업청",
+    "공공누리 제1유형",
+    "L-SAM 탄도탄 요격 시험 (2023)"
+   ],
+   "model": [
+    "A scale model of L-SAM's surface-to-air missile.jpg",
+    "dooyeol Choi Music travel",
+    "CC BY 3.0",
+    "L-SAM 유도탄 축소 모형"
+   ],
+   "kamd": [
+    "The concept of Korean Air and Missile Defense.jpg",
+    "방위사업청",
+    "공공누리 제1유형",
+    "한국형 다층 미사일 방어 개념도"
+   ]
+  },
+  "version_photos": {
+   "L-SAM ABM (대탄도탄 유도탄)": "hero",
+   "L-SAM AAM (대항공기 유도탄)": "model"
+  },
+  "supply_photos": [
+   "kamd"
+  ]
+ },
+ "kf21": {
+  "ir": "kai_ir.json",
+  "segment_short": "KAI",
+  "photos": {
+   "hero": [
+    "A South Korean Air Force KF-21, developed by Korea Aerospace Industries, performs an aerial demonstration at the Aerospace and Defense Exhibition in Seoul, South Korea, October 21, 2023.jpg",
+    "Sgt. Alexander Kelly (미 육군)",
+    "Public domain",
+    "ADEX 2023 시범 비행 중인 KF-21"
+   ],
+   "proto": [
+    "KF-21 prototype 003 and 004 during flight testing.jpg",
+    "방위사업청",
+    "공공누리 제1유형",
+    "비행시험 중인 시제 3·4호기"
+   ],
+   "p4": [
+    "KF21 prototype004 ADEX2025oct19.jpg",
+    "Fresnel9",
+    "CC0",
+    "ADEX 2025의 시제 4호기"
+   ]
+  }
+ },
+ "redback": {
+  "ir": "hanwha_land_ir.json",
+  "segment_short": "지상방산",
+  "photos": {
+   "hero": [
+    "Hanwha AS21 Redback Australian IFV.png",
+    "Fabrice Ram",
+    "CC0",
+    "전시회의 AS21 레드백"
+   ]
+  },
+  "operator_photos": {
+   "호주": "hero"
+  }
+ },
+ "fa50": {
+  "ir": "kai_ir.json",
+  "segment_short": "KAI",
+  "photos": {
+   "hero": [
+    "FA-50 fighting Eagle on the Runway.jpg",
+    "대한민국 공군·KAI",
+    "CC BY 2.0",
+    "활주로의 FA-50"
+   ],
+   "t50": [
+    "Aircraft of the Black Eagles T-50.jpg",
+    "Slam",
+    "CC BY-SA 3.0",
+    "블랙이글스 T-50"
+   ],
+   "ta50": [
+    "2012.7.27 공군 T-50전력화 Rep.of Korea Air Force T-50 (7655222040).jpg",
+    "대한민국 국군",
+    "CC BY-SA 2.0",
+    "TA-50 전력화 행사 (2012)"
+   ],
+   "pl": [
+    "FA-50 PAF 5001 at NATO Days 2023.jpg",
+    "Boevaya mashina",
+    "CC BY-SA 3.0 DE",
+    "폴란드 공군 FA-50GF (2023)"
+   ],
+   "ph": [
+    "Philippine Air Force FA-50PH.jpg",
+    "Senior Airman Mitchell Corley (미 공군)",
+    "Public domain",
+    "필리핀 공군 FA-50PH"
+   ],
+   "id": [
+    "KAI T-50i in Indonesia.jpg",
+    "Korea Aerospace Industries",
+    "CC BY 2.0",
+    "인도네시아 공군 T-50i"
+   ]
+  },
+  "version_photos": {
+   "T-50": "t50",
+   "TA-50 (전술입문훈련기)": "ta50",
+   "FA-50 Block 10": "hero",
+   "T-50i": "id",
+   "FA-50PH (1차)": "ph",
+   "FA-50GF (Gap Filler)": "pl"
+  },
+  "operator_photos": {
+   "폴란드": "pl",
+   "필리핀": "ph",
+   "인도네시아": "id"
+  }
+ },
+ "msam2": {
+  "ir": "lig_ir.json",
+  "segment_short": "LIG",
+  "photos": {
+   "hero": [
+    "M-SAM Block-2 battery.jpg",
+    "방위사업청",
+    "공공누리 제1유형",
+    "천궁-II 포대(다기능레이더·발사대·교전통제소)"
+   ],
+   "model": [
+    "A scale model of the KM-SAM Block 2 missile.jpg",
+    "dooyeol Choi Music travel",
+    "CC BY 3.0",
+    "천궁-II 유도탄 축소 모형"
+   ]
+  },
+  "version_photos": {
+   "천궁-II 블록II (국군 1차 양산)": "hero"
+  },
+  "supply_photos": [
+   "model"
+  ]
+ },
+ "kss3": {
+  "ir": "hanwhaocean_naval_ir.json",
+  "segment_short": "특수선",
+  "photos": {
+   "hero": [
+    "260621-N-DP708-1007 ROKS Dosan ahn Chang-ho (SS-083) arrives at Pearl Harbor-Hickam for RIMPAC 2026.jpg",
+    "MC2 Analice Baker (미 해군)",
+    "Public domain",
+    "림팩 2026에 참가한 도산안창호함"
+   ],
+   "b1": [
+    "ROKS Dosan Ahn Changho class submarine.png",
+    "국방부",
+    "공공누리 제1유형",
+    "도산안창호급 잠수함"
+   ]
+  },
+  "version_photos": {
+   "장보고-III 배치-I (도산안창호급)": "b1"
+  }
+ },
+ "chunmoo": {
+  "ir": "hanwha_land_ir.json",
+  "segment_short": "지상방산",
+  "photos": {
+   "hero": [
+    "K239 Chunmoo Image6.jpg",
+    "국방부",
+    "공공누리 제1유형",
+    "천무 발사대 사격"
+   ],
+   "kr": [
+    "K239 Chunmoo.jpg",
+    "후니포커스",
+    "CC BY 3.0",
+    "국군 천무 다연장로켓"
+   ]
+  },
+  "version_photos": {
+   "천무 국군 초기 양산 (1·2차)": "kr"
+  }
+ }
+}

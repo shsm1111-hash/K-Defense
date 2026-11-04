@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/site.css?v=9f14398a">
 </head>
 <body>
 <div class="wrap">
@@ -27,7 +27,7 @@
   <p class="empty hidden" id="empty">조건에 맞는 무기체계가 없습니다. 분류나 검색어를 바꿔 보세요.</p>
 
   <footer class="site">
-    <p>공개 보도·공시·증권사 리포트를 바탕으로 정리했고, 모든 수치에 확정·보도·추정 신뢰도를 표시합니다. 준비 중인 무기체계는 같은 구성으로 순서대로 추가됩니다.</p>
+    <p>공개 보도·공시·증권사 리포트를 바탕으로 정리했고, 모든 수치에 확정·보도·추정 신뢰도를 표시합니다. 새 무기체계는 같은 구성으로 계속 추가됩니다.</p>
     <p>사진은 위키미디어 커먼즈의 공개 라이선스 이미지입니다.</p>
     <ul id="credits"></ul>
   </footer>
@@ -41,25 +41,30 @@ const SYSTEMS = [
    photo:{f:"Coordinated thunder - 1 of 7.jpg", by:"Pfc. Dasol Choi (미 육군)", lic:"Public domain"}},
   {code:"K2", name:"K2 전차", alias:"흑표", cat:"지상", sub:"기동", maker:"현대로템", desc:"120mm 55구경장 활강포와 자동장전장치를 갖춘 3세대 주력전차. 폴란드가 최대 고객입니다.", href:"k2/", updated:"2026.11.4", facts:["폴란드 실행계약 360대","계약액 13.5조원","K2PL 현지 생산"],
    photo:{f:"K2 Tank Joins the Fight with eFP Battle Group Poland - 1.jpg", by:"Staff Sgt. Matthew Foster (미 육군)", lic:"Public domain"}},
-  {code:"K239", name:"천무", alias:"Chunmoo", cat:"지상", sub:"화력", maker:"한화에어로스페이스", desc:"여러 구경의 유도로켓을 쏘는 차륜형 다연장로켓 체계.",
+  {code:"K239", name:"천무", alias:"Chunmoo", cat:"지상", sub:"화력", maker:"한화에어로스페이스", desc:"여러 구경의 유도로켓과 전술탄도탄을 한 발사대에서 쏘는 다연장로켓 체계.", href:"chunmoo/", updated:"2026.11.4", facts:["수출 6개국","발사대 345대","폴란드 유도탄 현지 생산"],
    photo:{f:"K239 Chunmoo Image6.jpg", by:"국방부", lic:"공공누리 제1유형"}},
-  {code:"AS21", name:"레드백", alias:"Redback", cat:"지상", sub:"기동", maker:"한화에어로스페이스", desc:"호주 육군용으로 개발한 궤도형 보병전투장갑차.",
+  {code:"AS21", name:"레드백", alias:"Redback", cat:"지상", sub:"기동", maker:"한화에어로스페이스", desc:"호주 육군용으로 개발한 궤도형 보병전투장갑차.", href:"redback/", updated:"2026.11.4", facts:["호주 129대","3.16조원","질롱 현지 생산"],
    photo:{f:"Hanwha AS21 Redback Australian IFV.png", by:"Fabrice Ram", lic:"CC0"}},
-  {code:"K21", name:"K21 보병전투차", alias:"", cat:"지상", sub:"기동", maker:"한화에어로스페이스", desc:"40mm 기관포를 단 국군 주력 보병전투차량."},
-  {code:"FA-50", name:"FA-50", alias:"Fighting Eagle", cat:"항공", sub:"경공격", maker:"한국항공우주산업(KAI)", desc:"T-50 고등훈련기에서 파생한 경공격기.",
+  {code:"K21", name:"K21 보병전투차", alias:"KNIFV", cat:"지상", sub:"기동", maker:"한화에어로스페이스", desc:"40mm 기관포를 단 국군 주력 보병전투차량. 레드백의 원형입니다.", href:"k21/", updated:"2026.11.4", facts:["국군 약 590대","4차 양산 7,093억원","수출 실적 없음"],
+   photo:{f:"2014.4.1 육군 수도기계화보병사단 K-21 장갑차 사격집중훈련 Republic of Korea Army (13592630584).jpg", by:"대한민국 국군", lic:"CC BY-SA 2.0"}},
+  {code:"FA-50", name:"FA-50", alias:"Fighting Eagle", cat:"항공", sub:"경공격", maker:"한국항공우주산업(KAI)", desc:"T-50 고등훈련기에서 파생한 경전투기. T-50 계열 전체를 함께 다룹니다.", href:"fa50/", updated:"2026.11.4", facts:["수출 6개국 150대","국군 T-50 계열 142대","폴란드 FA-50PL"],
    photo:{f:"FA-50 fighting Eagle on the Runway.jpg", by:"대한민국 공군·KAI", lic:"CC BY 2.0"}},
-  {code:"KF-21", name:"KF-21", alias:"보라매", cat:"항공", sub:"전투기", maker:"한국항공우주산업(KAI)", desc:"한국형 차세대 전투기. 블록별로 공대지·스텔스 성능을 단계적으로 높입니다.",
-   photo:{f:"KF-21 Boramae First Production.jpg", by:"국방부", lic:"공공누리 제1유형"}},
-  {code:"M-SAM II", name:"천궁-II", alias:"Cheongung", cat:"유도무기", sub:"방공", maker:"LIG넥스원", desc:"항공기와 탄도탄을 요격하는 중거리 지대공 유도무기.",
+  {code:"KF-21", name:"KF-21", alias:"보라매", cat:"항공", sub:"전투기", maker:"한국항공우주산업(KAI)", desc:"한국형 차세대 전투기. 블록별로 공대지·스텔스 성능을 단계적으로 높입니다.", href:"kf21/", updated:"2026.11.4", facts:["양산 40대 계약","총 120대 계획","2026.9 첫 인도"],
+   photo:{f:"A South Korean Air Force KF-21, developed by Korea Aerospace Industries, performs an aerial demonstration at the Aerospace and Defense Exhibition in Seoul, South Korea, October 21, 2023.jpg", by:"Sgt. Alexander Kelly (미 육군)", lic:"Public domain"}},
+  {code:"M-SAM II", name:"천궁-II", alias:"Cheongung", cat:"유도무기", sub:"방공", maker:"LIG넥스원(LIG디펜스앤에어로스페이스)", desc:"항공기와 탄도탄을 요격하는 중거리 지대공 유도무기.", href:"msam2/", updated:"2026.11.4", facts:["3개국 28개 포대","약 95억 달러","UAE 실전 요격"],
    photo:{f:"M-SAM Block-2 battery.jpg", by:"방위사업청", lic:"공공누리 제1유형"}},
-  {code:"KSS-III", name:"장보고-III", alias:"도산안창호급", cat:"해상", sub:"잠수함", maker:"한화오션 · HD현대중공업", desc:"수직발사관을 갖춘 3,000톤급 국산 잠수함.",
+  {code:"L-SAM", name:"L-SAM", alias:"장거리 지대공 유도무기", cat:"유도무기", sub:"탄도탄 방어", maker:"LIG · 한화에어로스페이스 · 한화시스템", desc:"탄도미사일을 고도 40~60km에서 요격하는 한국형 미사일 방어의 상층 무기.", href:"lsam/", updated:"2026.11.4", facts:["양산 1조 7,302억원","2025 양산 착수","UAE 텀시트"],
+   photo:{f:"Long-range Surface-to-Air Missile.jpg", by:"방위사업청", lic:"공공누리 제1유형"}},
+  {code:"Block-I", name:"천광", alias:"레이저 대공무기", cat:"유도무기", sub:"대드론", maker:"한화시스템", desc:"소형 드론을 레이저로 떨어뜨리는 무기. 2024년 말 세계 처음으로 실전 배치됐습니다.", href:"cheongwang/", updated:"2026.11.4", facts:["2024.12 실전 배치","1발 약 2,000원","블록-II 2030 목표"],
+   photo:{f:"Hanwha laser anti-aircraft weapon.webp", by:"독서하는 자", lic:"CC BY-SA 4.0"}},
+  {code:"KSS-III", name:"장보고-III", alias:"도산안창호급", cat:"해상", sub:"잠수함", maker:"한화오션 · HD현대중공업", desc:"수직발사관을 갖춘 3,000톤급 국산 잠수함.", href:"kss3/", updated:"2026.11.4", facts:["6척 건조","척당 약 1.1조원","캐나다·폴란드 경쟁"],
    photo:{f:"260621-N-DP708-1007 ROKS Dosan ahn Chang-ho (SS-083) arrives at Pearl Harbor-Hickam for RIMPAC 2026.jpg", by:"U.S. Navy", lic:"Public domain"}}
 ];
 const CATS = ["전체","지상","항공","해상","유도무기"];
 let cat = "전체", q = "";
 const el = (t, c, x) => { const e = document.createElement(t); if (c) e.className = c; if (x != null) e.textContent = x; return e; };
 const live = SYSTEMS.filter(s => s.href).length;
-document.getElementById("sum").textContent = `${SYSTEMS.length}종 중 ${live}종 공개, 나머지는 준비 중`;
+document.getElementById("sum").textContent = `${live}종 공개`;
 
 const fbox = document.getElementById("filters");
 CATS.forEach(c => {

@@ -1,0 +1,134 @@
+{
+ "company": "한화시스템",
+ "segment": "회사 전체(방산·ICT 등)",
+ "unit": "억원",
+ "source": {
+  "name": "한화에어로스페이스 IR 실적발표(연결 자회사 한화시스템 실적표)",
+  "url": "https://www.hanwhaaerospace.com/kor/ir/earning-release.do"
+ },
+ "note": "한화시스템은 한화에어로스페이스의 연결 자회사로, 모회사 3Q26 IR 자료의 분기 실적표 수치를 썼습니다. 방산 외 ICT 사업이 포함된 회사 전체 실적이고 수출·내수 구분과 수주잔고는 이 표에 없습니다.",
+ "quarters": [
+  {
+   "quarter": "1Q24",
+   "revenue_eok": 5442,
+   "op_eok": 455,
+   "opm_pct": 8.4,
+   "export_eok": null,
+   "domestic_eok": null,
+   "export_share_pct": null,
+   "ir_doc": "한화에어로스페이스 3Q26 IR",
+   "tier": "확정"
+  },
+  {
+   "quarter": "2Q24",
+   "revenue_eok": 6870,
+   "op_eok": 844,
+   "opm_pct": 12.3,
+   "export_eok": null,
+   "domestic_eok": null,
+   "export_share_pct": null,
+   "ir_doc": "한화에어로스페이스 3Q26 IR",
+   "tier": "확정"
+  },
+  {
+   "quarter": "3Q24",
+   "revenue_eok": 6390,
+   "op_eok": 603,
+   "opm_pct": 9.4,
+   "export_eok": null,
+   "domestic_eok": null,
+   "export_share_pct": null,
+   "ir_doc": "한화에어로스페이스 3Q26 IR",
+   "tier": "확정"
+  },
+  {
+   "quarter": "4Q24",
+   "revenue_eok": 9335,
+   "op_eok": 291,
+   "opm_pct": 3.1,
+   "export_eok": null,
+   "domestic_eok": null,
+   "export_share_pct": null,
+   "ir_doc": "한화에어로스페이스 3Q26 IR",
+   "tier": "확정"
+  },
+  {
+   "quarter": "1Q25",
+   "revenue_eok": 5737,
+   "op_eok": 600,
+   "opm_pct": 10.5,
+   "export_eok": null,
+   "domestic_eok": null,
+   "export_share_pct": null,
+   "ir_doc": "한화에어로스페이스 3Q26 IR",
+   "tier": "확정"
+  },
+  {
+   "quarter": "2Q25",
+   "revenue_eok": 6195,
+   "op_eok": 619,
+   "opm_pct": 10.0,
+   "export_eok": null,
+   "domestic_eok": null,
+   "export_share_pct": null,
+   "ir_doc": "한화에어로스페이스 3Q26 IR",
+   "tier": "확정"
+  },
+  {
+   "quarter": "3Q25",
+   "revenue_eok": 6392,
+   "op_eok": 618,
+   "opm_pct": 9.7,
+   "export_eok": null,
+   "domestic_eok": null,
+   "export_share_pct": null,
+   "ir_doc": "한화에어로스페이스 3Q26 IR",
+   "tier": "확정"
+  },
+  {
+   "quarter": "4Q25",
+   "revenue_eok": 12663,
+   "op_eok": 918,
+   "opm_pct": 7.2,
+   "export_eok": null,
+   "domestic_eok": null,
+   "export_share_pct": null,
+   "ir_doc": "한화에어로스페이스 3Q26 IR",
+   "tier": "확정"
+  },
+  {
+   "quarter": "1Q26",
+   "revenue_eok": 6449,
+   "op_eok": 807,
+   "opm_pct": 12.5,
+   "export_eok": null,
+   "domestic_eok": null,
+   "export_share_pct": null,
+   "ir_doc": "한화에어로스페이스 3Q26 IR",
+   "tier": "확정"
+  },
+  {
+   "quarter": "2Q26",
+   "revenue_eok": 8872,
+   "op_eok": 1226,
+   "opm_pct": 13.8,
+   "export_eok": null,
+   "domestic_eok": null,
+   "export_share_pct": null,
+   "ir_doc": "한화에어로스페이스 3Q26 IR",
+   "tier": "확정"
+  },
+  {
+   "quarter": "3Q26",
+   "revenue_eok": 8316,
+   "op_eok": 991,
+   "opm_pct": 11.9,
+   "export_eok": null,
+   "domestic_eok": null,
+   "export_share_pct": null,
+   "ir_doc": "한화에어로스페이스 3Q26 IR",
+   "tier": "확정"
+  }
+ ],
+ "backlog": []
+}

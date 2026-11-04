@@ -3,6 +3,7 @@
 사용법: python3 tools/build.py k9 k2
 data/<id>.json 의 meta 값으로 tools/system.template.html 을 채워 <id>/index.html 을 만든다.
 """
+import hashlib
 import html
 import json
 import pathlib
@@ -50,6 +51,10 @@ def build(sys_id):
         out = out.replace("{{" + key + "}}", html.escape(str(val), quote=True))
     out = out.replace("{{fin_legend}}", legend(data["ir"], has_split))
     assert "{{" not in out, out[out.index("{{"): out.index("{{") + 40]
+    def ver(rel):
+        return hashlib.md5((ROOT / rel).read_bytes()).hexdigest()[:8]
+    for rel in ["assets/site.css", "assets/system.js", "assets/ir-chart.js"]:
+        out = out.replace(f'../{rel}"', f'../{rel}?v={ver(rel)}"')
     target = ROOT / sys_id / "index.html"
     target.parent.mkdir(exist_ok=True)
     target.write_text(out, encoding="utf-8")

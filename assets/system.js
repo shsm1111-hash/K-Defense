@@ -1,5 +1,5 @@
 (async () => {
-  const D = await fetch(document.body.dataset.data).then((r) => r.json());
+  const D = await fetch(document.body.dataset.data + '?v=' + Date.now().toString(36).slice(0, -4)).then((r) => r.json());
   const M = D.meta; const U = M.unit_word;
   const $ = (id) => document.getElementById(id);
   const el = (t, c, x) => { const e = document.createElement(t); if (c) e.className = c; if (x != null) e.textContent = String(x); return e; };
@@ -33,7 +33,7 @@
   const nCountries = counted.length;
   const nQty = counted.reduce((s, o) => s + Number(o.qty), 0);
   const spec = (k) => D.specs.find((s) => s.key === k);
-  const bl = D.ir.backlog[D.ir.backlog.length - 1];
+  const bl = D.ir.backlog[D.ir.backlog.length - 1] || { backlog_jo: 0, period: '', export_pct: null };
   const unit = new Map(D.contracts.map((c) => [c.id, c.unit_comparable && c.value_krw_eok != null ? Math.round(c.value_krw_eok / c.qty) : null]));
 
   // 머리
@@ -144,11 +144,13 @@
   }
 
   // 수출
-  let sel = '폴란드';
+  let sel = ([...D.operators].sort((a, b) => b.qty - a.qty)[0] || {}).country;
+  const emptyNote = (host, text) => { host.replaceChildren(el('p', 'note', text)); host.style.minHeight = '0'; };
   $('st-legend').replaceChildren(...Object.entries(ST).map(([k, c]) => { const s = el('span'); const i = el('i'); i.style.background = c; s.append(i, k); return s; }));
   const pick = (c) => { sel = c; drawOps(); drawDetail(); drawSwim(); };
   function drawOps() {
-    const rows = [...D.operators].sort((a, b) => b.qty - a.qty);
+    const rows = [...D.operators].map((o) => ({ ...o, qty: Number(o.qty) || 0 })).sort((a, b) => b.qty - a.qty);
+    if (!rows.length) { emptyNote($('opbars'), M.no_export_note || '아직 해외 수출 계약이 없습니다. 수출 기회는 수주 파이프라인 탭에서 볼 수 있습니다.'); return; }
     hbar($('opbars'), rows, {
       label: (r) => r.country, value: (r) => r.qty, valText: (r) => fmt(r.qty) + U, color: (r) => ST[r.status],
       isSel: (r) => r.country === sel, onClick: (r) => pick(r.country),
@@ -158,6 +160,7 @@
   function drawDetail() {
     const r = D.operators.find((o) => o.country === sel);
     const box = $('detail'); const parts = [];
+    if (!r) { box.replaceChildren(el('h2', null, '수출국 상세'), el('p', 'note', '수출 계약이 생기면 나라별 도입 배경과 조건이 여기에 표시됩니다.')); return; }
     const p = r.photo && photo(r.photo);
     if (p) { parts.push(p.fig); const c = el('div', 'credit'); c.append(...p.cap.childNodes); parts.push(c); }
     const hh = el('div', 'dt-h'); hh.append(el('h2', null, r.country), el('span', 'dt-local', r.local_name)); parts.push(hh);
@@ -179,7 +182,8 @@
     box.replaceChildren(...parts);
   }
   function drawSwim() {
-    const host = $('swim'); const rows = D.contracts;
+    const host = $('swim'); const rows = D.contracts.map((r) => ({ ...r, year: Number(r.year), qty: Number(r.qty) || 0 }));
+    if (!rows.length) { emptyNote(host, '아직 수출 계약이 없습니다.'); return; }
     const first = new Map(); rows.forEach((r) => first.set(r.country, Math.min(first.get(r.country) ?? 9999, r.year)));
     const countries = [...first.keys()].sort((a, b) => first.get(a) - first.get(b));
     const W = host.clientWidth || 700; const step = 30; const top = 8; const bottom = 28; const H = top + countries.length * step + bottom;
@@ -187,7 +191,7 @@
     const ml = measure(svg, countries) + 16; const x0 = 1999.5; const x1 = 2027;
     const x = (v) => ml + 8 + (W - 14 - ml - 8) * ((v - x0) / (x1 - x0));
     const y = (c) => top + countries.indexOf(c) * step + step / 2;
-    const maxQ = Math.max(...rows.map((r) => r.qty)); const rr = (q) => 3 + (Math.min(13, step / 2 - 2) - 3) * Math.sqrt(q / maxQ);
+    const maxQ = Math.max(...rows.map((r) => r.qty)); const rr = (q) => 3 + (Math.min(13, step / 2 - 2) - 3) * Math.sqrt(q / (maxQ || 1));
     const ticks = (W < 520 ? [2000, 2010, 2020, 2026] : [2000, 2005, 2010, 2015, 2020, 2026]);
     ticks.forEach((t) => { svg.append(S('line', { x1: x(t), x2: x(t), y1: top, y2: H - bottom, class: 'grid' })); const tx = S('text', { x: x(t), y: H - 8, 'text-anchor': 'middle' }); tx.textContent = t; svg.append(tx); });
     countries.forEach((c) => {
@@ -199,7 +203,7 @@
     [...rows].sort((a, b) => b.qty - a.qty).forEach((r) => {
       const ci = S('circle', { cx: x(r.year), cy: y(r.country), r: rr(r.qty), fill: css('--c1') || '#4b5d2a', 'fill-opacity': r.country === sel ? 0.8 : 0.3, stroke: css('--c1') || '#4b5d2a', 'stroke-width': 1.2, class: 'hit' });
       if (r.tier === '추정') ci.setAttribute('stroke-dasharray', '3 2');
-      ci.addEventListener('mousemove', (e) => tp.show(e, [`${r.date} · ${r.country}`, `${r.variant} ${fmt(r.qty)}문`, r.value_orig]));
+      ci.addEventListener('mousemove', (e) => tp.show(e, [`${r.date} · ${r.country}`, `${r.variant} ${fmt(r.qty)}${U}`, r.value_orig]));
       ci.addEventListener('mouseleave', () => tp.hide());
       ci.addEventListener('click', () => pick(r.country));
       svg.append(ci);
@@ -236,8 +240,9 @@
   // 단가·원가
   function drawUnit() {
     const rows = D.contracts.filter((c) => unit.get(c.id) != null).map((c) => ({ label: `${c.country} ${c.date}`, v: unit.get(c.id), kind: '수출' }));
-    const d = spec('domestic_unit'); rows.push({ label: '국군 조달(참고)', v: d.num, kind: '국내' });
+    const d = spec('domestic_unit'); if (d && d.num != null) rows.push({ label: '국군 조달(참고)', v: Number(d.num), kind: '국내' });
     rows.sort((a, b) => b.v - a.v);
+    if (!rows.length) { emptyNote($('unit'), '비교할 수 있는 계약 단가가 아직 없습니다. 제원·규모 표의 단가 항목을 참고하세요.'); return; }
     hbar($('unit'), rows, {
       label: (r) => r.label, value: (r) => r.v, valText: (r) => fmt(r.v) + '억', color: (r) => (r.kind === '국내' ? 'var(--c2)' : 'var(--c1)'),
       tip: (r) => [r.label, `대당 ${fmt(r.v)}억원`, r.kind === '국내' ? '국군 조달 단가 추정치' : '계약액 ÷ 수량 (패키지 포함)'],

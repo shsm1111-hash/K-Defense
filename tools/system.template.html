@@ -161,9 +161,11 @@
       </article>
     </div>
     <article class="card">
-      <h2>{{segment_short}} 수주잔고</h2>
-      <p class="note">{{company}} IR 실적발표 자료 기준. {{backlog_note}}</p>
-      <div class="card-body tbl-wrap"><table class="tbl"><thead><tr><th>시점</th><th class="num">수주잔고(조원)</th><th class="num">수출 비중</th></tr></thead><tbody id="backlog"></tbody></table></div>
+      <h2>분기별 수주잔고</h2>
+      <p class="note" id="bl-note">{{company}} IR 실적발표 자료 기준.</p>
+      <div class="swatches" id="bl-legend"></div>
+      <div class="card-body chart" id="bl-chart"></div>
+      <div class="card-body tbl-wrap"><table class="tbl"><thead id="bl-head"></thead><tbody id="backlog"></tbody></table></div>
       <p class="note"><a href="{{ir_url}}" target="_blank" rel="noopener">출처: {{company}} IR 실적발표</a></p>
     </article>
     <article class="card">

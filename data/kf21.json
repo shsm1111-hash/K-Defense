@@ -46,7 +46,7 @@
    }
   ],
   "segment_short": "KAI",
-  "backlog_note": "수출 비중은 완제기 수출 수주잔고 기준(기체구조물 제외). 3Q25 5조 8,439억원, 3Q26 6조 1,930억원.",
+  "backlog_note": "",
   "supply_photos": []
  },
  "features": [
@@ -1105,19 +1105,49 @@
   ],
   "backlog": [
    {
+    "period": "4Q23",
+    "backlog_jo": 21.78,
+    "export_pct": 24.5
+   },
+   {
+    "period": "1Q24",
+    "backlog_jo": 21.27,
+    "export_pct": 24.7
+   },
+   {
+    "period": "2Q24",
+    "backlog_jo": 23.26,
+    "export_pct": 21.9
+   },
+   {
+    "period": "3Q24",
+    "backlog_jo": 22.41,
+    "export_pct": 21.7
+   },
+   {
+    "period": "4Q24",
+    "backlog_jo": 24.7,
+    "export_pct": 21.4
+   },
+   {
     "period": "1Q25",
     "backlog_jo": 24.26,
-    "export_pct": null
+    "export_pct": 21.5
    },
    {
     "period": "2Q25",
     "backlog_jo": 26.67,
-    "export_pct": null
+    "export_pct": 22.5
    },
    {
     "period": "3Q25",
     "backlog_jo": 26.27,
-    "export_pct": 22
+    "export_pct": 22.2
+   },
+   {
+    "period": "4Q25",
+    "backlog_jo": 27.3,
+    "export_pct": null
    },
    {
     "period": "1Q26",
@@ -1127,14 +1157,154 @@
    {
     "period": "2Q26",
     "backlog_jo": 25.75,
-    "export_pct": null
+    "export_pct": 19.5
    },
    {
     "period": "3Q26",
     "backlog_jo": 26.29,
-    "export_pct": 24
+    "export_pct": 23.6
    }
   ],
-  "backlog_note": "수출 비중은 완제기 수출 수주잔고 기준(기체구조물 제외). 3Q25 5조 8,439억원, 3Q26 6조 1,930억원."
+  "backlog_note": "수출 비중은 완제기 수출 수주잔고 기준(기체구조물 제외). 3Q25 5조 8,439억원, 3Q26 6조 1,930억원.",
+  "backlog_q": {
+   "unit": "조원",
+   "title": "KAI 사업별 수주잔고",
+   "segments": [
+    {
+     "key": "exp",
+     "label": "완제기 수출",
+     "color": "c1"
+    },
+    {
+     "key": "dom",
+     "label": "국내사업",
+     "color": "c2"
+    },
+    {
+     "key": "aero",
+     "label": "기체구조물(보잉·에어버스 등)",
+     "color": "c5"
+    }
+   ],
+   "export_keys": [
+    "exp"
+   ],
+   "focus": null,
+   "rows": [
+    {
+     "period": "4Q23",
+     "total": 21.78,
+     "values": {
+      "dom": 9.07,
+      "exp": 5.33,
+      "aero": 7.38
+     },
+     "export_pct": 24.5
+    },
+    {
+     "period": "1Q24",
+     "total": 21.27,
+     "values": {
+      "dom": 8.66,
+      "exp": 5.25,
+      "aero": 7.36
+     },
+     "export_pct": 24.7
+    },
+    {
+     "period": "2Q24",
+     "total": 23.26,
+     "values": {
+      "dom": 9.74,
+      "exp": 5.1,
+      "aero": 8.41
+     },
+     "export_pct": 21.9
+    },
+    {
+     "period": "3Q24",
+     "total": 22.41,
+     "values": {
+      "dom": 9.34,
+      "exp": 4.86,
+      "aero": 8.21
+     },
+     "export_pct": 21.7
+    },
+    {
+     "period": "4Q24",
+     "total": 24.7,
+     "values": {
+      "dom": 9.11,
+      "exp": 5.29,
+      "aero": 10.29
+     },
+     "export_pct": 21.4
+    },
+    {
+     "period": "1Q25",
+     "total": 24.26,
+     "values": {
+      "dom": 8.92,
+      "exp": 5.22,
+      "aero": 10.12
+     },
+     "export_pct": 21.5
+    },
+    {
+     "period": "2Q25",
+     "total": 26.67,
+     "values": {
+      "dom": 10.64,
+      "exp": 5.99,
+      "aero": 10.04
+     },
+     "export_pct": 22.5
+    },
+    {
+     "period": "3Q25",
+     "total": 26.27,
+     "values": {
+      "dom": 10.5,
+      "exp": 5.84,
+      "aero": 9.92
+     },
+     "export_pct": 22.2
+    },
+    {
+     "period": "4Q25",
+     "total": 27.3,
+     "values": null,
+     "export_pct": null
+    },
+    {
+     "period": "1Q26",
+     "total": 26.55,
+     "values": null,
+     "export_pct": null
+    },
+    {
+     "period": "2Q26",
+     "total": 25.75,
+     "values": {
+      "dom": 10.92,
+      "exp": 5.03,
+      "aero": 9.81
+     },
+     "export_pct": 19.5
+    },
+    {
+     "period": "3Q26",
+     "total": 26.29,
+     "values": {
+      "dom": 10.54,
+      "exp": 6.19,
+      "aero": 9.55
+     },
+     "export_pct": 23.6
+    }
+   ],
+   "note": "각 분기 IR Report 경영실적 표(억원). 수출 비중은 완제기 수출 잔고 기준이며, 기체구조물도 대부분 해외 항공기 제조사 납품입니다. 4Q25는 연도별 수주잔고 차트의 27.3조원, 1Q26은 총액만 공개돼 부문 구분이 없습니다."
+  }
  }
 }

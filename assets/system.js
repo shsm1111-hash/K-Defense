@@ -250,11 +250,32 @@
   }
   function drawFin() {
     window.drawIR($('fin'), D.ir);
-    $('backlog').replaceChildren(...D.ir.backlog.map((b) => { const tr = el('tr'); tr.append(td(b.period, 'nowrap'), td(Number(b.backlog_jo).toFixed(1), 'num'), td(b.export_pct == null ? '미공개' : b.export_pct + '%', 'num')); return tr; }));
+    drawBL();
   }
   (M.supply_photos || []).forEach((k) => { const p = photo(k); if (!p) return; const w = el('div'); w.append(p.fig, p.cap); $('supply-photos').append(w); });
   const comp = (id, g) => $(id).replaceChildren(...D.components.filter((c) => c.group === g).map((c) => { const tr = el('tr'); tr.append(td(c.part, 'strong'), td(c.maker), td(c.detail, 'hide-sm'), tierTd(c.tier)); return tr; }));
   comp('comp-dom', '국내 핵심 구성품'); comp('comp-loc', '해외 현지 생산');
+
+  // 분기별 수주잔고
+  function drawBL() {
+    const bs = D.ir.backlog_q;
+    if (!bs) { $('bl-note').textContent = D.ir.backlog_note || '회사 IR 자료에 수주잔고가 공개되지 않습니다.'; $('bl-chart').replaceChildren(); $('bl-legend').replaceChildren(); return; }
+    $('bl-note').textContent = bs.title + ' · 단위 ' + bs.unit + '. ' + bs.note;
+    const sw = bs.segments.map((g) => { const s = el('span'); const i = el('i'); i.style.background = `var(--${g.color})`; s.append(i, g.label + (bs.focus === g.key ? ' ← 이 무기체계' : '')); return s; });
+    if (bs.rows.some((r) => r.export_pct != null)) { const s = el('span'); const i = el('i'); i.style.background = 'var(--c3)'; s.append(i, '수출 비중(%, 오른쪽 축·점선)'); sw.push(s); }
+    $('bl-legend').replaceChildren(...sw);
+    window.drawBacklog($('bl-chart'), bs);
+    const ex = bs.export_keys.length > 0;
+    const hr = el('tr'); [['시점'], ['합계', 'num'], ...bs.segments.map((g) => [g.label, 'num hide-sm']), ...(ex ? [['수출 잔고', 'num'], ['수출 비중', 'num']] : [])].forEach(([h, c]) => { const th = el('th', c || null, h); hr.append(th); });
+    $('bl-head').replaceChildren(hr);
+    const f = (v) => (v == null ? '—' : Number(v).toLocaleString('ko-KR', { minimumFractionDigits: 1, maximumFractionDigits: bs.unit === '억달러' ? 1 : 2 }));
+    $('backlog').replaceChildren(...[...bs.rows].reverse().map((r) => {
+      const tr = el('tr'); tr.append(td(r.period, 'nowrap'), td(f(r.total), 'num strong'));
+      bs.segments.forEach((g) => tr.append(td(r.values ? f(r.values[g.key]) : '—', 'num hide-sm')));
+      if (ex) { const e = r.values ? bs.export_keys.reduce((a, k) => a + (r.values[k] || 0), 0) : null; tr.append(td(f(e), 'num'), td(r.export_pct == null ? '—' : r.export_pct + '%', 'num')); }
+      return tr;
+    }));
+  }
 
   // 관련 기업 (투자자 관점)
   const CO = [...(D.companies || [])].sort((a, b) => (a.importance || 3) - (b.importance || 3));

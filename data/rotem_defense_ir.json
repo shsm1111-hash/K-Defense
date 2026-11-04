@@ -88,18 +88,53 @@
  ],
  "backlog": [
   {
-   "period": "2023말",
+   "period": "4Q23",
    "backlog_jo": 5.43,
    "export_pct": null
   },
   {
-   "period": "2024말",
+   "period": "1Q24",
+   "backlog_jo": 5.23,
+   "export_pct": null
+  },
+  {
+   "period": "2Q24",
+   "backlog_jo": 5.01,
+   "export_pct": null
+  },
+  {
+   "period": "3Q24",
+   "backlog_jo": 4.48,
+   "export_pct": null
+  },
+  {
+   "period": "4Q24",
    "backlog_jo": 3.87,
    "export_pct": null
   },
   {
-   "period": "2025말",
+   "period": "1Q25",
+   "backlog_jo": 3.4,
+   "export_pct": null
+  },
+  {
+   "period": "2Q25",
+   "backlog_jo": 2.54,
+   "export_pct": null
+  },
+  {
+   "period": "3Q25",
+   "backlog_jo": 10.79,
+   "export_pct": null
+  },
+  {
+   "period": "4Q25",
    "backlog_jo": 10.52,
+   "export_pct": null
+  },
+  {
+   "period": "1Q26",
+   "backlog_jo": 10.1,
    "export_pct": null
   },
   {
@@ -129,5 +164,139 @@
    "name": "폴란드 K2전차 2차 이행계약",
    "value_eok": 89814
   }
- ]
+ ],
+ "backlog_q": {
+  "unit": "조원",
+  "title": "현대로템 사업부문별 수주잔고",
+  "segments": [
+   {
+    "key": "def",
+    "label": "방산(디펜스솔루션→AD&RH)",
+    "color": "c1"
+   },
+   {
+    "key": "rail",
+    "label": "레일솔루션(RS)",
+    "color": "c2"
+   },
+   {
+    "key": "eco",
+    "label": "에코플랜트(EP)",
+    "color": "c5"
+   }
+  ],
+  "export_keys": [],
+  "focus": "def",
+  "rows": [
+   {
+    "period": "4Q23",
+    "total": 17.5,
+    "values": {
+     "def": 5.43,
+     "rail": 11.41,
+     "eco": 0.66
+    }
+   },
+   {
+    "period": "1Q24",
+    "total": 18.59,
+    "values": {
+     "def": 5.23,
+     "rail": 12.71,
+     "eco": 0.65
+    }
+   },
+   {
+    "period": "2Q24",
+    "total": 18.99,
+    "values": {
+     "def": 5.01,
+     "rail": 13.32,
+     "eco": 0.66
+    }
+   },
+   {
+    "period": "3Q24",
+    "total": 18.99,
+    "values": {
+     "def": 4.48,
+     "rail": 13.66,
+     "eco": 0.86
+    }
+   },
+   {
+    "period": "4Q24",
+    "total": 18.76,
+    "values": {
+     "def": 3.87,
+     "rail": 14.06,
+     "eco": 0.82
+    }
+   },
+   {
+    "period": "1Q25",
+    "total": 21.12,
+    "values": {
+     "def": 3.4,
+     "rail": 16.86,
+     "eco": 0.86
+    }
+   },
+   {
+    "period": "2Q25",
+    "total": 21.64,
+    "values": {
+     "def": 2.54,
+     "rail": 18.26,
+     "eco": 0.84
+    }
+   },
+   {
+    "period": "3Q25",
+    "total": 29.61,
+    "values": {
+     "def": 10.79,
+     "rail": 18.0,
+     "eco": 0.82
+    }
+   },
+   {
+    "period": "4Q25",
+    "total": 29.77,
+    "values": {
+     "def": 10.52,
+     "rail": 18.45,
+     "eco": 0.8
+    }
+   },
+   {
+    "period": "1Q26",
+    "total": 29.82,
+    "values": {
+     "def": 10.1,
+     "rail": 18.94,
+     "eco": 0.78
+    }
+   },
+   {
+    "period": "2Q26",
+    "total": 30.4,
+    "values": {
+     "def": 9.82,
+     "rail": 19.87,
+     "eco": 0.72
+    }
+   },
+   {
+    "period": "3Q26",
+    "total": 29.14,
+    "values": {
+     "def": 9.52,
+     "rail": 19.03,
+     "eco": 0.59
+    }
+   }
+  ],
+  "note": "각 분기 IR 실적발표 '사업부문별 수주잔고'(억원)를 조원으로 환산. 방산 부문은 2026년 2분기부터 AD&RH로 이름이 바뀌었고 과거치는 같은 숫자로 유지됩니다. 회사는 방산 잔고의 수출·내수를 나눠 공개하지 않습니다(3Q25 급증은 2025.8 폴란드 K2 2차 실행계약 반영)."
+ }
 }

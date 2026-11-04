@@ -130,5 +130,7 @@
    "tier": "확정"
   }
  ],
- "backlog": []
+ "backlog": [],
+ "backlog_q": null,
+ "backlog_note": "한화시스템 분기 실적발표 자료에는 수주잔고가 공개되지 않습니다."
 }

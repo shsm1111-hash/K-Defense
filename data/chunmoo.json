@@ -1322,12 +1322,27 @@
   ],
   "backlog": [
    {
-    "period": "2023말",
+    "period": "4Q23",
     "backlog_jo": 27.9,
     "export_pct": 66
    },
    {
-    "period": "2024말",
+    "period": "1Q24",
+    "backlog_jo": 29.8,
+    "export_pct": 68
+   },
+   {
+    "period": "2Q24",
+    "backlog_jo": 30.3,
+    "export_pct": 68
+   },
+   {
+    "period": "3Q24",
+    "backlog_jo": 29.9,
+    "export_pct": 69
+   },
+   {
+    "period": "4Q24",
     "backlog_jo": 32.4,
     "export_pct": 68
    },
@@ -1337,20 +1352,178 @@
     "export_pct": 65
    },
    {
-    "period": "3Q25",
-    "backlog_jo": 31.0,
-    "export_pct": 67
+    "period": "2Q25",
+    "backlog_jo": 31.7,
+    "export_pct": 65
    },
    {
-    "period": "2025말",
+    "period": "3Q25",
+    "backlog_jo": 31.0,
+    "export_pct": 69
+   },
+   {
+    "period": "4Q25",
     "backlog_jo": 37.2,
     "export_pct": 71
+   },
+   {
+    "period": "1Q26",
+    "backlog_jo": 38.2,
+    "export_pct": 74
+   },
+   {
+    "period": "2Q26",
+    "backlog_jo": 38.3,
+    "export_pct": 75
    },
    {
     "period": "3Q26",
     "backlog_jo": 35.0,
     "export_pct": 74
    }
-  ]
+  ],
+  "backlog_q": {
+   "unit": "조원",
+   "title": "지상방산 수주잔고 (수출·내수)",
+   "segments": [
+    {
+     "key": "exp",
+     "label": "수출",
+     "color": "c1"
+    },
+    {
+     "key": "dom",
+     "label": "내수",
+     "color": "c2"
+    }
+   ],
+   "export_keys": [
+    "exp"
+   ],
+   "focus": null,
+   "rows": [
+    {
+     "period": "4Q23",
+     "total": 27.9,
+     "values": {
+      "exp": 18.41,
+      "dom": 9.49
+     },
+     "export_pct": 66,
+     "calc": true
+    },
+    {
+     "period": "1Q24",
+     "total": 29.8,
+     "values": {
+      "exp": 20.26,
+      "dom": 9.54
+     },
+     "export_pct": 68,
+     "calc": true
+    },
+    {
+     "period": "2Q24",
+     "total": 30.3,
+     "values": {
+      "exp": 20.6,
+      "dom": 9.7
+     },
+     "export_pct": 68,
+     "calc": true
+    },
+    {
+     "period": "3Q24",
+     "total": 29.9,
+     "values": {
+      "exp": 20.63,
+      "dom": 9.27
+     },
+     "export_pct": 69,
+     "calc": true
+    },
+    {
+     "period": "4Q24",
+     "total": 32.4,
+     "values": {
+      "exp": 22.03,
+      "dom": 10.37
+     },
+     "export_pct": 68,
+     "calc": true
+    },
+    {
+     "period": "1Q25",
+     "total": 31.4,
+     "values": {
+      "exp": 20.41,
+      "dom": 10.99
+     },
+     "export_pct": 65,
+     "calc": true
+    },
+    {
+     "period": "2Q25",
+     "total": 31.7,
+     "values": {
+      "exp": 20.61,
+      "dom": 11.1
+     },
+     "export_pct": 65,
+     "calc": true
+    },
+    {
+     "period": "3Q25",
+     "total": 31.0,
+     "values": {
+      "exp": 21.39,
+      "dom": 9.61
+     },
+     "export_pct": 69,
+     "calc": true
+    },
+    {
+     "period": "4Q25",
+     "total": 37.2,
+     "values": {
+      "exp": 26.41,
+      "dom": 10.79
+     },
+     "export_pct": 71,
+     "calc": true
+    },
+    {
+     "period": "1Q26",
+     "total": 38.2,
+     "values": {
+      "exp": 28.27,
+      "dom": 9.93
+     },
+     "export_pct": 74,
+     "calc": true
+    },
+    {
+     "period": "2Q26",
+     "total": 38.3,
+     "values": {
+      "exp": 28.73,
+      "dom": 9.57
+     },
+     "export_pct": 75,
+     "calc": true
+    },
+    {
+     "period": "3Q26",
+     "total": 35.0,
+     "values": {
+      "exp": 25.9,
+      "dom": 9.1
+     },
+     "export_pct": 74,
+     "calc": true
+    }
+   ],
+   "note": "지상방산 부문 기준. 회사는 총액과 수출 비중(%)을 공개하며, 수출·내수 금액은 총액×비중으로 계산했습니다. 각 분기 IR 실적발표 '사업부문별 실적' 페이지."
+  }
  }
 }

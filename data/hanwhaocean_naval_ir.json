@@ -115,10 +115,96 @@
    "export_pct": null
   },
   {
+   "period": "4Q25",
+   "backlog_jo": 7.35,
+   "export_pct": null
+  },
+  {
+   "period": "1Q26",
+   "backlog_jo": 7.35,
+   "export_pct": null
+  },
+  {
+   "period": "2Q26",
+   "backlog_jo": 6.82,
+   "export_pct": null
+  },
+  {
    "period": "3Q26",
    "backlog_jo": 7.67,
    "export_pct": null
   }
  ],
- "backlog_note": "수주잔고는 달러로 공개됩니다(특수선 및 기타: 3Q25 52.8억 달러, 3Q26 54.8억 달러). 조원 환산은 1달러=1,400원 기준."
+ "backlog_note": "수주잔고는 달러로 공개됩니다(특수선 및 기타: 3Q25 52.8억 달러, 3Q26 54.8억 달러). 조원 환산은 1달러=1,400원 기준.",
+ "backlog_q": {
+  "unit": "억달러",
+  "title": "한화오션 사업부별 수주잔고",
+  "segments": [
+   {
+    "key": "naval",
+    "label": "특수선 및 기타",
+    "color": "c1"
+   },
+   {
+    "key": "merchant",
+    "label": "상선",
+    "color": "c2"
+   },
+   {
+    "key": "energy",
+    "label": "해양·에너지플랜트",
+    "color": "c5"
+   }
+  ],
+  "export_keys": [],
+  "focus": "naval",
+  "rows": [
+   {
+    "period": "3Q25",
+    "total": 316.7,
+    "values": {
+     "merchant": 240.2,
+     "energy": 23.7,
+     "naval": 52.8
+    }
+   },
+   {
+    "period": "4Q25",
+    "total": 321.8,
+    "values": {
+     "merchant": 259.3,
+     "energy": 10.0,
+     "naval": 52.5
+    }
+   },
+   {
+    "period": "1Q26",
+    "total": 348.6,
+    "values": {
+     "merchant": 260.2,
+     "energy": 35.9,
+     "naval": 52.5
+    }
+   },
+   {
+    "period": "2Q26",
+    "total": 337.7,
+    "values": {
+     "merchant": 252.5,
+     "energy": 36.5,
+     "naval": 48.7
+    }
+   },
+   {
+    "period": "3Q26",
+    "total": 362.2,
+    "values": {
+     "merchant": 268.3,
+     "energy": 39.1,
+     "naval": 54.8
+    }
+   }
+  ],
+  "note": "각 분기 실적발표 '종합 수주잔고'(인도기준, 억 달러). 1Q26부터 사업 양수한 풍력·플랜트가 에너지플랜트에 포함됐습니다. 특수선 잔고의 수출·내수는 나눠 공개하지 않습니다."
+ }
 }

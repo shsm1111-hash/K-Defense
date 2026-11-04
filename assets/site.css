@@ -219,3 +219,4 @@ table.tbl{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeri
 .co-why{color:var(--muted)}
 .co-src{font-size:12.5px;align-self:flex-start}
 #co-chart h3{margin:18px 0 6px;font-size:14px}
+.chart text.vlab{paint-order:stroke;stroke:var(--panel);stroke-width:4px;stroke-linejoin:round;fill:var(--ink);font-weight:600}

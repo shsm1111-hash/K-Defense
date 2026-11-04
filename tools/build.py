@@ -20,6 +20,7 @@ def legend(ir, has_split):
                f'<span><i style="background:var(--c2)"></i>{html.escape(lb["domestic"])}</span>')
         if lb.get("other"):
             out += f'<span><i style="background:var(--c5)"></i>{html.escape(lb["other"])}</span>'
+        out += '<span><i style="background:var(--c3)"></i>수출 비중(%, 오른쪽 축·점선)</span>'
         return out
     return '<span><i style="background:var(--c1)"></i>부문 매출</span>'
 

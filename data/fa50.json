@@ -799,7 +799,7 @@
   },
   {
    "v": "T-50B",
-   "photo": null,
+   "photo": "vp_1",
    "period": "2010~",
    "stage": "공군 운용 중 (블랙이글스)",
    "crew": "2명",
@@ -841,7 +841,7 @@
   },
   {
    "v": "FA-50 Block 20",
-   "photo": null,
+   "photo": "vp_4",
    "period": "2026~ (수출형 기준)",
    "stage": "말레이시아 인도 시작, 필리핀·폴란드 생산·개발 중",
    "crew": "2명",
@@ -911,7 +911,7 @@
   },
   {
    "v": "T-50TH",
-   "photo": null,
+   "photo": "vp_9",
    "period": "2018~",
    "stage": "태국 운용 중",
    "crew": "2명",
@@ -939,7 +939,7 @@
   },
   {
    "v": "FA-50PL",
-   "photo": null,
+   "photo": "vp_11",
    "period": "2027 중반~2029 초 인도",
    "stage": "개발·통합 시험 중 (약 2년 지연)",
    "crew": "2명",
@@ -953,7 +953,7 @@
   },
   {
    "v": "FA-50M",
-   "photo": null,
+   "photo": "vp_12",
    "period": "2026.10~2028 초",
    "stage": "말레이시아 납품 중",
    "crew": "2명",
@@ -967,7 +967,7 @@
   },
   {
    "v": "TF-50 / FA-50 Block 70 (미국 제안형)",
-   "photo": null,
+   "photo": "vp_13",
    "period": "2018~2026 (제안)",
    "stage": "제안 단계 → 미국 사업 연속 무산",
    "crew": "2명",
@@ -1438,6 +1438,48 @@
    "by": "Korea Aerospace Industries",
    "lic": "CC BY 2.0",
    "cap": "인도네시아 공군 T-50i"
+  },
+  "vp_1": {
+   "src": "https://img.koreatimes.co.kr/upload/newsV2/images/202205/72818c09f12d4768ba568f407ac81a97.jpg",
+   "page": "https://www.koreatimes.co.kr/www/nation/2022/05/113_329354.html",
+   "by": "대한민국 공군 (코리아타임스 게재)",
+   "lic": "",
+   "cap": "영국 와딩턴 에어쇼에서 비행하는 블랙이글스 T-50B (2012)"
+  },
+  "vp_4": {
+   "src": "https://prd-sc102-cdn.rtx.com/-/media/project/raytheon-technologies/shared/p/phantomstrike2.jpg?rev=f2d0d5f447fd468389f94b86b0961336&rid=e967f4c04ec241e18cd5f53c9954fc25",
+   "page": "https://www.rtx.com/news/news-center/2025/10/20/rtxs-raytheon-delivers-first-phantomstrike-radar-for-korea-aerospace-industries",
+   "by": "RTX 레이시온 뉴스룸",
+   "lic": "개념도",
+   "cap": "FA-50 Block 20용 PhantomStrike AESA 레이더 개념도 (첫 납품 발표, 2025.10)"
+  },
+  "vp_9": {
+   "src": "https://www.asianmilitaryreview.com/wp-content/uploads/T-50TH.jpg",
+   "page": "https://www.asianmilitaryreview.com/2018/04/thailand-celebrates-induction-of-t-50th/",
+   "by": "Asian Military Review",
+   "lic": "",
+   "cap": "태국 공군 T-50TH 도입 (2018)"
+  },
+  "vp_11": {
+   "src": "https://cdn.defence24.pl/2024/10/02/1920x1080px/5aqeo8mxpaxgkipmrkj1piebjygieacqtuaplqjd.mus9.jpg",
+   "page": "https://defence24.com/industry/first-photo-of-fa-50pl-exclusive",
+   "by": "KAI (Defence24 게재)",
+   "lic": "",
+   "cap": "KAI 사천 공장에서 생산 중인 FA-50PL"
+  },
+  "vp_12": {
+   "src": "https://migflug.com/afterburner/wp-content/uploads/sites/4/2026/10/FEATURED-rmaf-fa-50m-01-labuan.jpg",
+   "page": "https://migflug.com/afterburner/?p=30288551",
+   "by": "MiGFlug Afterburner",
+   "lic": "",
+   "cap": "라부안 기지에 도착한 말레이시아 공군 FA-50M 01호기 (2026.10)"
+  },
+  "vp_13": {
+   "src": "https://www.lockheedmartin.com/content/dam/lockheed-martin/aero/photo/t50a/T50_Shot_01C@0.25x.jpg",
+   "page": "https://lockheedmartin.com/en-us/products/tf-50.html",
+   "by": "록히드마틴",
+   "lic": "",
+   "cap": "록히드마틴 TF-50 제품 페이지 대표 이미지 (T-50A 계열)"
   }
  },
  "ir": {

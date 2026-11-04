@@ -491,7 +491,7 @@
   },
   {
    "v": "K21 4차 양산",
-   "photo": null,
+   "photo": "vp_3",
    "period": "2025~2028",
    "stage": "생산 중",
    "crew": "3+9명",
@@ -519,7 +519,7 @@
   },
   {
    "v": "K21-105 경전차",
-   "photo": null,
+   "photo": "vp_5",
    "period": "2013~ (시제 공개 2016 전후)",
    "stage": "시제",
    "crew": "3명",
@@ -533,7 +533,7 @@
   },
   {
    "v": "K-MPF 계열(경전차·대전차·공병)",
-   "photo": null,
+   "photo": "vp_6",
    "period": "2022~ 공개",
    "stage": "구상·시제",
    "crew": "차종별",
@@ -547,7 +547,7 @@
   },
   {
    "v": "AS21 레드백 (파생 신형)",
-   "photo": null,
+   "photo": "vp_7",
    "period": "2019~ (호주 선정 2023)",
    "stage": "호주 생산 준비",
    "crew": "3+8명",
@@ -561,7 +561,7 @@
   },
   {
    "v": "K-NIFV",
-   "photo": null,
+   "photo": "vp_8",
    "period": "2025 공개, 블록2 2030년 무렵",
    "stage": "시제(인증 중)",
    "crew": "승무원 + 하차 8명",
@@ -915,6 +915,41 @@
    "by": "Luthercho",
    "lic": "CC BY-SA 4.0",
    "cap": "K21 포탑(40mm 기관포)"
+  },
+  "vp_3": {
+   "src": "https://thecommoditiesnews.com/news/photo/202312/6922_14407_449.png",
+   "page": "https://thecommoditiesnews.com/news/articleView.html?idxno=6922",
+   "by": "한화에어로스페이스 (더코모디티스뉴스 게재)",
+   "lic": "",
+   "cap": "4차 양산 결정 보도에 실린 K21 도하 장면 (2023)"
+  },
+  "vp_5": {
+   "src": "https://www.armyrecognition.com/images/stories/asia/korea_south/exhibition/adex_2017/pictures/adex_hanwa_cmi_k21_105_korea_medium_tank_925_001.jpg",
+   "page": "https://www.armyrecognition.com/archives/archives-land-defense/land-defense-2017/adex-2017-k21-105-medium-tank-showcased-by-hanwha",
+   "by": "Army Recognition",
+   "lic": "",
+   "cap": "ADEX 2017에 전시된 K21-105 (CMI 105mm 포탑)"
+  },
+  "vp_6": {
+   "src": "https://s.bizhankook.com/attachments_webp/2026/06/126665_dd07a35c.webp",
+   "page": "https://www.bizhankook.com/bk/article/27771",
+   "by": "비즈한국 (김민석 제공)",
+   "lic": "개념도",
+   "cap": "한화에어로스페이스 K-MPF 최신 디자인"
+  },
+  "vp_7": {
+   "src": "https://www.army-technology.com/wp-content/uploads/sites/3/2020/12/Image-1-Redback-Infantry-Fighting-Vehicle.jpg",
+   "page": "https://www.army-technology.com/projects/as21-redback-infantry-fighting-vehicle/",
+   "by": "Commonwealth of Australia (Army Technology 게재)",
+   "lic": "",
+   "cap": "호주 육군 시험 중인 AS21 레드백"
+  },
+  "vp_8": {
+   "src": "https://www.asianmilitaryreview.com/wp-content/uploads/2025/10/K-NIFV.jpeg",
+   "page": "https://www.asianmilitaryreview.com/2025/10/seoul-adex-2025-hanwha-unveils-k-nifv-armoured-vehicle-foc/",
+   "by": "한화에어로스페이스 (Asian Military Review 게재)",
+   "lic": "",
+   "cap": "ADEX 2025에서 공개된 K-NIFV"
   }
  },
  "ir": {

@@ -963,7 +963,7 @@
   },
   {
    "v": "K2 2차 양산",
-   "photo": null,
+   "photo": "vp_1",
    "period": "2019~2020",
    "stage": "국군 운용 중",
    "crew": "3명",
@@ -1033,7 +1033,7 @@
   },
   {
    "v": "K2EX",
-   "photo": null,
+   "photo": "vp_6",
    "period": "2023 공개",
    "stage": "수출형 개념",
    "crew": "3명",
@@ -1047,7 +1047,7 @@
   },
   {
    "v": "K2ME",
-   "photo": null,
+   "photo": "vp_7",
    "period": "2025 개념 / 2026.03 실물",
    "stage": "중동형 시제",
    "crew": "3명",
@@ -1061,7 +1061,7 @@
   },
   {
    "v": "K2 성능개량형",
-   "photo": null,
+   "photo": "vp_8",
    "period": "2028~2046",
    "stage": "사업 의결, 개발 전",
    "crew": "3명",
@@ -1075,7 +1075,7 @@
   },
   {
    "v": "K3 (차세대 전차)",
-   "photo": null,
+   "photo": "vp_9",
    "period": "2030년대~ (구상)",
    "stage": "기술 개발·개념",
    "crew": "2~3명 (차체 앞쪽 분리 격실)",
@@ -1137,6 +1137,41 @@
    "by": "대한민국 국군",
    "lic": "CC BY-SA 2.0",
    "cap": "K2의 120mm 55구경장 주포(CN08)"
+  },
+  "vp_1": {
+   "src": "https://cdn.emetro.co.kr/data2/content/image/2019/05/27/0540/20190527000015.jpg",
+   "page": "https://www.metroseoul.co.kr/article/2019052700014",
+   "by": "메트로신문 (현대로템 제공)",
+   "lic": "",
+   "cap": "K2 전차 2차 양산 초도분 출고 (2019.05, 창원)"
+  },
+  "vp_6": {
+   "src": "https://www.armyrecognition.com/images/stories/news/2024/september/MSPO_2024_Hyundai_Rotems_K2EX_tank_paves_the_way_for_Polish_K2PL_configuration_925_002.jpg",
+   "page": "https://www.armyrecognition.com/archives/archives-land-defense/land-defense-2024/mspo-2024-hyundai-rotems-k2ex-tank-paves-the-way-for-polish-k2pl-configuration",
+   "by": "Army Recognition",
+   "lic": "",
+   "cap": "KAPS-2 능동방호를 단 K2EX (MSPO 2024 전시)"
+  },
+  "vp_7": {
+   "src": "https://www.armyrecognition.com/media/yootheme/cache/4d/South_Korea_Launches_K2_Tank_Engineered_for_Extreme_Heat_Warfare_in_Middle_East_1920_001-4df048bb.jpg",
+   "page": "https://armyrecognition.com/news/army-news/2026/south-korea-debuts-k2-tank-engineered-for-extreme-heat-warfare-in-middle-east",
+   "by": "Army Recognition (사진: 현대로템)",
+   "lic": "",
+   "cap": "K2ME 중동형 전차 실물 공개 (2026.03, 창원)"
+  },
+  "vp_8": {
+   "src": "https://www.theguru.co.kr/data/photos/20240207/art_17077831494279_ccbbf6.png",
+   "page": "https://www.theguru.co.kr/news/article.html?no=66487",
+   "by": "더구루 (자료: 방위사업청)",
+   "lic": "개념도",
+   "cap": "방위사업청이 공개한 K2 성능개량 사업 개요도"
+  },
+  "vp_9": {
+   "src": "https://www.armyrecognition.com/images/stories/news/2025/may/Hyundai_Rotem_officially_registers_the_design_of_South_Koreas_future_K3_stealth_tank_925_001.jpg",
+   "page": "https://www.armyrecognition.com/archives/archives-land-defense/defense-news-army-2025/hyundai-rotem-officially-registers-the-design-of-south-koreas-future-k3-stealth-tank",
+   "by": "Army Recognition (현대로템 디자인 등록, KIPO)",
+   "lic": "개념도",
+   "cap": "현대로템 K3 차세대 전차 디자인 등록도 (2025)"
   }
  },
  "ir": {

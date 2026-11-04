@@ -1192,7 +1192,7 @@
   },
   {
    "v": "K9PL",
-   "photo": null,
+   "photo": "vp_2",
    "period": "2026~",
    "stage": "폴란드형 양산",
    "crew": "5명",
@@ -1206,7 +1206,7 @@
   },
   {
    "v": "K9A2",
-   "photo": null,
+   "photo": "vp_3",
    "period": "2027~ (목표)",
    "stage": "개발·시험평가",
    "crew": "3명",
@@ -1220,7 +1220,7 @@
   },
   {
    "v": "K9MH",
-   "photo": null,
+   "photo": "vp_4",
    "period": "2026 시제",
    "stage": "시제",
    "crew": "—",
@@ -1317,6 +1317,27 @@
    "by": "Estonian Foreign Ministry",
    "lic": "CC BY 2.0",
    "cap": "에스토니아 K9 Kõu (2023)"
+  },
+  "vp_2": {
+   "src": "https://www.armyrecognition.com/images/stories/news/2023/october/South_Korea_Hanwha_Aerospace_K9PL_Poland_925_001.jpg",
+   "page": "https://www.armyrecognition.com/archives/archives-land-defense/land-defense-2023/hanwha-aerospace-delivers-18-k9pl-self-propelled-howitzers-to-poland",
+   "by": "Army Recognition (사진: Hanwha Aerospace Europe)",
+   "lic": "",
+   "cap": "폴란드 인도용 K9PL 자주포 (2023)"
+  },
+  "vp_3": {
+   "src": "https://www.armyrecognition.com/images/stories/news/2023/september/DSEI_2023_Hanwha_unveils_K9A2_Self-Propelled_Howitzer_with_composite_rubber_tracks_5.jpg",
+   "page": "https://www.armyrecognition.com/archives/archives-land-defense/land-defense-2023/dsei-2023-hanwha-unveils-k9a2-self-propelled-howitzer-with-soucy-composite-rubber-tracks",
+   "by": "Army Recognition (사진: 한화에어로스페이스)",
+   "lic": "",
+   "cap": "고무궤도를 장착한 K9A2 자주포 (DSEI 2023)"
+  },
+  "vp_4": {
+   "src": "https://thedefensepost.com/wp-content/uploads/2026/08/6a74b5e39b4b422b79398a42_IMG_5258-p-1080.jpeg",
+   "page": "https://thedefensepost.com/2026/08/20/us-army-k9-howitzer/",
+   "by": "The Defense Post (사진: Hanwha Defense USA)",
+   "lic": "",
+   "cap": "K9 차륜형 자주포 K9MH (미 육군 시제 사업)"
   }
  },
  "ir": {

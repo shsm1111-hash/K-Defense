@@ -713,7 +713,7 @@
   },
   {
    "v": "천무 국군 3차 양산",
-   "photo": null,
+   "photo": "vp_1",
    "period": "2024.11 계약~2026 납품",
    "stage": "양산 중",
    "crew": "3명",
@@ -741,7 +741,7 @@
   },
   {
    "v": "사우디 수출형",
-   "photo": null,
+   "photo": "vp_3",
    "period": "2022 계약 / 2023~",
    "stage": "운용 중",
    "crew": "3명",
@@ -755,7 +755,7 @@
   },
   {
    "v": "Homar-K (폴란드)",
-   "photo": null,
+   "photo": "vp_4",
    "period": "2022~2029 인도 (유도탄 현지 생산 2030~2033)",
    "stage": "납품 중",
    "crew": "3명",
@@ -769,7 +769,7 @@
   },
   {
    "v": "에스토니아형",
-   "photo": null,
+   "photo": "vp_5",
    "period": "2025.12 계약 / 2027 하반기~ 인도",
    "stage": "인도 전",
    "crew": "3명",
@@ -783,7 +783,7 @@
   },
   {
    "v": "노르웨이형",
-   "photo": null,
+   "photo": "vp_6",
    "period": "2026.01 계약 / 2028~2031 인도",
    "stage": "인도 전",
    "crew": "3명",
@@ -797,7 +797,7 @@
   },
   {
    "v": "크로아티아형",
-   "photo": null,
+   "photo": "vp_7",
    "period": "2026.09 계약 / ~2030 인도",
    "stage": "인도 전",
    "crew": "3명",
@@ -811,7 +811,7 @@
   },
   {
    "v": "사거리 연장 개량 (연구)",
-   "photo": null,
+   "photo": "vp_8",
    "period": "2022 공개 / 개발 일정 미정",
    "stage": "연구 단계",
    "crew": "-",
@@ -1202,6 +1202,55 @@
    "by": "후니포커스",
    "lic": "CC BY 3.0",
    "cap": "국군 천무 다연장로켓"
+  },
+  "vp_1": {
+   "src": "https://dtd31o1ybbmk8.cloudfront.net/photos/dadb24c3b8849a8c7f0c969cc630eac8/thumb.jpg",
+   "page": "https://dealsite.co.kr/articles/131703",
+   "by": "딜사이트 (사진: 한화그룹)",
+   "lic": "",
+   "cap": "국군 천무 사격 장면 (3차 양산 3,423억원 계약 보도, 2024.11)"
+  },
+  "vp_3": {
+   "src": "https://www.armyrecognition.com/images/stories/news/2024/november/Saudi_Arabias_K239_Chunmoo_Launchers_Now_Armed_with_South_Koreas_CTM-290_Ballistic_Missiles_1920_001.jpg",
+   "page": "https://armyrecognition.com/archives/archives-land-defense/land-defense-2024/exclusive-saudi-arabias-k239-chunmoo-launchers-now-armed-with-south-koreas-ctm-290-ballistic-missiles",
+   "by": "Army Recognition",
+   "lic": "",
+   "cap": "사우디군 천무, CTM-290 포드 장착 (WDS 2024 전시)"
+  },
+  "vp_4": {
+   "src": "https://www.armyrecognition.com/images/stories/news/2024/August/First_Homar-K_Multiple_Launch_Rocket_System_Delivered_to_Polish_Artillery_Brigade.jpg",
+   "page": "https://www.armyrecognition.com/archives/archives-land-defense/land-defense-2024/first-homar-k-multiple-launch-rocket-system-delivered-to-polish-artillery-brigade",
+   "by": "Army Recognition (사진: 폴란드 육군)",
+   "lic": "",
+   "cap": "폴란드 포병여단에 인도된 Homar-K (2024)"
+  },
+  "vp_5": {
+   "src": "https://www.hanwha.com/upload/newsroom/component/20251223/1766473103030.webp",
+   "page": "https://www.hanwha.com/newsroom/news/press-releases/hanwha-aerospace-awarded-250-million-contract-to-supply-chunmoo-systems-to-estonia.do",
+   "by": "한화 뉴스룸",
+   "lic": "",
+   "cap": "에스토니아 계약 보도자료 사진: 천무 실사격 (에스토니아형은 인도 전)"
+  },
+  "vp_6": {
+   "src": "https://www.fma.no/en/news-and-media/newsarticles/new-contract-with-hanwha-aerospace-to-procure-long-range-precision-fires/_/image/04c0db29-b282-4239-88dc-500a2aa1d2ce:ca02e645f0059d1331f63d4efcca4858a741fd58/width-1024/Ny%20kontrakt%20med%20Hanwah%20-%20langtrekkende_1920x1267.jpg?quality=80",
+   "page": "https://www.fma.no/en/news-and-media/newsarticles/new-contract-with-hanwha-aerospace-to-procure-long-range-precision-fires",
+   "by": "노르웨이 국방물자청(FMA) (사진: 한화에어로스페이스)",
+   "lic": "",
+   "cap": "노르웨이 장거리 정밀화력 계약 발표 사진: 천무 발사대 (2026.01, 인도 전)"
+  },
+  "vp_7": {
+   "src": "https://www.armyrecognition.com/images/stories/news/2026/september/Croatia%20to%20buy%2018%20K239%20Chunmoo%20rocket%20launchers%20from%20South%20Korea%20over%20extra%20U.S.%20M142%20HIMARS%20925%20001.jpg",
+   "page": "https://www.armyrecognition.com/news/army-news/2026/croatia-k239-chunmoo-deal-435m-mlrs-hanwha",
+   "by": "Army Recognition (사진: 한화에어로스페이스)",
+   "lic": "",
+   "cap": "크로아티아 천무 18문 계약 보도 사진 (2026.09, 인도 전)"
+  },
+  "vp_8": {
+   "src": "https://s.bizhankook.com/attachments_webp/2026/06/119114_f171ff4e.webp",
+   "page": "https://www.bizhankook.com/bk/article/23865",
+   "by": "비즈한국 (김민석 제공)",
+   "lic": "개념도",
+   "cap": "덕티드 로켓 적용 천무 사거리 연장탄 상상도"
   }
  },
  "ir": {

@@ -27,6 +27,9 @@ def apply(sid):
             c["importance"] = int(num(c.get("importance")) or 3)
             c["exposure_krw_eok"] = num(c.get("exposure_krw_eok"))
         d["companies"] = sorted(cos, key=lambda c: c["importance"])
+    sp = SYSDATA / sid / f"{sid}_supplychain.json"
+    if sp.exists():
+        d["supplychain"] = json.loads(sp.read_text(encoding="utf-8"))
     ap = SYSDATA / sid / f"{sid}_components_add.json"
     added = fixed = 0
     if ap.exists():

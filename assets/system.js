@@ -278,6 +278,34 @@
     }));
   }
 
+  // 공급망 분석 (국내 상장사 수혜·리스크)
+  (() => {
+    const SC = D.supplychain;
+    if (!SC) return;
+    $('sc-summary').textContent = SC.summary || '';
+    const SENS = { 높음: 's-high', 중간: 's-mid', 낮음: 's-low' };
+    const TIERS = ['체계종합', '1차 협력', '2차·소재'];
+    const L = SC.listed || [];
+    $('sc-flow').replaceChildren(...TIERS.map((tn, i) => {
+      const col = el('div', 'sc-col'); col.append(el('h3', null, tn));
+      L.filter((c) => c.tier === tn).forEach((c) => { const b = el('div', 'sc-node ' + (SENS[c.sensitivity] || '')); b.append(el('strong', null, c.name), el('span', 'tk', c.ticker || ''), el('small', null, c.parts)); col.append(b); });
+      if (i < TIERS.length - 1) col.classList.add('has-arrow');
+      return col;
+    }));
+    $('sc-list').replaceChildren(...L.map((c) => {
+      const r = el('div', 'sc-row');
+      const h = el('div', 'sc-h'); h.append(el('strong', null, c.name), el('span', 'tk', `${c.market || ''} ${c.ticker || ''}`), el('span', 'chip t-note', c.tier), el('span', 'sens ' + (SENS[c.sensitivity] || ''), '민감도 ' + (c.sensitivity || '—')), chip(c.tier_conf));
+      r.append(h, el('p', 'sc-parts', c.parts));
+      const g = el('div', 'sc-grid');
+      [['비중·규모', c.exposure, ''], ['수혜', c.benefit, 'sc-up'], ['리스크', c.risk, 'sc-down'], ['다음 변수', c.catalyst, '']].forEach(([k, v, cl]) => { if (!v) return; const b = el('div', 'sc-cell ' + cl); b.append(el('b', null, k), el('p', null, v)); g.append(b); });
+      r.append(g);
+      if (c.source_url) { const a = el('a', 'co-src', '근거'); a.href = c.source_url; a.target = '_blank'; a.rel = 'noopener'; r.append(a); }
+      return r;
+    }));
+    $('sc-risks').replaceChildren(...(SC.system_risks || []).map((x) => { const li = el('li'); li.append(el('strong', null, x.risk), el('p', null, x.detail)); if (x.affected) li.append(el('p', 'note', '영향: ' + x.affected)); return li; }));
+    $('sc-cat').replaceChildren(...(SC.catalysts || []).map((x) => { const li = el('li'); li.style.setProperty('--c', 'var(--c1)'); const b = el('div'); b.append(el('p', null, x.event)); if (x.beneficiaries) b.append(el('p', 'note', '수혜: ' + x.beneficiaries)); li.append(el('div', 'when', x.when), el('span', 'dot'), b); return li; }));
+  })();
+
   // 관련 기업 (투자자 관점)
   const CO = [...(D.companies || [])].sort((a, b) => (a.importance || 3) - (b.importance || 3));
   const IMP = { 1: '핵심', 2: '중요', 3: '참고' };
@@ -348,7 +376,7 @@
   const drawn = {};
   const drawers = { export: () => { drawOps(); drawDetail(); drawSwim(); }, cost: () => { drawUnit(); drawFin(); }, 'pipeline-tab': () => drawPipe(), companies: () => drawCoChart() };
   function route() {
-    const id = ['overview', 'history', 'export', 'companies', 'cost', 'plan', 'pipeline-tab'].includes(location.hash.slice(1)) ? location.hash.slice(1) : 'overview';
+    const id = ['overview', 'history', 'export', 'companies', 'supply', 'cost', 'plan', 'pipeline-tab'].includes(location.hash.slice(1)) ? location.hash.slice(1) : 'overview';
     document.querySelectorAll('.page').forEach((s) => s.classList.toggle('hidden', s.id !== id));
     document.querySelectorAll('.tabs a').forEach((a) => (a.dataset.tab === id ? a.setAttribute('aria-current', 'page') : a.removeAttribute('aria-current')));
     if (drawers[id]) { drawers[id](); drawn[id] = true; }

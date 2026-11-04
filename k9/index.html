@@ -6,7 +6,7 @@
 <title>K9 자주포 · K방산 무기체계 도감</title>
 <meta name="description" content="K9 자주포의 개발 배경과 연혁, 버전별 차이, 양산 단계, 수출국별 도입 배경과 현지화 조건, 계약 단가, 구성품 업체, 향후 계획">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-<link rel="stylesheet" href="../assets/site.css?v=d4e25677">
+<link rel="stylesheet" href="../assets/site.css?v=6ced16cc">
 </head>
 <body data-data="../data/k9.json?v=01af5326">
 <div class="wrap">
@@ -34,6 +34,7 @@
     <a href="#history" data-tab="history">연혁·버전</a>
     <a href="#export" data-tab="export">수출</a>
     <a href="#companies" data-tab="companies">관련 기업·구성품</a>
+    <a href="#supply" data-tab="supply">공급망 분석</a>
     <a href="#cost" data-tab="cost">단가·원가·실적</a>
     <a href="#plan" data-tab="plan">향후 계획</a>
     <a href="#pipeline-tab" data-tab="pipeline-tab">수주 파이프라인</a>
@@ -146,6 +147,32 @@
     </article>
   </section>
 
+  <section class="page hidden" id="supply">
+    <article class="card">
+      <h2>국내 상장사 공급망 한눈에</h2>
+      <p class="note" id="sc-summary">공급망 분석을 준비 중입니다.</p>
+      <div class="card-body">
+        <div class="sc-flow" id="sc-flow"></div>
+        <div class="co-legend">실적 민감도 <span class="sens s-high">높음</span> 이 체계 수주·납품이 회사 실적을 크게 좌우 <span class="sens s-mid">중간</span> <span class="sens s-low">낮음</span> 회사 전체에서 비중 작음</div>
+      </div>
+    </article>
+    <article class="card">
+      <h2>상장사별 수혜와 리스크</h2>
+      <p class="note">투자 권유가 아니라 공급망 구조와 공개 정보에 기반한 정리입니다. 신뢰도 표시를 함께 보세요.</p>
+      <div class="card-body sc-list" id="sc-list"></div>
+    </article>
+    <div class="two">
+      <article class="card">
+        <h2>공급망 리스크</h2>
+        <div class="card-body"><ul class="sc-risks" id="sc-risks"></ul></div>
+      </article>
+      <article class="card">
+        <h2>앞으로 볼 이벤트</h2>
+        <div class="card-body"><ol class="tl" id="sc-cat"></ol></div>
+      </article>
+    </div>
+  </section>
+
   <section class="page hidden" id="cost">
     <div class="two">
       <article class="card">
@@ -206,6 +233,6 @@
   </footer>
 </div>
 <script src="../assets/ir-chart.js?v=69b6fc38"></script>
-<script src="../assets/system.js?v=88f16d97"></script>
+<script src="../assets/system.js?v=757a3b56"></script>
 </body>
 </html>

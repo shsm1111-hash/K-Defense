@@ -2095,5 +2095,391 @@
     "beneficiaries": "한화에어로스페이스, 한화시스템"
    }
   ]
+ },
+ "competition": {
+  "summary": "K9은 세계 자주포 수출 시장 점유율 약 50%(2025 보도)로 1위이며, 궤도형에서는 독일 PzH 2000, 차륜형에서는 프랑스 CAESAR·스웨덴 Archer·독일 RCH 155와 경쟁한다. 이기는 공식은 'PzH 2000급 성능을 절반 이하 가격에, 가동 중인 생산라인으로 빠르게, 현지 생산·기술이전까지 유연하게'이며, 핀란드·노르웨이·폴란드·호주·루마니아·스페인이 이 공식으로 넘어왔다. 지는 패턴은 성능 비교 이전에 '독일 등 유럽 파트너와의 정부 간 공동개발·패키지'로 경쟁 없이 결정되는 경우(영국 MFP 등)와 차륜형 선호 수요다. 2026년 미 육군 차륜형 시제(XM1776) 선정으로 차륜형 약점도 줄이는 중이다.",
+  "rivals": [
+   {
+    "name": "PzH 2000",
+    "maker": "KNDS Deutschland(구 KMW)·라인메탈",
+    "origin": "독일",
+    "unit_price": "대당 약 €1,200만~1,700만 (2022~23 독일·네덜란드 추가 발주 보도 환산, 추정)",
+    "strengths": "분당 10발급 발사속도와 높은 자동화, 우크라이나 실전 검증으로 성능 평판이 가장 높다.",
+    "weaknesses": "K9 대비 2~3배 비싸고 55t 이상으로 무거우며, 생산능력이 작아 신규 주문 시 인도까지 수년 대기.",
+    "users": "독일·네덜란드·이탈리아·그리스·리투아니아·헝가리·크로아티아·카타르·우크라이나",
+    "status": "전쟁 이후 재생산 중이나 연 수십 대 수준 보도, 신규 주문 대기 3~4년(추정)",
+    "vs": "성능은 근소 우위, 가격·납기·현지화에서 K9이 압도 — 노르웨이·핀란드에서 K9 승"
+   },
+   {
+    "name": "CAESAR (Mk II 6x6 / 8x8)",
+    "maker": "KNDS France(구 넥스터)",
+    "origin": "프랑스",
+    "unit_price": "대당 약 €400만~700만 (6x6 기준, 2021~24 체코·벨기에 보도 환산, 추정)",
+    "strengths": "트럭 기반 차륜형이라 싸고 가벼우며 전략 기동(C-130 수송)이 쉽다. 우크라이나에서 실전 운용.",
+    "weaknesses": "장갑 방호가 약하고 탄 적재량이 적어(18~36발) 고강도 대포병전 생존성이 궤도형보다 낮다.",
+    "users": "프랑스·벨기에·체코·덴마크·리투아니아·에스토니아·크로아티아·사우디·인도네시아·태국·모로코·우크라이나 등",
+    "status": "생산을 월 2대 → 6대(2023) → 12대(2025 목표)로 확대 보도",
+    "vs": "가격·기동은 CAESAR, 방호·화력 지속은 K9 — 수요가 '차륜·경량'이면 CAESAR가 유리"
+   },
+   {
+    "name": "Archer (FH77BW L52)",
+    "maker": "BAE Systems Bofors",
+    "origin": "스웨덴",
+    "unit_price": "대당 약 $1,000만~1,500만 (추정, 공식 단가 미공개)",
+    "strengths": "6x6 차륜형에 완전 자동 포탑, 3~4명 운용, 방열 후 20~30초 내 사격 개시로 생존성이 높다.",
+    "weaknesses": "비싸고 생산 속도가 느리며 노르웨이가 2013년 공동 도입에서 이탈한 이력이 있다.",
+    "users": "스웨덴·영국(임시 14문)·우크라이나",
+    "status": "스웨덴 추가 발주로 생산 중, 대량 수출 생산능력은 제한적(보도)",
+    "vs": "자동화·차륜 기동은 Archer, 가격·생산량·사용자 기반은 K9"
+   },
+   {
+    "name": "RCH 155",
+    "maker": "KNDS Deutschland",
+    "origin": "독일",
+    "unit_price": "대당 약 €1,000만 이상 (추정, 미공개)",
+    "strengths": "복서 8x8 차체에 원격 무인 포탑, 2명 운용, 주행 중 사격(shoot-on-the-move) 가능.",
+    "weaknesses": "양산 초기라 운용 실적이 거의 없고 단가가 높다.",
+    "users": "독일·영국(MFP 공동개발)·스위스·우크라이나(발주)",
+    "status": "2024~25 양산 개시, 영국은 2030년 전후 전력화 목표",
+    "vs": "영국 MFP에서 경쟁 없이 선정 — K9의 '정치적 실주' 대표 사례"
+   },
+   {
+    "name": "M109A7 Paladin",
+    "maker": "BAE Systems",
+    "origin": "미국",
+    "unit_price": "자주포+탄약차 1세트 약 $1,400만 (미 육군 예산 기준, 추정)",
+    "strengths": "미군 표준, 미국 FMS·탄약 체계와 완전 호환.",
+    "weaknesses": "39구경장으로 사거리가 짧고(약 30km), 미 육군이 직접 대체 경쟁(2026 RFI)을 열 정도로 노후 설계.",
+    "users": "미국 (구형 M109 계열은 수십 개국)",
+    "status": "미 육군 물량 위주 생산, 궤도형 후속 경쟁 RFI(2026.9) 진행",
+    "vs": "미국 궤도형 후속 경쟁에서 K9A1/K9A2가 대체 후보"
+   },
+   {
+    "name": "SH-15 / PLZ-52",
+    "maker": "노린코(NORINCO)",
+    "origin": "중국",
+    "unit_price": "대당 약 $300만 안팎 (추정)",
+    "strengths": "저가에 금융 패키지 동반, 서방 제재·정치 조건이 없다.",
+    "weaknesses": "NATO 상호운용성이 없고 품질·MRO 신뢰도가 낮다는 평가.",
+    "users": "중국·파키스탄 등",
+    "status": "파키스탄 등 아시아·아프리카 수출 추진",
+    "vs": "비NATO 저가 시장(동남아·아프리카)에서 잠재 경쟁자 — 베트남은 탈러시아·탈중국 다변화로 K9 선택"
+   }
+  ],
+  "matrix": {
+   "systems": [
+    "K9A1",
+    "PzH 2000",
+    "CAESAR Mk II",
+    "Archer",
+    "RCH 155"
+   ],
+   "rows": [
+    {
+     "axis": "대당 가격(추정)",
+     "values": [
+      "약 $400만~500만 (차량), 수출 패키지 약 $1,000만",
+      "약 €1,200만~1,700만",
+      "약 €400만~700만",
+      "약 $1,000만~1,500만",
+      "약 €1,000만+"
+     ]
+    },
+    {
+     "axis": "사거리 (표준/연장탄)",
+     "values": [
+      "40km / 50km+",
+      "40km / 약 67km(V-LAP)",
+      "40km+ / 약 55km",
+      "40km / 50km+(엑스칼리버)",
+      "40km / 약 54km"
+     ]
+    },
+    {
+     "axis": "최대 발사속도",
+     "values": [
+      "분당 6~8발",
+      "분당 약 10발",
+      "분당 6발",
+      "분당 8~9발",
+      "분당 8~9발"
+     ]
+    },
+    {
+     "axis": "차체 / 중량",
+     "values": [
+      "궤도 / 47t",
+      "궤도 / 55~57t",
+      "차륜 6x6·8x8 / 약 18~30t",
+      "차륜 6x6 / 약 33t",
+      "차륜 8x8(복서) / 약 39t"
+     ]
+    },
+    {
+     "axis": "승무원·자동화",
+     "values": [
+      "5명 (K9A2 3명·자동장전)",
+      "5명, 고자동화",
+      "5명, 반자동",
+      "3~4명, 완전 자동",
+      "2명, 무인 포탑"
+     ]
+    },
+    {
+     "axis": "납기",
+     "values": [
+      "계약 후 약 4개월 초도(폴란드 2022)",
+      "수년 대기",
+      "생산 확대 중(월 6~12)",
+      "제한적",
+      "양산 초기"
+     ]
+    },
+    {
+     "axis": "현지화·기술이전",
+     "values": [
+      "면허생산·현지공장 다수(튀르키예·인도·호주·이집트·루마니아·스페인)",
+      "제한적",
+      "공동 생산 일부(체코 등)",
+      "제한적",
+      "독·영 공동개발"
+     ]
+    },
+    {
+     "axis": "운용국 수(수출)",
+     "values": [
+      "11개국 (미국 시제 별도)",
+      "약 9개국",
+      "10개국 이상",
+      "약 3개국",
+      "약 4개국(발주 포함)"
+     ]
+    }
+   ]
+  },
+  "cases": [
+   {
+    "country": "튀르키예",
+    "year": "2001",
+    "program": "T-155 Fırtına 자주포 국산화",
+    "result": "수주",
+    "winner": "K9 (기술이전·면허생산)",
+    "competitors": "공개 경쟁자 미확인 (기존 제안 검토 후 K9 선택 보도)",
+    "value": "약 350문 계획(육군 280 + 수출 70), 구매·기술이전 총 약 $10억 (보도)",
+    "reasons": "완성품 구매 대신 자국 생산을 원했고, 한국이 초도 8문 국내 생산 후 300문 이상 현지 면허생산을 받아들였다. 튀르키예군은 기존 제안들을 검토한 뒤 K9을 골랐다(경쟁 체계와의 구체적 비교는 출처 미확인).",
+    "lesson": "'기술이전형 수출'이 K9 해외 진출의 출발점 — 이후 현지 생산 공식의 원형",
+    "tier": "보도",
+    "source_url": "https://www.globalsecurity.org/military/world/europe/firtina.htm"
+   },
+   {
+    "country": "호주",
+    "year": "2010~2012",
+    "program": "LAND 17 Phase 1C 자주포",
+    "result": "무산",
+    "winner": "AS9(K9, 레이시온 오스트레일리아·삼성테크윈) 우선 후보 후 사업 취소",
+    "competitors": "PzH 2000 (KMW, 입찰 불참 보도)",
+    "value": "수량 미공개 (사업비 A$5억~15억 범위, 취소로 A$2.25억 절감 발표)",
+    "reasons": "LAND 17 Phase 1C 자주포 입찰에서 AS9이 우선 후보(육군 요구를 충족한 유일한 제품으로 보도)였으나 2012.5 예산에서 자주포 부분이 취소됐다. 장관은 중량·탄약 호환성을 들었지만 육군총장은 의회에서 재정 삭감 때문이라고 인정했다. KMW(PzH 2000)는 2년 전 입찰 참여를 거절한 것으로 알려졌다.",
+    "lesson": "선정 ≠ 계약 — 예산 사이클 리스크. 9년 뒤(2021) 같은 국가에서 재수주",
+    "tier": "보도",
+    "source_url": "https://asiapacificdefencereporter.com/self-propelled-howitzers-scrapped/"
+   },
+   {
+    "country": "인도",
+    "year": "2015~2017",
+    "program": "궤도형 자주포 도입",
+    "result": "수주",
+    "winner": "K9 Vajra-T (L&T 면허생산)",
+    "competitors": "2S19 Msta-S (러시아)",
+    "value": "100문, 약 Rs 4,500크로르 (약 $7억, 2017.5 L&T 계약)",
+    "reasons": "사막 실사격·기동 시험에서 러시아 Msta-S를 앞섰고, '메이크 인 인디아'에 맞춰 L&T가 현지 생산하는 구조를 제시했다. 2024년 100문 추가로 운용 만족도를 확인했다.",
+    "lesson": "현지 대기업 파트너(L&T) 확보가 인도 시장의 진입 조건",
+    "tier": "보도",
+    "source_url": "https://www.business-standard.com/article/pti-stories/l-t-gets-contract-to-supply-100-howitzers-to-army-117051200784_1.html"
+   },
+   {
+    "country": "핀란드",
+    "year": "2017",
+    "program": "중고 자주포 도입",
+    "result": "수주",
+    "winner": "K9 (한국군 중고)",
+    "competitors": "신품 PzH 2000 등 (검토 보도)",
+    "value": "48문, 약 $1.55억 (정비·부품·교육 포함, 약 €1.46억)",
+    "reasons": "한국군 중고 K9을 정비·부품·교육 포함 약 $1.55억에 들여와 신품 대비 훨씬 싸게 전력화했다. 가격과 징병제 군에 맞는 운용성이 선택 이유로 보도됐다(혹한 시험 관련 세부는 출처 미확인).",
+    "lesson": "중고 저가 진입 → 2026.4 신규 112문(€5.47억) 추가로 200문 이상으로 확대된 '랜드 앤 익스팬드' 모델",
+    "tier": "보도",
+    "source_url": "https://www.globalsecurity.org/military/library/news/2017/02/mil-170218-sputnik02.htm"
+   },
+   {
+    "country": "노르웨이",
+    "year": "2017",
+    "program": "M109A3 대체 자주포",
+    "result": "수주",
+    "winner": "K9 VIDAR",
+    "competitors": "PzH 2000(KMW), CAESAR(넥스터), M109 Krait(RUAG) — 2016 초 현지 시험. Archer 공동도입은 2013년 이탈",
+    "value": "24문, NOK 18억 (약 $2.15억)",
+    "reasons": "2016년 초 노르웨이 현지 시험에 4개 체계가 참가했고, 노르웨이군은 한화가 '육군 요구를 가장 잘 충족했다'고 밝혔다. 평생 군수지원과 비에르크비크 기술센터 설립이 계약에 포함됐다. 이후 2022년 4문, 2025년 24문 추가 구매로 이어졌다.",
+    "lesson": "NATO 선진국 첫 신품 수주 — '유럽에서도 통한다'는 레퍼런스",
+    "tier": "보도",
+    "source_url": "https://defensenews.com/land/2017/12/20/norway-orders-k9-howitzers-in-latest-win-for-south-korean-arms-industry"
+   },
+   {
+    "country": "에스토니아",
+    "year": "2018",
+    "program": "자주포 전력 신설",
+    "result": "수주",
+    "winner": "K9EST (한국군 중고)",
+    "competitors": "공개 경쟁자 미확인",
+    "value": "1차 12문 €4,600만 (2018.6), 옵션·추가 구매로 누적 36문",
+    "reasons": "핀란드와 공동 구매로 단가와 교육·정비 부담을 낮췄다. 자주포가 없던 군에 저비용으로 기계화 포병을 만들었다.",
+    "lesson": "북유럽·발트 사용자 클럽 형성 → 천무 수출(2025)로 이어진 교두보",
+    "tier": "보도",
+    "source_url": "https://www.armyrecognition.com/archives/archives-land-defense/land-defense-2018/estonia-has-signed-a-contrat-to-purchase-k9-155m-howitzers-from-south-korea"
+   },
+   {
+    "country": "헝가리",
+    "year": "2018",
+    "program": "자주포 도입",
+    "result": "실주",
+    "winner": "PzH 2000 (24문)",
+    "competitors": "K9 (공개 경쟁 없음, K9 제안 여부 출처 미확인)",
+    "value": "PzH 2000 24문 + 레오파르트2A7+ 44대 + 2A4 12대 (2018.12 KMW 계약)",
+    "reasons": "헝가리 국방부가 '즈리니 2026' 현대화 계획으로 KMW와 전차·자주포를 묶어 직접 계약했다. 공개 경쟁 입찰은 확인되지 않으며, K9이 실제로 제안·검토됐는지는 출처 미확인이다. (출처 미확인)",
+    "lesson": "독일 '패키지 딜' 국가는 진입 장벽이 높다 — 사전 산업협력 구축이 필수",
+    "tier": "추정",
+    "source_url": "https://defensenews.com/global/europe/2018/12/20/hungary-signs-deal-to-buy-dozens-of-tanks-howitzers-from-germanys-kmw"
+   },
+   {
+    "country": "호주",
+    "year": "2021",
+    "program": "LAND 8116 Phase 1 방호기동화력",
+    "result": "수주",
+    "winner": "AS9 Huntsman",
+    "competitors": "단독 협상 (2012 경쟁 결과 승계)",
+    "value": "AS9 30문 + AS10 15대, 약 $7.3억 (한화 수주액 9,320억원은 증권사 자료 기준)",
+    "reasons": "과거 평가 결과를 바탕으로 한화와 단독 협상했고, 질롱(H-ACE) 현지 공장 건설을 약속했다. 이 공장이 2023년 레드백 수주의 기반이 됐다.",
+    "lesson": "현지 공장 = 후속 체계(레드백) 수주의 플랫폼",
+    "tier": "확정",
+    "source_url": "https://defensenews.com/industry/2021/12/13/australia-buys-k9-howitzers-from-south-koreas-hanwha-defense/"
+   },
+   {
+    "country": "이집트",
+    "year": "2022",
+    "program": "자주포 현대화·현지 생산",
+    "result": "수주",
+    "winner": "K9A1EGY",
+    "competitors": "공개 경쟁자 미확인",
+    "value": "약 200문 + K10·K11 지원차량 (수량은 익명 소식통), 약 $17억(약 2조원)",
+    "reasons": "대부분을 카이로 인근 국영 200공장에서 현지 생산하는 조건이었다. 2009년 시작한 포병 현대화가 아랍의 봄으로 10년 가까이 멈췄다가 재개됐다. 독일 MTU 엔진 재수출 승인 문제를 국산 엔진으로 풀었다는 보도가 있다(엔진 부분은 국내 언론 보도 기준).",
+    "lesson": "부품 국산화가 수출 통제(독일 재수출 승인) 리스크를 없애는 무기 — STX엔진·SNT다이내믹스 수혜",
+    "tier": "보도",
+    "source_url": "https://www.defensenews.com/land/2022/02/01/egypt-inks-17-billion-deal-for-k9-howitzers-from-south-korea/"
+   },
+   {
+    "country": "폴란드",
+    "year": "2022",
+    "program": "전쟁 후 포병 긴급 증강",
+    "result": "수주",
+    "winner": "K9A1/K9PL (기본계약 672문)",
+    "competitors": "자국 Krab 증산, PzH 2000 등",
+    "value": "1차 212문 $24억, 2차 152문 $26억",
+    "reasons": "우크라이나에 장비를 넘긴 공백을 빨리 메워야 했고, 서방 업체는 납기가 수년이었다. 한국은 계약 4개월 만에 첫 물량을 보냈고 Krab용 차체 공급 경험과 현지화(K9PL) 로드맵을 제시했다.",
+    "lesson": "'납기'가 성능보다 중요해진 전시 수요의 최대 수혜 사례",
+    "tier": "확정",
+    "source_url": "https://dealsite.co.kr/articles/114079"
+   },
+   {
+    "country": "루마니아",
+    "year": "2024",
+    "program": "자주포 도입",
+    "result": "수주",
+    "winner": "K9 (루마니아형)",
+    "competitors": "PzH 2000(KMW), T-155 Fırtına(튀르키예 BMC — K9 면허생산형)",
+    "value": "K9 54문 + K10 36대, 약 $10억(약 1.4조원)",
+    "reasons": "2024.6 루마니아 국방부가 한화를 선정했고 경쟁자는 KMW(PzH 2000)와 튀르키예 BMC(T-155, K9 면허생산형)였다. 대부분을 현지 기업과 생산하고 기술이전·MRO 우수센터(신규 공장)를 세우는 조건으로 2024.7 약 $10억에 계약했다. (단독 응찰 보도는 사실과 다름)",
+    "lesson": "현지 공장 약속이 레드백·전차 등 후속 경쟁의 발판이 되지만, 레드백은 2026년 실주",
+    "tier": "보도",
+    "source_url": "https://defensenews.com/industry/2024/06/20/romania-to-buy-54-howitzers-from-south-koreas-hanwha-aerospace"
+   },
+   {
+    "country": "영국",
+    "year": "2024",
+    "program": "Mobile Fires Platform (MFP)",
+    "result": "실주",
+    "winner": "RCH 155 (독일과 공동개발)",
+    "competitors": "K9A1(한화 '팀 썬더'), Archer(BAE)",
+    "value": "수량 미공개 (언론은 100문 안팎 거론, 추정)",
+    "reasons": "2024.4 수낵 총리의 베를린 방문 때 영국은 MFP로 RCH 155(복서 차체)를 골랐다. 독일과의 공동개발·영국 복서 사업과의 공통성이 이유로 제시됐고, K9A1과 Archer가 평가 대상이었다. 한화가 '공정하지 않았다'고 밝혔다는 부분은 출처 미확인.",
+    "lesson": "유럽 정부 간 공동개발 정치는 가격·납기로 뒤집기 어렵다 — 서유럽 대형사업 리스크",
+    "tier": "보도",
+    "source_url": "https://overtdefense.com/2024/04/25/british-army-selects-rheinmetall-rch-155-for-mobile-fires-platform-requirement"
+   },
+   {
+    "country": "베트남",
+    "year": "2025",
+    "program": "자주포 도입 (G2G)",
+    "result": "수주",
+    "winner": "K9",
+    "competitors": "러시아·중국제 (공개 경쟁 미확인)",
+    "value": "20문, 약 $2.5억",
+    "reasons": "러시아제 의존을 줄이려는 장비 다변화와 정부 간 계약 방식이 맞았다. 한국 무기 첫 공산권 수출이다.",
+    "lesson": "비NATO·탈러시아 시장 개척 — 동남아 후속 수요 기대",
+    "tier": "보도",
+    "source_url": "https://biz.sbs.co.kr/amp/article/20000253278"
+   },
+   {
+    "country": "미국",
+    "year": "2025~2026",
+    "program": "자주포 현대화(SPH-M) 차륜형 이동전술포(MTC)",
+    "result": "수주",
+    "winner": "K9MH (차륜형 K9) → XM1776",
+    "competitors": "Archer(BAE), RCH 155(라인메탈 미국법인), CAESAR(레오나르도 DRS·KNDS), SIGMA(엘빗 아메리카·안두릴·오시코시)",
+    "value": "시제 6문 + 옵션 12문, 최대 $2.33억(2026.8) → 2026.10 AUSA에서 XM1776 명명, 시제 9문 확정 + 옵션 9문(금액 미공개)",
+    "reasons": "엘빗(SIGMA)·레오나르도 DRS-KNDS(CAESAR)·라인메탈 미국(RCH 155)·BAE(Archer)와 경쟁해 한화만 시제 계약을 받았다. 2026.10 미 육군이 'XM1776 이동전술포'로 명명하고 시제를 9문으로 늘렸다. 앨라배마 오펠라이카 1단계 시설을 임차해 준비 중이다(미 육군 공식 평가 사유는 미공개).",
+    "lesson": "미국 본토 시장 첫 진입 — 본사업(수백 문) 전환 시 최대 업사이드",
+    "tier": "확정",
+    "source_url": "https://defence-industry.eu/u-s-army-orders-nine-hanwha-wheeled-howitzer-prototypes-unveils-xm1776-designation/"
+   },
+   {
+    "country": "스페인",
+    "year": "2026",
+    "program": "궤도형 자주포(ATP-C) 현대화",
+    "result": "수주",
+    "winner": "K9 기반 (인드라 주계약·한화 협력)",
+    "competitors": "공개 경쟁자 미확인 (차륜형 ATP-R은 인드라-에스크리바노 국산 컨소시엄)",
+    "value": "자주포 128문 + 지원차량 152대, 사업예산 €45.5억 (한화 몫 공시 최소 6,675억원)",
+    "reasons": "자국 기업 인드라가 생산을 주도하는 구조로 '유럽산' 요건을 맞췄다. 한화의 현지 산업 협력 의지가 서유럽 장벽을 넘은 핵심으로 평가된다.",
+    "lesson": "한화가 '부품·기술 공급자'로 들어가는 모델 — 매출 인식 규모는 완제품보다 작다",
+    "tier": "보도",
+    "source_url": "https://www.defensenews.com/global/europe/2026/03/24/indra-teams-up-with-hanwha-for-spains-53-billion-artillery-order/"
+   },
+   {
+    "country": "미국",
+    "year": "2026~",
+    "program": "궤도형 자주포 경쟁 (M109A7 대체)",
+    "result": "진행 중",
+    "winner": "미정",
+    "competitors": "M109 개량(BAE), RCH 155, Archer 등 예상",
+    "value": "수량 미공개 (탄약운반차 포함)",
+    "reasons": "미 육군이 2026.9 정보요청(RFI)에서 생산 리드타임·최대 생산능력·미국 내 생산을 요구했다. 차륜형 시제 선정으로 한화가 유리한 위치라는 평가가 있다.",
+    "lesson": "미국 내 생산능력 투자가 수주 조건 — 투자비 대비 물량 확인 필요",
+    "tier": "보도",
+    "source_url": "https://breakingdefense.com/2026/09/army-seeks-tracked-howitzer-candidates-following-award-for-wheeled-platforms/"
+   }
+  ],
+  "win_factors": [
+   "PzH 2000급 성능을 절반 이하 가격에 제공(가성비)",
+   "가동 중인 창원 생산라인으로 계약 후 수개월 내 초도 인도",
+   "현지 생산·기술이전에 유연(튀르키예·인도·호주·이집트·루마니아·스페인)",
+   "K10 탄약운반차·K11 사격지휘차까지 묶은 패밀리 패키지와 11개국 사용자 클럽(공동 MRO·교육)",
+   "정부 간(G2G) 협력과 금융 지원, 중고 저가 진입 후 신품 확대"
+  ],
+  "loss_factors": [
+   "독일 등 유럽 정부 간 공동개발·패키지로 경쟁 없이 결정(영국 MFP, 헝가리 2018은 K9 참여 미확인)",
+   "EU 역내 생산 우대 자금(SAFE 등)과 '유럽산 우선' 정치",
+   "차륜형·경량 자주포 선호 수요 (CAESAR·Archer·RCH 155에 유리)",
+   "과거 독일 MTU 엔진 재수출 승인 의존 (국산 엔진으로 해소 중)",
+   "예산 삭감에 따른 사업 취소 (호주 2012)"
+  ]
  }
 }

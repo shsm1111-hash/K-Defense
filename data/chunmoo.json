@@ -1824,5 +1824,276 @@
     "beneficiaries": "한화에어로스페이스, 삼양컴텍, HD건설기계"
    }
   ]
+ },
+ "competition": {
+  "summary": "천무는 미국 HIMARS가 사실상 표준인 장거리 다연장 시장에서 '대안 1순위'로 자리 잡았다. 주 경쟁자는 HIMARS(실전 검증·NATO 생태계), 이스라엘 PULS/EuroPULS(저가·오픈 아키텍처), 라인메탈-록히드 GMARS다. 이기는 공식은 'HIMARS 대비 2배 화력(포드 2개) + 빠른 납기 + 290~500km 장거리탄을 미국 수출통제 없이 공급 + 차대·유도탄 현지 생산'이며 폴란드·에스토니아·노르웨이·크로아티아가 모두 HIMARS 납기·장거리탄 제약을 이유로 넘어왔다. 지는 패턴은 저가 PULS와 EU 역내 생산을 내세운 유럽 컨소시엄, 그리고 '미국 무기 = 동맹 보험'이라는 정치다.",
+  "rivals": [
+   {
+    "name": "M142 HIMARS",
+    "maker": "록히드마틴",
+    "origin": "미국",
+    "unit_price": "발사대 단독 약 $500만~700만 (미 육군 조달 기준, 추정). FMS 패키지는 탄·지원 포함 대당 수천만 달러",
+    "strengths": "우크라이나 실전으로 검증된 정밀타격 표준. GMLRS·ATACMS·PrSM 탄종과 NATO 다수 사용자 생태계.",
+    "weaknesses": "포드 1개(GMLRS 6발)로 1회 화력이 천무의 절반. 생산·FMS 대기가 길고, 장거리탄(ATACMS·PrSM) 동맹 공급을 미국이 제한한다는 보도.",
+    "users": "미국·폴란드(발주)·루마니아·에스토니아·라트비아·리투아니아·대만·호주·싱가포르·요르단·UAE·우크라이나·크로아티아 등",
+    "status": "연 96대 수준 생산(2024 보도)에서 확대 중, 신규 FMS 인도 수년",
+    "vs": "검증·동맹 정치는 HIMARS, 화력·납기·장거리탄 자율성은 천무 — 유럽 4개국이 HIMARS 보유·주문 후에도 천무 추가"
+   },
+   {
+    "name": "PULS / EuroPULS",
+    "maker": "엘빗시스템(+KNDS, 유럽판)",
+    "origin": "이스라엘",
+    "unit_price": "패키지 기준 대당 약 $1,500만 (네덜란드 2023 20대 $3.05억, 탄·교육 포함)",
+    "strengths": "저가에 포드 2개, 122~306mm 탄종 다양(EXTRA 150km, Predator Hawk 300km), 오픈 아키텍처로 기존 지휘통제 연동 쉬움.",
+    "weaknesses": "전시 이스라엘 자국 우선 공급 리스크, 대량 실전 기록이 HIMARS·천무보다 적다.",
+    "users": "이스라엘·네덜란드·덴마크·독일(EuroPULS)·스페인(SILAM 기술 기반) 등",
+    "status": "유럽 생산(EuroPULS) 추진, 네덜란드 5년에 걸쳐 인도",
+    "vs": "가격·유연성의 최강 경쟁자 — 천무는 화력 지속·대량 생산·현지 유도탄 공장으로 차별화"
+   },
+   {
+    "name": "GMARS",
+    "maker": "록히드마틴·라인메탈",
+    "origin": "미국·독일",
+    "unit_price": "미공개 (개발 단계)",
+    "strengths": "HIMARS 탄 포드 2개를 라인메탈 HX 트럭에 얹어 미국 탄 생태계와 유럽 생산을 결합.",
+    "weaknesses": "시제 단계로 운용 실적이 없고, 미국 탄 수출통제는 그대로 따른다.",
+    "users": "없음",
+    "status": "개발·시연 중",
+    "vs": "노르웨이 경쟁에서 천무에 패배 — 유럽 시장에서 '미국탄+유럽생산' 대안으로 계속 경쟁"
+   },
+   {
+    "name": "Pinaka",
+    "maker": "인도 DRDO·L&T·타타·솔라 등",
+    "origin": "인도",
+    "unit_price": "미공개 (저가, 추정)",
+    "strengths": "저가, 인도 내 대량 생산, 프랑스·아르메니아 등 수출 시도.",
+    "weaknesses": "현재 사거리 약 75~90km로 장거리 정밀타격(300km급) 능력이 없다.",
+    "users": "인도·아르메니아",
+    "status": "인도 육군 증강 생산 중, 장사정형 개발",
+    "vs": "프랑스 FLP-T 공백 보완 후보로 함께 거론 — 장사정 능력은 천무 우위"
+   },
+   {
+    "name": "PHL-16 / AR3",
+    "maker": "노린코(NORINCO)",
+    "origin": "중국",
+    "unit_price": "미공개 (저가, 추정)",
+    "strengths": "370mm 유도탄 등 장사정, 저가·정치조건 없음.",
+    "weaknesses": "NATO 호환성 없음, 서방·친서방 시장 진입 불가.",
+    "users": "중국 (일부 수출 보도)",
+    "status": "중국군 배치 중",
+    "vs": "중동·아프리카 비NATO 시장의 잠재 경쟁자"
+   }
+  ],
+  "matrix": {
+   "systems": [
+    "천무 (K239)",
+    "M142 HIMARS",
+    "PULS",
+    "GMARS",
+    "Pinaka"
+   ],
+   "rows": [
+    {
+     "axis": "대당 가격(추정)",
+     "values": [
+      "패키지 약 $1,600만 (폴란드 EC1 2022)",
+      "발사대 약 $500만~700만, FMS 패키지 고가",
+      "패키지 약 $1,500만 (네덜란드 2023)",
+      "미공개",
+      "저가 (미공개)"
+     ]
+    },
+    {
+     "axis": "1회 탑재 (포드)",
+     "values": [
+      "포드 2개: 239mm 12발 / 290km 미사일 2발",
+      "포드 1개: GMLRS 6발 / ATACMS·PrSM 1~2발",
+      "포드 2개 (탄종 다양)",
+      "포드 2개 (HIMARS 탄)",
+      "포드 2개: 214mm 12발"
+     ]
+    },
+    {
+     "axis": "최대 사거리",
+     "values": [
+      "290km (CTM-290), 500km급 옵션 보도",
+      "300km(ATACMS), PrSM 500km+",
+      "300km (Predator Hawk)",
+      "300~500km (미국 탄)",
+      "약 75~90km"
+     ]
+    },
+    {
+     "axis": "차체",
+     "values": [
+      "8x8 차륜 (폴란드 Jelcz)",
+      "6x6 차륜",
+      "다양한 트럭",
+      "8x8 HX 트럭",
+      "8x8 Tatra"
+     ]
+    },
+    {
+     "axis": "납기",
+     "values": [
+      "계약 1년 내 첫 포대 (폴란드 2023.8)",
+      "FMS 수년",
+      "약 5년에 걸쳐 인도",
+      "개발 중",
+      "인도군 우선"
+     ]
+    },
+    {
+     "axis": "장거리탄 수출 제약",
+     "values": [
+      "한국 독자 결정 (폴란드 현지 생산)",
+      "미국 통제 (동맹 공급 제한 보도)",
+      "이스라엘 통제",
+      "미국 통제",
+      "인도 통제"
+     ]
+    },
+    {
+     "axis": "현지화",
+     "values": [
+      "차대(Jelcz)·유도탄(폴란드 HWB) 현지 생산, 노르웨이 오프셋 120%",
+      "거의 없음 (폴란드 Homar-A 무산)",
+      "EuroPULS 유럽 생산",
+      "독일 생산",
+      "인도 생산"
+     ]
+    },
+    {
+     "axis": "운용국 (수출)",
+     "values": [
+      "6개국",
+      "15개국 이상",
+      "5개국 내외",
+      "0",
+      "2개국"
+     ]
+    }
+   ]
+  },
+  "cases": [
+   {
+    "country": "아랍에미리트(UAE)",
+    "year": "2017~2018 (추정)",
+    "program": "현대식 다연장 도입",
+    "result": "수주",
+    "winner": "K239 수출형 (첫 수출)",
+    "competitors": "공개 경쟁자 미확인 (UAE는 HIMARS도 운용)",
+    "value": "수량·금액 비공개 (발사대 12대·약 7,000억원설은 출처 미확인)",
+    "reasons": "UAE는 천무의 첫 수출국으로 국내 언론에 거론되지만, 계약 시기·수량·금액은 공식 발표가 없다. 한화는 2021년 IDEX에서 'UAE와 계약 없음'이라고 부인한 바 있어 계약 형태가 불분명하다. (출처 미확인)",
+    "lesson": "첫 레퍼런스 확보 — 중동 후속(사우디)으로 연결",
+    "tier": "추정",
+    "source_url": "https://www.fnnews.com/news/202307231803347231"
+   },
+   {
+    "country": "사우디아라비아",
+    "year": "2022",
+    "program": "남부 국경 장거리 정밀화력",
+    "result": "수주",
+    "winner": "K239 사우디형",
+    "competitors": "공개 경쟁자 미확인",
+    "value": "약 $8억 (2022.3 WDS 계약, 수량 비공개)",
+    "reasons": "예멘 후티 반군과 맞닿은 국경에서 쓸 장거리 정밀 화력이 급했다. 이후 CTM-290 포드 포착·500km 사거리 승인 보도가 나왔다(미확인).",
+    "lesson": "미국 장거리탄 통제가 없는 '자율 공급'이 중동 수요의 핵심",
+    "tier": "보도",
+    "source_url": "https://www.marketscreener.com/news/latest/Saudi-Arabia-signs-800-million-defence-deal-with-South-Korea-s-Hanwha-39698684/"
+   },
+   {
+    "country": "폴란드",
+    "year": "2022",
+    "program": "BM-21·RM-70 대체 장거리 화력 (Homar)",
+    "result": "수주",
+    "winner": "Homar-K (천무 발사모듈 + Jelcz 차대)",
+    "competitors": "M142 HIMARS (Homar-A, FMS 486대 요청·2023 승인 약 $100억)",
+    "value": "1차 218대 5.0조원, 2차 72대 2.25조원, 3차 유도탄 현지생산 약 5.6조원",
+    "reasons": "HIMARS는 대량 구매 승인에도 납기가 길고 현지 생산이 어려웠다. 한국은 계약 1년 안에 첫 포대를 보냈고, 자국 Jelcz 차대 결합과 유도탄 현지 생산(HWB 합작)까지 제시했다.",
+    "lesson": "HIMARS를 '대체'한 첫 대형 사례 — 폴란드 유도탄 공장이 노르웨이 등 유럽 공급 허브로 확장",
+    "tier": "확정",
+    "source_url": "https://www.gov.pl/web/obrona-narodowa/homar-k"
+   },
+   {
+    "country": "네덜란드",
+    "year": "2023",
+    "program": "지상 장거리 정밀화력 신설",
+    "result": "실주",
+    "winner": "PULS (20대)",
+    "competitors": "HIMARS (천무 공식 참여 여부는 미확인)",
+    "value": "약 $3.05억 (탄·정비·교육 포함)",
+    "reasons": "네덜란드 국방부는 PULS가 가격이 낮고 미사일을 더 많이 주며 다른 유럽 고객이 있다는 점을 들었다. 천무가 공식 후보였는지는 확인되지 않아, 같은 수요를 두고 PULS가 이긴 시장 사례로 분류한다. (출처 미확인)",
+    "lesson": "저가·다탄종 PULS가 서유럽 중소국 수요를 선점 — 천무의 가격 방어선",
+    "tier": "추정",
+    "source_url": "https://defence24.pl/sily-zbrojne/niderlandy-wybraly-izraelska-wyrzutnie-wygrala-z-himarsem"
+   },
+   {
+    "country": "에스토니아",
+    "year": "2025",
+    "program": "종심타격 전력 확충",
+    "result": "수주",
+    "winner": "K239 에스토니아형",
+    "competitors": "HIMARS 추가 구매 (병행 추진)",
+    "value": "6대 약 4,400억원(€2.5억~2.9억) + 2026.5 3대 추가",
+    "reasons": "HIMARS 6대로 능력을 만들기 시작했지만 추가 물량의 생산·인도 일정에 대해 미국에 답을 요구할 정도로 지연이 문제였다. K9 운용으로 한화와 협력 경험이 있었고, 폴란드 모델(현지 MRO·부품 생산)을 따랐다.",
+    "lesson": "HIMARS 보유국도 '추가분'은 천무로 — 혼합 운용 시장이 열림",
+    "tier": "확정",
+    "source_url": "https://www.kaitseministeerium.ee/en/news/estonia-will-purchase-three-additional-chunmoo-multiple-rocket-launchers-produced-south-korea"
+   },
+   {
+    "country": "노르웨이",
+    "year": "2024~2026",
+    "program": "장거리 정밀화력 (LRPFS)",
+    "result": "수주",
+    "winner": "천무 (16대 + 3종 사거리 미사일)",
+    "competitors": "KNDS·라인메탈(독일, EuroPULS·GMARS 계열), 사브·보잉(스웨덴·미국), HIMARS(대안 평가)",
+    "value": "사업 총액 NOK 190억(약 $19억), 한화 몫 $9.22억",
+    "reasons": "노르웨이 국방부는 성능·납기·비용·체계 통합 요구를 모두 충족한 것은 천무뿐이라고 밝혔다. 계약액의 120% 산업협력(오프셋), 인도 시점 대금 지급, 폴란드 공장 미사일 공급을 제안했다. 2024년 HIMARS 우선 구매 보도와 국내 '유럽 협력' 반대론이 있었지만 뒤집었다.",
+    "lesson": "독일·미국 컨소시엄과의 정면 경쟁 승리 — 서유럽 장거리화력 시장 레퍼런스",
+    "tier": "확정",
+    "source_url": "https://breakingdefense.com/2026/01/norway-selects-hanwha-chunmoo-over-european-systems-himars-in-2b-rocket-artillery-deal/"
+   },
+   {
+    "country": "크로아티아",
+    "year": "2026",
+    "program": "종심타격 보완",
+    "result": "수주",
+    "winner": "천무 (18대)",
+    "competitors": "HIMARS (8대 기주문)",
+    "value": "18대 약 $4.77억(6,411억원, 부가세 포함 약 €5.44억 / 부가세 제외 €4.35억)",
+    "reasons": "HIMARS를 이미 주문했지만 미국이 300km급 로켓 공급을 멈추고 500km급은 막아 깊숙한 표적을 칠 수단이 부족했다. 국방장관은 짧은 납기·가용성·가격·산업협력 개방성을 이유로 꼽았다.",
+    "lesson": "미국 장거리탄 수출통제가 천무 수요를 만드는 구조적 동인",
+    "tier": "확정",
+    "source_url": "https://www.koreatimes.co.kr/southkorea/defense/20260910/hanwha-aerospace-inks-477-mil-deal-to-export-18-chunmoo-rocket-launchers-to-croatia"
+   },
+   {
+    "country": "프랑스",
+    "year": "2026",
+    "program": "장거리 지상타격(FLP-T) 공백 보완 (M270 LRU 대체)",
+    "result": "실주",
+    "winner": "사프란·MBDA 컨소시엄 (국산 솔루션, 독점협상 개시)",
+    "competitors": "HIMARS, 탈레스·아리안그룹, 천무 (PULS는 임시 대안으로 거론)",
+    "value": "대수 미공개 (언론은 2030년까지 13대, 2035년까지 총 26대 거론)",
+    "reasons": "M270 LRU가 2027년 퇴역 예정이라 천무가 '가장 실용적 대안'으로 거론됐으나(IFRI, 2026.3), 2026.6.15 유로사토리에서 프랑스 국방장관은 '주권적 해법'을 이유로 사프란·MBDA와 독점협상을 시작했다. 천무·HIMARS·탈레스-아리안 팀이 탈락했다. 2030년 이전 공백을 메울 임시 도입(폴란드 Homar-K 임차 등) 여부는 미정.",
+    "lesson": "프랑스는 자국산 우선이 확인됨 — 임시 도입 가능성만 잔존, 서유럽 대국은 확률 낮게",
+    "tier": "보도",
+    "source_url": "https://www.defensenews.com/global/europe/2026/06/15/france-picks-mbda-safran-combo-to-supply-multiple-rocket-launcher/"
+   }
+  ],
+  "win_factors": [
+   "포드 2개로 HIMARS 대비 1회 화력 2배(239mm 12발)",
+   "가동 중인 생산라인으로 1년 내 첫 포대 인도",
+   "290km(CTM-290)·500km급 장거리탄을 미국 수출통제 없이 공급",
+   "차대(Jelcz)·유도탄(폴란드 HWB) 현지 생산과 120% 오프셋",
+   "K9 사용국 네트워크(폴란드·에스토니아·노르웨이)를 통한 교차 판매"
+  ],
+  "loss_factors": [
+   "HIMARS의 실전 검증과 '미국 무기 = 동맹 보험' 정치",
+   "이스라엘 PULS의 저가·다탄종·오픈 아키텍처",
+   "EU 역내 생산 우대(SAFE) 아래 독일 컨소시엄(EuroPULS·GMARS)",
+   "프랑스 등 자국 개발 우선 국가의 높은 진입 장벽",
+   "미국 탄과의 상호운용성 요구 시 불리"
+  ]
  }
 }

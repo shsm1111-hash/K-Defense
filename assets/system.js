@@ -331,7 +331,7 @@
     const rows = pipeRows.filter((r) => r.value_krw_eok != null).map((r) => ({ ...r, v: Number(r.value_krw_eok) })).sort((a, b) => b.v - a.v);
     if (!rows.length) { $('pipe-chart').replaceChildren(el('p', 'note', '사업 규모가 알려진 기회가 아직 없습니다.')); return; }
     hbar($('pipe-chart'), rows, {
-      label: (r) => `${r.country} · ${r.opportunity}`.slice(0, 22), value: (r) => r.v,
+      label: (r) => `${r.country} · ${r.opportunity.split(' — ')[0].split(' (')[0]}`.slice(0, 22), value: (r) => r.v,
       valText: (r) => (r.v >= 10000 ? (r.v / 10000).toFixed(1) + '조원' : fmt(r.v) + '억원'),
       color: (r) => (r.value_basis === '발표' ? 'var(--c1)' : 'var(--c3)'),
       tip: (r) => [`${r.country} · ${r.stage}`, r.opportunity, `${n1(r.value_krw_eok)}억원 / ${n2(r.value_usd_eok)}억달러 (${r.value_basis || '근거 미상'})`, r.value_note || ''],

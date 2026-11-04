@@ -1031,17 +1031,32 @@
   {
    "id": "Q3",
    "country": "미국",
-   "opportunity": "자주포 현대화 본사업",
-   "scale": "시제 6문 (옵션 12문) 이후 본사업",
+   "opportunity": "차륜형 이동전술포(MTC, XM1776) — M777 견인포 대체",
+   "scale": "시제 6문 + 옵션 12문(최대 18문) → 본사업 약 500문 추정",
    "stage": "시제 실험",
-   "updated": "2026.08",
-   "note": "세계 최대 방산 시장 진입 여부를 가를 사업",
+   "updated": "2026.10",
+   "note": "2026.8 한화디펜스USA가 K9MH(차륜형 K9)로 시제 계약 체결(6문 $1.003억, 옵션 포함 최대 $2.629억, 약 4년간 시험). 2026.10 1호기 미 육군 인도, XM1776으로 명명. 스트라이커 여단에 우선 배치 예정. 미국 내(앨라배마) 생산 검토",
    "tier": "확정",
    "value_krw_eok": 50260,
    "value_usd_eok": 35.9,
    "value_basis": "언론 추정",
-   "value_note": "차륜형 MTC(K9MH) 본사업 약 500문 추정 $35.9억(원화 환산), Shephard(2026.8) — 시제는 6문 $1.003억·옵션 포함 최대 $2.629억, 국내 업계 추정 10조원($71.4억, 코리아헤럴드), 궤도형 M109 대체 최대 670문 $80억(Shephard 전망)",
-   "source_url": "https://www.shephardmedia.com/news/landwarfareintl/hanwha-debuts-with-us-army-deal-worth-potentially-36-billion-and-positions-for-8-billion-m109-replac/"
+   "value_note": "본사업 약 500문 $35.9억(Shephard 2026.8). 국내 업계는 약 10조원($71.4억)으로 추정(코리아헤럴드). 미 육군은 수량·금액 미확정. 원화는 1,400원/달러 환산",
+   "source_url": "https://www.koreaherald.com/article/10845559"
+  },
+  {
+   "id": "Q3b",
+   "country": "미국",
+   "opportunity": "궤도형 자주포 신규 경쟁 — M109A7 팔라딘 대체(기갑여단)",
+   "scale": "수량 미공개 (탄약운반차 동시 도입)",
+   "stage": "경쟁 (정보요청 RFI 단계)",
+   "updated": "2026.10",
+   "note": "차륜형과 별개 사업. 미 육군 화력사업단이 2026.9.30 궤도형 자주포·탄약운반차 정보요청(RFI) 공고, 생산 리드타임·최대 생산능력·미국 내 생산 계획을 요구. 한화는 K9A1(가격 경쟁력) 또는 K9A2(완전 자동장전, 승무원 3명)를 제안 예정. 이전 SPH-M 시연에는 한화·BAE 보포스·아메리칸 라인메탈·GDLS·엘빗이 참여",
+   "tier": "보도",
+   "value_krw_eok": 112000,
+   "value_usd_eok": 80,
+   "value_basis": "언론 추정",
+   "value_note": "Shephard가 M109 대체 시장을 최대 약 $80억으로 전망(기사 제목 기준, 수량·산정 근거 미공개). 미 육군 공식 수량·예산 없음",
+   "source_url": "https://breakingdefense.com/2026/10/hanwha-sets-sights-on-armys-tracked-howitzer-program-after-victory-in-wheeled-competition/"
   },
   {
    "id": "Q4",

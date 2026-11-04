@@ -16,7 +16,7 @@
     const p = D.photos[key];
     const fig = el('figure', 'photo' + (cls ? ' ' + cls : ''));
     if (!p) return null;
-    const img = el('img'); img.src = p.src; img.alt = p.cap; img.loading = 'lazy';
+    const img = el('img'); img.src = p.src; img.alt = p.cap; img.loading = key === 'hero' ? 'eager' : 'lazy'; img.decoding = 'async';
     const cap = el('figcaption');
     cap.append(p.cap + ' · 사진 ');
     const a = el('a', null, p.by); a.href = p.page; a.target = '_blank'; a.rel = 'noopener';

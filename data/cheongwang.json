@@ -1,9 +1,9 @@
 {
  "updated": "2026-11-04",
  "meta": {
-  "name": "천광 (레이저 대공무기 블록-I)",
+  "name": "천광",
   "short": "천광",
-  "alias": "Cheongwang · Laser Air Defense Weapon Block-I",
+  "alias": "레이저 대공무기 · Cheongwang Laser Air Defense Weapon",
   "maker": "한화시스템 (개발·초기 양산은 한화에어로스페이스, 개발 주관 국방과학연구소)",
   "eyebrow": "방공 · 레이저 대공무기(대드론)",
   "purpose": "낮고 느리게 나는 소형 무인기와 멀티콥터 드론을 레이저 빛으로 태워 떨어뜨리는 무기다. 서울 등 주요 시설을 지키는 고정형 체계로, 비싼 미사일 대신 전기만으로 싸게 계속 막는 것이 목적이다.",

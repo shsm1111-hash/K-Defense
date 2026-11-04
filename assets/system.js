@@ -256,6 +256,37 @@
   const comp = (id, g) => $(id).replaceChildren(...D.components.filter((c) => c.group === g).map((c) => { const tr = el('tr'); tr.append(td(c.part, 'strong'), td(c.maker), td(c.detail, 'hide-sm'), tierTd(c.tier)); return tr; }));
   comp('comp-dom', '국내 핵심 구성품'); comp('comp-loc', '해외 현지 생산');
 
+  // 관련 기업 (투자자 관점)
+  const CO = [...(D.companies || [])].sort((a, b) => (a.importance || 3) - (b.importance || 3));
+  const IMP = { 1: '핵심', 2: '중요', 3: '참고' };
+  if (!CO.length) $('co-grid').replaceChildren(el('p', 'note', '관련 기업 정리를 준비 중입니다.'));
+  else $('co-grid').replaceChildren(...CO.map((c) => {
+    const card = el('div', 'co imp-' + (c.importance || 3));
+    const h = el('div', 'co-h');
+    h.append(el('span', 'imp imp' + (c.importance || 3), IMP[c.importance || 3]), el('strong', null, c.name));
+    const tk = c.ticker ? `${c.market && c.market !== '해외' ? c.market + ' ' : ''}${c.ticker}` : (c.market || '비상장');
+    h.append(el('span', 'tk', tk));
+    card.append(h);
+    const r = el('div', 'co-role'); r.append(el('span', 'chip t-note', c.role)); if (c.tier) r.append(chip(c.tier)); card.append(r);
+    card.append(el('p', 'co-parts', c.parts));
+    if (c.exposure) { const e = el('p', 'co-exp'); e.append(el('b', null, '수주·매출 규모 '), c.exposure); card.append(e); }
+    if (c.why) card.append(el('p', 'co-why', c.why));
+    if (c.source_url) { const a = el('a', 'co-src', '근거'); a.href = c.source_url; a.target = '_blank'; a.rel = 'noopener'; card.append(a); }
+    return card;
+  }));
+  function drawCoChart() {
+    const rows = CO.filter((c) => c.exposure_krw_eok != null).map((c) => ({ ...c, v: Number(c.exposure_krw_eok) })).sort((a, b) => b.v - a.v);
+    if (rows.length < 2) { $('co-chart').replaceChildren(); return; }
+    const host = $('co-chart'); host.replaceChildren();
+    const t = el('h3', null, '기업별 확인된 수주 규모 (억원)'); host.append(t); const box = el('div'); host.append(box);
+    hbar(box, rows, {
+      label: (r) => r.name.slice(0, 16), value: (r) => r.v,
+      valText: (r) => (r.v >= 10000 ? (r.v / 10000).toFixed(1) + '조원' : fmt(r.v) + '억원'),
+      color: (r) => (r.importance === 1 ? 'var(--c1)' : 'var(--c3)'),
+      tip: (r) => [r.name + (r.ticker ? ' (' + r.ticker + ')' : ''), r.parts, r.exposure || ''],
+    });
+  }
+
   // 계획
   $('road').replaceChildren(...D.roadmap.map((r) => {
     const li = el('li'); li.style.setProperty('--c', RS[r.status] || 'var(--muted-mark)');
@@ -271,7 +302,7 @@
   $('pipeline').replaceChildren(...pipeRows.map((r) => {
     const tr = el('tr');
     const opp = el('td'); opp.append(r.opportunity); if (r.value_note) { opp.append(el('div', 'note', r.value_note)); }
-    tr.append(td(r.country, 'strong nowrap'), opp, td(n1(r.value_krw_eok), 'num'), td(n2(r.value_usd_eok), 'num'), basisChip(r.value_basis), td(r.scale, 'hide-sm'), td(r.stage, 'nowrap'), td(r.updated, 'hide-sm nowrap'), td(r.note, 'hide-md'), tierTd(r.tier));
+    tr.append(td(r.country, 'strong nowrap'), opp, td(r.scale), td(n1(r.value_krw_eok), 'num'), td(n2(r.value_usd_eok), 'num'), basisChip(r.value_basis), td(r.stage, 'nowrap'), td(r.updated, 'hide-sm nowrap'), td(r.note, 'hide-md'), tierTd(r.tier));
     return tr;
   }));
   function drawPipe() {
@@ -293,9 +324,9 @@
 
   // 탭 (주소의 #으로 이동)
   const drawn = {};
-  const drawers = { export: () => { drawOps(); drawDetail(); drawSwim(); }, cost: () => { drawUnit(); drawFin(); }, 'pipeline-tab': () => drawPipe() };
+  const drawers = { export: () => { drawOps(); drawDetail(); drawSwim(); }, cost: () => { drawUnit(); drawFin(); }, 'pipeline-tab': () => drawPipe(), companies: () => drawCoChart() };
   function route() {
-    const id = ['overview', 'history', 'export', 'cost', 'plan', 'pipeline-tab'].includes(location.hash.slice(1)) ? location.hash.slice(1) : 'overview';
+    const id = ['overview', 'history', 'export', 'companies', 'cost', 'plan', 'pipeline-tab'].includes(location.hash.slice(1)) ? location.hash.slice(1) : 'overview';
     document.querySelectorAll('.page').forEach((s) => s.classList.toggle('hidden', s.id !== id));
     document.querySelectorAll('.tabs a').forEach((a) => (a.dataset.tab === id ? a.setAttribute('aria-current', 'page') : a.removeAttribute('aria-current')));
     if (drawers[id]) { drawers[id](); drawn[id] = true; }

@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="../assets/site.css?v=9f14398a">
+<link rel="stylesheet" href="../assets/site.css?v=54a4d745">
 </head>
 <body data-data="../data/cheongwang.json">
 <div class="wrap">
@@ -35,7 +35,8 @@
     <a href="#overview" data-tab="overview">개요·배경</a>
     <a href="#history" data-tab="history">연혁·버전</a>
     <a href="#export" data-tab="export">수출</a>
-    <a href="#cost" data-tab="cost">단가·원가·공급망</a>
+    <a href="#companies" data-tab="companies">관련 기업·구성품</a>
+    <a href="#cost" data-tab="cost">단가·원가·실적</a>
     <a href="#plan" data-tab="plan">향후 계획</a>
     <a href="#pipeline-tab" data-tab="pipeline-tab">수주 파이프라인</a>
   </nav>
@@ -122,6 +123,31 @@
     </article>
   </section>
 
+  <section class="page hidden" id="companies">
+    <article class="card">
+      <h2>누가 돈을 버나 · 관련 기업</h2>
+      <p class="note">투자자 관점에서 이 무기체계 실적이 의미 있게 반영되는 순서로 정리했습니다. 종목코드, 맡은 품목, 이 체계에서 나온 수주 규모, 투자 포인트를 함께 봅니다.</p>
+      <div class="card-body">
+        <div class="co-legend"><span class="imp imp1">핵심</span> 이 체계 실적이 기업 실적에 크게 반영 <span class="imp imp2">중요</span> 의미 있는 공급사 <span class="imp imp3">참고</span> 부품·협력</div>
+        <div class="co-grid" id="co-grid"></div>
+        <div id="co-chart" class="chart"></div>
+      </div>
+    </article>
+    <article class="card">
+      <h2>세부 구성품별 생산업체</h2>
+      <p class="note">국내 공급망과 해외 현지 생산 파트너.</p>
+      <div class="card-body">
+        <div class="supply-photos" id="supply-photos"></div>
+        <div class="two">
+          <div class="tbl-wrap"><h3>국내 핵심 구성품</h3>
+            <table class="tbl"><thead><tr><th>구성품</th><th>업체</th><th class="hide-sm">비고</th><th>신뢰도</th></tr></thead><tbody id="comp-dom"></tbody></table></div>
+          <div class="tbl-wrap"><h3>해외 현지 생산</h3>
+            <table class="tbl"><thead><tr><th>국가</th><th>파트너</th><th class="hide-sm">역할</th><th>신뢰도</th></tr></thead><tbody id="comp-loc"></tbody></table></div>
+        </div>
+      </div>
+    </article>
+  </section>
+
   <section class="page hidden" id="cost">
     <div class="two">
       <article class="card">
@@ -151,19 +177,6 @@
         <li><b>이익률</b> · 방산 부문 이익률은 수출 물량 인도 시점에 따라 분기마다 크게 흔들립니다. 연간 흐름과 수주잔고를 함께 봅니다.</li>
       </ul>
     </article>
-    <article class="card">
-      <h2>구성품별 생산업체</h2>
-      <p class="note">국내 공급망과 해외 현지 생산 파트너.</p>
-      <div class="card-body">
-        <div class="supply-photos" id="supply-photos"></div>
-        <div class="two">
-          <div class="tbl-wrap"><h3>국내 핵심 구성품</h3>
-            <table class="tbl"><thead><tr><th>구성품</th><th>업체</th><th class="hide-sm">비고</th><th>신뢰도</th></tr></thead><tbody id="comp-dom"></tbody></table></div>
-          <div class="tbl-wrap"><h3>해외 현지 생산</h3>
-            <table class="tbl"><thead><tr><th>국가</th><th>파트너</th><th class="hide-sm">역할</th><th>신뢰도</th></tr></thead><tbody id="comp-loc"></tbody></table></div>
-        </div>
-      </div>
-    </article>
   </section>
 
   <section class="page hidden" id="plan">
@@ -180,7 +193,7 @@
       <p class="note">아직 계약 전인 수출·양산 기회들. 협상 단계가 앞선 순서로 정리했습니다. 사업 규모는 정부·회사가 발표한 사업비가 있으면 "발표", 없으면 언론·증권사 추정치로 "언론 추정"이라 표시했고, 한쪽 통화만 알려진 경우 1달러=1,400원으로 환산했습니다.</p>
       <div class="card-body chart" id="pipe-chart"></div>
       <div class="card-body tbl-wrap">
-        <table class="tbl"><thead><tr><th>국가</th><th>기회</th><th class="num">사업 규모(억원)</th><th class="num">사업 규모(억달러)</th><th>금액 근거</th><th class="hide-sm">물량·내용</th><th>단계</th><th class="hide-sm">기준</th><th class="hide-md">메모</th><th>신뢰도</th></tr></thead><tbody id="pipeline"></tbody></table>
+        <table class="tbl"><thead><tr><th>국가</th><th>기회</th><th>수량·물량</th><th class="num">사업 규모(억원)</th><th class="num">사업 규모(억달러)</th><th>금액 근거</th><th>단계</th><th class="hide-sm">기준</th><th class="hide-md">메모</th><th>신뢰도</th></tr></thead><tbody id="pipeline"></tbody></table>
       </div>
     </article>
   </section>
@@ -193,6 +206,6 @@
   </footer>
 </div>
 <script src="../assets/ir-chart.js?v=871e9914"></script>
-<script src="../assets/system.js?v=4b278595"></script>
+<script src="../assets/system.js?v=7413b67d"></script>
 </body>
 </html>

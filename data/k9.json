@@ -1,0 +1,1318 @@
+{
+ "updated": "2026-11-04",
+ "specs": [
+  {
+   "key": "caliber",
+   "group": "제원",
+   "item": "주포",
+   "value": "155mm 52구경장",
+   "num": null,
+   "tier": "확정"
+  },
+  {
+   "key": "weight",
+   "group": "제원",
+   "item": "전투중량",
+   "value": "47t (K9A2 48.5t)",
+   "num": 47,
+   "tier": "확정"
+  },
+  {
+   "key": "range",
+   "group": "제원",
+   "item": "최대 사거리",
+   "value": "40km (사거리 연장탄 50km 이상)",
+   "num": 40,
+   "tier": "확정"
+  },
+  {
+   "key": "rof",
+   "group": "제원",
+   "item": "발사속도",
+   "value": "급속 15초 내 3발, 최대 분당 6~8발",
+   "num": null,
+   "tier": "확정"
+  },
+  {
+   "key": "engine",
+   "group": "제원",
+   "item": "엔진",
+   "value": "1,000마력 디젤",
+   "num": 1000,
+   "tier": "확정"
+  },
+  {
+   "key": "speed",
+   "group": "제원",
+   "item": "최고속도 / 항속거리",
+   "value": "67km/h / 360km",
+   "num": 67,
+   "tier": "확정"
+  },
+  {
+   "key": "ammo",
+   "group": "제원",
+   "item": "탄 적재량",
+   "value": "48발",
+   "num": 48,
+   "tier": "보도"
+  },
+  {
+   "key": "crew",
+   "group": "제원",
+   "item": "승무원",
+   "value": "5명 (K9A2 3명)",
+   "num": 5,
+   "tier": "확정"
+  },
+  {
+   "key": "domestic_qty",
+   "group": "규모",
+   "item": "국군 배치",
+   "value": "1,300여 문",
+   "num": 1300,
+   "tier": "확정"
+  },
+  {
+   "key": "built",
+   "group": "규모",
+   "item": "전 세계 누적 생산",
+   "value": "약 1,900문 (2025)",
+   "num": 1900,
+   "tier": "보도"
+  },
+  {
+   "key": "market_share",
+   "group": "규모",
+   "item": "세계 자주포 수출 점유율",
+   "value": "52%",
+   "num": 52,
+   "tier": "보도"
+  },
+  {
+   "key": "domestic_unit",
+   "group": "단가",
+   "item": "국군 조달 단가(참고)",
+   "value": "약 40억원",
+   "num": 40,
+   "tier": "추정"
+  }
+ ],
+ "timeline": [
+  {
+   "date": "1985",
+   "category": "배경",
+   "title": "K55 자주포 생산 시작",
+   "detail": "미국 M109A2를 면허생산한 첫 국산 자주포. 이후 사거리·자동화 한계가 드러남.",
+   "tier": "보도"
+  },
+  {
+   "date": "1989",
+   "category": "배경",
+   "title": "북한, 170mm '주체포' 휴전선 배치",
+   "detail": "최대 사거리 30km(특수탄 40km)로 K55(24km)를 크게 앞서 수도권이 사정권에 들어감.",
+   "tier": "보도"
+  },
+  {
+   "date": "1989.07",
+   "category": "개발",
+   "title": "개념형성·탐색개발 착수",
+   "detail": "국방과학연구소 주관, 삼성항공(현 한화에어로스페이스) 참여. 1993년 7월까지.",
+   "tier": "보도"
+  },
+  {
+   "date": "1993.10",
+   "category": "개발",
+   "title": "체계개발 1단계",
+   "detail": "1996년 9월까지 시제 설계·제작.",
+   "tier": "보도"
+  },
+  {
+   "date": "1996",
+   "category": "개발",
+   "title": "첫 시제 시험",
+   "detail": "52구경 155mm 포를 얹은 시제차 시험 사격.",
+   "tier": "보도"
+  },
+  {
+   "date": "1998",
+   "category": "개발",
+   "title": "독자 개발 완료",
+   "detail": "10년 개발, 100여 개 업체 참여.",
+   "tier": "확정"
+  },
+  {
+   "date": "1998.12",
+   "category": "양산",
+   "title": "양산 계약",
+   "detail": "정부-삼성항공 간 계약(12월 22일).",
+   "tier": "보도"
+  },
+  {
+   "date": "1999.12",
+   "category": "양산",
+   "title": "첫 양산차 출고·전력화",
+   "detail": "12월 17일 출고, 국군 배치 시작.",
+   "tier": "보도"
+  },
+  {
+   "date": "2001.07",
+   "category": "수출",
+   "title": "튀르키예 첫 수출",
+   "detail": "기술이전·면허생산 방식(T-155 Fırtına).",
+   "tier": "보도"
+  },
+  {
+   "date": "2010.11",
+   "category": "실전",
+   "title": "연평도 포격전 첫 실전",
+   "detail": "북한 포격에 대응 사격. 일부 장비 고장으로 정비 체계 강화 계기.",
+   "tier": "보도"
+  },
+  {
+   "date": "2017",
+   "category": "양산",
+   "title": "K9 기본형 생산 종료",
+   "detail": "이후 개량형 K9A1로 전환.",
+   "tier": "보도"
+  },
+  {
+   "date": "2018",
+   "category": "개량",
+   "title": "K9A1 전력화",
+   "detail": "자동 사격통제 고도화, 조종수 야간 잠망경, 보조동력장치 추가.",
+   "tier": "확정"
+  },
+  {
+   "date": "2018",
+   "category": "개량",
+   "title": "K9A2 개발 착수",
+   "detail": "완전 자동 장전으로 승무원 3명, 분당 9발 목표.",
+   "tier": "보도"
+  },
+  {
+   "date": "2021.04",
+   "category": "개량",
+   "title": "국산 엔진 개발 착수",
+   "detail": "STX엔진 주도 국책과제. 독일 MTU 면허 엔진의 재수출 승인 제약 해소가 목적.",
+   "tier": "보도"
+  },
+  {
+   "date": "2022.07",
+   "category": "수출",
+   "title": "폴란드 기본계약 672문",
+   "detail": "K9 역대 최대 단일 국가 물량.",
+   "tier": "확정"
+  },
+  {
+   "date": "2022.09",
+   "category": "개량",
+   "title": "K9A2 시제 첫 공개",
+   "detail": "영국 방산전시회(DVD 2022)에서 공개.",
+   "tier": "보도"
+  },
+  {
+   "date": "2024.09",
+   "category": "개량",
+   "title": "국산 엔진 1호기 납품",
+   "detail": "1,000마력, 기존 엔진과 1:1 호환.",
+   "tier": "보도"
+  },
+  {
+   "date": "2025.02",
+   "category": "개량",
+   "title": "국산 엔진 1만km 내구도 완료",
+   "detail": "이집트 수출 물량부터 적용.",
+   "tier": "확정"
+  },
+  {
+   "date": "2025.12",
+   "category": "수출",
+   "title": "폴란드 1차 212문 납품 완료",
+   "detail": "12월 16일 마지막 12문 인도.",
+   "tier": "보도"
+  },
+  {
+   "date": "2026.04",
+   "category": "수출",
+   "title": "핀란드 2차 112문 계약",
+   "detail": "9,400억원 규모 정부 간 계약.",
+   "tier": "확정"
+  },
+  {
+   "date": "2026.07",
+   "category": "수출",
+   "title": "첫 K9PL 출하",
+   "detail": "7월 3일 창원 공장에서 폴란드형 첫 물량 출하.",
+   "tier": "보도"
+  },
+  {
+   "date": "2026.08",
+   "category": "수출",
+   "title": "미 육군 차륜형 시제 계약",
+   "detail": "국산 무기체계 첫 대미 계약(K9MH 6문).",
+   "tier": "확정"
+  },
+  {
+   "date": "2026.08",
+   "category": "수출",
+   "title": "스페인 실행계약",
+   "detail": "K9의 첫 서유럽 진출, 인드라 현지 생산.",
+   "tier": "확정"
+  }
+ ],
+ "contracts": [
+  {
+   "id": "C01",
+   "country": "튀르키예",
+   "date": "2001.07",
+   "year": 2001,
+   "qty": 350,
+   "qty_note": "면허생산 계획 기준",
+   "variant": "T-155 Fırtına (면허생산)",
+   "value_krw_eok": null,
+   "value_orig": "총 약 $10억 (기술이전·면허 포함)",
+   "scope": "K9 차체·포탑·장전장치 기술 도입, 현지 생산",
+   "unit_comparable": false,
+   "tier": "보도",
+   "source_name": "Wikipedia K9 Thunder",
+   "source_url": "https://en.wikipedia.org/wiki/K9_Thunder"
+  },
+  {
+   "id": "C02",
+   "country": "폴란드",
+   "date": "2014",
+   "year": 2014,
+   "qty": 24,
+   "qty_note": "Krab 자주포용 차체",
+   "variant": "K9 차체 (Krab용)",
+   "value_krw_eok": 830,
+   "value_orig": "830억원",
+   "scope": "완성 자주포가 아닌 차체만 공급",
+   "unit_comparable": false,
+   "tier": "보도",
+   "source_name": "키움증권 리포트(2025.11)",
+   "source_url": "https://bbn.kiwoom.com/rfCR11734"
+  },
+  {
+   "id": "C03",
+   "country": "폴란드",
+   "date": "2016",
+   "year": 2016,
+   "qty": 96,
+   "qty_note": "Krab 자주포용 차체",
+   "variant": "K9 차체 (Krab용)",
+   "value_krw_eok": 2800,
+   "value_orig": "2,800억원",
+   "scope": "완성 자주포가 아닌 차체만 공급",
+   "unit_comparable": false,
+   "tier": "보도",
+   "source_name": "키움증권 리포트(2025.11)",
+   "source_url": "https://bbn.kiwoom.com/rfCR11734"
+  },
+  {
+   "id": "C04",
+   "country": "핀란드",
+   "date": "2017.02",
+   "year": 2017,
+   "qty": 48,
+   "qty_note": "한국군 운용 중고",
+   "variant": "K9FIN Moukari (중고)",
+   "value_krw_eok": 1915,
+   "value_orig": "€1.46억",
+   "scope": "한국군 중고 K9 정비 후 인도",
+   "unit_comparable": true,
+   "tier": "보도",
+   "source_name": "Army Recognition(2017)",
+   "source_url": "https://www.armyrecognition.com/archives/archives-land-defense/land-defense-2017/norway-will-purchase-south-korean-k9-155mm-howitzers"
+  },
+  {
+   "id": "C05",
+   "country": "인도",
+   "date": "2017",
+   "year": 2017,
+   "qty": 100,
+   "qty_note": "L&T 면허생산",
+   "variant": "K9 Vajra-T",
+   "value_krw_eok": 3730,
+   "value_orig": "Rs 4,500 크로르 (L&T 전체 계약)",
+   "scope": "한화 몫 3,730억원 기준, 초도 10문 한국 생산·나머지 인도 현지 생산",
+   "unit_comparable": false,
+   "tier": "보도",
+   "source_name": "ThePrint",
+   "source_url": "https://theprint.in/defence/defence-ministry-orders-100-more-k9-vajra-howitzers-to-boost-armys-artillery-firepower/2413615/"
+  },
+  {
+   "id": "C06",
+   "country": "노르웨이",
+   "date": "2017.12",
+   "year": 2017,
+   "qty": 24,
+   "qty_note": "",
+   "variant": "K9 VIDAR",
+   "value_krw_eok": 2132,
+   "value_orig": "NOK 18억 (약 $2.15억)",
+   "scope": "K10 탄약운반차 6대·기술센터 포함",
+   "unit_comparable": true,
+   "tier": "보도",
+   "source_name": "Shephard",
+   "source_url": "https://shephardmedia.com/news/landwarfareintl/norway-selects-korean-k9-boosting-euro-prospects-f"
+  },
+  {
+   "id": "C07",
+   "country": "에스토니아",
+   "date": "2018",
+   "year": 2018,
+   "qty": 18,
+   "qty_note": "한국군 운용 중고",
+   "variant": "K9EST Kõu (중고)",
+   "value_krw_eok": 870,
+   "value_orig": "870억원",
+   "scope": "핀란드와 공동 구매",
+   "unit_comparable": true,
+   "tier": "보도",
+   "source_name": "키움증권 리포트(2025.11)",
+   "source_url": "https://bbn.kiwoom.com/rfCR11734"
+  },
+  {
+   "id": "C08",
+   "country": "핀란드",
+   "date": "2018~2022",
+   "year": 2022,
+   "qty": 48,
+   "qty_note": "옵션 분할 행사, 누적 96문",
+   "variant": "K9FIN Moukari (중고)",
+   "value_krw_eok": null,
+   "value_orig": "비공개",
+   "scope": "1차 계약 옵션 추가 도입 (2017~2022년 3차례 누적 96문)",
+   "unit_comparable": false,
+   "tier": "보도",
+   "source_name": "MBC 뉴스(2026.4)",
+   "source_url": "https://imnews.imbc.com/news/2026/politics/article/6814047_36912.html"
+  },
+  {
+   "id": "C09",
+   "country": "호주",
+   "date": "2021.12",
+   "year": 2021,
+   "qty": 30,
+   "qty_note": "",
+   "variant": "AS9 Huntsman",
+   "value_krw_eok": 9320,
+   "value_orig": "9,320억원",
+   "scope": "AS10 탄약운반차 15대, 질롱 현지 공장 포함",
+   "unit_comparable": true,
+   "tier": "보도",
+   "source_name": "키움증권 리포트(2025.11)",
+   "source_url": "https://bbn.kiwoom.com/rfCR11734"
+  },
+  {
+   "id": "C10",
+   "country": "이집트",
+   "date": "2022.02",
+   "year": 2022,
+   "qty": 200,
+   "qty_note": "수량 보도 기준",
+   "variant": "K9A1EGY",
+   "value_krw_eok": 20000,
+   "value_orig": "약 2조원 (약 $17억)",
+   "scope": "K9·K10·K11 패키지, 현지 생산, 국산 엔진 탑재",
+   "unit_comparable": true,
+   "tier": "보도",
+   "source_name": "뉴시스(2025.2)",
+   "source_url": "https://mobile.newsis.com/view/NISX20250212_0003062128"
+  },
+  {
+   "id": "C11",
+   "country": "노르웨이",
+   "date": "2022",
+   "year": 2022,
+   "qty": 4,
+   "qty_note": "",
+   "variant": "K9 VIDAR",
+   "value_krw_eok": null,
+   "value_orig": "비공개",
+   "scope": "K10 탄약운반차 8대 포함",
+   "unit_comparable": false,
+   "tier": "보도",
+   "source_name": "아시아경제(2025.9)",
+   "source_url": "https://view.asiae.co.kr/article/2025091809024376162"
+  },
+  {
+   "id": "C12",
+   "country": "폴란드",
+   "date": "2022.08",
+   "year": 2022,
+   "qty": 212,
+   "qty_note": "1차 실행계약(EC1)",
+   "variant": "K9A1",
+   "value_krw_eok": 32039,
+   "value_orig": "약 $24억",
+   "scope": "탄약·종합군수지원·교육 포함, 2025.12 납품 완료",
+   "unit_comparable": true,
+   "tier": "확정",
+   "source_name": "딜사이트(공시 기준)",
+   "source_url": "https://dealsite.co.kr/articles/114079"
+  },
+  {
+   "id": "C13",
+   "country": "폴란드",
+   "date": "2023.12",
+   "year": 2023,
+   "qty": 152,
+   "qty_note": "2차 실행계약(EC2)",
+   "variant": "K9A1 6 + K9PL 146",
+   "value_krw_eok": 34475,
+   "value_orig": "약 $26억",
+   "scope": "155mm 탄약·종합군수지원, 부품 현지생산·기술이전",
+   "unit_comparable": true,
+   "tier": "확정",
+   "source_name": "딜사이트(공시 기준)",
+   "source_url": "https://dealsite.co.kr/articles/114079"
+  },
+  {
+   "id": "C14",
+   "country": "루마니아",
+   "date": "2024.07",
+   "year": 2024,
+   "qty": 54,
+   "qty_note": "",
+   "variant": "K9 (루마니아형)",
+   "value_krw_eok": 13000,
+   "value_orig": "약 $9.38억",
+   "scope": "K10 36대 포함, 대부분 루마니아 현지 생산, 5년간 인도",
+   "unit_comparable": true,
+   "tier": "확정",
+   "source_name": "KED Global",
+   "source_url": "https://www.kedglobal.com/aerospace-defense/newsView/ked202608190002"
+  },
+  {
+   "id": "C15",
+   "country": "인도",
+   "date": "2024.12",
+   "year": 2024,
+   "qty": 100,
+   "qty_note": "L&T 면허생산",
+   "variant": "K9 Vajra-T",
+   "value_krw_eok": null,
+   "value_orig": "Rs 7,629 크로르 (약 $8.95억, L&T 전체)",
+   "scope": "한화는 L&T와 구성품 공급 $2.53억 계약(2025.4)",
+   "unit_comparable": false,
+   "tier": "확정",
+   "source_name": "Business Standard",
+   "source_url": "https://business-standard.com/external-affairs-defence-security/news/mod-signs-rs-7-629-cr-deal-with-lt-for-additional-k9-vajra-artillery-guns-124122001200_1.html"
+  },
+  {
+   "id": "C16",
+   "country": "베트남",
+   "date": "2025.07",
+   "year": 2025,
+   "qty": 20,
+   "qty_note": "",
+   "variant": "K9",
+   "value_krw_eok": 3500,
+   "value_orig": "$2.5억",
+   "scope": "정부 간(G2G) 계약, MRO 제외",
+   "unit_comparable": true,
+   "tier": "보도",
+   "source_name": "SBS Biz",
+   "source_url": "https://biz.sbs.co.kr/amp/article/20000253278"
+  },
+  {
+   "id": "C17",
+   "country": "노르웨이",
+   "date": "2025.09",
+   "year": 2025,
+   "qty": 24,
+   "qty_note": "",
+   "variant": "K9 VIDAR",
+   "value_krw_eok": null,
+   "value_orig": "비공개",
+   "scope": "세 번째 계약, 누적 52문",
+   "unit_comparable": false,
+   "tier": "확정",
+   "source_name": "CEO스코어데일리",
+   "source_url": "https://ceoscoredaily.com/page/view/2025091910081854250"
+  },
+  {
+   "id": "C18",
+   "country": "핀란드",
+   "date": "2026.04",
+   "year": 2026,
+   "qty": 112,
+   "qty_note": "신규 2차 계약",
+   "variant": "K9FIN",
+   "value_krw_eok": 9400,
+   "value_orig": "€5.46억",
+   "scope": "KOTRA-핀란드 국방부 정부 간 계약",
+   "unit_comparable": true,
+   "tier": "확정",
+   "source_name": "경향신문(방사청 발표)",
+   "source_url": "https://www.khan.co.kr/article/202604092030001"
+  },
+  {
+   "id": "C19",
+   "country": "미국",
+   "date": "2026.08",
+   "year": 2026,
+   "qty": 6,
+   "qty_note": "시제, 옵션 12문",
+   "variant": "K9MH 차륜형 (시제)",
+   "value_krw_eok": null,
+   "value_orig": "최대 $2.33억 (옵션 포함)",
+   "scope": "미 육군 운용 실험용 시제, 국산 무기체계 첫 대미 계약",
+   "unit_comparable": false,
+   "tier": "확정",
+   "source_name": "Breaking Defense",
+   "source_url": "https://breakingdefense.com/2026/08/army-picks-hanwhas-wheeled-k9-for-self-propelled-howitzer-prototypes/"
+  },
+  {
+   "id": "C20",
+   "country": "스페인",
+   "date": "2026.08",
+   "year": 2026,
+   "qty": 128,
+   "qty_note": "MOU 기준 수량",
+   "variant": "K9 (스페인형)",
+   "value_krw_eok": 6675,
+   "value_orig": "비공개 (공시 기준 최소 6,675억원, 업계 약 1조원 추산)",
+   "scope": "인드라 히혼 공장 현지 생산, 탄약운반차 120대(MOU)",
+   "unit_comparable": false,
+   "tier": "추정",
+   "source_name": "네이트 뉴스(2026.8)",
+   "source_url": "https://m.news.nate.com/view/20260831n20167"
+  }
+ ],
+ "operators": [
+  {
+   "country": "튀르키예",
+   "region": "유럽·중동",
+   "first_year": 2001,
+   "qty": 350,
+   "qty_note": "면허생산 계획 기준",
+   "local_name": "T-155 Fırtına",
+   "mode": "기술 도입 후 현지 면허생산",
+   "status": "운용 중",
+   "counted": true,
+   "nato": true,
+   "why": "냉전 이후 포병 현대화를 추진하며 자주포를 처음부터 개발하는 대신 K9의 차체·포탑·장전장치 기술을 들여와 국산화하는 길을 택했다. K9의 첫 해외 고객이자 '기술이전형 수출'의 원형.",
+   "tier": "해설",
+   "diff": "기술이전·면허생산형. K9의 차체·포탑·장전장치를 들여와 현지에서 생산하며 개조를 더해 중량이 K9보다 무겁다(T-155). 독일 엔진 재수출 제약을 겪은 뒤 자체 엔진 개발에 나섰다.",
+   "photo": "튀르키예"
+  },
+  {
+   "country": "폴란드",
+   "region": "유럽",
+   "first_year": 2014,
+   "qty": 364,
+   "qty_note": "기본계약 672문 중 1·2차 실행계약 364문 (별도로 Krab용 차체 120대)",
+   "local_name": "K9A1 / K9PL",
+   "mode": "완제품 수입 → 현지화 확대",
+   "status": "운용 중",
+   "counted": true,
+   "nato": true,
+   "why": "2022년 러시아-우크라이나 전쟁 이후 동부 전선 포병을 단기간에 대폭 늘려야 했다. 이미 자국 Krab 자주포에 K9 차체를 써 온 경험이 있었고, 한국의 가동 중인 생산라인 덕분에 계약 4개월 만에 초도 물량을 받을 수 있었다.",
+   "tier": "해설",
+   "diff": "1차는 K9A1 완제품을 빠르게 인도하고 폴란드 통신장비를 별도 계약($1.4억)으로 장착. 2차부터 폴란드형 K9PL, 정비 부품·155mm 탄약 현지생산과 기술이전 조항이 들어갔다. 3차는 현지 생산이 전제.",
+   "photo": "폴란드"
+  },
+  {
+   "country": "인도",
+   "region": "아시아",
+   "first_year": 2017,
+   "qty": 200,
+   "qty_note": "2017년 100문 + 2024년 100문",
+   "local_name": "K9 Vajra-T",
+   "mode": "L&T 하지라 공장 면허생산",
+   "status": "운용 중",
+   "counted": true,
+   "nato": false,
+   "why": "1980년대 이후 신형 야포 도입이 여러 번 무산돼 포병 현대화가 늦어졌다. 파키스탄 접경 서부 사막에서 기동하며 쏠 수 있는 자주포가 필요했고, '메이크 인 인디아' 정책에 맞춰 현지 기업 L&T가 생산을 맡았다.",
+   "tier": "보도",
+   "diff": "L&T가 면허생산. 초도 10문만 한국 생산, 나머지는 하지라 공장에서 조립. 가치 기준 현지화율 50% 이상, 사막 고온·먼지 환경에 맞춘 개조.",
+   "photo": "인도"
+  },
+  {
+   "country": "핀란드",
+   "region": "유럽",
+   "first_year": 2017,
+   "qty": 208,
+   "qty_note": "중고 96문 + 신규 112문(2026)",
+   "local_name": "K9FIN Moukari",
+   "mode": "완제품 (1차는 한국군 중고)",
+   "status": "운용 중",
+   "counted": true,
+   "nato": true,
+   "why": "러시아와 긴 국경을 맞댄 포병 중심 방어 국가. 처음엔 한국군 중고 K9을 저렴하게 들여와 혹한·폭설 환경에서 검증했고, 운용 만족도를 바탕으로 2026년 신규 물량을 추가 계약했다.",
+   "tier": "해설",
+   "diff": "1차는 한국군이 쓰던 중고 K9을 정비해 저가 도입. 혹한·폭설 시험을 거쳐 2차는 신품 112문을 정부 간 계약으로 도입.",
+   "photo": "핀란드"
+  },
+  {
+   "country": "노르웨이",
+   "region": "유럽",
+   "first_year": 2017,
+   "qty": 52,
+   "qty_note": "24 + 4 + 24문",
+   "local_name": "K9 VIDAR",
+   "mode": "완제품",
+   "status": "운용 중",
+   "counted": true,
+   "nato": true,
+   "why": "냉전기에 들여온 M109A3 자주포를 교체하기 위해 도입했다. 독일산도 검토했지만 성능과 납기를 높이 평가해 세 차례에 걸쳐 구매했다.",
+   "tier": "보도",
+   "diff": "노르웨이 사양으로 개조한 K9 VIDAR. 기술센터 설립과 시험장비·교육 자료 제공이 계약에 포함.",
+   "photo": "노르웨이"
+  },
+  {
+   "country": "에스토니아",
+   "region": "유럽",
+   "first_year": 2018,
+   "qty": 36,
+   "qty_note": "18문 + 추가분 (누적 36문 보도)",
+   "local_name": "K9EST Kõu",
+   "mode": "완제품 (한국군 중고)",
+   "status": "운용 중",
+   "counted": true,
+   "nato": true,
+   "why": "자주포 전력이 없던 상황에서 핀란드와 함께 한국군 중고 K9을 공동 구매해 저비용으로 포병을 기계화했다. 이후 추가 구매했고 일부는 우크라이나에 지원된 것으로 보도됐다.",
+   "tier": "보도",
+   "diff": "핀란드와 공동 구매한 한국군 중고 K9. 신규 개발 요구 없이 저비용 도입이 핵심.",
+   "photo": "에스토니아"
+  },
+  {
+   "country": "호주",
+   "region": "오세아니아",
+   "first_year": 2021,
+   "qty": 30,
+   "qty_note": "AS10 탄약운반차 15대 별도",
+   "local_name": "AS9 Huntsman",
+   "mode": "질롱 현지 공장 생산",
+   "status": "납품 중",
+   "counted": true,
+   "nato": false,
+   "why": "호주 육군의 첫 자주포 도입 사업(방호기동화력). 견인포 위주 포병을 기동형으로 바꾸고, 현지 공장을 세워 자국 방산 기반을 키우는 것이 목적이다.",
+   "tier": "해설",
+   "diff": "AS9 2문과 AS10 1대만 창원에서 만들고 나머지는 호주 질롱 공장에서 조립. 자주포를 처음 도입하면서 현지 생산 기반을 함께 세우는 것이 조건.",
+   "photo": null
+  },
+  {
+   "country": "이집트",
+   "region": "중동·아프리카",
+   "first_year": 2022,
+   "qty": 200,
+   "qty_note": "수량 보도 기준 (K10·K11 별도)",
+   "local_name": "K9A1EGY",
+   "mode": "현지 생산 (국산 엔진)",
+   "status": "납품 중",
+   "counted": true,
+   "nato": false,
+   "why": "중동 최대 규모 육군의 노후 자주포 현대화와 현지 생산을 요구했다. 독일산 엔진의 재수출 승인 문제가 걸림돌이었지만 엔진 국산화로 해소됐다.",
+   "tier": "보도",
+   "diff": "현지 국영 공장 생산과 기술이전 요구. 독일 정부의 재수출 승인 문제를 피하려고 국산 엔진을 처음 적용한 수출형.",
+   "photo": null
+  },
+  {
+   "country": "루마니아",
+   "region": "유럽",
+   "first_year": 2024,
+   "qty": 54,
+   "qty_note": "K10 36대 별도",
+   "local_name": "K9 (루마니아형)",
+   "mode": "대부분 현지 생산",
+   "status": "인도 전",
+   "counted": true,
+   "nato": true,
+   "why": "러시아-우크라이나 전쟁으로 흑해에 접한 NATO 동부 측면의 위협이 커지면서 포병 현대화를 서둘렀다. 한화는 루마니아를 유럽 지상방산 생산 거점으로 삼을 계획이다.",
+   "tier": "보도",
+   "diff": "대부분 루마니아 현지 생산, 현지 협력사 참여 확대. 한화의 유럽 지상방산 거점 역할.",
+   "photo": null
+  },
+  {
+   "country": "베트남",
+   "region": "아시아",
+   "first_year": 2025,
+   "qty": 20,
+   "qty_note": "",
+   "local_name": "K9",
+   "mode": "완제품 (정부 간 계약)",
+   "status": "인도 전",
+   "counted": true,
+   "nato": false,
+   "why": "남중국해 영유권 분쟁 속에서 러시아제 무기 의존을 줄이고 장비를 다변화하려는 선택. 한국 무기의 첫 공산권 수출이자 K9의 첫 동남아 진출이다.",
+   "tier": "보도",
+   "diff": "정부 간(G2G) 계약으로 완제품 도입, MRO는 계약에서 제외. 향후 현지 생산 희망 보도.",
+   "photo": null
+  },
+  {
+   "country": "스페인",
+   "region": "유럽",
+   "first_year": 2026,
+   "qty": 128,
+   "qty_note": "MOU 기준",
+   "local_name": "K9 (스페인형)",
+   "mode": "인드라 히혼 공장 현지 생산",
+   "status": "인도 전",
+   "counted": true,
+   "nato": true,
+   "why": "약 7조원 규모의 자주포 현대화 사업으로 노후 장비를 교체한다. 유럽 '방산 블록'의 장벽을 현지 기업 인드라가 생산을 주도하는 구조로 넘은 첫 서유럽 사례.",
+   "tier": "보도",
+   "diff": "한화가 플랫폼 기술을 주고 인드라가 히혼 공장에서 차체·제어·통신을 제작해 납품하는 구조. 유럽 내 생산 비중이 핵심 조건.",
+   "photo": null
+  },
+  {
+   "country": "미국",
+   "region": "북미",
+   "first_year": 2026,
+   "qty": 6,
+   "qty_note": "시제, 옵션 12문",
+   "local_name": "K9MH (차륜형)",
+   "mode": "시제 공급, 앨라배마 생산시설 준비",
+   "status": "시제",
+   "counted": false,
+   "nato": true,
+   "why": "장사정 자주포(ERCA) 사업이 취소된 뒤 미 육군이 이미 검증된 플랫폼 중에서 대안을 고르는 경쟁을 열었다. K9A2 자동 포탑을 차륜형 차체에 얹은 시제로 운용 실험을 한다.",
+   "tier": "보도",
+   "diff": "궤도형이 아닌 차륜형(K9MH) 시제. K9A2 자동 포탑을 8x8 트럭에 얹었고, 앨라배마 생산시설로 현지 생산을 준비.",
+   "photo": null
+  }
+ ],
+ "components": [
+  {
+   "id": "P01",
+   "group": "국내 핵심 구성품",
+   "part": "체계종합 (차체·포탑·조립)",
+   "maker": "한화에어로스페이스",
+   "detail": "창원 공장. K10 탄약운반차·K11 사격지휘차도 생산",
+   "tier": "확정"
+  },
+  {
+   "id": "P02",
+   "group": "국내 핵심 구성품",
+   "part": "연구개발 주관",
+   "maker": "국방과학연구소(ADD)",
+   "detail": "1989~1998년 개발 주관, 100여 개 업체 참여",
+   "tier": "확정"
+  },
+  {
+   "id": "P03",
+   "group": "국내 핵심 구성품",
+   "part": "155mm 52구경 주포",
+   "maker": "현대위아 (개발 당시 기아중공업)",
+   "detail": "국내 유일 화포 제작사",
+   "tier": "보도"
+  },
+  {
+   "id": "P04",
+   "group": "국내 핵심 구성품",
+   "part": "디젤 엔진 (1,000마력)",
+   "maker": "STX엔진",
+   "detail": "독일 MTU 엔진 면허생산 → 2024년 국산 엔진 개발 완료(기존 엔진과 1:1 호환)",
+   "tier": "보도"
+  },
+  {
+   "id": "P05",
+   "group": "국내 핵심 구성품",
+   "part": "자동변속기",
+   "maker": "SNT다이내믹스",
+   "detail": "X1100-5A3, 국내 고객사에 독점 공급",
+   "tier": "보도"
+  },
+  {
+   "id": "P06",
+   "group": "국내 핵심 구성품",
+   "part": "사격통제시스템",
+   "maker": "한화시스템",
+   "detail": "K2·K21·K9 등 지상무기 사격통제 30여 년 공급",
+   "tier": "보도"
+  },
+  {
+   "id": "P07",
+   "group": "국내 핵심 구성품",
+   "part": "포탑·현가장치 (개발 당시)",
+   "maker": "동명중공업",
+   "detail": "초기 개발 참여 업체",
+   "tier": "보도"
+  },
+  {
+   "id": "P08",
+   "group": "국내 핵심 구성품",
+   "part": "탄약·장약",
+   "maker": "풍산",
+   "detail": "개발 단계 탄약 분야 참여, 155mm 탄 공급",
+   "tier": "보도"
+  },
+  {
+   "id": "L01",
+   "group": "해외 현지 생산",
+   "part": "인도",
+   "maker": "L&T",
+   "detail": "하지라 공장 면허생산, 1차 물량 현지화율 50% 이상(가치 기준)",
+   "tier": "보도"
+  },
+  {
+   "id": "L02",
+   "group": "해외 현지 생산",
+   "part": "폴란드",
+   "maker": "HSW 등 폴란드 방산기업",
+   "detail": "Krab 자주포 차체, K9 정비 부품·탄약 현지 생산 협력",
+   "tier": "보도"
+  },
+  {
+   "id": "L03",
+   "group": "해외 현지 생산",
+   "part": "호주",
+   "maker": "한화디펜스 오스트레일리아",
+   "detail": "질롱 공장에서 AS9·AS10 생산",
+   "tier": "보도"
+  },
+  {
+   "id": "L04",
+   "group": "해외 현지 생산",
+   "part": "이집트",
+   "maker": "이집트 국영 군수공장",
+   "detail": "국산 엔진 탑재 K9 현지 양산",
+   "tier": "보도"
+  },
+  {
+   "id": "L05",
+   "group": "해외 현지 생산",
+   "part": "루마니아",
+   "maker": "현지 협력사",
+   "detail": "대부분 물량 루마니아 현지 생산",
+   "tier": "확정"
+  },
+  {
+   "id": "L06",
+   "group": "해외 현지 생산",
+   "part": "스페인",
+   "maker": "인드라",
+   "detail": "히혼 공장에서 차체·제어·통신 제작 후 납품",
+   "tier": "보도"
+  },
+  {
+   "id": "L07",
+   "group": "해외 현지 생산",
+   "part": "UAE",
+   "maker": "Gen5 (제너레이션 5 홀딩스)",
+   "detail": "중동·북아프리카 생산·판매 독점 협력(2026.6)",
+   "tier": "보도"
+  },
+  {
+   "id": "L08",
+   "group": "해외 현지 생산",
+   "part": "미국",
+   "maker": "한화디펜스USA",
+   "detail": "앨라배마 오펠라이카 생산시설 구축",
+   "tier": "보도"
+  }
+ ],
+ "roadmap": [
+  {
+   "id": "R1",
+   "when": "2026 4분기",
+   "item": "폴란드 2차(EC2) 물량 인도 집중",
+   "detail": "3분기 실적 부진의 원인이었던 인도 일정이 4분기로 몰림",
+   "status": "진행",
+   "tier": "확정"
+  },
+  {
+   "id": "R2",
+   "when": "2026 내 (목표)",
+   "item": "폴란드 3차 실행계약(EC3)",
+   "detail": "잔여 308문 중 일부. K9A2·모듈화장약·현지화를 묶은 패키지로 협상",
+   "status": "협상",
+   "tier": "보도"
+  },
+  {
+   "id": "R3",
+   "when": "2027 초",
+   "item": "루마니아 첫 인도",
+   "detail": "5년에 걸쳐 단계적으로 인도",
+   "status": "계획",
+   "tier": "확정"
+  },
+  {
+   "id": "R4",
+   "when": "2027",
+   "item": "K9PL 146문 인도 완료",
+   "detail": "폴란드 2차 실행계약 마무리",
+   "status": "계획",
+   "tier": "확정"
+  },
+  {
+   "id": "R5",
+   "when": "2027",
+   "item": "K9A2 개발 완료·국내 전력화 착수",
+   "detail": "2023~2027년 약 500억원 투자, 2027년 예산 153억원 반영",
+   "status": "계획",
+   "tier": "보도"
+  },
+  {
+   "id": "R6",
+   "when": "2034",
+   "item": "국군 K9·K9A1 1,100여 문 K9A2 개량 완료",
+   "detail": "성능개량 사업 목표 시점",
+   "status": "계획",
+   "tier": "보도"
+  },
+  {
+   "id": "R7",
+   "when": "2040",
+   "item": "K9A2-II (원격 운용) 구상",
+   "detail": "2020년 육군 연구계획에 제시된 장기 구상",
+   "status": "구상",
+   "tier": "보도"
+  },
+  {
+   "id": "R8",
+   "when": "미정",
+   "item": "미 육군 자주포 현대화 본사업",
+   "detail": "시제 6문 운용 실험 결과에 따라 본사업 경쟁",
+   "status": "경쟁",
+   "tier": "보도"
+  },
+  {
+   "id": "R9",
+   "when": "미정",
+   "item": "UAE 현지 생산 거점",
+   "detail": "중동·북아프리카 수출 기지로 활용 계획",
+   "status": "협력",
+   "tier": "보도"
+  }
+ ],
+ "pipeline": [
+  {
+   "id": "Q1",
+   "country": "폴란드",
+   "opportunity": "3차 실행계약(EC3)",
+   "scale": "기본계약 잔여 308문 중 일부",
+   "stage": "협상",
+   "updated": "2026.07",
+   "note": "회사는 현지화를 전제로 연내 결론을 기대",
+   "tier": "보도"
+  },
+  {
+   "id": "Q2",
+   "country": "인도",
+   "opportunity": "추가 도입",
+   "scale": "300문 규모 예산 승인 보도, K9A2 도입 가능성",
+   "stage": "예산 승인",
+   "updated": "2026.10",
+   "note": "L&T 현지 생산 방식 유지 전망",
+   "tier": "보도"
+  },
+  {
+   "id": "Q3",
+   "country": "미국",
+   "opportunity": "자주포 현대화 본사업",
+   "scale": "시제 6문 (옵션 12문) 이후 본사업",
+   "stage": "시제 실험",
+   "updated": "2026.08",
+   "note": "세계 최대 방산 시장 진입 여부를 가를 사업",
+   "tier": "확정"
+  },
+  {
+   "id": "Q4",
+   "country": "UAE·중동",
+   "opportunity": "Gen5 현지 생산·판매",
+   "scale": "미정",
+   "stage": "협력계약",
+   "updated": "2026.06",
+   "note": "국산 엔진 적용으로 독일 재수출 승인 문제 해소",
+   "tier": "보도"
+  },
+  {
+   "id": "Q5",
+   "country": "사우디아라비아",
+   "opportunity": "K9·천무 패키지",
+   "scale": "미정",
+   "stage": "협의",
+   "updated": "2025.09",
+   "note": "증권사 리포트에서 협의 중인 대형 계약으로 언급",
+   "tier": "보도"
+  },
+  {
+   "id": "Q6",
+   "country": "베트남",
+   "opportunity": "추가 도입",
+   "scale": "1차 20문 운용 후 결정 전망",
+   "stage": "가능성",
+   "updated": "2025.08",
+   "note": "현지 생산 희망 보도",
+   "tier": "보도"
+  }
+ ],
+ "finance": [
+  {
+   "quarter": "3Q25",
+   "revenue_eok": 21098,
+   "op_eok": 5725,
+   "opm_pct": 27.1,
+   "export_share_pct": 56.7,
+   "backlog_jo": null,
+   "backlog_export_pct": null,
+   "tier": "확정"
+  },
+  {
+   "quarter": "1Q26",
+   "revenue_eok": null,
+   "op_eok": null,
+   "opm_pct": 17.1,
+   "export_share_pct": null,
+   "backlog_jo": null,
+   "backlog_export_pct": null,
+   "tier": "확정"
+  },
+  {
+   "quarter": "2Q26",
+   "revenue_eok": 21075,
+   "op_eok": 5330,
+   "opm_pct": 25.3,
+   "export_share_pct": null,
+   "backlog_jo": null,
+   "backlog_export_pct": null,
+   "tier": "확정"
+  },
+  {
+   "quarter": "3Q26",
+   "revenue_eok": 12455,
+   "op_eok": 217,
+   "opm_pct": 1.7,
+   "export_share_pct": 47.7,
+   "backlog_jo": 35,
+   "backlog_export_pct": 74,
+   "tier": "확정"
+  }
+ ],
+ "notes": [
+  {
+   "id": "B1",
+   "kind": "배경",
+   "order": 1,
+   "title": "수도권을 겨눈 북한 장사정포",
+   "detail": "1989년 북한이 휴전선에 배치한 170mm 자주포는 K55보다 사거리가 길어 수도권을 직접 위협했다. 이를 넘어설 자주포가 시급했다."
+  },
+  {
+   "id": "B2",
+   "kind": "배경",
+   "order": 2,
+   "title": "면허생산 자주포의 한계",
+   "detail": "당시 주력 K55는 미국 M109A2를 면허생산한 것으로 사거리·발사속도·자동화가 부족했고, 개량도 원천기술국에 묶여 있었다."
+  },
+  {
+   "id": "B3",
+   "kind": "배경",
+   "order": 3,
+   "title": "방산 자립과 국군 현대화",
+   "detail": "설계부터 국내 기술로 개발해 방산 자립을 이루고 포병 전력을 한 세대 끌어올리는 것이 목표였다. 52구경 장포신으로 사거리를 크게 늘렸다."
+  },
+  {
+   "id": "B4",
+   "kind": "배경",
+   "order": 4,
+   "title": "단계적 개량 플랫폼",
+   "detail": "K9 → K9A1(사격통제·생존성) → K9A2(자동장전·승무원 감축)로 같은 차체 위에서 계속 진화하며 수출 상품도 함께 업그레이드된다."
+  },
+  {
+   "id": "S1",
+   "kind": "공부",
+   "order": 1,
+   "title": "수출 단가 ≠ 차량 가격",
+   "detail": "수출 계약액에는 탄약, 종합군수지원, 교육, 탄약운반차, 현지 공장 투자가 함께 묶인다. 국군 조달 단가와 수출 계약 단가가 크게 차이 나는 이유다."
+  },
+  {
+   "id": "S2",
+   "kind": "공부",
+   "order": 2,
+   "title": "엔진 국산화의 의미",
+   "detail": "독일산 면허 엔진은 제3국 재수출 때 독일 정부 승인이 필요해 중동 수출이 막혔다. 엔진 국산화가 이집트·UAE 사업의 열쇠가 됐다."
+  },
+  {
+   "id": "S3",
+   "kind": "공부",
+   "order": 3,
+   "title": "현지 생산이 수주 조건",
+   "detail": "인도·폴란드·호주·이집트·루마니아·스페인·UAE 모두 현지 생산이나 기술이전을 요구했다. '어디서 만드느냐'가 이제 가격만큼 중요하다."
+  },
+  {
+   "id": "S4",
+   "kind": "공부",
+   "order": 4,
+   "title": "가동 중인 생산라인 = 빠른 납기",
+   "detail": "국군 물량으로 생산라인이 계속 돌고 있어 수출 물량을 빠르게 돌릴 수 있었다. 폴란드가 계약 몇 달 만에 초도 물량을 받은 배경이다."
+  },
+  {
+   "id": "S5",
+   "kind": "공부",
+   "order": 5,
+   "title": "분기 실적은 납품 일정에 출렁인다",
+   "detail": "수출 물량이 언제 인도되느냐에 따라 지상방산 이익률이 크게 오르내린다. 분기 숫자보다 수주잔고와 인도 일정을 함께 봐야 한다."
+  },
+  {
+   "id": "S6",
+   "kind": "공부",
+   "order": 6,
+   "title": "개량형이 다음 수출 상품",
+   "detail": "K9A2는 폴란드 3차 계약, 인도 추가 도입, 미국 차륜형 사업의 핵심 제안 모델이다. 국내 개량 일정이 수출 경쟁력과 직결된다."
+  }
+ ],
+ "versions": [
+  {
+   "v": "K9",
+   "photo": "K9",
+   "period": "1999~2017",
+   "stage": "생산 종료, A1으로 개량 중",
+   "crew": "5명",
+   "rof": "분당 6~8발 (급속 15초 내 3발)",
+   "loading": "반자동 (포탄 자동, 장약 수동)",
+   "fcs": "자동 사격통제",
+   "mobility": "1,000마력 · 67km/h",
+   "weight": "47t",
+   "users": "한국 (기본형), 초기 수출형",
+   "tier": "확정"
+  },
+  {
+   "v": "K9A1",
+   "photo": "K9A1",
+   "period": "2018~",
+   "stage": "양산·수출 주력",
+   "crew": "5명",
+   "rof": "분당 6발",
+   "loading": "반자동",
+   "fcs": "사격통제 고도화, 관성·위성항법(INS/GPS)",
+   "mobility": "보조동력장치(APU)로 엔진 정지 상태 운용, 조종수 열상 잠망경·후방카메라",
+   "weight": "47t",
+   "users": "한국, 폴란드, 호주, 이집트 등",
+   "tier": "확정"
+  },
+  {
+   "v": "K9PL",
+   "photo": null,
+   "period": "2026~",
+   "stage": "폴란드형 양산",
+   "crew": "5명",
+   "rof": "분당 6발",
+   "loading": "반자동",
+   "fcs": "폴란드 지휘통제·통신체계 통합",
+   "mobility": "K9A1 기반",
+   "weight": "—",
+   "users": "폴란드 (2차 실행계약 146문)",
+   "tier": "확정"
+  },
+  {
+   "v": "K9A2",
+   "photo": null,
+   "period": "2027~ (목표)",
+   "stage": "개발·시험평가",
+   "crew": "3명",
+   "rof": "분당 9발 이상",
+   "loading": "완전 자동 (포탄·장약·신관)",
+   "fcs": "포탑 내 수직 탄적재, 원격사격통제체계(RCWS), 자동소화장치",
+   "mobility": "고무궤도 옵션",
+   "weight": "48.5t (금속궤도)",
+   "users": "국군 1,100여 문 개량 예정, 폴란드 3차 등 제안",
+   "tier": "보도"
+  },
+  {
+   "v": "K9MH",
+   "photo": null,
+   "period": "2026 시제",
+   "stage": "시제",
+   "crew": "—",
+   "rof": "K9A2 포탑과 동일",
+   "loading": "완전 자동",
+   "fcs": "K9A2 자동 포탑",
+   "mobility": "8x8 차륜형 트럭 차체",
+   "weight": "—",
+   "users": "미 육군 시제 6문",
+   "tier": "확정"
+  }
+ ],
+ "photos": {
+  "hero": {
+   "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Coordinated%20thunder%20-%201%20of%207.jpg?width=1280",
+   "page": "https://commons.wikimedia.org/wiki/File:Coordinated_thunder_-_1_of_7.jpg",
+   "by": "Pfc. Dasol Choi (미 육군)",
+   "lic": "Public domain",
+   "cap": "한국군 K9 자주포 포대 사격 (2016)"
+  },
+  "K9": {
+   "src": "https://commons.wikimedia.org/wiki/Special:FilePath/K-9%20%EC%9E%90%EC%A3%BC%ED%8F%AC%20%287445556056%29%20%282%29.jpg?width=1280",
+   "page": "https://commons.wikimedia.org/wiki/File:K-9_%EC%9E%90%EC%A3%BC%ED%8F%AC_%287445556056%29_%282%29.jpg",
+   "by": "대한민국 국군",
+   "lic": "CC BY-SA 2.0",
+   "cap": "초기형 K9 (2007)"
+  },
+  "K9A1": {
+   "src": "https://commons.wikimedia.org/wiki/Special:FilePath/ROK%20Armed%20Forces%20Parade%202023%20-%203%20of%2013.jpg?width=1280",
+   "page": "https://commons.wikimedia.org/wiki/File:ROK_Armed_Forces_Parade_2023_-_3_of_13.jpg",
+   "by": "Sgt. Jason Palacios (미 육군)",
+   "lic": "Public domain",
+   "cap": "국군의 날 시가행진의 K9A1 (2023)"
+  },
+  "K9A1PL": {
+   "src": "https://commons.wikimedia.org/wiki/Special:FilePath/A%20Polish%20K9%20howitzer%20maneuvers%20on%20the%20firing%20range%20for%20a%20live%20fire%20demonstration.jpg?width=1280",
+   "page": "https://commons.wikimedia.org/wiki/File:A_Polish_K9_howitzer_maneuvers_on_the_firing_range_for_a_live_fire_demonstration.jpg",
+   "by": "Staff Sgt. Matthew Foster (미 육군)",
+   "lic": "Public domain",
+   "cap": "폴란드군 K9A1 (2023)"
+  },
+  "K10": {
+   "src": "https://commons.wikimedia.org/wiki/Special:FilePath/K10%20ARV.jpg?width=1280",
+   "page": "https://commons.wikimedia.org/wiki/File:K10_ARV.jpg",
+   "by": "권순삼, 국방시민연대",
+   "lic": "CC BY-SA 2.0 KR",
+   "cap": "K10 탄약운반장갑차"
+  },
+  "engine": {
+   "src": "https://commons.wikimedia.org/wiki/Special:FilePath/STX%20SMV1000%20engine.jpg?width=1280",
+   "page": "https://commons.wikimedia.org/wiki/File:STX_SMV1000_engine.jpg",
+   "by": "방위사업청",
+   "lic": "공공누리 제1유형",
+   "cap": "STX엔진 국산 1,000마력 엔진"
+  },
+  "튀르키예": {
+   "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Turkish%20Army%20155mm%20F%C4%B1rt%C4%B1na%20Howitzer%20at%20SAHA%20Expo%202024.jpg?width=1280",
+   "page": "https://commons.wikimedia.org/wiki/File:Turkish_Army_155mm_F%C4%B1rt%C4%B1na_Howitzer_at_SAHA_Expo_2024.jpg",
+   "by": "Ciko1213",
+   "lic": "CC0",
+   "cap": "튀르키예 T-155 Fırtına (2024)"
+  },
+  "폴란드": {
+   "src": "https://commons.wikimedia.org/wiki/Special:FilePath/A%20Polish%20K9%20howitzer%20maneuvers%20on%20the%20firing%20range%20for%20a%20live%20fire%20demonstration.jpg?width=1280",
+   "page": "https://commons.wikimedia.org/wiki/File:A_Polish_K9_howitzer_maneuvers_on_the_firing_range_for_a_live_fire_demonstration.jpg",
+   "by": "Staff Sgt. Matthew Foster (미 육군)",
+   "lic": "Public domain",
+   "cap": "폴란드군 K9A1 (2023)"
+  },
+  "인도": {
+   "src": "https://commons.wikimedia.org/wiki/Special:FilePath/K-9%20VAJRA-T%20passes%20through%20the%20Rajpath%2C%20at%20the%2071st%20Republic%20Day%20Celebrations%2C%20at%20Rajpath%2C%20in%20New%20Delhi%20on%20January%2026%2C%202020.jpg?width=1280",
+   "page": "https://commons.wikimedia.org/wiki/File:K-9_VAJRA-T_passes_through_the_Rajpath%2C_at_the_71st_Republic_Day_Celebrations%2C_at_Rajpath%2C_in_New_Delhi_on_January_26%2C_2020.jpg",
+   "by": "인도 정부 PIB",
+   "lic": "GODL-India",
+   "cap": "인도 공화국의 날 행진의 K9 Vajra-T (2020)"
+  },
+  "핀란드": {
+   "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Lippujuhlan%20p%C3%A4iv%C3%A4n%202022%20paraati%20072%20K9%20moukari%20%28cropped%29.JPG?width=1280",
+   "page": "https://commons.wikimedia.org/wiki/File:Lippujuhlan_p%C3%A4iv%C3%A4n_2022_paraati_072_K9_moukari_%28cropped%29.JPG",
+   "by": "MKFI",
+   "lic": "Public domain",
+   "cap": "핀란드 K9 Moukari (2022)"
+  },
+  "노르웨이": {
+   "src": "https://commons.wikimedia.org/wiki/Special:FilePath/41st%20FAB%20and%20Norwegian%20Army%20Talk%20Shop%20-%202%20of%2011.jpg?width=1280",
+   "page": "https://commons.wikimedia.org/wiki/File:41st_FAB_and_Norwegian_Army_Talk_Shop_-_2_of_11.jpg",
+   "by": "Maj. Joseph Bush (미 육군)",
+   "lic": "Public domain",
+   "cap": "노르웨이군 K9 VIDAR와 미군 포병"
+  },
+  "에스토니아": {
+   "src": "https://commons.wikimedia.org/wiki/Special:FilePath/K9%20K%C3%B5u%20Kevadtormil%20%28cropped%29.jpg?width=1280",
+   "page": "https://commons.wikimedia.org/wiki/File:K9_K%C3%B5u_Kevadtormil_%28cropped%29.jpg",
+   "by": "Estonian Foreign Ministry",
+   "lic": "CC BY 2.0",
+   "cap": "에스토니아 K9 Kõu (2023)"
+  }
+ }
+}

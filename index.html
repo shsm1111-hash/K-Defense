@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>K방산 무기체계 도감</title>
+<meta name="description" content="K방산 무기체계별 개발 연혁, 양산 단계, 수출국과 도입 배경, 단가, 구성품 업체, 향후 계획을 정리한 공부용 도감">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<div class="wrap">
+  <header style="display:flex;flex-direction:column;gap:10px">
+    <div class="eyebrow">Korea Defense · Weapon Systems</div>
+    <h1>K방산 무기체계 도감</h1>
+    <p class="lede">무기체계를 누르면 개발 연혁, 버전별 차이, 양산 단계, 수출국과 도입 배경, 나라별 현지화 조건, 단가, 구성품 업체, 향후 계획을 한 화면에서 공부할 수 있습니다. 지금 <b id="sum">—</b>.</p>
+  </header>
+
+  <div class="bar">
+    <div class="chips" id="filters" role="group" aria-label="분류"></div>
+    <input class="search" id="q" type="search" placeholder="이름·업체 검색" aria-label="무기체계 검색">
+  </div>
+
+  <ul class="grid" id="grid"></ul>
+  <p class="empty hidden" id="empty">조건에 맞는 무기체계가 없습니다. 분류나 검색어를 바꿔 보세요.</p>
+
+  <footer class="site">
+    <p>공개 보도·공시·증권사 리포트를 바탕으로 정리했고, 모든 수치에 확정·보도·추정 신뢰도를 표시합니다. 준비 중인 무기체계는 같은 구성으로 순서대로 추가됩니다.</p>
+    <p>사진은 위키미디어 커먼즈의 공개 라이선스 이미지입니다.</p>
+    <ul id="credits"></ul>
+  </footer>
+</div>
+
+<script>
+const FP = (f, w = 800) => `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(f)}?width=${w}`;
+const PG = (f) => `https://commons.wikimedia.org/wiki/File:${encodeURIComponent(f.replace(/ /g, '_'))}`;
+const SYSTEMS = [
+  {code:"K9", name:"K9 자주포", alias:"Thunder", cat:"지상", sub:"화력", maker:"한화에어로스페이스", desc:"155mm 52구경 궤도형 자주곡사포. 세계 자주포 수출 시장의 절반가량을 차지합니다.", href:"k9/", updated:"2026.11.4", facts:["수출 11개국","계약 1,642문","K9A2 개발 중"],
+   photo:{f:"Coordinated thunder - 1 of 7.jpg", by:"Pfc. Dasol Choi (미 육군)", lic:"Public domain"}},
+  {code:"K2", name:"K2 전차", alias:"흑표", cat:"지상", sub:"기동", maker:"현대로템", desc:"120mm 55구경 활강포와 자동장전장치를 갖춘 주력전차.",
+   photo:{f:"K2 Tank Joins the Fight with eFP Battle Group Poland - 1.jpg", by:"Staff Sgt. Matthew Foster (미 육군)", lic:"Public domain"}},
+  {code:"K239", name:"천무", alias:"Chunmoo", cat:"지상", sub:"화력", maker:"한화에어로스페이스", desc:"여러 구경의 유도로켓을 쏘는 차륜형 다연장로켓 체계.",
+   photo:{f:"K239 Chunmoo Image6.jpg", by:"국방부", lic:"공공누리 제1유형"}},
+  {code:"AS21", name:"레드백", alias:"Redback", cat:"지상", sub:"기동", maker:"한화에어로스페이스", desc:"호주 육군용으로 개발한 궤도형 보병전투장갑차.",
+   photo:{f:"Hanwha AS21 Redback Australian IFV.png", by:"Fabrice Ram", lic:"CC0"}},
+  {code:"K21", name:"K21 보병전투차", alias:"", cat:"지상", sub:"기동", maker:"한화에어로스페이스", desc:"40mm 기관포를 단 국군 주력 보병전투차량."},
+  {code:"FA-50", name:"FA-50", alias:"Fighting Eagle", cat:"항공", sub:"경공격", maker:"한국항공우주산업(KAI)", desc:"T-50 고등훈련기에서 파생한 경공격기.",
+   photo:{f:"FA-50 fighting Eagle on the Runway.jpg", by:"대한민국 공군·KAI", lic:"CC BY 2.0"}},
+  {code:"KF-21", name:"KF-21", alias:"보라매", cat:"항공", sub:"전투기", maker:"한국항공우주산업(KAI)", desc:"한국형 차세대 전투기. 블록별로 공대지·스텔스 성능을 단계적으로 높입니다.",
+   photo:{f:"KF-21 Boramae First Production.jpg", by:"국방부", lic:"공공누리 제1유형"}},
+  {code:"M-SAM II", name:"천궁-II", alias:"Cheongung", cat:"유도무기", sub:"방공", maker:"LIG넥스원", desc:"항공기와 탄도탄을 요격하는 중거리 지대공 유도무기.",
+   photo:{f:"M-SAM Block-2 battery.jpg", by:"방위사업청", lic:"공공누리 제1유형"}},
+  {code:"KSS-III", name:"장보고-III", alias:"도산안창호급", cat:"해상", sub:"잠수함", maker:"한화오션 · HD현대중공업", desc:"수직발사관을 갖춘 3,000톤급 국산 잠수함.",
+   photo:{f:"260621-N-DP708-1007 ROKS Dosan ahn Chang-ho (SS-083) arrives at Pearl Harbor-Hickam for RIMPAC 2026.jpg", by:"U.S. Navy", lic:"Public domain"}}
+];
+const CATS = ["전체","지상","항공","해상","유도무기"];
+let cat = "전체", q = "";
+const el = (t, c, x) => { const e = document.createElement(t); if (c) e.className = c; if (x != null) e.textContent = x; return e; };
+const live = SYSTEMS.filter(s => s.href).length;
+document.getElementById("sum").textContent = `${SYSTEMS.length}종 중 ${live}종 공개, 나머지는 준비 중`;
+
+const fbox = document.getElementById("filters");
+CATS.forEach(c => {
+  const b = el("button", null, c);
+  b.type = "button"; b.dataset.cat = c;
+  b.append(el("span", "n", c === "전체" ? SYSTEMS.length : SYSTEMS.filter(s => s.cat === c).length));
+  b.addEventListener("click", () => { cat = c; render(); });
+  fbox.append(b);
+});
+document.getElementById("q").addEventListener("input", e => { q = e.target.value.trim().toLowerCase(); render(); });
+
+function card(s) {
+  const li = el("li", "scard" + (s.href ? " is-live" : ""));
+  const fig = el("figure", "photo thumb");
+  if (s.photo) {
+    const img = el("img"); img.src = FP(s.photo.f); img.alt = s.name; img.loading = "lazy";
+    fig.append(img);
+  } else {
+    const n = el("div", "nophoto"); n.append(el("b", null, s.code), el("span", null, "공개 라이선스 사진 준비 중"));
+    fig.append(n);
+  }
+  const top = el("div", "scard-top");
+  top.append(el("div", "code", s.code), el("span", "state", s.href ? "공개" : "준비 중"));
+  const body = el("div", "scard-body");
+  const h = el("h2", null, s.name);
+  if (s.alias) h.append(el("span", null, s.alias));
+  const meta = el("dl", "meta");
+  [["분류", s.cat + " · " + s.sub], ["체계업체", s.maker]].forEach(([k, v]) => meta.append(el("dt", null, k), el("dd", null, v)));
+  body.append(h, el("p", "desc", s.desc), meta);
+  if (s.facts) { const f = el("div", "facts"); s.facts.forEach(x => f.append(el("span", null, x))); body.append(f); }
+  const foot = el("div", "scard-foot");
+  if (s.href) {
+    foot.append(el("span", null, s.updated + " 기준"));
+    const a = el("a", null, "자세히 보기"); a.href = s.href; foot.append(a);
+  } else {
+    foot.append(el("span", null, "페이지 제작 예정"));
+  }
+  li.append(fig, top, body, foot);
+  return li;
+}
+function render() {
+  fbox.querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.cat === cat)));
+  const rows = SYSTEMS
+    .filter(s => cat === "전체" || s.cat === cat)
+    .filter(s => !q || [s.code, s.name, s.alias, s.maker, s.desc, s.sub].join(" ").toLowerCase().includes(q))
+    .sort((a, b) => (b.href ? 1 : 0) - (a.href ? 1 : 0));
+  document.getElementById("grid").replaceChildren(...rows.map(card));
+  document.getElementById("empty").classList.toggle("hidden", rows.length > 0);
+}
+render();
+document.getElementById("credits").replaceChildren(...SYSTEMS.filter(s => s.photo).map(s => {
+  const li = el("li"); li.append(s.name + ": ");
+  const a = el("a", null, s.photo.by); a.href = PG(s.photo.f); a.target = "_blank"; a.rel = "noopener";
+  li.append(a, ` · ${s.photo.lic}`);
+  return li;
+}));
+</script>
+</body>
+</html>

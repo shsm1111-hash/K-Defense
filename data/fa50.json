@@ -1016,7 +1016,7 @@
    "group": "국내 핵심 구성품",
    "part": "엔진 (F404-GE-102)",
    "maker": "GE에어로스페이스 원설계 / 한화에어로스페이스 면허생산",
-   "detail": "옛 삼성테크윈이 엔진과 디지털 엔진제어(FADEC) 면허생산. 이라크 T-50IQ 엔진 창정비도 창원에서 수행",
+   "detail": "옛 삼성테크윈이 엔진과 디지털 엔진제어(FADEC) 면허생산. GE가 엔진 키트를 공급하고 한화가 최종 조립·시험(2025.10 F404 키트 40기 계약 보도). 이라크 T-50IQ 엔진 창정비도 창원에서 수행",
    "tier": "보도"
   },
   {
@@ -1039,7 +1039,7 @@
    "id": "P06",
    "group": "국내 핵심 구성품",
    "part": "국산 AESA 레이더 (ESR-500A)",
-   "maker": "LIG넥스원",
+   "maker": "LIG D&A (옛 LIG넥스원)",
    "detail": "2023 시제품 공개. 송수신 모듈 약 500개 공랭식. 2025.10부터 네덜란드 항공우주센터 시험기로 약 2년 비행시험. 국산 레이더면 레이더 부분 미국 수출허가가 필요 없음",
    "tier": "보도"
   },
@@ -1047,7 +1047,7 @@
    "id": "P07",
    "group": "국내 핵심 구성품",
    "part": "항전·다기능 시현기·전자전",
-   "maker": "한화시스템(옛 삼성탈레스) · LIG넥스원",
+   "maker": "한화시스템(옛 삼성탈레스) · LIG D&A(옛 LIG넥스원)",
    "detail": "항전 장비, 다기능 시현기(MFD), 전자전·레이더경보 장비",
    "tier": "보도"
   },
@@ -1071,7 +1071,7 @@
    "id": "P10",
    "group": "국내 핵심 구성품",
    "part": "임무컴퓨터 운영체제",
-   "maker": "MDS테크",
+   "maker": "엠디에스테크 (MDS테크)",
    "detail": "실시간 운영체제(NEOS)와 CPU",
    "tier": "보도"
   },
@@ -1103,7 +1103,7 @@
    "id": "P14",
    "group": "국내 핵심 구성품",
    "part": "국산 무장 통합",
-   "maker": "LIG넥스원 · 한화에어로스페이스",
+   "maker": "LIG D&A(옛 LIG넥스원) · 한화에어로스페이스",
    "detail": "2026.02 사우디 WDS에서 KAI와 FA-50·KF-21 국산 공대공·공대지 무장 통합·공동 마케팅 MOU",
    "tier": "보도"
   },
@@ -1791,5 +1791,189 @@
    ],
    "note": "각 분기 IR Report 경영실적 표(억원). 수출 비중은 완제기 수출 잔고 기준이며, 기체구조물도 대부분 해외 항공기 제조사 납품입니다. 4Q25는 연도별 수주잔고 차트의 27.3조원, 1Q26은 총액만 공개돼 부문 구분이 없습니다."
   }
- }
+ },
+ "companies": [
+  {
+   "name": "한국항공우주산업(KAI)",
+   "ticker": "047810",
+   "market": "KOSPI",
+   "role": "체계종합(주계약)",
+   "importance": 1,
+   "parts": "T-50 계열 전 기종 설계·최종 조립(사천), 수출 교육·후속지원(CLS)·성능개량",
+   "exposure": "T-50/FA-50 수출 누적 약 $73억+ (폴란드 48대 약 $30억, 이라크 24대 약 $11억, 말레이시아 18대 약 1.2조원, 필리핀 2차 12대 약 1조원, 이라크 CLS 4,266억원, 필리핀 성능개량 930억원 등. 태국 1·2차 금액 미포함)",
+   "exposure_krw_eok": null,
+   "why": "FA-50은 KAI 완제기 수출 매출의 대부분이고 내수보다 마진이 높아 분기 영업이익률을 좌우한다. 폴란드 FA-50PL 36대(2027 중반~2029 초)와 말레이시아·필리핀 2차 인도가 2027~2030 수출 매출을 받치며, 이집트(최대 100대)가 다음 대형 촉매.",
+   "tier": "보도",
+   "source_url": "https://www.dailian.co.kr/news/view/1153666/"
+  },
+  {
+   "name": "한화에어로스페이스",
+   "ticker": "012450",
+   "market": "KOSPI",
+   "role": "핵심 구성품",
+   "importance": 2,
+   "parts": "F404-GE-102 엔진 면허생산(최종 조립·시험)과 디지털 엔진제어(FADEC), 이라크 T-50IQ 엔진 창정비. 국산 무장 통합 협력(2026.02 MOU)",
+   "exposure": "미공개 (GE와 F404 엔진 키트 40기 공급 계약, 2025.10 보도. 금액 비공개)",
+   "exposure_krw_eok": null,
+   "why": "FA-50 수출 대수만큼 엔진 조립·정비 매출이 생긴다. 다만 엔진 핵심 부품이 GE 키트라 부가가치는 조립·시험·정비 위주이며, 회사 전체에서 비중은 작다.",
+   "tier": "보도",
+   "source_url": "https://defence-industry.eu/?p=62770"
+  },
+  {
+   "name": "한화시스템",
+   "ticker": "272210",
+   "market": "KOSPI",
+   "role": "핵심 구성품",
+   "importance": 2,
+   "parts": "항전 장비, 다기능 시현기(MFD) 등 (옛 삼성탈레스)",
+   "exposure": "미공개",
+   "exposure_krw_eok": null,
+   "why": "FA-50 항전 일부를 맡지만 레이더는 해외(엘타·레이시온)라 대당 기여는 제한적. 한화시스템 항공 매출의 큰 축은 KF-21 쪽이다.",
+   "tier": "보도",
+   "source_url": "https://en.wikipedia.org/wiki/KAI_T-50_Golden_Eagle"
+  },
+  {
+   "name": "LIG D&A",
+   "ticker": "079550",
+   "market": "KOSPI",
+   "role": "핵심 구성품",
+   "importance": 2,
+   "parts": "국산 AESA 레이더 ESR-500A(개발·비행시험 중), 전자전·레이더경보 장비, 국산 공대공·공대지 무장 통합(2026.02 MOU) (옛 사명 LIG넥스원)",
+   "exposure": "미공개 (ESR-500A는 아직 양산 계약 없음)",
+   "exposure_krw_eok": null,
+   "why": "ESR-500A가 PhantomStrike를 대체하면 레이더에 미국 수출허가가 필요 없어져 FA-50 수출 장벽이 낮아지고 대당 수십억원급 레이더 매출이 국내로 넘어온다. 필리핀 2차분 등이 첫 적용 후보로 거론되는 옵션 가치.",
+   "tier": "보도",
+   "source_url": "https://v.daum.net/v/20250607070020229"
+  },
+  {
+   "name": "록히드마틴",
+   "ticker": "NYSE:LMT",
+   "market": "해외",
+   "role": "개발",
+   "importance": 2,
+   "parts": "T-50 공동개발(개발비 13% 분담), 비행제어·항전 설계 협력, 스나이퍼 표적지시 포드",
+   "exposure": "미공개",
+   "exposure_krw_eok": null,
+   "why": "미국산 부품 비중이 높아(UJTS 관련 보도 약 75%) 미국 수출허가가 FA-50 수출의 변수다. 2026.04 미 해군 UJTS 불참으로 미국 시장 진출은 멀어졌다.",
+   "tier": "보도",
+   "source_url": "https://www.heraldk.com/article/2026042322230253883"
+  },
+  {
+   "name": "현대위아",
+   "ticker": "011210",
+   "market": "KOSPI",
+   "role": "부품·소재",
+   "importance": 3,
+   "parts": "주·전방 착륙장치",
+   "exposure": "미공개",
+   "exposure_krw_eok": null,
+   "why": "자동차 부품 대기업이라 FA-50 착륙장치 비중은 미미. 참고용.",
+   "tier": "보도",
+   "source_url": "https://en.wikipedia.org/wiki/KAI_T-50_Golden_Eagle"
+  },
+  {
+   "name": "엠디에스테크",
+   "ticker": "086960",
+   "market": "KOSDAQ",
+   "role": "부품·소재",
+   "importance": 3,
+   "parts": "임무컴퓨터용 실시간 운영체제(NEOS)와 CPU (사명 MDS테크)",
+   "exposure": "미공개",
+   "exposure_krw_eok": null,
+   "why": "임베디드 소프트웨어 공급. 매출 기여는 작다.",
+   "tier": "보도",
+   "source_url": "https://en.wikipedia.org/wiki/KAI_T-50_Golden_Eagle"
+  },
+  {
+   "name": "도담시스템스",
+   "ticker": null,
+   "market": "비상장",
+   "role": "부품·소재",
+   "importance": 3,
+   "parts": "전방시현기(HUD)",
+   "exposure": "미공개",
+   "exposure_krw_eok": null,
+   "why": "비상장 국내 협력사.",
+   "tier": "보도",
+   "source_url": "https://en.wikipedia.org/wiki/KAI_T-50_Golden_Eagle"
+  },
+  {
+   "name": "GE에어로스페이스",
+   "ticker": "NYSE:GE",
+   "market": "해외",
+   "role": "핵심 구성품",
+   "importance": 3,
+   "parts": "F404-GE-102 엔진 원설계·엔진 키트, 폴란드 WZL-2와 정비 지원 검토(2026.09 MOU)",
+   "exposure": "미공개",
+   "exposure_krw_eok": null,
+   "why": "엔진 원천기술 보유. 수출마다 미국 승인이 필요한 구조적 의존.",
+   "tier": "보도",
+   "source_url": "https://avitrader.com/2026/09/11/ge-aerospace-wzl-2-to-explore-f404-ge-102-engine-support/"
+  },
+  {
+   "name": "RTX (레이시온)",
+   "ticker": "NYSE:RTX",
+   "market": "해외",
+   "role": "핵심 구성품",
+   "importance": 3,
+   "parts": "Block 20 AESA 레이더 PhantomStrike (FA-50PL·FA-50M 등)",
+   "exposure": "미공개",
+   "exposure_krw_eok": null,
+   "why": "Block 20 수출형의 레이더 공급처. 국산 ESR-500A와 대체 경쟁 관계.",
+   "tier": "보도",
+   "source_url": "https://defencesecurityasia.com/en/raytheon-phantomstrike-aesa-radar-kai-fa50-fleet-delivery/"
+  },
+  {
+   "name": "엘타 (IAI)",
+   "ticker": null,
+   "market": "비상장",
+   "role": "핵심 구성품",
+   "importance": 3,
+   "parts": "Block 10 기계식 레이더 EL/M-2032",
+   "exposure": "미공개",
+   "exposure_krw_eok": null,
+   "why": "이스라엘 국영 IAI 자회사. 기존 FA-50·TA-50 레이더.",
+   "tier": "보도",
+   "source_url": "https://en.wikipedia.org/wiki/KAI_T-50_Golden_Eagle"
+  },
+  {
+   "name": "하니웰",
+   "ticker": "NASDAQ:HON",
+   "market": "해외",
+   "role": "부품·소재",
+   "importance": 3,
+   "parts": "H-764G 관성항법(EGI)·전파고도계",
+   "exposure": "미공개",
+   "exposure_krw_eok": null,
+   "why": "수입 구성품. 폴란드 GF 초도분 EGI 미적용 이슈의 당사 품목.",
+   "tier": "보도",
+   "source_url": "https://www.theguru.co.kr/news/article.html?no=75431"
+  },
+  {
+   "name": "제너럴다이내믹스",
+   "ticker": "NYSE:GD",
+   "market": "해외",
+   "role": "부품·소재",
+   "importance": 3,
+   "parts": "20mm M197 3총열 기관포",
+   "exposure": "미공개",
+   "exposure_krw_eok": null,
+   "why": "수입 무장. 실적 영향 미미.",
+   "tier": "보도",
+   "source_url": "https://en.wikipedia.org/wiki/KAI_T-50_Golden_Eagle"
+  },
+  {
+   "name": "WZL-2 (폴란드 국영 공군정비창)",
+   "ticker": null,
+   "market": "비상장",
+   "role": "현지 생산",
+   "importance": 3,
+   "parts": "폴란드 FA-50 보증기간 이후 후속 정비 주계약자 추천(KAI는 하청), GE와 F404 정비 검토",
+   "exposure": "미공개 (2026.06 기준 계약 전)",
+   "exposure_krw_eok": null,
+   "why": "폴란드 현지화 요구의 창구. KAI 후속지원 매출 일부가 현지로 넘어가는 구조.",
+   "tier": "보도",
+   "source_url": "https://wzl2.mil.pl/en/media-briefing-june-30-2026/"
+  }
+ ]
 }

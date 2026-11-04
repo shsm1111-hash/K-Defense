@@ -635,8 +635,16 @@
    "id": "P08",
    "group": "국내 핵심 구성품",
    "part": "대전차미사일 (현궁)",
-   "maker": "LIG넥스원",
+   "maker": "LIG D&A (옛 LIG넥스원)",
    "detail": "일부 차량 포탑 옆 발사대에 장착",
+   "tier": "보도"
+  },
+  {
+   "id": "P10",
+   "group": "국내 핵심 구성품",
+   "part": "유압 시스템·인암 유기압 현수장치(ISU)",
+   "maker": "엠앤씨솔루션 (옛 두산모트롤 방산부문)",
+   "detail": "4차 양산분 유압 시스템 약 199억원 계약(2025.04~2028.09, 한화에어로스페이스 발주)",
    "tier": "보도"
   },
   {
@@ -1246,5 +1254,111 @@
    ],
    "note": "지상방산 부문 기준. 회사는 총액과 수출 비중(%)을 공개하며, 수출·내수 금액은 총액×비중으로 계산했습니다. 각 분기 IR 실적발표 '사업부문별 실적' 페이지."
   }
- }
+ },
+ "companies": [
+  {
+   "name": "한화에어로스페이스",
+   "ticker": "012450",
+   "market": "KOSPI",
+   "role": "체계종합(주계약)",
+   "importance": 1,
+   "parts": "체계종합(차체·포탑·최종 조립), 창원 공장. 옛 대우중공업→두산인프라코어→두산DST→한화디펜스를 거쳐 1~4차 양산 모두 담당",
+   "exposure": "1~3차 약 466대 납품 완료. 4차 양산 약 120대(2024.12 계약, 2028년까지 납품) 계약액 약 $5.92억 보도, 총사업비는 약 7,800억원(방추위)",
+   "exposure_krw_eok": null,
+   "why": "K21은 수출 실적이 없는 내수 사업이라 지상방산 부문의 내수 매출(마진 낮음)로 잡힌다. 투자 포인트는 K21 자체보다 이 차체 기술이 레드백·K-NIFV·K-CEV 등 파생형과 수출로 이어지느냐다.",
+   "tier": "보도",
+   "source_url": "https://overtdefense.com/2025/02/21/south-korea-ordering-new-k21-infantry-fighting-vehicles"
+  },
+  {
+   "name": "SNT다이내믹스",
+   "ticker": "003570",
+   "market": "KOSPI",
+   "role": "핵심 구성품",
+   "importance": 2,
+   "parts": "40mm K40 주포(기관포)와 자동변속기 HMPT500-4EK(미국 HMPT-500 면허생산)",
+   "exposure": "미공개 (4차 양산분 계약 공시 확인 못 함)",
+   "exposure_krw_eok": null,
+   "why": "주포와 변속기 두 품목을 동시에 맡아 대당 기여가 큰 국내 협력사. 4차 양산(~2028)이 안정적 내수 매출원이며, 회사 전체로는 K9·K2 변속기 수출이 더 큰 동력.",
+   "tier": "보도",
+   "source_url": "https://en.wikipedia.org/wiki/SNT_Dynamics"
+  },
+  {
+   "name": "한화시스템",
+   "ticker": "272210",
+   "market": "KOSPI",
+   "role": "핵심 구성품",
+   "importance": 2,
+   "parts": "전차장 파노라마 조준경(ICPS), 포수 조준경(IGPS) 등 사격통제·광학 (옛 삼성탈레스)",
+   "exposure": "미공개 (하위 협력사 코츠테크놀로지가 4차분 임베디드 컴퓨터 69억원을 한화시스템에 공급)",
+   "exposure_krw_eok": null,
+   "why": "그룹 내 사격통제 공급사. K21 단독 비중은 작지만 한화 지상장비 계열 전반의 조준경·사통을 맡아 파생형이 늘면 같이 수혜.",
+   "tier": "보도",
+   "source_url": "https://www.army-technology.com/projects/k21-fighting-vehicle/"
+  },
+  {
+   "name": "엠앤씨솔루션",
+   "ticker": "484870",
+   "market": "KOSPI",
+   "role": "핵심 구성품",
+   "importance": 2,
+   "parts": "암내장형 유기압 현수장치(ISU)를 포함한 유압 시스템 (옛 두산모트롤 방산부문)",
+   "exposure": "4차 양산용 유압 시스템 약 199억원 (한화에어로스페이스 발주, 2025.04.03~2028.09.15)",
+   "exposure_krw_eok": 199.0,
+   "why": "2024년 매출 2,828억원 규모 기업이라 199억원 단일 계약도 의미 있는 비중. 같은 기술이 K9·레드백으로 이어져 한화 궤도차량 대수 증가의 레버리지를 받는다.",
+   "tier": "보도",
+   "source_url": "https://core.asiae.co.kr/article/2025040410420102081"
+  },
+  {
+   "name": "HD건설기계",
+   "ticker": "267270",
+   "market": "KOSPI",
+   "role": "핵심 구성품",
+   "importance": 3,
+   "parts": "엔진 D2840LXE(V10 터보 디젤, 750마력). 옛 두산인프라코어·HD현대인프라코어 엔진사업 (2026년 HD현대건설기계와 합병해 HD건설기계 출범)",
+   "exposure": "미공개",
+   "exposure_krw_eok": null,
+   "why": "건설기계 대기업이라 K21 엔진 매출 비중은 미미. 투자 판단에는 참고 수준.",
+   "tier": "보도",
+   "source_url": "https://en.wikipedia.org/wiki/K21"
+  },
+  {
+   "name": "코츠테크놀로지",
+   "ticker": "448710",
+   "market": "KOSDAQ",
+   "role": "부품·소재",
+   "importance": 3,
+   "parts": "4차 양산분 임베디드 컴퓨터 (한화시스템에 공급)",
+   "exposure": "69억원 (2024.12.26~2028.06.12, 직전 연도 매출의 약 13.6%)",
+   "exposure_krw_eok": 69.0,
+   "why": "소형 코스닥사라 계약 규모 대비 실적 기여가 크고 공시 당일 주가가 반응했다. K21 계열 후속 양산이 이어지면 반복 수주 가능.",
+   "tier": "보도",
+   "source_url": "https://www.finance-scope.com/article/view/scp202412260007"
+  },
+  {
+   "name": "LIG D&A",
+   "ticker": "079550",
+   "market": "KOSPI",
+   "role": "탄약",
+   "importance": 3,
+   "parts": "대전차미사일 현궁 (일부 차량 포탑 측면 발사대 장착) (옛 사명 LIG넥스원)",
+   "exposure": "미공개",
+   "exposure_krw_eok": null,
+   "why": "현궁은 보병 휴대용 위주라 K21 장착분 비중은 작다. 차량 탑재 확대 여부를 지켜볼 항목.",
+   "tier": "보도",
+   "source_url": "https://bizhankook.com/articles/27338.html"
+  },
+  {
+   "name": "노스롭그루먼 (리테프)",
+   "ticker": "NYSE:NOC",
+   "market": "해외",
+   "role": "부품·소재",
+   "importance": 3,
+   "parts": "관성항법장치 LLN-G1 (독일 자회사 LITEF)",
+   "exposure": "미공개",
+   "exposure_krw_eok": null,
+   "why": "수입 구성품. 회사 실적 영향은 미미.",
+   "tier": "보도",
+   "source_url": "https://www.defenseindustrydaily.com/koreas-k21-knifv-05345/"
+  }
+ ]
 }

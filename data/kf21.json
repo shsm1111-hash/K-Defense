@@ -602,7 +602,7 @@
    "group": "국내 핵심 구성품",
    "part": "AESA 레이더 (APY-016K)",
    "maker": "한화시스템 + ADD",
-   "detail": "송수신 모듈 약 1,000개, 탐지 150~200km, 표적 약 20개 동시 추적. 이스라엘 엘타가 시험 지원. 2차 잔여 계약 1,248억원",
+   "detail": "송수신 모듈 약 1,000개, 탐지 150~200km, 표적 약 20개 동시 추적. 이스라엘 엘타가 시험 지원. 1차 양산 약 1,100억원(2024.06, 20대분) + 2차 잔여 계약 1,248억원",
    "tier": "확정"
   },
   {
@@ -625,8 +625,8 @@
    "id": "P08",
    "group": "국내 핵심 구성품",
    "part": "전자전 장비",
-   "maker": "LIG넥스원",
-   "detail": "통합 전자전 체계. 단거리 공대공 유도탄-II 체계개발(2,070억원, 2025.12)도 맡음",
+   "maker": "LIG D&A (옛 LIG넥스원)",
+   "detail": "통합 전자전 체계·피아식별장치(IFF). 단거리 공대공 유도탄-II 체계개발(2,070억원, 2025.12)도 맡음",
    "tier": "보도"
   },
   {
@@ -665,8 +665,24 @@
    "id": "P13",
    "group": "국내 핵심 구성품",
    "part": "장거리 공대지 미사일 '천룡'",
-   "maker": "ADD·LIG넥스원",
+   "maker": "ADD·LIG D&A (옛 LIG넥스원)",
    "detail": "블록II 핵심 무장. 개발 지연 시 블록II 다목적화가 늦어질 위험",
+   "tier": "보도"
+  },
+  {
+   "id": "P15",
+   "group": "국내 핵심 구성품",
+   "part": "장거리 공대공 미사일 (개발 협력)",
+   "maker": "현대로템",
+   "detail": "2026.08.12 KAI와 KF-21 장거리 공대공 미사일 공동 개발·통합 MOU. 계약 전 단계",
+   "tier": "보도"
+  },
+  {
+   "id": "P16",
+   "group": "국내 핵심 구성품",
+   "part": "기체 구조물·정밀가공·복합재·구동제어 협력",
+   "maker": "켄코아에어로스페이스, 한국카본·한국화이바 계열, 퍼스텍, 디앤엠항공 등",
+   "detail": "KAI 협력사 약 500곳 중 언론에 거론된 업체. 개별 품목·금액은 비공개",
    "tier": "보도"
   },
   {
@@ -1306,5 +1322,189 @@
    ],
    "note": "각 분기 IR Report 경영실적 표(억원). 수출 비중은 완제기 수출 잔고 기준이며, 기체구조물도 대부분 해외 항공기 제조사 납품입니다. 4Q25는 연도별 수주잔고 차트의 27.3조원, 1Q26은 총액만 공개돼 부문 구분이 없습니다."
   }
- }
+ },
+ "companies": [
+  {
+   "name": "한국항공우주산업(KAI)",
+   "ticker": "047810",
+   "market": "KOSPI",
+   "role": "체계종합(주계약)",
+   "importance": 1,
+   "parts": "기체 설계·체계통합·최종 조립·시험비행(사천), 체계개발 주관",
+   "exposure": "양산 1차 20대 1조 9,600억원(2024.06) + 2차 20대 2조 3,969억원(2025.06, ~2028.12) = 약 4조 3,569억원. 별도로 인도네시아 공동개발 분담금 6,000억원(2025.06 확정)",
+   "exposure_krw_eok": 43569.0,
+   "why": "KF-21은 KAI 국내사업 매출의 최대 축이자 10년 이상 이어질 양산 사업(후속 80대 약 18.4조원 추정). 다만 초기 양산은 대당 계약가가 낮고(1,000억원 안팎) 손익분기가 200~250대라 내수 마진은 낮다. 인도네시아 16대·UAE 등 수출 계약이 성사되면 마진이 크게 개선되는 레버리지.",
+   "tier": "확정",
+   "source_url": "https://www.etoday.co.kr/news/view/2482432"
+  },
+  {
+   "name": "한화에어로스페이스",
+   "ticker": "012450",
+   "market": "KOSPI",
+   "role": "핵심 구성품",
+   "importance": 1,
+   "parts": "GE F414-GE-400K 엔진 면허생산(최종 조립·시험), 보조동력장치(APU, 자체 기술)와 추진·착륙·구동·연료 계통 17종. 국산 전투기 엔진 개발 주도 목표",
+   "exposure": "엔진 1차 5,562억 + 2차 6,232억 = 1조 1,794억원(약 80기, ~2028.12) + 구성품 17종 4,731억원(2024.11) = 약 1조 6,525억원",
+   "exposure_krw_eok": 16525.0,
+   "why": "KF-21 1대당 엔진 2기라 양산 대수에 정비례하는 매출 구조이고, 이후 수십 년 엔진 정비(MRO) 매출이 따라온다. 국산 엔진(약 3.35조원 개발 구상)이 확정되면 장기 핵심 성장축. 수출 시 미국산 F414라 미국 승인이 변수.",
+   "tier": "확정",
+   "source_url": "https://www.segye.com/newsView/20250627514719"
+  },
+  {
+   "name": "한화시스템",
+   "ticker": "272210",
+   "market": "KOSPI",
+   "role": "핵심 구성품",
+   "importance": 1,
+   "parts": "AESA 레이더 APY-016K(ADD와 개발, 송수신 모듈 약 1,000개), IRST 신호처리(센서 헤드는 레오나르도), EO 표적추적장비(TGP), 임무컴퓨터, 다기능 시현기, 지형추적컴퓨터 등 항전",
+   "exposure": "AESA 레이더 1차 양산 약 1,100억원(2024.06, 20대분) + 2차 잔여 계약 1,248억원(2025.06) = 약 2,348억원. 항전 4종 계약 금액은 미공개",
+   "exposure_krw_eok": 2348.0,
+   "why": "전투기의 '눈'인 레이더·센서를 국산으로 공급해 대당 콘텐츠가 크다. KF-21 120대 전량과 수출기, FA-50 등 다른 기종으로 AESA 레이더를 확장할 수 있는지가 항공 부문 성장 포인트.",
+   "tier": "보도",
+   "source_url": "https://www.etoday.co.kr/news/view/2373390"
+  },
+  {
+   "name": "LIG D&A",
+   "ticker": "079550",
+   "market": "KOSPI",
+   "role": "핵심 구성품",
+   "importance": 2,
+   "parts": "통합 전자전 체계, 피아식별장치(IFF), 단거리 공대공 유도탄-II 체계개발, 장거리 공대지 미사일 '천룡'(ADD와 개발, 블록II 핵심 무장) (옛 사명 LIG넥스원)",
+   "exposure": "단거리 공대공 유도탄-II 체계개발 2,070억원(2025.12). 전자전 장비 양산 계약 금액은 미공개",
+   "exposure_krw_eok": 2070.0,
+   "why": "장비 공급보다 무장(미사일) 통합이 더 큰 기회다. 블록II 공대지 능력과 수출 패키지에 국산 미사일이 들어가면 장기 탄약 매출이 생긴다. 천룡 개발 지연은 블록II 일정 위험.",
+   "tier": "보도",
+   "source_url": "https://www.heraldk.com/article/2025122320492560400"
+  },
+  {
+   "name": "GE에어로스페이스",
+   "ticker": "NYSE:GE",
+   "market": "해외",
+   "role": "핵심 구성품",
+   "importance": 2,
+   "parts": "F414-GE-400K 엔진 원설계·핵심 부품",
+   "exposure": "미공개",
+   "exposure_krw_eok": null,
+   "why": "엔진이 미국산이라 KF-21 수출마다 미국 정부 승인이 필요하다. 국산 엔진 전환 전까지 핵심 의존.",
+   "tier": "확정",
+   "source_url": "https://en.wikipedia.org/wiki/KAI_KF-21_Boramae"
+  },
+  {
+   "name": "현대로템",
+   "ticker": "064350",
+   "market": "KOSPI",
+   "role": "개발",
+   "importance": 3,
+   "parts": "KF-21용 장거리 공대공 미사일 공동 개발·통합 협력 (2026.08.12 KAI와 MOU)",
+   "exposure": "미공개 (MOU 단계, 계약 없음)",
+   "exposure_krw_eok": null,
+   "why": "지상장비 회사의 항공무장 진출 시도. 실제 개발 계약 전까지는 옵션 수준.",
+   "tier": "보도",
+   "source_url": "https://www.koreatimes.co.kr/business/companies/20260813/kai-hyundai-rotem-to-team-up-on-long-range-air-to-air-missiles-for-kf-21"
+  },
+  {
+   "name": "켄코아에어로스페이스",
+   "ticker": "274090",
+   "market": "KOSDAQ",
+   "role": "부품·소재",
+   "importance": 3,
+   "parts": "정밀 가공부품·기체 구조물 (KAI 협력사)",
+   "exposure": "미공개",
+   "exposure_krw_eok": null,
+   "why": "소형 코스닥사로 KF-21 양산 증가 시 가공물량 수혜 가능. 규모는 공개되지 않음.",
+   "tier": "보도",
+   "source_url": "https://www.etoday.co.kr/news/view/2611314"
+  },
+  {
+   "name": "한국카본",
+   "ticker": "017960",
+   "market": "KOSPI",
+   "role": "부품·소재",
+   "importance": 3,
+   "parts": "복합소재 구조물 (한국카본·한국화이바 계열로 언급)",
+   "exposure": "미공개",
+   "exposure_krw_eok": null,
+   "why": "LNG선 보냉재가 주력이라 KF-21 기여는 작다. 참고용.",
+   "tier": "보도",
+   "source_url": "https://www.etoday.co.kr/news/view/2611314"
+  },
+  {
+   "name": "퍼스텍",
+   "ticker": "010820",
+   "market": "KOSPI",
+   "role": "부품·소재",
+   "importance": 3,
+   "parts": "구동·제어 계통 일부",
+   "exposure": "미공개",
+   "exposure_krw_eok": null,
+   "why": "방산 부품 중소형사. 품목·금액이 구체적으로 공개되지 않아 참고 수준.",
+   "tier": "보도",
+   "source_url": "https://www.etoday.co.kr/news/view/2611314"
+  },
+  {
+   "name": "레오나르도",
+   "ticker": "BIT:LDO",
+   "market": "해외",
+   "role": "핵심 구성품",
+   "importance": 3,
+   "parts": "IRST 센서 헤드(SkyWard-K)·돔",
+   "exposure": "미공개",
+   "exposure_krw_eok": null,
+   "why": "IRST 국산화율 50% 미만의 원인. 국산화 진척 시 한화시스템 몫 확대.",
+   "tier": "보도",
+   "source_url": "https://v.daum.net/v/pxbTWydzLN"
+  },
+  {
+   "name": "MBDA·딜 디펜스",
+   "ticker": null,
+   "market": "비상장",
+   "role": "탄약",
+   "importance": 3,
+   "parts": "공대공 미사일 미티어(MBDA)·IRIS-T(딜)",
+   "exposure": "미공개",
+   "exposure_krw_eok": null,
+   "why": "미국 AIM-120·AIM-9X 승인 지연으로 먼저 통합된 유럽 무장. 국산 공대공 미사일이 나오면 대체 대상.",
+   "tier": "보도",
+   "source_url": "https://en.wikipedia.org/wiki/KAI_KF-21_Boramae"
+  },
+  {
+   "name": "에루-데브텍",
+   "ticker": null,
+   "market": "비상장",
+   "role": "부품·소재",
+   "importance": 3,
+   "parts": "착륙장치 설계·개발 (2016 계약)",
+   "exposure": "미공개",
+   "exposure_krw_eok": null,
+   "why": "캐나다 착륙장치 업체. 2025년 사모펀드(플래티넘 에쿼티)에 인수돼 상장폐지된 것으로 알려짐. 국내 장착·계통은 한화에어로 17종 계약에 포함.",
+   "tier": "보도",
+   "source_url": "https://www.aviationtoday.com/2016/08/30/heroux-devtek-signs-on-to-develop-landing-gear-for-south-koreas-4-5th-gen-fighter-jet"
+  },
+  {
+   "name": "마틴베이커",
+   "ticker": null,
+   "market": "비상장",
+   "role": "부품·소재",
+   "importance": 3,
+   "parts": "Mk18 사출좌석",
+   "exposure": "미공개",
+   "exposure_krw_eok": null,
+   "why": "영국 비상장 가족기업. 해외 구매 품목.",
+   "tier": "보도",
+   "source_url": "https://en.wikipedia.org/wiki/KAI_KF-21_Boramae"
+  },
+  {
+   "name": "PTDI (인도네시아 국영 항공사)",
+   "ticker": null,
+   "market": "비상장",
+   "role": "현지 생산",
+   "importance": 3,
+   "parts": "인도네시아용 기체 일부 15% 생산 주장(산업협력)",
+   "exposure": "미공개 (인니 국방부는 현지 생산 취소·완성기 구매라 밝혀 엇갈림)",
+   "exposure_krw_eok": null,
+   "why": "인도네시아 16대 수출 협상의 현지화 조건 변수.",
+   "tier": "보도",
+   "source_url": "https://theguru.co.kr/news/article.html?no=106454"
+  }
+ ]
 }

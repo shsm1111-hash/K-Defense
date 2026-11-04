@@ -589,9 +589,9 @@
   {
    "id": "P04",
    "group": "국내 핵심 구성품",
-   "part": "인암 유기압 현수장치 기술",
-   "maker": "K21·K9 계열 국내 기술",
-   "detail": "K21에서 쓰던 국내 기술이 바탕. 국내 공급업체는 자료에 따라 다르게 적혀 있다(나무위키는 두산모트롤)",
+   "part": "인암 유기압 현수장치(ISU) 기술",
+   "maker": "엠앤씨솔루션 (옛 두산모트롤 방산부문)",
+   "detail": "K9·K21에 쓰던 암내장형 유기압 현수장치 기술. 레드백용 ISU 공급사로 보도됨. 호주 현지 생산은 코르부스(P12)",
    "tier": "보도"
   },
   {
@@ -1239,5 +1239,176 @@
    ],
    "note": "지상방산 부문 기준. 회사는 총액과 수출 비중(%)을 공개하며, 수출·내수 금액은 총액×비중으로 계산했습니다. 각 분기 IR 실적발표 '사업부문별 실적' 페이지."
   }
- }
+ },
+ "companies": [
+  {
+   "name": "한화에어로스페이스",
+   "ticker": "012450",
+   "market": "KOSPI",
+   "role": "체계종합(주계약)",
+   "importance": 1,
+   "parts": "체계 설계(설계 권한 보유)·시제 8대 제작, 호주 자회사 한화디펜스오스트레일리아(HDA) 질롱 H-ACE에서 129대 최종 조립·시험·초기 후속지원",
+   "exposure": "호주 LAND 400 Phase 3 레드백 129대 공급계약 약 3조 1,649억원(2023.12, 2028년까지 순차 공급)",
+   "exposure_krw_eok": 31649.0,
+   "why": "레드백 매출은 지상방산 부문 수출 매출로 인식되며, 2027~2028년 인도가 몰려 이 기간 수출 비중을 받쳐준다. 다만 포탑·무장 등 고가 구성품이 외국 하도급(엘빗 등)이라 K9 대비 자체 부가가치 비중은 낮을 수 있다. 호주 물량 이후 H-ACE를 수출 생산·정비 거점으로 쓸 수 있는지가 추가 레버리지 포인트.",
+   "tier": "확정",
+   "source_url": "https://twig24.com/news/industry/2023/12/08/20231208500059"
+  },
+  {
+   "name": "STX엔진",
+   "ticker": "077970",
+   "market": "KOSPI",
+   "role": "핵심 구성품",
+   "importance": 2,
+   "parts": "엔진: 롤스로이스 파워시스템즈(MTU) MT881Ka-500(8기통, 735kW) 면허생산 부품. 2027년까지 5차례 나눠 호주 펜스케로 보내 현지 조립",
+   "exposure": "미공개 (129대분 엔진 부품, 개별 계약 공시 확인 못 함)",
+   "exposure_krw_eok": null,
+   "why": "K9·K2·레드백 계열 MTU 엔진을 면허생산하는 국내 유일 업체라 한화 지상장비 수출 대수에 연동되는 구조. 레드백 단독 금액은 크지 않지만 한화 장갑차 수출이 늘수록 반복 매출이 쌓인다.",
+   "tier": "확정",
+   "source_url": "https://www.theguru.co.kr/news/article.html?no=85242"
+  },
+  {
+   "name": "SNT다이내믹스",
+   "ticker": "003570",
+   "market": "KOSPI",
+   "role": "핵심 구성품",
+   "importance": 2,
+   "parts": "변속기: 미국 앨리슨 X1100-5A3 교차구동 변속기 조립 키트 공급·기술이전(호주 펜스케가 현지 조립)",
+   "exposure": "미공개",
+   "exposure_krw_eok": null,
+   "why": "K9·K21 변속기에 이어 레드백까지 한화 궤도차량 파워트레인을 담당. 수출 물량 증가가 변속기 매출로 이어지지만 레드백분은 원설계사(앨리슨) 몫이 커 단가 기여는 제한적일 수 있다.",
+   "tier": "확정",
+   "source_url": "https://hanwha-defence.com.au/news/penske-to-drive-local-assembly-of-complete-powerpack-modules-for-the-hanwha-redback-infantry-fighting-vehicle"
+  },
+  {
+   "name": "엠앤씨솔루션",
+   "ticker": "484870",
+   "market": "KOSPI",
+   "role": "핵심 구성품",
+   "importance": 2,
+   "parts": "암내장형 유기압 현수장치(ISU) 기술·핵심 부품 (옛 두산모트롤 방산 사업). 호주 현지 생산은 코르부스가 담당",
+   "exposure": "미공개 (레드백 단독 계약 공시 확인 못 함. 같은 계열 K21용 유압 시스템은 199억원, 2025.04)",
+   "exposure_krw_eok": null,
+   "why": "K9·K21·레드백 궤도차량의 현수장치를 사실상 독점 공급하는 중소형 상장사라, 한화 지상장비 수출 대수가 곧 매출 레버리지다. 레드백은 호주 현지화로 국내 몫이 일부에 그칠 수 있다.",
+   "tier": "보도",
+   "source_url": "https://www.fnnews.com/news/202607211835560521"
+  },
+  {
+   "name": "엘빗 시스템즈",
+   "ticker": "NASDAQ:ESLT",
+   "market": "해외",
+   "role": "핵심 구성품",
+   "importance": 2,
+   "parts": "MT30 Mk2 기반 2인 포탑, 아이언 피스트 하드킬 능동방호, 아이언비전 360도 시야 (호주 법인 Elbit Systems of Australia 통해 공급)",
+   "exposure": "약 $6억 하도급(5년, 2024.02 발표)",
+   "exposure_krw_eok": null,
+   "why": "차량 가격에서 가장 비싼 덩어리(포탑·방호)를 가져가는 해외 업체. 한화 입장에선 원가 상당 부분이 외부로 나가는 구조라 마진 해석 시 참고.",
+   "tier": "보도",
+   "source_url": "https://militaryleak.com/2024/02/26/elbit-systems-awarded-600-million-contract-to-supply-systems-for-redback-ifv"
+  },
+  {
+   "name": "롤스로이스 (파워시스템즈/MTU)",
+   "ticker": "LSE:RR.",
+   "market": "해외",
+   "role": "개발",
+   "importance": 3,
+   "parts": "MT881Ka-500 엔진 원설계·면허 제공",
+   "exposure": "미공개",
+   "exposure_krw_eok": null,
+   "why": "엔진 원천기술 보유사. 국산 엔진 대체 전까지 한화 궤도차량 수출 시 로열티·핵심 부품이 계속 발생.",
+   "tier": "확정",
+   "source_url": "https://www.theguru.co.kr/news/article.html?no=85242"
+  },
+  {
+   "name": "앨리슨 트랜스미션",
+   "ticker": "NYSE:ALSN",
+   "market": "해외",
+   "role": "개발",
+   "importance": 3,
+   "parts": "X1100-5A3 교차구동 변속기 원설계·면허, 호주 내 변속기 정비 거점",
+   "exposure": "미공개",
+   "exposure_krw_eok": null,
+   "why": "변속기 원천기술 보유. 레드백 선정 자체를 회사가 공식 발표했다.",
+   "tier": "확정",
+   "source_url": "https://allisontransmission.com/company/news-article/2023/10/19/allison-transmission-selected-for-australian-armored-vehicle-project-as-part-of-hanwha-s-redback"
+  },
+  {
+   "name": "펜스케 오스트레일리아 (펜스케 오토모티브 그룹 계열)",
+   "ticker": "NYSE:PAG",
+   "market": "해외",
+   "role": "현지 생산",
+   "importance": 3,
+   "parts": "엔진 129기 현지 조립·시험, 변속기와 결합한 파워팩 통합, 변속기 정비",
+   "exposure": "미공개",
+   "exposure_krw_eok": null,
+   "why": "현지화 요구를 충족시키는 파워팩 파트너. 모회사 기준 매출 기여는 미미.",
+   "tier": "확정",
+   "source_url": "https://hanwha-defence.com.au/news/penske-to-drive-local-assembly-of-complete-powerpack-modules-for-the-hanwha-redback-infantry-fighting-vehicle"
+  },
+  {
+   "name": "노스롭그루먼",
+   "ticker": "NYSE:NOC",
+   "market": "해외",
+   "role": "핵심 구성품",
+   "importance": 3,
+   "parts": "30mm Mk44S 부시마스터 II 기관포",
+   "exposure": "미공개",
+   "exposure_krw_eok": null,
+   "why": "주무장 공급. 회사 규모 대비 비중은 미미.",
+   "tier": "확정",
+   "source_url": "https://www.army-technology.com/projects/as21-redback-infantry-fighting-vehicle/"
+  },
+  {
+   "name": "라파엘",
+   "ticker": null,
+   "market": "비상장",
+   "role": "탄약",
+   "importance": 3,
+   "parts": "스파이크 LR2 대전차미사일과 접이식 2연장 발사기",
+   "exposure": "미공개",
+   "exposure_krw_eok": null,
+   "why": "이스라엘 국영 방산업체. 미사일은 차량 계약과 별도 조달될 수 있어 소모성 탄 매출이 따로 발생.",
+   "tier": "확정",
+   "source_url": "https://www.army-technology.com/projects/as21-redback-infantry-fighting-vehicle/"
+  },
+  {
+   "name": "EOS (Electro Optic Systems)",
+   "ticker": "ASX:EOS",
+   "market": "해외",
+   "role": "핵심 구성품",
+   "importance": 3,
+   "parts": "R400 원격무장(RWS) 개량형",
+   "exposure": "약 A$1.08억",
+   "exposure_krw_eok": null,
+   "why": "호주 상장 소형주라 레드백 계약이 회사 실적에 의미 있게 반영됨. 감사원·야당이 지적한 RWS 문제의 당사자.",
+   "tier": "확정",
+   "source_url": "https://www.army-technology.com/projects/as21-redback-infantry-fighting-vehicle/"
+  },
+  {
+   "name": "비살로이 스틸",
+   "ticker": "ASX:BIS",
+   "market": "해외",
+   "role": "부품·소재",
+   "importance": 3,
+   "parts": "레드백·수출용 K9 방탄강(장갑강) 현지 공급",
+   "exposure": "미공개",
+   "exposure_krw_eok": null,
+   "why": "한화 호주 생산의 소재 공급처. 국군 장비는 계속 포스코 장갑판을 쓴다.",
+   "tier": "보도",
+   "source_url": "https://www.snmnews.com/news/articleView.html?idxno=520848"
+  },
+  {
+   "name": "수시 디펜스",
+   "ticker": null,
+   "market": "비상장",
+   "role": "부품·소재",
+   "importance": 3,
+   "parts": "고무 궤도(CRT)",
+   "exposure": "미공개",
+   "exposure_krw_eok": null,
+   "why": "캐나다 비상장사. 고무 궤도는 레드백의 차별화 포인트 중 하나.",
+   "tier": "확정",
+   "source_url": "https://www.army-technology.com/projects/as21-redback-infantry-fighting-vehicle/"
+  }
+ ]
 }

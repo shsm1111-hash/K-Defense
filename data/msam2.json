@@ -508,7 +508,7 @@
  "versions": [
   {
    "v": "천궁 블록I (M-SAM)",
-   "photo": null,
+   "photo": "vp_0",
    "period": "개발 2006~2011 · 배치 2015~2020",
    "stage": "국군 운용 중",
    "crew": "공개 자료 없음",
@@ -536,7 +536,7 @@
   },
   {
    "v": "천궁-II 2차 양산",
-   "photo": null,
+   "photo": "vp_2",
    "period": "2025~",
    "stage": "국군 초도 배치 진행",
    "crew": "공개 자료 없음",
@@ -550,7 +550,7 @@
   },
   {
    "v": "천궁-II UAE형",
-   "photo": null,
+   "photo": "vp_3",
    "period": "계약 2022 · 인도 2025~",
    "stage": "UAE 운용 중 (2026 실전)",
    "crew": "공개 자료 없음",
@@ -564,7 +564,7 @@
   },
   {
    "v": "천궁-II 사우디형",
-   "photo": null,
+   "photo": "vp_4",
    "period": "계약 2023 · 인도 2028년 무렵 예상",
    "stage": "생산 중",
    "crew": "공개 자료 없음",
@@ -578,7 +578,7 @@
   },
   {
    "v": "천궁-II 이라크형",
-   "photo": null,
+   "photo": "vp_5",
    "period": "계약 2024 · 납품 2033년까지(발사대 계약 기준)",
    "stage": "생산 중",
    "crew": "공개 자료 없음",
@@ -592,7 +592,7 @@
   },
   {
    "v": "천궁-III 블록III",
-   "photo": null,
+   "photo": "vp_6",
    "period": "개발 2024~2034",
    "stage": "개발 중",
    "crew": "미정",
@@ -965,6 +965,48 @@
    "by": "dooyeol Choi Music travel",
    "lic": "CC BY 3.0",
    "cap": "천궁-II 유도탄 축소 모형"
+  },
+  "vp_0": {
+   "src": "https://img.koreatimes.co.kr/upload/newsV2/images/150730_p04_indigenous.jpg",
+   "page": "https://www.koreatimes.co.kr/amp/southkorea/20150730/indigenous-surface-to-air-guided-missiles-to-be-deployed-this-year",
+   "by": "방위사업청 (The Korea Times 게재)",
+   "lic": "",
+   "cap": "천궁(블록I) 유도탄 시험 발사 (2015 전력화 직전 보도)"
+  },
+  "vp_2": {
+   "src": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https://t1.daumcdn.net/news/202605/14/newsis/20260514120235734fsxa.jpg",
+   "page": "https://v.daum.net/v/20260514120235386",
+   "by": "사진공동취재단 (뉴시스)",
+   "lic": "",
+   "cap": "사천 공군미사일방어사령부 제8146부대의 천궁-II 발사 모의훈련 (2026.5)"
+  },
+  "vp_3": {
+   "src": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https://t1.daumcdn.net/news/202603/04/kedbiz/20260304063004616qjus.jpg",
+   "page": "https://v.daum.net/v/20260303182402491",
+   "by": "LIG넥스원 (한국경제 게재)",
+   "lic": "",
+   "cap": "천궁-II — UAE 실전 요격(2026.3) 보도 대표 사진"
+  },
+  "vp_4": {
+   "src": "https://img.etoday.co.kr/pto_db/2024/07/20240709143434_2048786_1168_830.jpg",
+   "page": "https://www.etoday.co.kr/news/view/2378286",
+   "by": "한화시스템 (이투데이 게재)",
+   "lic": "",
+   "cap": "사우디 수출용 천궁-II 다기능레이더(수출형 모델)"
+  },
+  "vp_5": {
+   "src": "https://image.koreajoongangdaily.com/12077646.jpg?imageId=12077646&panox=0&panoy=0&panow=0&panoh=0&width=1200&height=683",
+   "page": "https://www.koreajoongangdaily.com/business/iraq-buys-lig-nex1s-cheongung-ii-missiles-for-28-billion/12077287",
+   "by": "연합뉴스 (Korea JoongAng Daily 게재)",
+   "lic": "",
+   "cap": "천궁 유도탄 전시(포항, 2023) — 이라크 수출 계약 보도 대표 사진"
+  },
+  "vp_6": {
+   "src": "https://menu.sidae.com/moneyweek/thumb/2025/12/11/06/2025121116111343982_1.jpg",
+   "page": "https://www.sidae.com/article/2025121116111343982",
+   "by": "LIG넥스원 (머니S 게재)",
+   "lic": "",
+   "cap": "천궁-III 체계개발 시제 계약(2,166억원, 2025.12) 보도 대표 사진"
   }
  },
  "ir": {

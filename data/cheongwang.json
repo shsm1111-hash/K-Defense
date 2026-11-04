@@ -374,7 +374,7 @@
   },
   {
    "v": "블록-I 후속 양산 (국산 발진기)",
-   "photo": null,
+   "photo": "vp_1",
    "period": "2026~",
    "stage": "양산 적용 예정",
    "crew": "3명",
@@ -388,7 +388,7 @@
   },
   {
    "v": "30kW급 차량 탑재 레이저포",
-   "photo": null,
+   "photo": "vp_2",
    "period": "2026 시연",
    "stage": "시제·시연",
    "crew": "비공개",
@@ -402,7 +402,7 @@
   },
   {
    "v": "블록-II (이동형)",
-   "photo": null,
+   "photo": "vp_3",
    "period": "2027 착수 ~ 2030 목표",
    "stage": "연구개발 착수 예정",
    "crew": "미정",
@@ -416,7 +416,7 @@
   },
   {
    "v": "50kW 레이저 장갑차 (수출형)",
-   "photo": null,
+   "photo": "vp_4",
    "period": "2026 시제 → 2027 말 양산 목표",
    "stage": "시제 완성",
    "crew": "비공개",
@@ -444,7 +444,7 @@
   },
   {
    "v": "100kW급 고에너지 레이저 시제",
-   "photo": null,
+   "photo": "vp_6",
    "period": "2023~",
    "stage": "핵심기술 시제",
    "crew": "비공개",
@@ -756,6 +756,41 @@
    "by": "독서하는 자",
    "lic": "CC BY-SA 4.0",
    "cap": "한화의 레이저 대공무기 시험 장면"
+  },
+  "vp_1": {
+   "src": "https://cdn.www.smarttoday.co.kr/w1200/q100/f_jpg/article-images/2026-10-15/a0da6d26-ba1c-4e33-a634-8a3022393684.jpg",
+   "page": "https://www.smarttoday.co.kr/ko-kr/articles/112725",
+   "by": "한화시스템 (스마트투데이 게재)",
+   "lic": "",
+   "cap": "아미 타이거 플러스 훈련에서 드론 요격 시연 중인 블록-I 천광 (2026.10)"
+  },
+  "vp_2": {
+   "src": "https://car.withnews.kr/wp-content/uploads/2026/10/cheongwang-laser-3-drones-2000won-3.jpg",
+   "page": "https://car.withnews.kr/military/cheongwang-laser-3-drones-2000won",
+   "by": "한화시스템 (더위드카 게재)",
+   "lic": "",
+   "cap": "전투차량 탑재형 고에너지 레이저포"
+  },
+  "vp_3": {
+   "src": "https://www.hanwhasystems.com/resources/img/pc/business/defense/land/laser/pop02.jpg",
+   "page": "https://www.hanwhasystems.com/kr/business/defense/land/laser_index.do",
+   "by": "한화시스템 홈페이지",
+   "lic": "개념도",
+   "cap": "한화시스템 이동형 레이저무기(차량 탑재, 레이더·재머 결합) 제품 이미지"
+  },
+  "vp_4": {
+   "src": "https://one.sightlinemg.com/wp-content/uploads/2026/09/Photo-by-Hanwha.jpeg.jpg?w=1024",
+   "page": "https://www.defensenews.com/global/europe/2026/09/08/hanwha-plans-to-build-armored-vehicle-carrying-a-counter-drone-laser/",
+   "by": "한화 (Defense News 게재)",
+   "lic": "모형",
+   "cap": "MSPO 2026(폴란드)에서 전시된 한화 방공 제품 모형 — 50kW 레이저 장갑차 공개"
+  },
+  "vp_6": {
+   "src": "https://img1.daumcdn.net/thumb/S800x400/?fname=https://t1.daumcdn.net/news/202505/28/552097-eUj6kex/20250528110116983wqiz.jpg",
+   "page": "https://v.daum.net/v/Qi1iwudzHj",
+   "by": "한화시스템 (다음 뉴스 게재)",
+   "lic": "",
+   "cap": "100kW급 이동형 고에너지 레이저 시제 야외 시험 — 드론 격추 장면"
   }
  },
  "ir": {

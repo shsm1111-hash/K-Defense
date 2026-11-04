@@ -491,7 +491,7 @@
  "versions": [
   {
    "v": "KSS-I 장보고-I (209급) — 참고",
-   "photo": null,
+   "photo": "vp_0",
    "period": "1993~2001 취역",
    "stage": "국군 운용 중 (1번함 장보고함 퇴역 진행)",
    "crew": "약 33명",
@@ -505,7 +505,7 @@
   },
   {
    "v": "KSS-II 장보고-II (214급) — 참고",
-   "photo": null,
+   "photo": "vp_1",
    "period": "2007~2020 취역",
    "stage": "국군 운용 중 (성능개량 체계개발 2025 착수)",
    "crew": "약 40명",
@@ -533,7 +533,7 @@
   },
   {
    "v": "장보고-III 배치-II (장영실급)",
-   "photo": null,
+   "photo": "vp_3",
    "period": "2019 계약 ~ 2026·2027(1번함), 2028(2번함), 2031(3번함) 인도 예정",
    "stage": "건조 중 (1번함 2025.10 진수, 시운전)",
    "crew": "약 50명 (자동화 확대)",
@@ -547,7 +547,7 @@
   },
   {
    "v": "장보고-III 배치-III → 장보고 N (핵추진)",
-   "photo": null,
+   "photo": "vp_4",
    "period": "2027 설계 계약 계획, 2030년대 중반 1번함 진수",
    "stage": "개발 착수 전 (예산 반영)",
    "crew": null,
@@ -561,7 +561,7 @@
   },
   {
    "v": "수출형 KSS-III (폴란드·캐나다 제안형)",
-   "photo": null,
+   "photo": "vp_5",
    "period": "2024~2026 제안",
    "stage": "제안만 (두 사업 모두 탈락)",
    "crew": "약 50명",
@@ -575,7 +575,7 @@
   },
   {
    "v": "DSME-3000 / DSME-2000 (수출용 설계)",
-   "photo": null,
+   "photo": "vp_6",
    "period": "2019 공개",
    "stage": "제안만",
    "crew": "DSME-2000: 약 40명 + 특수부대 10명",
@@ -970,6 +970,48 @@
    "by": "국방부",
    "lic": "공공누리 제1유형",
    "cap": "도산안창호급 잠수함"
+  },
+  "vp_0": {
+   "src": "https://newsroom.etomato.com/userfiles/20251119_155627_662771022.jpg",
+   "page": "https://newstomato.com/ReadNews.aspx?no=1282138",
+   "by": "해군 (뉴스토마토 게재)",
+   "lic": "",
+   "cap": "1번함 장보고함, 마지막 항해를 위해 진해군항 출항 (2025.11)"
+  },
+  "vp_1": {
+   "src": "https://cphoto.asiae.co.kr/listimglink/1/2015050708560995950_1.jpg",
+   "page": "https://view.asiae.co.kr/article/2015061809442870812",
+   "by": "아시아경제",
+   "lic": "",
+   "cap": "해군이 보유한 214급(손원일급) 잠수함"
+  },
+  "vp_3": {
+   "src": "https://img1.newsis.com/2025/10/22/NISI20251022_0021025027_web.jpg",
+   "page": "https://www.newsis.com/view/NISX20251024_0003376118",
+   "by": "뉴시스 (차용현 기자)",
+   "lic": "",
+   "cap": "장보고-III 배치-II 1번함 장영실함(3,600t급) 진수식, 한화오션 거제 (2025.10.22)"
+  },
+  "vp_4": {
+   "src": "https://www.navalnews.com/wp-content/uploads/2026/02/Hanwha-Ocean-Future-Submarine-KSS-N.jpg",
+   "page": "https://www.navalnews.com/naval-news/2026/02/south-korea-is-already-preparing-for-nuclear-powered-submarines/",
+   "by": "Naval News (Xavier Vavasseur)",
+   "lic": "모형",
+   "cap": "한화오션이 MADEX 2025에서 공개한 '미래 잠수함(KSS-N)' 설계 모형"
+  },
+  "vp_5": {
+   "src": "https://www.navalnews.com/wp-content/uploads/2025/05/KSS-III-model-on-Hanwha-booth-at-MADEX-2025-scaled.jpg",
+   "page": "https://www.navalnews.com/event-news/madex-2025/2025/05/madex-2025-hanwha-ocean-eyes-canadas-submarine-requirement/",
+   "by": "Naval News (Gordon Arthur)",
+   "lic": "모형",
+   "cap": "MADEX 2025 한화오션 부스의 KSS-III 배치-II 모형 — 캐나다 잠수함 사업 제안 기반"
+  },
+  "vp_6": {
+   "src": "https://www.navalnews.com/wp-content/uploads/2019/10/MADEX-2019-New-2000-tons-attack-submarine-joins-DSME-portfolio_001.jpg",
+   "page": "https://www.navalnews.com/event-news/madex-2019/2019/10/madex-2019-new-2000-tons-attack-submarine-joins-dsme-portfolio/",
+   "by": "Naval News",
+   "lic": "모형",
+   "cap": "MADEX 2019에 전시된 DSME-2000 (2,000t급) 축소 모형"
   }
  },
  "ir": {

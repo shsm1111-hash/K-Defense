@@ -424,7 +424,7 @@
   },
   {
    "v": "L-SAM 포대 (블록 I 체계)",
-   "photo": null,
+   "photo": "vp_2",
    "period": "2025~2030 양산",
    "stage": "양산 중",
    "crew": "비공개",
@@ -438,7 +438,7 @@
   },
   {
    "v": "L-SAM-II 고고도 요격탄",
-   "photo": null,
+   "photo": "vp_3",
    "period": "2025~2028 체계개발 → 2030년대 양산 예정",
    "stage": "체계개발 중",
    "crew": "미정",
@@ -452,7 +452,7 @@
   },
   {
    "v": "L-SAM-II 활공단계 요격탄",
-   "photo": null,
+   "photo": "vp_4",
    "period": "2030년대 (L-SAM-II 사업 2035년까지)",
    "stage": "개발 계획",
    "crew": "미정",
@@ -466,7 +466,7 @@
   },
   {
    "v": "수출형 (UAE 제안안)",
-   "photo": null,
+   "photo": "vp_5",
    "period": "협상 중",
    "stage": "텀시트 (2026.9)",
    "crew": "미정",
@@ -778,6 +778,34 @@
    "by": "방위사업청",
    "lic": "공공누리 제1유형",
    "cap": "한국형 다층 미사일 방어 개념도"
+  },
+  "vp_2": {
+   "src": "https://menu.sidae.com/moneyweek/thumb/2025/11/28/06/2025112810013269479_1.jpg",
+   "page": "https://www.sidae.com/article/2025112810013269479",
+   "by": "한화에어로스페이스 (머니S 게재)",
+   "lic": "",
+   "cap": "L-SAM 양산 계약(7,054억원, 2025.11) 보도 대표 사진"
+  },
+  "vp_3": {
+   "src": "https://menu.sidae.com/moneyweek/thumb/2025/06/10/06/2025061013435886449_1.jpg",
+   "page": "https://www.sidae.com/article/2025061013435886449",
+   "by": "한화시스템 (머니S 게재)",
+   "lic": "",
+   "cap": "L-SAM-II 고고도 요격탄 유도탄 개발 참여 보도 대표 사진 (2025.6)"
+  },
+  "vp_4": {
+   "src": "https://newsseoul.co.kr/news/data/ptn/20250115/p1065579323700924_879.jpg",
+   "page": "https://newsseoul.co.kr/news/view/1065579621410034",
+   "by": "방위사업청 (뉴스서울 게재)",
+   "lic": "개념도",
+   "cap": "복합다층방어체계 개념도 — L-SAM-II 개발 착수 발표"
+  },
+  "vp_5": {
+   "src": "https://sateconomy.co.kr/news/data/20250213/p1065574418540633_683_thum.jpeg",
+   "page": "https://sateconomy.co.kr/news/view/1065574418540633",
+   "by": "한화에어로스페이스 (위성경제 게재)",
+   "lic": "개념도",
+   "cap": "IDEX 2025(아부다비) 한화 통합전시관 조감도 — L-SAM 중동 첫 공개"
   }
  },
  "ir": {

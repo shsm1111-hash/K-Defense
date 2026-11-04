@@ -17,11 +17,12 @@
     const p = D.photos[key];
     const fig = el('figure', 'photo' + (cls ? ' ' + cls : ''));
     if (!p) return null;
-    const img = el('img'); img.src = p.src; img.alt = p.cap; img.loading = key === 'hero' ? 'eager' : 'lazy'; img.decoding = 'async';
+    const img = el('img'); img.src = p.src; img.alt = p.cap; img.loading = key === 'hero' ? 'eager' : 'lazy'; img.decoding = 'async'; img.referrerPolicy = 'no-referrer';
+    img.addEventListener('error', () => { const n = el('div', 'nophoto'); n.append(el('b', null, p.cap.split(' ')[0]), el('span', null, '사진을 불러오지 못했습니다 · 출처 링크에서 보기')); img.replaceWith(n); });
     const cap = el('figcaption');
     cap.append(p.cap + ' · 사진 ');
     const a = el('a', null, p.by); a.href = p.page; a.target = '_blank'; a.rel = 'noopener';
-    cap.append(a, ' · ' + p.lic);
+    cap.append(a, p.lic ? ' · ' + p.lic : '');
     fig.append(img);
     return { fig, cap };
   };
@@ -68,7 +69,7 @@
     const card = el('article', 'ver');
     const p = v.photo && photo(v.photo);
     if (p) card.append(p.fig);
-    else { const n = el('div', 'nophoto'); n.append(el('b', null, v.v), el('span', null, '공개 라이선스 사진 없음')); card.append(n); }
+    else { const n = el('div', 'nophoto'); n.append(el('b', null, v.v), el('span', null, '사진 준비 중')); card.append(n); }
     if (p) { const c = el('div', 'credit'); c.append(...p.cap.childNodes); card.append(c); }
     const b = el('div', 'ver-b');
     const hh = el('div', 'ver-h'); hh.append(el('b', null, v.v), chip(v.tier));

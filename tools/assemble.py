@@ -78,8 +78,9 @@ def assemble(sid):
     (ROOT / "data" / f"{sid}.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
     print("assembled", sid, {k: len(v) for k, v in data.items()})
     sys.path.insert(0, str(ROOT / "tools"))
-    import companies
+    import companies, version_photos
     companies.apply(sid)
+    version_photos.apply(sid)
 
 
 if __name__ == "__main__":

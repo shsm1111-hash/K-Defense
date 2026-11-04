@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>K2 전차 · K방산 무기체계 도감</title>
+<meta name="description" content="K2 전차의 개발 배경과 연혁, 버전별 차이, 양산 단계, 수출국별 도입 배경과 현지화 조건, 계약 단가, 구성품 업체, 향후 계획">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body data-data="../data/k2.json">
+<div class="wrap">
+  <nav class="topnav" aria-label="경로"><a href="../">← K방산 무기체계 도감</a><span>/</span><span>K2 전차</span></nav>
+
+  <section class="hero">
+    <div class="hero-media"><figure class="photo" id="hero-photo"></figure></div>
+    <div class="hero-text">
+      <div class="eyebrow">지상 기동 · 120mm 55구경장 3세대 주력전차</div>
+      <h1>K2 전차<span>K2 Black Panther (흑표) · 체계업체 현대로템</span></h1>
+      <p class="lede" id="lede">—</p>
+      <div class="legend-tier">신뢰도
+        <span class="chip t-ok">확정</span>공시·정부 발표
+        <span class="chip t-news">보도</span>언론·리포트
+        <span class="chip t-est">추정</span>계산·추산
+        <span class="chip t-note">해설</span>맥락 설명
+      </div>
+    </div>
+  </section>
+
+  <section class="kpis" id="kpis" aria-label="핵심 지표"></section>
+
+  <nav class="tabs" aria-label="섹션">
+    <a href="#overview" data-tab="overview">개요·배경</a>
+    <a href="#history" data-tab="history">연혁·버전</a>
+    <a href="#export" data-tab="export">수출</a>
+    <a href="#cost" data-tab="cost">단가·원가·공급망</a>
+    <a href="#plan" data-tab="plan">향후 계획</a>
+  </nav>
+
+  <section class="page" id="overview">
+    <div class="two">
+      <article class="card">
+        <h2>왜 만들었나</h2>
+        <p class="note">K1 전차의 화력·방호로는 북한 신형 전차와 미래 전장을 감당하기 어려웠습니다.</p>
+        <div class="card-body"><ol class="reasons" id="reasons"></ol></div>
+      </article>
+      <article class="card">
+        <h2>핵심 제원과 규모</h2>
+        <p class="note">국군 K2 기준, 괄호 안은 수출형·변형.</p>
+        <div class="card-body tbl-wrap">
+          <table class="tbl"><thead><tr><th>항목</th><th>값</th><th>신뢰도</th></tr></thead><tbody id="specs"></tbody></table>
+        </div>
+      </article>
+    </div>
+    <article class="card">
+      <h2>공부 포인트</h2>
+      <p class="note">K2을(를) 이해할 때 짚어야 할 산업·사업 관점.</p>
+      <div class="card-body study" id="study"></div>
+    </article>
+  </section>
+
+  <section class="page hidden" id="history">
+    <article class="card">
+      <h2>버전별 차이</h2>
+      <p class="note">양산 차수마다 파워팩(엔진·변속기) 국산화 수준이 달라졌고, 수출형은 방호·통신 사양이 더해졌습니다. 공개 라이선스 사진이 없는 버전은 비워 두었습니다.</p>
+      <div class="card-body versions" id="versions"></div>
+    </article>
+    <article class="card">
+      <div class="card-h">
+        <div><h2>개발 연혁</h2><p class="note">위협 인식부터 개발·양산·수출·개량까지 순서대로.</p></div>
+        <div class="filters" id="tl-filters" role="group" aria-label="분류"></div>
+      </div>
+      <div class="card-body"><ol class="tl" id="timeline"></ol></div>
+    </article>
+  </section>
+
+  <section class="page hidden" id="export">
+    <div class="split">
+      <article class="card">
+        <h2>수출 국가별 계약 규모</h2>
+        <p class="note">나라별 누적 계약 수량(완성 전차, 계열전차 제외). 막대를 누르면 그 나라의 도입 배경, 현지화·기술이전 조건, 계약 이력이 열립니다.</p>
+        <div class="swatches" id="st-legend"></div>
+        <div class="card-body chart" id="opbars"></div>
+      </article>
+      <article class="card detail" id="detail" aria-live="polite"></article>
+    </div>
+    <article class="card">
+      <h2>수출 사업 타임라인</h2>
+      <p class="note">계약 한 건이 원 하나, 원 크기는 수량. 점선 원은 추정치. 나라 이름이나 원을 누르면 위 상세가 바뀝니다.</p>
+      <div class="card-body chart" id="swim"></div>
+    </article>
+    <article class="card">
+      <div class="card-h">
+        <div><h2>수출 계약 상세</h2><p class="note">계약액은 원화로 공개·보도된 경우만 적었습니다. 단가는 계약액을 수량으로 나눈 값으로 패키지 비용이 섞여 있습니다.</p></div>
+        <input class="search" id="cq" type="search" placeholder="국가·모델 검색" aria-label="계약 검색">
+      </div>
+      <div class="card-body tbl-wrap tall">
+        <table class="tbl">
+          <thead><tr>
+            <th aria-sort="ascending"><button data-sort="id">계약</button></th>
+            <th aria-sort="none"><button data-sort="country">국가</button></th>
+            <th class="hide-sm">모델</th>
+            <th class="num" aria-sort="none"><button data-sort="qty">수량(대)</button></th>
+            <th class="num" aria-sort="none"><button data-sort="value_krw_eok">계약액(억원)</button></th>
+            <th class="num" aria-sort="none"><button data-sort="unit">단가(억원)</button></th>
+            <th class="hide-sm">원 계약 표기</th>
+            <th class="hide-md">포함 범위</th>
+            <th>신뢰도</th>
+            <th class="hide-sm">출처</th>
+          </tr></thead>
+          <tbody id="contracts"></tbody>
+        </table>
+      </div>
+    </article>
+  </section>
+
+  <section class="page hidden" id="cost">
+    <div class="two">
+      <article class="card">
+        <h2>대당 계약 단가 비교</h2>
+        <p class="note">계약액 ÷ 수량, 억원. 수출 계약에는 탄약·군수지원·교육·현지 공장이 묶여 있어 장비 가격보다 큽니다.</p>
+        <div class="card-body chart" id="unit"></div>
+      </article>
+      <article class="card">
+        <h2>현대로템 방산 부문 실적</h2>
+        <p class="note">분기별 매출(막대, 억원. 회사가 부문별 수출·내수를 따로 공개하지 않음)과 영업이익률(선, 오른쪽 축). K2 단독 원가는 공개되지 않아 부문 실적으로 수익성을 가늠합니다. 회사 IR 실적발표 자료 기준이며, 막대에 올리면 수치와 출처 자료가 보입니다.</p>
+        <div class="swatches"><span><i style="background:var(--c1)"></i>부문 매출</span><span><i style="background:var(--c4);height:3px"></i>영업이익률</span></div>
+        <div class="card-body chart" id="fin"></div>
+      </article>
+    </div>
+    <article class="card">
+      <h2>방산 부문 수주잔고</h2>
+      <p class="note">현대로템 IR 실적발표 자료 기준. 현대로템은 부문별 수출 비중을 따로 공개하지 않습니다. 2025년 폴란드 2차 계약(8조 9,814억원)으로 잔고가 크게 늘었습니다.</p>
+      <div class="card-body tbl-wrap"><table class="tbl"><thead><tr><th>시점</th><th class="num">수주잔고(조원)</th><th class="num">수출 비중</th></tr></thead><tbody id="backlog"></tbody></table></div>
+      <p class="note"><a href="https://www.hyundai-rotem.co.kr/ko/invest/ir/list.do" target="_blank" rel="noopener">출처: 현대로템 IR 실적발표</a></p>
+    </article>
+    <article class="card">
+      <h2>원가는 어떻게 읽나</h2>
+      <ul class="guide card-body">
+        <li><b>공개 범위</b> · 개별 무기의 원가와 마진은 영업비밀이라 공개되지 않습니다. 방위사업청 사업비와 기업의 부문 실적이 간접 지표입니다.</li>
+        <li><b>국군 조달가</b> · 국방예산의 대당 사업비가 차량 자체 가격의 기준선이 됩니다.</li>
+        <li><b>수출 계약 단가</b> · 계약액에 탄약, 후속 군수지원, 교육, 현지 생산 투자가 섞이므로 패키지 단가로 읽습니다.</li>
+        <li><b>이익률</b> · 방산 부문 이익률은 수출 물량 인도 시점에 따라 분기마다 크게 흔들립니다. 연간 흐름과 수주잔고를 함께 봅니다.</li>
+      </ul>
+    </article>
+    <article class="card">
+      <h2>구성품별 생산업체</h2>
+      <p class="note">국내 공급망과 해외 현지 생산 파트너.</p>
+      <div class="card-body">
+        <div class="supply-photos" id="supply-photos"></div>
+        <div class="two">
+          <div class="tbl-wrap"><h3>국내 핵심 구성품</h3>
+            <table class="tbl"><thead><tr><th>구성품</th><th>업체</th><th class="hide-sm">비고</th><th>신뢰도</th></tr></thead><tbody id="comp-dom"></tbody></table></div>
+          <div class="tbl-wrap"><h3>해외 현지 생산</h3>
+            <table class="tbl"><thead><tr><th>국가</th><th>파트너</th><th class="hide-sm">역할</th><th>신뢰도</th></tr></thead><tbody id="comp-loc"></tbody></table></div>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <section class="page hidden" id="plan">
+    <article class="card">
+      <h2>향후 개발·양산 타임라인</h2>
+      <p class="note">국내 개량 일정과 수출 인도·협상 일정을 한 줄로.</p>
+      <div class="card-body"><ol class="tl" id="road"></ol></div>
+    </article>
+    <article class="card">
+      <h2>수주 파이프라인</h2>
+      <p class="note">아직 계약 전인 기회들. 단계와 규모는 보도 기준.</p>
+      <div class="card-body tbl-wrap">
+        <table class="tbl"><thead><tr><th>국가</th><th>기회</th><th>규모</th><th>단계</th><th class="hide-sm">기준</th><th class="hide-md">메모</th><th>신뢰도</th></tr></thead><tbody id="pipeline"></tbody></table>
+      </div>
+    </article>
+  </section>
+
+  <footer class="site">
+    <p id="updated">—</p>
+    <p>공개 보도·공시·증권사 리포트를 바탕으로 정리했습니다. 각 계약의 출처는 수출 계약 상세 표에 있습니다.</p>
+    <p>사진 출처 (위키미디어 커먼즈)</p>
+    <ul id="credits"></ul>
+  </footer>
+</div>
+<script src="../assets/ir-chart.js"></script>
+<script src="../assets/system.js"></script>
+</body>
+</html>

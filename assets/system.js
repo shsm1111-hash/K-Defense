@@ -165,7 +165,7 @@
     [['계약 수량', fmt(r.qty) + U + (r.qty_note ? ' · ' + r.qty_note : '')], ['첫 계약', r.first_year], ['생산 방식', r.mode]].forEach(([k, v]) => dl.append(el('dt', null, k), el('dd', null, v)));
     parts.push(dl);
     const sec = (title, text, t) => { const s = el('div', 'dt-sec'); const h3 = el('h3', null, title); if (t) h3.append(chip(t)); s.append(h3, el('p', null, text)); return s; };
-    parts.push(sec(`왜 ${M.short}이(가) 필요했나`, r.why, r.tier));
+    parts.push(sec((M.why_title || `왜 ${M.short}이(가) 필요했나`), r.why, r.tier));
     if (r.diff) parts.push(sec('이 나라만의 조건 (현지화·기술이전·요구사항)', r.diff, '해설'));
     const hs = el('div', 'dt-sec'); hs.append(el('h3', null, '수출 사업 타임라인'));
     const ol = el('ol', 'mini');

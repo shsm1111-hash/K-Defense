@@ -1482,6 +1482,7 @@
     "src": "backlog",
     "note": "한화에어로 {backlog_period}{backlog_export} (IR)"
    }
-  ]
+  ],
+  "why_title": "왜 K9이 필요했나"
  }
 }

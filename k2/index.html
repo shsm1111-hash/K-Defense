@@ -37,9 +37,15 @@
     <a href="#export" data-tab="export">수출</a>
     <a href="#cost" data-tab="cost">단가·원가·공급망</a>
     <a href="#plan" data-tab="plan">향후 계획</a>
+    <a href="#pipeline-tab" data-tab="pipeline-tab">수주 파이프라인</a>
   </nav>
 
   <section class="page" id="overview">
+    <article class="card">
+      <h2>어떤 무기체계인가</h2>
+      <p class="note" id="purpose">—</p>
+      <div class="card-body study" id="features"></div>
+    </article>
     <div class="two">
       <article class="card">
         <h2>왜 만들었나</h2>
@@ -166,9 +172,12 @@
       <p class="note">국내 개량 일정과 수출 인도·협상 일정을 한 줄로.</p>
       <div class="card-body"><ol class="tl" id="road"></ol></div>
     </article>
+  </section>
+
+  <section class="page hidden" id="pipeline-tab">
     <article class="card">
       <h2>수주 파이프라인</h2>
-      <p class="note">아직 계약 전인 기회들. 단계와 규모는 보도 기준.</p>
+      <p class="note">아직 계약 전인 수출·양산 기회들. 협상 단계가 앞선 순서로 정리했고, 단계와 규모는 보도 기준입니다.</p>
       <div class="card-body tbl-wrap">
         <table class="tbl"><thead><tr><th>국가</th><th>기회</th><th>규모</th><th>단계</th><th class="hide-sm">기준</th><th class="hide-md">메모</th><th>신뢰도</th></tr></thead><tbody id="pipeline"></tbody></table>
       </div>

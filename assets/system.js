@@ -57,6 +57,8 @@
   $('updated').textContent = `자료 기준일 ${D.updated}`;
 
   // 개요
+  $('purpose').textContent = M.purpose || '';
+  $('features').replaceChildren(...(D.features || []).map((f) => { const d = el('div'); d.append(el('strong', null, f.title), el('p', null, f.detail)); return d; }));
   $('reasons').replaceChildren(...D.notes.filter((n) => n.kind === '배경').sort((a, b) => a.order - b.order).map((n) => { const li = el('li'); li.append(el('strong', null, n.title), el('p', null, n.detail)); return li; }));
   $('study').replaceChildren(...D.notes.filter((n) => n.kind === '공부').sort((a, b) => a.order - b.order).map((n) => { const d = el('div'); d.append(el('strong', null, n.title), el('p', null, n.detail)); return d; }));
   $('specs').replaceChildren(...D.specs.map((s) => { const tr = el('tr'); tr.append(td(s.item), td(s.value, 'strong'), tierTd(s.tier)); return tr; }));
@@ -255,7 +257,9 @@
     const b = el('div'); const hh = el('div', 'h'); hh.append(el('span', 'cat', r.status), el('strong', null, r.item), chip(r.tier));
     b.append(hh, el('p', null, r.detail)); li.append(el('div', 'when', r.when), el('span', 'dot'), b); return li;
   }));
-  $('pipeline').replaceChildren(...D.pipeline.map((r) => { const tr = el('tr'); tr.append(td(r.country, 'strong nowrap'), td(r.opportunity), td(r.scale), td(r.stage, 'nowrap'), td(r.updated, 'hide-sm nowrap'), td(r.note, 'hide-md'), tierTd(r.tier)); return tr; }));
+  const STAGE = ['총괄합의', '협상', '예산 승인', '시제', '협력계약', '경쟁', '협의', '관심', '가능성', '마케팅', '제외'];
+  const sr = (s) => { const i = STAGE.findIndex((x) => String(s).includes(x)); return i < 0 ? 99 : i; };
+  $('pipeline').replaceChildren(...[...D.pipeline].sort((a, b) => sr(a.stage) - sr(b.stage)).map((r) => { const tr = el('tr'); tr.append(td(r.country, 'strong nowrap'), td(r.opportunity), td(r.scale), td(r.stage, 'nowrap'), td(r.updated, 'hide-sm nowrap'), td(r.note, 'hide-md'), tierTd(r.tier)); return tr; }));
 
   // 사진 출처
   const seen = new Set();
@@ -267,7 +271,7 @@
   const drawn = {};
   const drawers = { export: () => { drawOps(); drawDetail(); drawSwim(); }, cost: () => { drawUnit(); drawFin(); } };
   function route() {
-    const id = ['overview', 'history', 'export', 'cost', 'plan'].includes(location.hash.slice(1)) ? location.hash.slice(1) : 'overview';
+    const id = ['overview', 'history', 'export', 'cost', 'plan', 'pipeline-tab'].includes(location.hash.slice(1)) ? location.hash.slice(1) : 'overview';
     document.querySelectorAll('.page').forEach((s) => s.classList.toggle('hidden', s.id !== id));
     document.querySelectorAll('.tabs a').forEach((a) => (a.dataset.tab === id ? a.setAttribute('aria-current', 'page') : a.removeAttribute('aria-current')));
     if (drawers[id]) { drawers[id](); drawn[id] = true; }

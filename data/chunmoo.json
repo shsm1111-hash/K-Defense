@@ -882,6 +882,22 @@
    "tier": "확정"
   },
   {
+   "id": "P15",
+   "group": "국내 핵심 구성품",
+   "part": "차세대 전자제어식 디젤 엔진 (개발 중)",
+   "maker": "STX엔진",
+   "detail": "2023.12 국방기술진흥연구소 부품국산화 협약. 기존 기계식 엔진 단종·내구연한 도래 대체, 수출 장애 요인 제거 목적",
+   "tier": "확정"
+  },
+  {
+   "id": "P16",
+   "group": "국내 핵심 구성품",
+   "part": "전자전(EW) 대응 강화",
+   "maker": "BAE 시스템즈 (영국)",
+   "detail": "2025.9 한화에어로스페이스와 협력 협약",
+   "tier": "보도"
+  },
+  {
    "id": "F01",
    "group": "해외 현지 생산",
    "part": "폴란드 발사대 차대 (Jelcz P882.57 8x8)",
@@ -1525,5 +1541,124 @@
    ],
    "note": "지상방산 부문 기준. 회사는 총액과 수출 비중(%)을 공개하며, 수출·내수 금액은 총액×비중으로 계산했습니다. 각 분기 IR 실적발표 '사업부문별 실적' 페이지."
   }
- }
+ },
+ "companies": [
+  {
+   "name": "한화에어로스페이스",
+   "ticker": "012450",
+   "market": "KOSPI",
+   "role": "체계종합(주계약)",
+   "importance": 1,
+   "parts": "천무 체계종합, 발사대 모듈, K239L 발사차·K239T 탄약운반차, 유도로켓·전술탄도탄(CGR-080 80km, CTM-MR 160km, CTM-290 290km, 노르웨이향 최대 500km) 추진기관·탄두·조립",
+   "exposure": "수출 계약 공개·보도 금액 합산 약 17.0조원(폴란드 EC1 5.04조·EC2 2.25조·EC3 5.6조, 사우디 약 1조, UAE 약 0.7조, 노르웨이 1.3조, 크로아티아 0.64조, 에스토니아 0.44조. 에스토니아 추가 3대 미공개) + 국군 3차 양산 3,423억원(2024.11 공시)",
+   "exposure_krw_eok": 169694.0,
+   "why": "천무는 발사대보다 유도탄 매출 비중이 커서, 한 번 팔린 뒤에도 탄 재보급으로 반복 매출이 나오는 구조다. 탄 내재화(옛 ㈜한화 방산 합병)로 체계·탄을 모두 가져가 마진이 높다. 폴란드 HWB 합작공장이 유럽 탄 공급 거점이 되면 추가 수주의 레버리지가 크다.",
+   "tier": "보도",
+   "source_url": "https://www.gov.pl/web/obrona-narodowa/homar-k"
+  },
+  {
+   "name": "삼양컴텍",
+   "ticker": "484590",
+   "market": "KOSDAQ",
+   "role": "부품·소재",
+   "importance": 2,
+   "parts": "발사차 운전실 방탄장갑(강철·세라믹·복합재, STANAG 4569 레벨 2 수준)",
+   "exposure": "계약 금액 미공개. 매출 448억원(2021) → 1,416억원(2024) 증가를 K2·천무 수출이 견인",
+   "exposure_krw_eok": null,
+   "why": "한국형 K239L 차체를 쓰는 물량(국군·UAE·사우디·노르웨이·에스토니아·크로아티아 등)에 장갑이 들어간다. 폴란드는 Jelcz 차대를 써서 노출이 상대적으로 작다.",
+   "tier": "보도",
+   "source_url": "https://www.hankyung.com/article/2025042786511"
+  },
+  {
+   "name": "한화 WB 어드밴스드 시스템즈(HWB)",
+   "ticker": null,
+   "market": "비상장",
+   "role": "현지 생산",
+   "importance": 2,
+   "parts": "폴란드 CGR-080 유도탄 현지 생산 (한화에어로스페이스·WB 일렉트로닉스 합작, 고주프 비엘코폴스키 인근 공장)",
+   "exposure": "폴란드 EC3 약 5조 6,000억원(PLN 약 140억) 생산 담당, 2030~2033 인도",
+   "exposure_krw_eok": 56000.0,
+   "why": "한화에어로스페이스의 지분법·연결 처리 방식에 따라 이익 인식이 달라진다(지분 구조 공식 미공개). 유럽 다른 천무 사용국 탄 공급 거점이 될 수 있어 중요.",
+   "tier": "확정",
+   "source_url": "https://defence24.com/industry/poland-becomes-a-rocket-manufacturer-contract-for-homar-k-signed"
+  },
+  {
+   "name": "WB 일렉트로닉스(WB그룹)",
+   "ticker": null,
+   "market": "비상장",
+   "role": "현지 생산",
+   "importance": 2,
+   "parts": "폴란드 Homar-K 사격·전장관리체계(TOPAZ) 통합, HWB 합작 파트너",
+   "exposure": "미공개",
+   "exposure_krw_eok": null,
+   "why": "폴란드 민간 방산 최대 업체. 크로아티아 천무에도 TOPAZ 통합 보도가 있어 유럽 확장의 현지 파트너 역할.",
+   "tier": "보도",
+   "source_url": "https://www.theguru.co.kr/news/article.html?no=85846"
+  },
+  {
+   "name": "HD건설기계",
+   "ticker": "267270",
+   "market": "KOSPI",
+   "role": "핵심 구성품",
+   "importance": 3,
+   "parts": "DV11K 450마력 6기통 디젤 엔진 (K239L·K239T 차체). 옛 HD현대인프라코어",
+   "exposure": "미공개",
+   "exposure_krw_eok": null,
+   "why": "한국 차체형 천무 대수에 비례하는 엔진 공급. 회사 규모 대비 비중은 작고, 향후 STX엔진 전자제어식 엔진으로 교체될 가능성이 있다.",
+   "tier": "보도",
+   "source_url": "https://wikiwand.com/en/articles/K239_Chunmoo"
+  },
+  {
+   "name": "STX엔진",
+   "ticker": "077970",
+   "market": "KOSPI",
+   "role": "개발",
+   "importance": 3,
+   "parts": "천무 차량용 전자제어식 디젤 엔진 국산화 개발 (2023.12 국방기술진흥연구소 협약, 기존 기계식 엔진 단종 대체)",
+   "exposure": "개발 단계, 양산 금액 미정",
+   "exposure_krw_eok": null,
+   "why": "개발 성공 시 후속 양산·수출 천무 엔진 공급권을 확보할 수 있다. K9 엔진처럼 '수출 장애 요인 제거'가 명분이라 중장기 옵션 성격.",
+   "tier": "확정",
+   "source_url": "https://www.smarttoday.co.kr/ko-kr/articles/40344"
+  },
+  {
+   "name": "Jelcz(PGZ)",
+   "ticker": null,
+   "market": "비상장",
+   "role": "현지 생산",
+   "importance": 3,
+   "parts": "폴란드 Homar-K 발사대 차대 Jelcz P882.57 8x8",
+   "exposure": "차대 198대 PLN 15억(2023.12, 폴란드 정부와 별도 계약)",
+   "exposure_krw_eok": null,
+   "why": "폴란드 물량은 한국 차체 대신 Jelcz 차대를 써서 한국 차체·장갑·엔진 협력사의 폴란드 노출이 작다.",
+   "tier": "보도",
+   "source_url": "https://www.gov.pl/web/obrona-narodowa/homar-k"
+  },
+  {
+   "name": "앨리슨 트랜스미션",
+   "ticker": "NYSE:ALSN",
+   "market": "해외",
+   "role": "부품·소재",
+   "importance": 3,
+   "parts": "4500SP 자동변속기 (수입)",
+   "exposure": "미공개",
+   "exposure_krw_eok": null,
+   "why": "미국산 부품이라 수출 시 미국 규제 영향 여부를 확인할 필요가 있다. 국산화 여부는 확인되지 않음.",
+   "tier": "보도",
+   "source_url": "https://wikiwand.com/en/articles/K239_Chunmoo"
+  },
+  {
+   "name": "BAE 시스템즈",
+   "ticker": "LSE:BA",
+   "market": "해외",
+   "role": "개발",
+   "importance": 3,
+   "parts": "천무 전자전(EW) 대응 능력 강화 협력 (2025.9 협약)",
+   "exposure": "미공개",
+   "exposure_krw_eok": null,
+   "why": "유럽 고객 요구(GPS 교란 대응)를 맞추기 위한 협력으로, 수주 경쟁력 보강 성격.",
+   "tier": "보도",
+   "source_url": "https://www.asiae.co.kr/en/article/2025091109541943377"
+  }
+ ]
 }

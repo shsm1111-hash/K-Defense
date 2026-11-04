@@ -623,9 +623,9 @@
    "id": "P10",
    "group": "국내 핵심 구성품",
    "part": "포탑 구동장치",
-   "maker": "두산모트롤 (현 모트롤)",
+   "maker": "엠앤씨솔루션 (옛 두산모트롤 방산 부문, KOSPI 484870)",
    "detail": "전기식 포탑·주포 구동장치",
-   "tier": "보도"
+   "tier": "추정"
   },
   {
    "id": "P11",
@@ -633,6 +633,22 @@
    "part": "유기압 현수장치(ISU)",
    "maker": "현대로템 설계",
    "detail": "차체를 기울이고 높낮이를 바꾸는 핵심 기술. 생산 협력사는 공개 자료로 확인 어려움. 폴란드 기술이전 대상",
+   "tier": "보도"
+  },
+  {
+   "id": "P17",
+   "group": "국내 핵심 구성품",
+   "part": "1차 양산 엔진 (MTU MT883 면허생산)",
+   "maker": "STX엔진",
+   "detail": "1차 양산 100대분. 2차부터 HD건설기계 DV27K로 교체",
+   "tier": "보도"
+  },
+  {
+   "id": "P18",
+   "group": "국내 핵심 구성품",
+   "part": "2~3차 양산 변속기 (HSWL 295TM)",
+   "maker": "독일 RENK",
+   "detail": "국산 EST15K 전환(4차) 전 물량. 폴란드 수출분 일부에도 사용",
    "tier": "보도"
   },
   {
@@ -1449,6 +1465,164 @@
   {
    "title": "국산 파워팩",
    "detail": "1,500마력 엔진과 변속기를 차수별로 국산화해 4차 양산부터는 완전 국산입니다. 수출 때 외국 정부 승인에 덜 묶인다는 의미가 있습니다."
+  }
+ ],
+ "companies": [
+  {
+   "name": "현대로템",
+   "ticker": "064350",
+   "market": "KOSPI",
+   "role": "체계종합(주계약)",
+   "importance": 1,
+   "parts": "K2 체계종합(차체·포탑·자동장전·유기압 현수장치 설계·조립), 계열전차(구난·공병·교량), 폴란드 현지 생산 기술이전. 2027년부터 120mm 주포도 직접 생산(현대위아 특수사업 양수)",
+   "exposure": "폴란드 1차 4조 4,992억원 + 2차 8조 9,814억원 = 약 13.5조원(단일판매·공급계약 공시). 페루 54대 총괄합의(K808 포함 약 2.8조원 보도)·국군 4차 양산 별도",
+   "exposure_krw_eok": 134806.0,
+   "why": "디펜스솔루션 부문 매출·이익의 대부분이 K2에서 나온다. 폴란드 수출분은 내수보다 마진이 높아 회사 전체 영업이익률을 끌어올린 핵심. 폴란드 3차·이라크·루마니아 등 파이프라인과 주포 내재화(수직계열화)가 다음 레버리지.",
+   "tier": "확정",
+   "source_url": "https://www.digitaltoday.co.kr/aigongsi/987/hyundai-rotem-poland-k2-tank-contract"
+  },
+  {
+   "name": "SNT다이내믹스",
+   "ticker": "003570",
+   "market": "KOSPI",
+   "role": "핵심 구성품",
+   "importance": 1,
+   "parts": "EST15K 1,500마력급 자동변속기 (국군 4차 양산분부터 탑재, 튀르키예 알타이 수출)",
+   "exposure": "계약 금액 미공개. 2025년 수출 $1.31억(폴란드 56%·이집트 34%, K9 변속기 위주)",
+   "exposure_krw_eok": null,
+   "why": "'320시간 무결함' 문제를 넘겨 파워팩 완전 국산화를 완성한 업체. 폴란드 2차는 독일 RENK 변속기 비중이 남아 있지만, 중동형 K2(K2ME)·이라크·페루 등은 국산 파워팩이 판매 포인트라 수출 확대 시 레버리지가 크다. 매출 대부분이 방산 변속기.",
+   "tier": "보도",
+   "source_url": "https://www.ajunews.com/view/20250520145455159"
+  },
+  {
+   "name": "삼양컴텍",
+   "ticker": "484590",
+   "market": "KOSDAQ",
+   "role": "부품·소재",
+   "importance": 1,
+   "parts": "K2 복합장갑(세라믹 방탄) 독점 공급, 알타이 장갑 기술이전 참여",
+   "exposure": "계약 금액 미공개. 매출 448억원(2021) → 1,416억원(2024), 증가분 대부분이 K2·천무 수출 덕",
+   "exposure_krw_eok": null,
+   "why": "K2 방탄을 독점 공급해 K2 대수에 매출이 거의 정비례한다. 2025.8 코스닥 상장한 소형주라 K2 추가 수주에 대한 실적·주가 민감도가 가장 높은 편.",
+   "tier": "보도",
+   "source_url": "https://www.hankyung.com/article/2025042786511"
+  },
+  {
+   "name": "한화시스템",
+   "ticker": "272210",
+   "market": "KOSPI",
+   "role": "핵심 구성품",
+   "importance": 2,
+   "parts": "사격통제시스템(사격통제컴퓨터, 포수·전차장 조준경, 열상 잠망경, 레이저 경고장치, 전시기·조종패널), 능동방호(KAPS) 개발 참여",
+   "exposure": "폴란드 1차분 사격통제 2,574억원(2023.12 공시, 전년 매출의 11.8%). 2차분 계약은 미공개",
+   "exposure_krw_eok": 2574.0,
+   "why": "K2 '두뇌'를 독점 공급해 K2 수출 물량에 비례해 매출이 생긴다. 2차분(180대)과 K2PL 사양 변경, 하드킬 APS 탑재가 결정되면 대당 공급 가치가 커질 수 있다.",
+   "tier": "확정",
+   "source_url": "https://dealsite.co.kr/articles/114094"
+  },
+  {
+   "name": "HD건설기계",
+   "ticker": "267270",
+   "market": "KOSPI",
+   "role": "핵심 구성품",
+   "importance": 2,
+   "parts": "DV27K 1,500마력 디젤 엔진 (2차 양산부터 국군용, 폴란드 2차분·튀르키예 알타이 초도분 공급). 옛 HD현대인프라코어",
+   "exposure": "폴란드 2차분 엔진 116대 공급 계약(2026.01.28 공시, 금액 비공개)",
+   "exposure_krw_eok": null,
+   "why": "국산 파워팩의 엔진 축으로 독일 재수출 승인 없이 K2를 수출할 수 있게 한다. 회사 전체가 건설기계 중심이라 K2 비중은 작지만, 군산 방산엔진 공장 가동과 계열전차·중동형 K2 확대 시 방산엔진이 고마진 성장 사업이 된다.",
+   "tier": "확정",
+   "source_url": "https://www.smarttoday.co.kr/ko-kr/articles/102326"
+  },
+  {
+   "name": "현대위아",
+   "ticker": "011210",
+   "market": "KOSPI",
+   "role": "핵심 구성품",
+   "importance": 2,
+   "parts": "120mm 55구경장 활강포(CN08) 주포",
+   "exposure": "미공개. 특수(방산)사업 전체를 현대로템에 3,584억원에 양도(2026.10 결정, 2027년 1분기 종결 예정)",
+   "exposure_krw_eok": null,
+   "why": "지금까지 K2 주포 공급사였지만 사업 양도 후에는 K2 관련 실적이 현대로템으로 넘어간다. 투자 관점에서는 양도 대금 유입 정도의 의미만 남는다.",
+   "tier": "확정",
+   "source_url": "https://sateconomy.co.kr/news/view/1065597457400389"
+  },
+  {
+   "name": "풍산",
+   "ticker": "103140",
+   "market": "KOSPI",
+   "role": "탄약",
+   "importance": 2,
+   "parts": "120mm 전차탄(날개안정분리철갑탄 APFSDS·대전차고폭탄 등)",
+   "exposure": "미공개 (폴란드 계약에 탄약 포함, 풍산 몫 비공개)",
+   "exposure_krw_eok": null,
+   "why": "K2 운용 대수가 늘면 훈련·전투 예비탄 수요가 수십 년간 반복된다. 폴란드 계약 패키지 탄약의 공급 주체는 확인 필요.",
+   "tier": "보도",
+   "source_url": "https://en.wikipedia.org/wiki/K2_Black_Panther"
+  },
+  {
+   "name": "부마르-와벤디(PGZ)",
+   "ticker": null,
+   "market": "비상장",
+   "role": "현지 생산",
+   "importance": 2,
+   "parts": "K2PL 61대·계열전차 72대 현지 조립, 정비. WZE(관성항법)·PCO(조종수 카메라·열상)도 PGZ 계열",
+   "exposure": "폴란드 2차 실행계약(8조 9,814억원) 중 현지 생산분, 금액 배분 미공개",
+   "exposure_krw_eok": null,
+   "why": "폴란드 국영 그룹. 현지 생산 비중이 커질수록 현대로템 몫의 매출 구성(완성품→부품·기술료)이 바뀌어 마진 구조에 영향.",
+   "tier": "확정",
+   "source_url": "https://www.segye.com/newsView/20250703503425"
+  },
+  {
+   "name": "엠앤씨솔루션",
+   "ticker": "484870",
+   "market": "KOSPI",
+   "role": "부품·소재",
+   "importance": 3,
+   "parts": "전기·유압식 포탑·주포 구동장치 (옛 두산모트롤 방산 부문)",
+   "exposure": "미공개",
+   "exposure_krw_eok": null,
+   "why": "K2 등 지상무기의 정밀 구동 장치를 맡는 모션 제어 전문사. K2 관련 개별 계약 공개는 없어 참고로 표시.",
+   "tier": "추정",
+   "source_url": "https://core.asiae.co.kr/article/2025052613454633790"
+  },
+  {
+   "name": "STX엔진",
+   "ticker": "077970",
+   "market": "KOSPI",
+   "role": "핵심 구성품",
+   "importance": 3,
+   "parts": "1차 양산분 엔진(독일 MTU MT883 면허생산)",
+   "exposure": "미공개",
+   "exposure_krw_eok": null,
+   "why": "초기 K2 엔진 면허생산사. 2차 양산부터 HD건설기계 DV27K로 바뀌어 신규 K2 물량 노출은 작고 정비·예비부품 위주.",
+   "tier": "보도",
+   "source_url": "https://view.asiae.co.kr/article/2026032508554121368"
+  },
+  {
+   "name": "렝크(RENK)",
+   "ticker": "ETR:R3NK",
+   "market": "해외",
+   "role": "핵심 구성품",
+   "importance": 3,
+   "parts": "HSWL 295TM 변속기 (국군 2~3차 양산분, 폴란드 수출분 일부)",
+   "exposure": "미공개",
+   "exposure_krw_eok": null,
+   "why": "국산 변속기 전환 전 물량에 들어간 독일 변속기. 독일제 부품이 남는 한 제3국 재수출에 독일 승인이 필요하다는 리스크의 근원.",
+   "tier": "보도",
+   "source_url": "https://en.wikipedia.org/wiki/K2_Black_Panther"
+  },
+  {
+   "name": "BMC",
+   "ticker": null,
+   "market": "비상장",
+   "role": "현지 생산",
+   "importance": 3,
+   "parts": "튀르키예 알타이 전차 양산(K2 기술 기반). 주포 MKE, 사격통제 아셀산",
+   "exposure": "알타이 기술이전 약 $4억(2008)",
+   "exposure_krw_eok": null,
+   "why": "K2 완성차 수출은 아니지만 HD건설기계 엔진·SNT다이내믹스 변속기가 알타이 초도분에 수출돼 협력사 매출로 이어진다.",
+   "tier": "보도",
+   "source_url": "https://www.koreatimes.co.kr/southkorea/defense/20081229/defense-exports-exceed-1-bil"
   }
  ]
 }

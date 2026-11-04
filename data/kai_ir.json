@@ -1,0 +1,182 @@
+{
+ "company": "한국항공우주산업(KAI)",
+ "segment": "회사 전체",
+ "unit": "억원",
+ "source": {
+  "name": "KAI IR 자료실 실적발표",
+  "url": "https://www.koreaaero.com/KO/Ir/EarningRelease.aspx"
+ },
+ "labels": {
+  "export": "완제기 수출",
+  "domestic": "국내 사업",
+  "other": "기체구조물 등"
+ },
+ "note": "KAI는 사업부문별 영업이익을 공개하지 않아 회사 전체 실적을 씁니다. 매출은 국내사업(KF-21·FA-50 국내 납품 등), 완제기 수출(FA-50 등), 기체구조물(보잉·에어버스 부품)으로 나뉩니다. 기체구조물 막대에는 연결조정을 포함했습니다. 각 분기는 같은 분기 또는 이듬해 같은 분기 IR 자료의 수치입니다.",
+ "quarters": [
+  {
+   "quarter": "1Q24",
+   "revenue_eok": 7399,
+   "op_eok": 480,
+   "opm_pct": 6.5,
+   "export_eok": 906,
+   "domestic_eok": 4386,
+   "other_eok": 2107,
+   "export_share_pct": 12.2,
+   "ir_doc": "KAI 1Q25 IR Report",
+   "tier": "확정"
+  },
+  {
+   "quarter": "2Q24",
+   "revenue_eok": 8918,
+   "op_eok": 743,
+   "opm_pct": 8.3,
+   "export_eok": 1506,
+   "domestic_eok": 4982,
+   "other_eok": 2430,
+   "export_share_pct": 16.9,
+   "ir_doc": "KAI 2Q25 IR Report",
+   "tier": "확정"
+  },
+  {
+   "quarter": "3Q24",
+   "revenue_eok": 9072,
+   "op_eok": 763,
+   "opm_pct": 8.4,
+   "export_eok": 2434,
+   "domestic_eok": 4426,
+   "other_eok": 2212,
+   "export_share_pct": 26.8,
+   "ir_doc": "KAI 3Q25 IR Report",
+   "tier": "확정"
+  },
+  {
+   "quarter": "4Q24",
+   "revenue_eok": 10948,
+   "op_eok": 421,
+   "opm_pct": 3.8,
+   "export_eok": 1558,
+   "domestic_eok": 7274,
+   "other_eok": 2116,
+   "export_share_pct": 14.2,
+   "ir_doc": "KAI 4Q25 IR Report",
+   "tier": "확정"
+  },
+  {
+   "quarter": "1Q25",
+   "revenue_eok": 6993,
+   "op_eok": 468,
+   "opm_pct": 6.7,
+   "export_eok": 1711,
+   "domestic_eok": 3221,
+   "other_eok": 2061,
+   "export_share_pct": 24.5,
+   "ir_doc": "KAI 1Q26 IR Report",
+   "tier": "확정"
+  },
+  {
+   "quarter": "2Q25",
+   "revenue_eok": 8284,
+   "op_eok": 852,
+   "opm_pct": 10.3,
+   "export_eok": 2273,
+   "domestic_eok": 3632,
+   "other_eok": 2379,
+   "export_share_pct": 27.4,
+   "ir_doc": "KAI 2Q26 IR Report",
+   "tier": "확정"
+  },
+  {
+   "quarter": "3Q25",
+   "revenue_eok": 7021,
+   "op_eok": 602,
+   "opm_pct": 8.6,
+   "export_eok": 1638,
+   "domestic_eok": 2693,
+   "other_eok": 2690,
+   "export_share_pct": 23.3,
+   "ir_doc": "KAI 3Q26 IR Report",
+   "tier": "확정"
+  },
+  {
+   "quarter": "4Q25",
+   "revenue_eok": 14667,
+   "op_eok": 770,
+   "opm_pct": 5.2,
+   "export_eok": 3650,
+   "domestic_eok": 7554,
+   "other_eok": 3463,
+   "export_share_pct": 24.9,
+   "ir_doc": "KAI 4Q25 IR Report",
+   "tier": "확정"
+  },
+  {
+   "quarter": "1Q26",
+   "revenue_eok": 10927,
+   "op_eok": 671,
+   "opm_pct": 6.1,
+   "export_eok": 3071,
+   "domestic_eok": 5479,
+   "other_eok": 2378,
+   "export_share_pct": 28.1,
+   "ir_doc": "KAI 1Q26 IR Report",
+   "tier": "확정"
+  },
+  {
+   "quarter": "2Q26",
+   "revenue_eok": 11679,
+   "op_eok": 484,
+   "opm_pct": 4.1,
+   "export_eok": 3633,
+   "domestic_eok": 4965,
+   "other_eok": 3081,
+   "export_share_pct": 31.1,
+   "ir_doc": "KAI 2Q26 IR Report",
+   "tier": "확정"
+  },
+  {
+   "quarter": "3Q26",
+   "revenue_eok": 10643,
+   "op_eok": 794,
+   "opm_pct": 7.5,
+   "export_eok": 2914,
+   "domestic_eok": 4937,
+   "other_eok": 2792,
+   "export_share_pct": 27.4,
+   "ir_doc": "KAI 3Q26 IR Report",
+   "tier": "확정"
+  }
+ ],
+ "backlog": [
+  {
+   "period": "1Q25",
+   "backlog_jo": 24.26,
+   "export_pct": null
+  },
+  {
+   "period": "2Q25",
+   "backlog_jo": 26.67,
+   "export_pct": null
+  },
+  {
+   "period": "3Q25",
+   "backlog_jo": 26.27,
+   "export_pct": 22
+  },
+  {
+   "period": "1Q26",
+   "backlog_jo": 26.55,
+   "export_pct": null
+  },
+  {
+   "period": "2Q26",
+   "backlog_jo": 25.75,
+   "export_pct": null
+  },
+  {
+   "period": "3Q26",
+   "backlog_jo": 26.29,
+   "export_pct": 24
+  }
+ ],
+ "backlog_note": "수출 비중은 완제기 수출 수주잔고 기준(기체구조물 제외). 3Q25 5조 8,439억원, 3Q26 6조 1,930억원."
+}

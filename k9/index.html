@@ -131,7 +131,7 @@
       </article>
       <article class="card">
         <h2>한화에어로스페이스 지상방산 실적</h2>
-        <p class="note">분기별 매출(막대: 진한색 수출, 연한색 내수, 억원)과 영업이익률(선, 오른쪽 축). K9 단독 원가는 공개되지 않아 부문 실적으로 수익성을 가늠합니다. 회사 IR 실적발표 자료 기준이며, 막대에 올리면 수치와 출처 자료가 보입니다.</p>
+        <p class="note">분기별 매출(막대, 억원. 색은 아래 범례)과 영업이익률(선, 오른쪽 축). K9 단독 원가는 공개되지 않아 부문 실적으로 수익성을 가늠합니다. 회사 IR 실적발표 자료 기준이며, 막대에 올리면 수치와 출처 자료가 보입니다.</p>
         <div class="swatches"><span><i style="background:var(--c1)"></i>수출 매출</span><span><i style="background:var(--c2)"></i>내수 매출</span><span><i style="background:var(--c4);height:3px"></i>영업이익률</span></div>
         <div class="card-body chart" id="fin"></div>
       </article>
@@ -177,9 +177,10 @@
   <section class="page hidden" id="pipeline-tab">
     <article class="card">
       <h2>수주 파이프라인</h2>
-      <p class="note">아직 계약 전인 수출·양산 기회들. 협상 단계가 앞선 순서로 정리했고, 단계와 규모는 보도 기준입니다.</p>
+      <p class="note">아직 계약 전인 수출·양산 기회들. 협상 단계가 앞선 순서로 정리했습니다. 사업 규모는 정부·회사가 발표한 사업비가 있으면 "발표", 없으면 언론·증권사 추정치로 "언론 추정"이라 표시했고, 한쪽 통화만 알려진 경우 1달러=1,400원으로 환산했습니다.</p>
+      <div class="card-body chart" id="pipe-chart"></div>
       <div class="card-body tbl-wrap">
-        <table class="tbl"><thead><tr><th>국가</th><th>기회</th><th>규모</th><th>단계</th><th class="hide-sm">기준</th><th class="hide-md">메모</th><th>신뢰도</th></tr></thead><tbody id="pipeline"></tbody></table>
+        <table class="tbl"><thead><tr><th>국가</th><th>기회</th><th class="num">사업 규모(억원)</th><th class="num">사업 규모(억달러)</th><th>금액 근거</th><th class="hide-sm">물량·내용</th><th>단계</th><th class="hide-sm">기준</th><th class="hide-md">메모</th><th>신뢰도</th></tr></thead><tbody id="pipeline"></tbody></table>
       </div>
     </article>
   </section>

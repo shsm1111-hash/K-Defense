@@ -34,9 +34,12 @@ window.drawIR = function drawIR(host, ir) {
     const cx = ml + band * i + band / 2;
     const g = S('g');
     const hasSplit = r.export_eok != null && r.domestic_eok != null;
+    const lb = ir.labels || { export: '수출', domestic: '내수', other: '기타' };
     if (hasSplit) {
-      g.append(S('rect', { x: cx - bw / 2, y: y(r.export_eok + r.domestic_eok), width: bw, height: y(0) - y(r.domestic_eok) , fill: 'var(--c2)', rx: 2 }));
-      g.append(S('rect', { x: cx - bw / 2, y: y(r.export_eok), width: bw, height: y(0) - y(r.export_eok), fill: 'var(--c1)', rx: 2 }));
+      const parts = [[r.export_eok, 'var(--c1)'], [r.domestic_eok, 'var(--c2)']];
+      if (r.other_eok != null) parts.push([r.other_eok, 'var(--c5)']);
+      let base = 0;
+      parts.forEach(([v, col]) => { g.append(S('rect', { x: cx - bw / 2, y: y(base + v), width: bw, height: Math.max(0, y(base) - y(base + v)), fill: col, rx: 2 })); base += v; });
     } else {
       g.append(S('rect', { x: cx - bw / 2, y: y(r.revenue_eok), width: bw, height: y(0) - y(r.revenue_eok), fill: 'var(--c1)', rx: 2 }));
     }
@@ -44,7 +47,7 @@ window.drawIR = function drawIR(host, ir) {
     g.append(S('rect', { x: cx - band / 2, y: mt, width: band, height: H - mb - mt, fill: 'transparent' }));
     g.addEventListener('mousemove', (e) => {
       const lines = [`${r.quarter} · ${ir.segment}`, `매출 ${fmt(r.revenue_eok)}억 · 영업이익 ${fmt(r.op_eok)}억`, `영업이익률 ${r.opm_pct}%`];
-      if (hasSplit) lines.push(`수출 ${fmt(r.export_eok)}억 (${r.export_share_pct}%) · 내수 ${fmt(r.domestic_eok)}억`);
+      if (hasSplit) { lines.push(`${lb.export} ${fmt(r.export_eok)}억 (${r.export_share_pct}%) · ${lb.domestic} ${fmt(r.domestic_eok)}억`); if (r.other_eok != null) lines.push(`${lb.other} ${fmt(r.other_eok)}억`); }
       lines.push(`출처: ${r.ir_doc}`);
       tip.replaceChildren(...lines.map((l) => el('div', null, l))); tip.classList.remove('hidden');
       const hr = host.getBoundingClientRect(); let x = e.clientX - hr.left + 12; let yy = e.clientY - hr.top + 12;

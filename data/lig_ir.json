@@ -1,0 +1,110 @@
+{
+ "company": "LIG디펜스앤에어로스페이스(옛 LIG넥스원)",
+ "segment": "회사 전체",
+ "unit": "억원",
+ "source": {
+  "name": "LIG디펜스앤에어로스페이스 IR자료",
+  "url": "https://www.ligdefenseaerospace.com/ir/irResourceList.do"
+ },
+ "labels": {
+  "export": "수출",
+  "domestic": "국내(개발·양산)"
+ },
+ "note": "방산 전문기업이라 회사 전체 실적이 곧 방산 실적입니다. 수출·국내 구분은 4Q25부터 IR 자료에 분기 단위로 나옵니다(2025년 1~3분기는 합계만 공개). 2026년 3분기 IR 자료는 아직 홈페이지에 올라오지 않았습니다(2026.11.4 확인).",
+ "quarters": [
+  {
+   "quarter": "1Q25",
+   "revenue_eok": 9076,
+   "op_eok": 1136,
+   "opm_pct": 12.5,
+   "export_eok": null,
+   "domestic_eok": null,
+   "export_share_pct": null,
+   "ir_doc": "LIG 1Q25 실적 IR",
+   "tier": "확정"
+  },
+  {
+   "quarter": "2Q25",
+   "revenue_eok": 9454,
+   "op_eok": 776,
+   "opm_pct": 8.2,
+   "export_eok": null,
+   "domestic_eok": null,
+   "export_share_pct": null,
+   "ir_doc": "LIG 2Q25 실적 IR",
+   "tier": "확정"
+  },
+  {
+   "quarter": "3Q25",
+   "revenue_eok": 10492,
+   "op_eok": 896,
+   "opm_pct": 8.5,
+   "export_eok": null,
+   "domestic_eok": null,
+   "export_share_pct": null,
+   "ir_doc": "LIG 3Q25 실적 IR",
+   "tier": "확정"
+  },
+  {
+   "quarter": "4Q25",
+   "revenue_eok": 14048,
+   "op_eok": 387,
+   "opm_pct": 2.8,
+   "export_eok": 3850,
+   "domestic_eok": 10198,
+   "export_share_pct": 27.4,
+   "ir_doc": "LIG 2025 연간 실적 IR",
+   "tier": "확정"
+  },
+  {
+   "quarter": "1Q26",
+   "revenue_eok": 11679,
+   "op_eok": 1711,
+   "opm_pct": 14.7,
+   "export_eok": 4052,
+   "domestic_eok": 7627,
+   "export_share_pct": 34.7,
+   "ir_doc": "LIG 1Q26 실적 IR",
+   "tier": "확정"
+  },
+  {
+   "quarter": "2Q26",
+   "revenue_eok": 11101,
+   "op_eok": 1057,
+   "opm_pct": 9.5,
+   "export_eok": 2818,
+   "domestic_eok": 8283,
+   "export_share_pct": 25.4,
+   "ir_doc": "LIG 2Q26 실적 IR",
+   "tier": "확정"
+  }
+ ],
+ "backlog": [
+  {
+   "period": "2024말",
+   "backlog_jo": 20.05,
+   "export_pct": null
+  },
+  {
+   "period": "1Q25",
+   "backlog_jo": 22.89,
+   "export_pct": null
+  },
+  {
+   "period": "2Q25",
+   "backlog_jo": 23.47,
+   "export_pct": null
+  },
+  {
+   "period": "2025말",
+   "backlog_jo": 26.25,
+   "export_pct": null
+  },
+  {
+   "period": "2Q26",
+   "backlog_jo": 24.58,
+   "export_pct": null
+  }
+ ],
+ "backlog_note": "회사는 수주잔고의 50% 이상이 수출사업이라고 밝힘. 천궁-II 수출분(UAE 약 2.7조, 사우디 약 4.3조, 이라크 약 3.7조원)이 반영돼 있음."
+}

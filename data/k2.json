@@ -775,7 +775,11 @@
    "stage": "협상",
    "updated": "2026.11",
    "note": "연내 체결 목표였으나 11월 초 현재 미체결. 현지 생산 부품 범위·수출 수익 배분, 기술보호 조항·교육비·엔진 정비 주체를 두고 이견 보도",
-   "tier": "보도"
+   "tier": "보도",
+   "value_krw_eok": null,
+   "value_usd_eok": null,
+   "value_basis": null,
+   "value_note": "공개·보도된 사업 규모를 아직 확인하지 못함 (추가 조사 중)"
   },
   {
    "id": "Q2",
@@ -785,7 +789,11 @@
    "stage": "총괄합의",
    "updated": "2026.08",
    "note": "기술위원회가 K2 1위 평가. 그러나 예산 부족으로 6월 서명 무산, 재원은 2027년 이후 거론",
-   "tier": "보도"
+   "tier": "보도",
+   "value_krw_eok": 28000,
+   "value_usd_eok": 20,
+   "value_basis": "언론 추정",
+   "value_note": "K2 54대와 K808 차륜형장갑차 141대를 합친 총괄합의 규모(약 20억 달러, 환산). K2만의 금액은 미공개"
   },
   {
    "id": "Q3",
@@ -795,7 +803,11 @@
    "stage": "경쟁",
    "updated": "2026.02",
    "note": "독일 레오파르트2A8·KF51과 경쟁. 현지 생산(차체·포탑·사격통제) 요구, EU SAFE 융자 조건이 독일에 유리하다는 평가",
-   "tier": "보도"
+   "tier": "보도",
+   "value_krw_eok": 105300,
+   "value_usd_eok": 70.2,
+   "value_basis": "언론 추정",
+   "value_note": "전차 216대와 지원차량 76대, 약 65억 유로 보도(달러·원 환산)"
   },
   {
    "id": "Q4",
@@ -805,7 +817,11 @@
    "stage": "관심 표명",
    "updated": "2026.07",
    "note": "현대로템 공시: '이라크가 관심을 표명했으나 확정된 바 없음'",
-   "tier": "확정"
+   "tier": "확정",
+   "value_krw_eok": 91000,
+   "value_usd_eok": 65,
+   "value_basis": "언론 추정",
+   "value_note": "최대 250대 교체 시 약 65억 달러 증권가 추정(환산)"
   },
   {
    "id": "Q5",
@@ -815,7 +831,11 @@
    "stage": "마케팅",
    "updated": "2026.03",
    "note": "고온·사막 사양 K2ME 실물 출고. 정부·업계 '원팀' 공동 마케팅",
-   "tier": "보도"
+   "tier": "보도",
+   "value_krw_eok": null,
+   "value_usd_eok": null,
+   "value_basis": null,
+   "value_note": "공개·보도된 사업 규모를 아직 확인하지 못함 (추가 조사 중)"
   },
   {
    "id": "Q6",
@@ -825,7 +845,11 @@
    "stage": "후보 제외",
    "updated": "2025.09",
    "note": "운용비 부담을 이유로 경전차급(CV90120·툴파르)으로 좁히며 K2PL 제외",
-   "tier": "보도"
+   "tier": "보도",
+   "value_krw_eok": null,
+   "value_usd_eok": null,
+   "value_basis": null,
+   "value_note": "공개·보도된 사업 규모를 아직 확인하지 못함 (추가 조사 중)"
   }
  ],
  "notes": [

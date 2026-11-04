@@ -1,0 +1,124 @@
+{
+ "company": "한화오션",
+ "segment": "특수선 부문",
+ "unit": "억원",
+ "source": {
+  "name": "한화오션 IR자료·실적 발표",
+  "url": "https://www.hanwhaocean.com/investors/ea/"
+ },
+ "note": "특수선 부문은 잠수함(장보고-III 등)과 수상함을 함께 다룹니다. 회사 내부 관리기준의 제품군별 손익이며, 수출·내수 구분은 공개하지 않습니다. 3Q25 영업이익은 3Q25 자료 287억, 3Q26 자료 288억으로 1억 차이가 있어 최신 자료를 따랐습니다.",
+ "quarters": [
+  {
+   "quarter": "3Q24",
+   "revenue_eok": 1961,
+   "op_eok": 137,
+   "opm_pct": 7.0,
+   "export_eok": null,
+   "domestic_eok": null,
+   "export_share_pct": null,
+   "ir_doc": "한화오션 3Q25 실적발표",
+   "tier": "확정"
+  },
+  {
+   "quarter": "4Q24",
+   "revenue_eok": 3855,
+   "op_eok": 330,
+   "opm_pct": 8.6,
+   "export_eok": null,
+   "domestic_eok": null,
+   "export_share_pct": null,
+   "ir_doc": "한화오션 3Q25 실적발표",
+   "tier": "확정"
+  },
+  {
+   "quarter": "1Q25",
+   "revenue_eok": 3034,
+   "op_eok": 413,
+   "opm_pct": 13.6,
+   "export_eok": null,
+   "domestic_eok": null,
+   "export_share_pct": null,
+   "ir_doc": "한화오션 3Q25 실적발표",
+   "tier": "확정"
+  },
+  {
+   "quarter": "2Q25",
+   "revenue_eok": 2368,
+   "op_eok": 183,
+   "opm_pct": 7.7,
+   "export_eok": null,
+   "domestic_eok": null,
+   "export_share_pct": null,
+   "ir_doc": "한화오션 3Q25 실적발표",
+   "tier": "확정"
+  },
+  {
+   "quarter": "3Q25",
+   "revenue_eok": 3750,
+   "op_eok": 288,
+   "opm_pct": 7.7,
+   "export_eok": null,
+   "domestic_eok": null,
+   "export_share_pct": null,
+   "ir_doc": "한화오션 3Q26 실적발표",
+   "tier": "확정"
+  },
+  {
+   "quarter": "4Q25",
+   "revenue_eok": 3688,
+   "op_eok": 32,
+   "opm_pct": 0.9,
+   "export_eok": null,
+   "domestic_eok": null,
+   "export_share_pct": null,
+   "ir_doc": "한화오션 3Q26 실적발표",
+   "tier": "확정"
+  },
+  {
+   "quarter": "1Q26",
+   "revenue_eok": 3183,
+   "op_eok": -208,
+   "opm_pct": -6.5,
+   "export_eok": null,
+   "domestic_eok": null,
+   "export_share_pct": null,
+   "ir_doc": "한화오션 3Q26 실적발표",
+   "tier": "확정"
+  },
+  {
+   "quarter": "2Q26",
+   "revenue_eok": 3272,
+   "op_eok": -29,
+   "opm_pct": -0.9,
+   "export_eok": null,
+   "domestic_eok": null,
+   "export_share_pct": null,
+   "ir_doc": "한화오션 3Q26 실적발표",
+   "tier": "확정"
+  },
+  {
+   "quarter": "3Q26",
+   "revenue_eok": 3630,
+   "op_eok": -706,
+   "opm_pct": -19.4,
+   "export_eok": null,
+   "domestic_eok": null,
+   "export_share_pct": null,
+   "ir_doc": "한화오션 3Q26 실적발표",
+   "tier": "확정"
+  }
+ ],
+ "backlog": [
+  {
+   "period": "3Q25",
+   "backlog_jo": 7.39,
+   "export_pct": null
+  },
+  {
+   "period": "3Q26",
+   "backlog_jo": 7.67,
+   "export_pct": null
+  }
+ ],
+ "backlog_note": "수주잔고는 달러로 공개됩니다(특수선 및 기타: 3Q25 52.8억 달러, 3Q26 54.8억 달러). 조원 환산은 1달러=1,400원 기준."
+}

@@ -12,10 +12,14 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 TEMPLATE = (ROOT / "tools" / "system.template.html").read_text(encoding="utf-8")
 
 
-def legend(has_split):
+def legend(ir, has_split):
     if has_split:
-        return ('<span><i style="background:var(--c1)"></i>수출 매출</span>'
-                '<span><i style="background:var(--c2)"></i>내수 매출</span>')
+        lb = ir.get("labels") or {"export": "수출 매출", "domestic": "내수 매출"}
+        out = (f'<span><i style="background:var(--c1)"></i>{html.escape(lb["export"])}</span>'
+               f'<span><i style="background:var(--c2)"></i>{html.escape(lb["domestic"])}</span>')
+        if lb.get("other"):
+            out += f'<span><i style="background:var(--c5)"></i>{html.escape(lb["other"])}</span>'
+        return out
     return '<span><i style="background:var(--c1)"></i>부문 매출</span>'
 
 
@@ -39,12 +43,12 @@ def build(sys_id):
         "segment_short": meta["segment_short"],
         "backlog_note": meta["backlog_note"],
         "ir_url": data["ir"]["source"]["url"],
-        "fin_bar_desc": "분기별 매출(막대: 진한색 수출, 연한색 내수, 억원)" if has_split else "분기별 매출(막대, 억원. 회사가 부문별 수출·내수를 따로 공개하지 않음)",
+        "fin_bar_desc": "분기별 매출(막대, 억원. 색은 아래 범례)" if has_split else "분기별 매출(막대, 억원. 회사가 부문별 수출·내수를 따로 공개하지 않음)",
     }
     out = TEMPLATE
     for key, val in values.items():
         out = out.replace("{{" + key + "}}", html.escape(str(val), quote=True))
-    out = out.replace("{{fin_legend}}", legend(has_split))
+    out = out.replace("{{fin_legend}}", legend(data["ir"], has_split))
     assert "{{" not in out, out[out.index("{{"): out.index("{{") + 40]
     target = ROOT / sys_id / "index.html"
     target.parent.mkdir(exist_ok=True)

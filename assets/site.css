@@ -199,3 +199,4 @@ table.tbl{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeri
 .supply-photos{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,16rem),22rem));gap:12px;margin-bottom:16px}
 .supply-photos .photo{aspect-ratio:16/9;max-height:240px}
 .hidden{display:none!important}
+#pipe-chart{min-height:0}

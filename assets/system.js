@@ -259,7 +259,26 @@
   }));
   const STAGE = ['총괄합의', '협상', '예산 승인', '시제', '협력계약', '경쟁', '협의', '관심', '가능성', '마케팅', '제외'];
   const sr = (s) => { const i = STAGE.findIndex((x) => String(s).includes(x)); return i < 0 ? 99 : i; };
-  $('pipeline').replaceChildren(...[...D.pipeline].sort((a, b) => sr(a.stage) - sr(b.stage)).map((r) => { const tr = el('tr'); tr.append(td(r.country, 'strong nowrap'), td(r.opportunity), td(r.scale), td(r.stage, 'nowrap'), td(r.updated, 'hide-sm nowrap'), td(r.note, 'hide-md'), tierTd(r.tier)); return tr; }));
+  const pipeRows = [...D.pipeline].sort((a, b) => sr(a.stage) - sr(b.stage));
+  const basisChip = (b) => { if (!b) return el('td', null, '—'); const c = el('td'); c.append(el('span', 'chip ' + (b === '발표' ? 't-ok' : 't-est'), b)); return c; };
+  const n1 = (v) => (v == null ? '—' : fmt(Math.round(v)));
+  const n2 = (v) => (v == null ? '—' : Number(v).toLocaleString('ko-KR', { maximumFractionDigits: 1 }));
+  $('pipeline').replaceChildren(...pipeRows.map((r) => {
+    const tr = el('tr');
+    const opp = el('td'); opp.append(r.opportunity); if (r.value_note) { opp.append(el('div', 'note', r.value_note)); }
+    tr.append(td(r.country, 'strong nowrap'), opp, td(n1(r.value_krw_eok), 'num'), td(n2(r.value_usd_eok), 'num'), basisChip(r.value_basis), td(r.scale, 'hide-sm'), td(r.stage, 'nowrap'), td(r.updated, 'hide-sm nowrap'), td(r.note, 'hide-md'), tierTd(r.tier));
+    return tr;
+  }));
+  function drawPipe() {
+    const rows = pipeRows.filter((r) => r.value_krw_eok != null).map((r) => ({ ...r, v: Number(r.value_krw_eok) })).sort((a, b) => b.v - a.v);
+    if (!rows.length) { $('pipe-chart').replaceChildren(el('p', 'note', '사업 규모가 알려진 기회가 아직 없습니다.')); return; }
+    hbar($('pipe-chart'), rows, {
+      label: (r) => `${r.country} · ${r.opportunity}`.slice(0, 22), value: (r) => r.v,
+      valText: (r) => (r.v >= 10000 ? (r.v / 10000).toFixed(1) + '조원' : fmt(r.v) + '억원'),
+      color: (r) => (r.value_basis === '발표' ? 'var(--c1)' : 'var(--c3)'),
+      tip: (r) => [`${r.country} · ${r.stage}`, r.opportunity, `${n1(r.value_krw_eok)}억원 / ${n2(r.value_usd_eok)}억달러 (${r.value_basis || '근거 미상'})`, r.value_note || ''],
+    });
+  }
 
   // 사진 출처
   const seen = new Set();
@@ -269,7 +288,7 @@
 
   // 탭 (주소의 #으로 이동)
   const drawn = {};
-  const drawers = { export: () => { drawOps(); drawDetail(); drawSwim(); }, cost: () => { drawUnit(); drawFin(); } };
+  const drawers = { export: () => { drawOps(); drawDetail(); drawSwim(); }, cost: () => { drawUnit(); drawFin(); }, 'pipeline-tab': () => drawPipe() };
   function route() {
     const id = ['overview', 'history', 'export', 'cost', 'plan', 'pipeline-tab'].includes(location.hash.slice(1)) ? location.hash.slice(1) : 'overview';
     document.querySelectorAll('.page').forEach((s) => s.classList.toggle('hidden', s.id !== id));

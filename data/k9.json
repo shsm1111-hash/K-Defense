@@ -990,7 +990,11 @@
    "stage": "협상",
    "updated": "2026.07",
    "note": "회사는 현지화를 전제로 연내 결론을 기대",
-   "tier": "보도"
+   "tier": "보도",
+   "value_krw_eok": null,
+   "value_usd_eok": null,
+   "value_basis": null,
+   "value_note": "공개·보도된 사업 규모를 아직 확인하지 못함 (추가 조사 중)"
   },
   {
    "id": "Q2",
@@ -1000,7 +1004,11 @@
    "stage": "예산 승인",
    "updated": "2026.10",
    "note": "L&T 현지 생산 방식 유지 전망",
-   "tier": "보도"
+   "tier": "보도",
+   "value_krw_eok": null,
+   "value_usd_eok": null,
+   "value_basis": null,
+   "value_note": "공개·보도된 사업 규모를 아직 확인하지 못함 (추가 조사 중)"
   },
   {
    "id": "Q3",
@@ -1010,7 +1018,11 @@
    "stage": "시제 실험",
    "updated": "2026.08",
    "note": "세계 최대 방산 시장 진입 여부를 가를 사업",
-   "tier": "확정"
+   "tier": "확정",
+   "value_krw_eok": null,
+   "value_usd_eok": null,
+   "value_basis": null,
+   "value_note": "공개·보도된 사업 규모를 아직 확인하지 못함 (추가 조사 중)"
   },
   {
    "id": "Q4",
@@ -1020,7 +1032,11 @@
    "stage": "협력계약",
    "updated": "2026.06",
    "note": "국산 엔진 적용으로 독일 재수출 승인 문제 해소",
-   "tier": "보도"
+   "tier": "보도",
+   "value_krw_eok": null,
+   "value_usd_eok": null,
+   "value_basis": null,
+   "value_note": "공개·보도된 사업 규모를 아직 확인하지 못함 (추가 조사 중)"
   },
   {
    "id": "Q5",
@@ -1030,7 +1046,11 @@
    "stage": "협의",
    "updated": "2025.09",
    "note": "증권사 리포트에서 협의 중인 대형 계약으로 언급",
-   "tier": "보도"
+   "tier": "보도",
+   "value_krw_eok": null,
+   "value_usd_eok": null,
+   "value_basis": null,
+   "value_note": "공개·보도된 사업 규모를 아직 확인하지 못함 (추가 조사 중)"
   },
   {
    "id": "Q6",
@@ -1040,7 +1060,11 @@
    "stage": "가능성",
    "updated": "2025.08",
    "note": "현지 생산 희망 보도",
-   "tier": "보도"
+   "tier": "보도",
+   "value_krw_eok": null,
+   "value_usd_eok": null,
+   "value_basis": null,
+   "value_note": "공개·보도된 사업 규모를 아직 확인하지 못함 (추가 조사 중)"
   }
  ],
  "notes": [

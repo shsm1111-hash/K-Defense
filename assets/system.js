@@ -278,6 +278,36 @@
     }));
   }
 
+  // 경쟁 구도
+  (() => {
+    const C = D.competition;
+    if (!C) return;
+    $('cp-summary').textContent = C.summary || '';
+    if (C.matrix && C.matrix.rows) {
+      const th = el('thead'); const hr = el('tr'); hr.append(el('th', null, '비교 항목')); C.matrix.systems.forEach((s, i) => hr.append(el('th', i === 0 ? 'cp-us' : null, s))); th.append(hr);
+      const tb = el('tbody'); C.matrix.rows.forEach((r) => { const tr = el('tr'); tr.append(td(r.axis, 'strong')); r.values.forEach((v, i) => tr.append(td(v, i === 0 ? 'cp-us' : null))); tb.append(tr); });
+      $('cp-matrix').replaceChildren(th, tb);
+    }
+    $('cp-rivals').replaceChildren(...(C.rivals || []).map((r) => {
+      const c = el('div', 'co'); const h = el('div', 'co-h'); h.append(el('strong', null, r.name), el('span', 'tk', r.maker)); c.append(h);
+      [['가격', r.unit_price], ['강점', r.strengths], ['약점', r.weaknesses], ['운용국', r.users], ['생산·납기', r.status]].forEach(([k, v]) => { if (!v) return; const p = el('p', 'co-exp'); p.append(el('b', null, k + ' '), v); c.append(p); });
+      if (r.vs) c.append(el('p', 'co-why', '→ ' + r.vs));
+      return c;
+    }));
+    const RES = { 수주: 'r-win', 실주: 'r-loss', '진행 중': 'r-open', 무산: 'r-void' };
+    $('cp-cases').replaceChildren(...(C.cases || []).map((x) => {
+      const r = el('div', 'cp-case ' + (RES[x.result] || ''));
+      const h = el('div', 'sc-h'); h.append(el('span', 'res ' + (RES[x.result] || ''), x.result), el('strong', null, `${x.country} · ${x.program}`), el('span', 'tk', x.year), chip(x.tier)); r.append(h);
+      const meta = el('p', 'note'); meta.textContent = `선정: ${x.winner || '—'} · 경쟁: ${x.competitors || '—'}${x.value ? ' · 규모: ' + x.value : ''}`; r.append(meta);
+      r.append(el('p', null, x.reasons));
+      if (x.lesson) r.append(el('p', 'co-why', '시사점: ' + x.lesson));
+      if (x.source_url) { const a = el('a', 'co-src', '근거'); a.href = x.source_url; a.target = '_blank'; a.rel = 'noopener'; r.append(a); }
+      return r;
+    }));
+    $('cp-win').replaceChildren(...(C.win_factors || []).map((f) => el('li', null, f)));
+    $('cp-loss').replaceChildren(...(C.loss_factors || []).map((f) => el('li', null, f)));
+  })();
+
   // 공급망 분석 (국내 상장사 수혜·리스크)
   (() => {
     const SC = D.supplychain;
@@ -376,7 +406,7 @@
   const drawn = {};
   const drawers = { export: () => { drawOps(); drawDetail(); drawSwim(); }, cost: () => { drawUnit(); drawFin(); }, 'pipeline-tab': () => drawPipe(), companies: () => drawCoChart() };
   function route() {
-    const id = ['overview', 'history', 'export', 'companies', 'supply', 'cost', 'plan', 'pipeline-tab'].includes(location.hash.slice(1)) ? location.hash.slice(1) : 'overview';
+    const id = ['overview', 'history', 'export', 'compete', 'companies', 'supply', 'cost', 'plan', 'pipeline-tab'].includes(location.hash.slice(1)) ? location.hash.slice(1) : 'overview';
     document.querySelectorAll('.page').forEach((s) => s.classList.toggle('hidden', s.id !== id));
     document.querySelectorAll('.tabs a').forEach((a) => (a.dataset.tab === id ? a.setAttribute('aria-current', 'page') : a.removeAttribute('aria-current')));
     if (drawers[id]) { drawers[id](); drawn[id] = true; }

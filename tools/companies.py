@@ -30,6 +30,9 @@ def apply(sid):
     sp = SYSDATA / sid / f"{sid}_supplychain.json"
     if sp.exists():
         d["supplychain"] = json.loads(sp.read_text(encoding="utf-8"))
+    cq = SYSDATA / sid / f"{sid}_competition.json"
+    if cq.exists():
+        d["competition"] = json.loads(cq.read_text(encoding="utf-8"))
     ap = SYSDATA / sid / f"{sid}_components_add.json"
     added = fixed = 0
     if ap.exists():

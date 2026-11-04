@@ -1,5 +1,5 @@
 (async () => {
-  const D = await fetch(document.body.dataset.data + '?v=' + Date.now().toString(36).slice(0, -4)).then((r) => r.json());
+  const D = await fetch(document.body.dataset.data).then((r) => r.json());
   const M = D.meta; const U = M.unit_word;
   const $ = (id) => document.getElementById(id);
   const el = (t, c, x) => { const e = document.createElement(t); if (c) e.className = c; if (x != null) e.textContent = String(x); return e; };

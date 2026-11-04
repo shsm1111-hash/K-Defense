@@ -56,6 +56,7 @@ def build(sys_id):
         return hashlib.md5((ROOT / rel).read_bytes()).hexdigest()[:8]
     for rel in ["assets/site.css", "assets/system.js", "assets/ir-chart.js"]:
         out = out.replace(f'../{rel}"', f'../{rel}?v={ver(rel)}"')
+    out = out.replace(f'data-data="../data/{sys_id}.json"', f'data-data="../data/{sys_id}.json?v={ver("data/" + sys_id + ".json")}"')
     target = ROOT / sys_id / "index.html"
     target.parent.mkdir(exist_ok=True)
     target.write_text(out, encoding="utf-8")

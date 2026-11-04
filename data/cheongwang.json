@@ -485,7 +485,7 @@
    "group": "국내 핵심 구성품",
    "part": "체계종합·양산 (현재)",
    "maker": "한화시스템",
-   "detail": "2025.04 한화에어로스페이스에서 레이저 사업을 넘겨받음. 정밀 조준·추적·사격통제, 국산 발진기 시제, 수출 마케팅 담당",
+   "detail": "2025.04 한화에어로스페이스에서 레이저 사업을 109억원에 넘겨받음. 2025.6 블록-I 초도 양산 약 1,000억원 계약, 2025.12부터 전력화. 정밀 조준·추적·사격통제, 국산 발진기 시제, 수출 마케팅 담당",
    "tier": "보도"
   },
   {
@@ -893,5 +893,98 @@
   "backlog": [],
   "backlog_q": null,
   "backlog_note": "한화시스템 분기 실적발표 자료에는 수주잔고가 공개되지 않습니다."
- }
+ },
+ "companies": [
+  {
+   "name": "한화시스템",
+   "ticker": "272210",
+   "market": "KOSPI",
+   "role": "체계종합(주계약)",
+   "importance": 1,
+   "parts": "체계종합·양산, 정밀 조준·추적·사격통제, 국산 레이저 발진기 시제, 차량형(30kW)·장갑차형(50kW) 개발, 수출 마케팅",
+   "exposure": "블록-I 초도 양산 약 1,000억원(2025.6). 2025.4 한화에어로스페이스에서 레이저 사업을 109억원에 인수",
+   "exposure_krw_eok": 1000.0,
+   "why": "국내 유일 레이저 대공무기 체계업체다. 지금 매출 기여는 작지만 블록-II(2027 예산 신규)·50kW 장갑차(2027 말 양산 목표)·폴란드·중동 수출이 붙으면 '드론 방어' 테마의 핵심 수혜주. 발진기 국산화(국산화율 90%)로 수출 허가 걸림돌도 줄었다",
+   "tier": "보도",
+   "source_url": "https://core.asiae.co.kr/article/2026091714470537129"
+  },
+  {
+   "name": "빅텍",
+   "ticker": "065450",
+   "market": "KOSDAQ",
+   "role": "부품·소재",
+   "importance": 2,
+   "parts": "레이저 발진기 시스템 제어기, 제어·감시용 전자 구성품",
+   "exposure": "21억 6,000만원 양산 계약(2026.6, 한화시스템, 납기 2027.6)",
+   "exposure_krw_eok": 21.6,
+   "why": "금액은 작지만 국산 발진기에 붙는 부품이라 후속 양산·블록-II로 반복 수주가 가능하다. 소형주라 레이저 무기 뉴스에 주가 민감도가 높다",
+   "tier": "확정",
+   "source_url": "https://www.finance-scope.com/article/view/scp202606090013"
+  },
+  {
+   "name": "대한광통신",
+   "ticker": "010170",
+   "market": "KOSDAQ",
+   "role": "부품·소재",
+   "importance": 2,
+   "parts": "고출력 이터븀 첨가 광섬유(YDF) 레이저 모듈 — 빛을 증폭하는 특수 광섬유",
+   "exposure": "미공개",
+   "exposure_krw_eok": null,
+   "why": "광섬유 레이저의 출력을 결정하는 소재를 국산화한 업체. 출력이 20→30→50kW로 커질수록 들어가는 광섬유 모듈도 늘어난다",
+   "tier": "보도",
+   "source_url": "https://core.asiae.co.kr/article/2026091714470537129"
+  },
+  {
+   "name": "그린광학",
+   "ticker": null,
+   "market": "KOSDAQ",
+   "role": "부품·소재",
+   "importance": 2,
+   "parts": "광학계(미러·렌즈 등 빔 지향·집속 광학 모듈)",
+   "exposure": "미공개 (방산 매출 비중 60.6%, 2027년 방산 매출 577억원 목표)",
+   "exposure_krw_eok": null,
+   "why": "레이저를 표적 한 점에 모으는 정밀 광학을 맡는다. 2025.11 코스닥 상장 신규주로 방산 비중이 높아 레이저 무기 확대의 직접 수혜 후보(종목코드는 확인 필요)",
+   "tier": "보도",
+   "source_url": "https://www.hankyung.com/article/2025103030916"
+  },
+  {
+   "name": "퍼스텍",
+   "ticker": "010820",
+   "market": "KOSPI",
+   "role": "부품·소재",
+   "importance": 2,
+   "parts": "레이저 통합 냉각장치 (고출력 발사 때 생기는 열 제거)",
+   "exposure": "미공개",
+   "exposure_krw_eok": null,
+   "why": "레이저는 열 관리가 연속 사격 능력을 좌우해 출력이 오를수록 냉각장치 비중이 커진다. 천궁-II 구동장치에 이어 방공 포트폴리오를 넓히는 업체",
+   "tier": "보도",
+   "source_url": "https://core.asiae.co.kr/article/2026091714470537129"
+  },
+  {
+   "name": "한화에어로스페이스",
+   "ticker": "012450",
+   "market": "KOSPI",
+   "role": "개발",
+   "importance": 3,
+   "parts": "블록-I 개발 시제업체(2019~2023), 2024년 양산 착수 업체. 2025.4 사업을 한화시스템에 이관",
+   "exposure": "사업 이관 대가 109억원 (현재 천광 매출은 없음)",
+   "exposure_krw_eok": null,
+   "why": "개발 이력 확인용. 현재 천광 실적은 한화시스템에 잡히므로 투자 판단에서는 참고 수준이다",
+   "tier": "확정",
+   "source_url": "https://biz.newdaily.co.kr/site/data/html/2026/04/02/2026040200162.html"
+  },
+  {
+   "name": "PCO (PGZ 그룹)",
+   "ticker": null,
+   "market": "해외",
+   "role": "현지 생산",
+   "importance": 3,
+   "parts": "폴란드 천광·이동형 레이저 기술이전·현지 협력 (추진 단계)",
+   "exposure": "미공개 (계약·수량 없음)",
+   "exposure_krw_eok": null,
+   "why": "폴란드 국영 광학·전자 업체(비상장). 계약이 성사되면 천광 첫 수출이자 유럽 진출 교두보가 되지만 아직 협의 단계다",
+   "tier": "보도",
+   "source_url": "https://www.theguru.co.kr/mobile/article.html?no=91517"
+  }
+ ]
 }

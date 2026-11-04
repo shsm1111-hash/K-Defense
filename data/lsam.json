@@ -527,6 +527,38 @@
    "maker": "국내 19개 업체",
    "detail": "2025.1 체계개발 착수 시 참여. 개별 업체 명단은 공개되지 않음",
    "tier": "보도"
+  },
+  {
+   "id": "P07",
+   "group": "국내 핵심 구성품",
+   "part": "다기능레이더 주전원공급유닛",
+   "maker": "위드피에스 (비상장)",
+   "detail": "레이더에 전원을 공급하는 주전원장치. 한화시스템과 266억원 중장기 납품 계약",
+   "tier": "보도"
+  },
+  {
+   "id": "P08",
+   "group": "국내 핵심 구성품",
+   "part": "ABM 위치·자세제어장치(DACS)·이중펄스 로켓모터",
+   "maker": "한화에어로스페이스",
+   "detail": "희박한 고도에서 측면 분사로 방향·자세를 잡는 장치와 2번 점화하는 추진기관. L-SAM-II용 DACS(10개 밸브)도 개발",
+   "tier": "확정"
+  },
+  {
+   "id": "P09",
+   "group": "국내 핵심 구성품",
+   "part": "AAM 탐색기·유도조종·구동장치",
+   "maker": "LIG D&A",
+   "detail": "대항공기탄의 레이더 탐색기와 유도·조종 장치",
+   "tier": "확정"
+  },
+  {
+   "id": "P10",
+   "group": "국내 핵심 구성품",
+   "part": "L-SAM-II 개발 계약",
+   "maker": "LIG D&A 987억 · 한화에어로스페이스 1,986억 · 한화시스템 547억원",
+   "detail": "2025년 체계개발 착수. 고고도 요격탄·활공단계 요격탄 2종, 2028년까지",
+   "tier": "확정"
   }
  ],
  "roadmap": [
@@ -1027,5 +1059,98 @@
    ],
    "note": "각 분기 IR '영업(잠정)실적 – 수주잔고' 표(조원). 2024년 1~3분기는 총액만 공개. 3Q26 자료는 아직 게시 전입니다."
   }
- }
+ },
+ "companies": [
+  {
+   "name": "한화에어로스페이스",
+   "ticker": "012450",
+   "market": "KOSPI",
+   "role": "핵심 구성품",
+   "importance": 1,
+   "parts": "대탄도탄 유도탄(ABM: 위치·자세제어장치 DACS·측추력기·탄두·이중펄스 로켓모터)과 발사대. L-SAM-II 고고도 요격탄 DACS 등 개발",
+   "exposure": "양산 7,054억원(2025.11.28, 2030년까지) + L-SAM-II 개발 1,986억원(2025.6.10) = 약 9,040억원",
+   "exposure_krw_eok": 9040.0,
+   "why": "세 회사 중 L-SAM 양산 몫이 가장 크다. 가장 비싼 ABM 탄을 맡아 UAE 첫 수출(4개 포대 약 4.5조원 추정)이 성사되면 탄 물량에 비례해 수혜가 커진다. DACS 국산화는 L-SAM-II·수출로 이어지는 진입장벽",
+   "tier": "확정",
+   "source_url": "https://www.smarttoday.co.kr/ko-kr/articles/97568"
+  },
+  {
+   "name": "한화시스템",
+   "ticker": "272210",
+   "market": "KOSPI",
+   "role": "핵심 구성품",
+   "importance": 1,
+   "parts": "S밴드 AESA 다기능레이더(MFR). L-SAM-II 다기능레이더 개발",
+   "exposure": "양산 3,572.75억원(공시, 2025.10.02~2030.12.31, 매출 대비 12.74%) + L-SAM-II MFR 개발 547억원 = 약 4,120억원",
+   "exposure_krw_eok": 4120.0,
+   "why": "양산 계약이 매출의 약 13%로 단일 국내 사업으로 큰 편이다. 2026.9 UAE 통합대공망 텀시트를 EDGE와 직접 맺은 한국 측 당사자라 L-SAM 수출 시 레이더와 현지 합작 모두에서 수혜",
+   "tier": "확정",
+   "source_url": "https://www.digitaltoday.co.kr/aigongsi/3602/hanwha-systems-defense-contract"
+  },
+  {
+   "name": "LIG D&A",
+   "ticker": "079550",
+   "market": "KOSPI",
+   "role": "체계종합(주계약)",
+   "importance": 1,
+   "parts": "개발 단계 체계종합, 교전·작전통제소, 대항공기탄(AAM: 탐색기·유도조종·구동장치). L-SAM-II 체계종합 시제",
+   "exposure": "양산 1,639억원(통제소·AAM) + L-SAM-II 체계종합 시제 987억원(2025.5.14) = 약 2,626억원",
+   "exposure_krw_eok": 2626.0,
+   "why": "양산 금액은 세 회사 중 가장 작지만 체계종합을 맡아 L-SAM-II와 수출 패키지 구성에서 발언권이 있다. 천궁-II와 같은 통제소 계열이라 중동 기존 고객에게 다층 방공으로 묶어 팔기 쉽다. 옛 LIG넥스원",
+   "tier": "확정",
+   "source_url": "https://car.withnews.kr/?p=103931"
+  },
+  {
+   "name": "웨이비스",
+   "ticker": "289930",
+   "market": "KOSDAQ",
+   "role": "부품·소재",
+   "importance": 2,
+   "parts": "다기능레이더 고출력증폭보드(GaN 반도체 기반 송신 증폭). 2016년부터 개발 참여",
+   "exposure": "초도양산분 265억원(2027년 말까지, 한화시스템과 계약)",
+   "exposure_krw_eok": 265.0,
+   "why": "레이더 송신 소자 한 장 한 장에 들어가는 부품이라 포대 수에 비례한다. 회사 매출 규모가 작아 L-SAM 양산·수출 확대 시 실적 레버리지가 크다",
+   "tier": "확정",
+   "source_url": "https://www.smarttoday.co.kr/ko-kr/articles/79368"
+  },
+  {
+   "name": "EDGE 그룹",
+   "ticker": null,
+   "market": "해외",
+   "role": "현지 생산",
+   "importance": 2,
+   "parts": "UAE 통합대공망(L-SAM·천궁-II 등) 현지 합작법인·단계적 현지 생산 논의",
+   "exposure": "미공개 (2026.9.16 텀시트, 구속력 없음). 유진투자증권은 L-SAM 4개 포대 약 4조 5,000억원 추정",
+   "exposure_krw_eok": null,
+   "why": "L-SAM 첫 수출의 상대방이자 현지화 파트너(UAE 국영, 비상장). 현지 생산 비율에 따라 한국 3사의 몫이 달라진다",
+   "tier": "보도",
+   "source_url": "https://www.armyrecognition.com/news/army-news/2026/uae-hanwha-edge-air-defense-deal-l-sam-msam-chunmoo"
+  },
+  {
+   "name": "위드피에스",
+   "ticker": null,
+   "market": "비상장",
+   "role": "부품·소재",
+   "importance": 3,
+   "parts": "다기능레이더 주전원공급유닛",
+   "exposure": "266억원 (한화시스템과 중장기 납품 계약)",
+   "exposure_krw_eok": 266.0,
+   "why": "전남 순천 해룡산단의 중소 방산업체. 상장사가 아니라 공급망 확인용",
+   "tier": "보도",
+   "source_url": "https://www.heraldk.com/article/2026011122371804635"
+  },
+  {
+   "name": "퍼스텍",
+   "ticker": "010820",
+   "market": "KOSPI",
+   "role": "부품·소재",
+   "importance": 3,
+   "parts": "유도탄 구동장치 (천궁-II·비궁·현무와 함께 L-SAM 유도무기 수주에 포함된 것으로 보도, 세부 탄종 미공개)",
+   "exposure": "L-SAM 단독 금액 미공개 (유도무기 합산 수주잔고 약 1조원)",
+   "exposure_krw_eok": null,
+   "why": "요격탄 발 수에 비례하는 부품이지만 L-SAM 몫이 따로 공개되지 않아 참고 수준이다",
+   "tier": "보도",
+   "source_url": "https://thecheck.co.kr/firstec-stock-limit-up-cheongung-ii-success"
+  }
+ ]
 }

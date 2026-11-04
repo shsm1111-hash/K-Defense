@@ -594,8 +594,8 @@
    "group": "국내 핵심 구성품",
    "part": "체계종합·건조 (배치-I 1·2번함, 배치-II 전 3척)",
    "maker": "한화오션 (옛 대우조선해양)",
-   "detail": "거제 옥포조선소. 국내 잠수함 사업 KSS-I·II·III에 모두 참여한 유일한 업체로, 대우조선해양 시절부터 잠수함 23척을 수주했다",
-   "tier": "보도"
+   "detail": "거제 옥포조선소. 배치-II 1번함 1조 1,130억원(2019.10), 3번함 1조 1,019억원(2023.12) 건조 계약. 국내 잠수함 사업 KSS-I·II·III에 모두 참여한 유일한 업체로, 대우조선해양 시절부터 잠수함 23척을 수주했다",
+   "tier": "확정"
   },
   {
    "id": "P02",
@@ -616,9 +616,9 @@
   {
    "id": "P04",
    "group": "국내 핵심 구성품",
-   "part": "소나체계 (선체부착·예인 소나)",
-   "maker": "LIG넥스원 (현 LIG D&A)",
-   "detail": "선체부착 소나와 예인배열 소나(STX엔진과 협력). 측면배열 소나는 프랑스 탈레스 제품",
+   "part": "소나체계 (체계종합·선체부착·예인 소나)",
+   "maker": "LIG D&A (옛 LIG넥스원) · STX엔진 · 한화에어로스페이스(옛 ㈜한화)",
+   "detail": "LIG가 소나체계 시제업체(체계종합), STX엔진이 선체부착형 능동·수동 센서, ㈜한화(현 한화에어로스페이스 방산)가 예인배열 시스템을 맡음. 측면배열 소나는 프랑스 탈레스 제품",
    "tier": "보도"
   },
   {
@@ -1181,5 +1181,137 @@
    ],
    "note": "각 분기 실적발표 '종합 수주잔고'(인도기준, 억 달러). 1Q26부터 사업 양수한 풍력·플랜트가 에너지플랜트에 포함됐습니다. 특수선 잔고의 수출·내수는 나눠 공개하지 않습니다."
   }
- }
+ },
+ "companies": [
+  {
+   "name": "한화오션",
+   "ticker": "042660",
+   "market": "KOSPI",
+   "role": "체계종합(주계약)",
+   "importance": 1,
+   "parts": "설계·건조 체계종합: 배치-I 1·2번함(도산안창호·안무함), 배치-II 1~3번함 전부. 장보고-III 수출 제안(캐나다 CPSP·폴란드 오르카) 주관",
+   "exposure": "확인된 건조 계약: 배치-II 1번함 1조 1,130억원(2019.10) + 3번함 1조 1,019억원(2023.12) = 2조 2,149억원. 배치-II 2번함·배치-I 금액은 이번 조사에서 미확인",
+   "exposure_krw_eok": 22149.0,
+   "why": "국내 3,000톤급 잠수함 6척 중 5척을 지은 사실상 독점 업체. 특수선 부문 영업이익률은 한 자릿수라 국내 건조만으로는 이익 기여가 크지 않고, 주가의 관심은 캐나다 CPSP(최대 약 60조원, TKMS 협상 결렬 시 예비 공급자)·핵추진잠수함(장보고 N) 같은 대형 옵션이다. 옛 대우조선해양",
+   "tier": "확정",
+   "source_url": "https://biz.newdaily.co.kr/site/data/html/2019/10/11/2019101100057.amp.html"
+  },
+  {
+   "name": "HD현대중공업",
+   "ticker": "329180",
+   "market": "KOSPI",
+   "role": "체계종합(주계약)",
+   "importance": 2,
+   "parts": "배치-I 3번함 신채호함 건조(울산, 2024.4 인도), 2011년 기본설계 참여",
+   "exposure": "신채호함 건조 계약 금액 미공개",
+   "exposure_krw_eok": null,
+   "why": "배치-II 3척을 모두 한화오션이 가져가 장보고-III에서는 추가 매출이 없다. 잠수함 경쟁력은 장보고-II 성능개량·핵추진잠수함 수주전에서 다시 시험받는다",
+   "tier": "확정",
+   "source_url": "https://v.daum.net/v/20240404165103667"
+  },
+  {
+   "name": "한화시스템",
+   "ticker": "272210",
+   "market": "KOSPI",
+   "role": "핵심 구성품",
+   "importance": 2,
+   "parts": "잠수함 전투체계(센서 융합·표적 처리·무장 통제), 위성통신, 기뢰회피 소나",
+   "exposure": "미공개",
+   "exposure_krw_eok": null,
+   "why": "국산 잠수함 전투체계 시제업체로 배치마다 반복 탑재된다. 수출이 성사되면 전투체계도 함께 나가 한화그룹 내 수혜가 겹친다. 옛 삼성탈레스·한화탈레스",
+   "tier": "보도",
+   "source_url": "https://www.ajunews.com/view/20230424140609778"
+  },
+  {
+   "name": "LIG D&A",
+   "ticker": "079550",
+   "market": "KOSPI",
+   "role": "핵심 구성품",
+   "importance": 2,
+   "parts": "소나체계 체계종합(시제업체), 전자전체계(배치-II 3번함 신형 2026.6 상세설계 완료), 533mm 중어뢰 범상어",
+   "exposure": "미공개",
+   "exposure_krw_eok": null,
+   "why": "소나·전자전·어뢰를 함께 공급해 척당 탑재 품목이 많다. 다만 천궁-II 대비 회사 실적 비중은 작다. 옛 LIG넥스원",
+   "tier": "보도",
+   "source_url": "https://www.mt.co.kr/industry/2026/08/04/2026080413251277625"
+  },
+  {
+   "name": "한화에어로스페이스",
+   "ticker": "012450",
+   "market": "KOSPI",
+   "role": "핵심 구성품",
+   "importance": 2,
+   "parts": "배치-II 리튬이온 배터리 체계(옛 한화디펜스), 예인배열 소나 시스템(옛 ㈜한화 방산), 수직발사관(K-VLS) 생산 참여 보도(미확인)",
+   "exposure": "미공개",
+   "exposure_krw_eok": null,
+   "why": "세계 두 번째 잠수함 리튬이온 배터리 체계를 맡아 수출 제안의 핵심 차별점을 쥐고 있다. 회사 전체 실적에서 비중은 작다",
+   "tier": "보도",
+   "source_url": "https://view.asiae.co.kr/article/2024013114543339383"
+  },
+  {
+   "name": "범한퓨얼셀",
+   "ticker": "382900",
+   "market": "KOSDAQ",
+   "role": "부품·소재",
+   "importance": 2,
+   "parts": "AIP(공기불요추진)용 PEM 연료전지 모듈 (배치-I, 약 150kW급 4기). 214급 독일 지멘스 제품을 국산화",
+   "exposure": "미공개",
+   "exposure_krw_eok": null,
+   "why": "국내 유일 잠수함 연료전지 업체라 신규 잠수함·수출 때마다 거의 확실히 들어간다. 시가총액이 작아 잠수함 수주 뉴스 레버리지가 가장 큰 종목 중 하나",
+   "tier": "보도",
+   "source_url": "https://seaforces.org/marint/Republic-Korea-Navy/Submarine/Dosan-Ahn-Changho-class.htm"
+  },
+  {
+   "name": "삼성SDI",
+   "ticker": "006400",
+   "market": "KOSPI",
+   "role": "부품·소재",
+   "importance": 3,
+   "parts": "배치-II 리튬이온 배터리 셀",
+   "exposure": "미공개",
+   "exposure_krw_eok": null,
+   "why": "기술적 상징성은 크지만 삼성SDI 전체 매출에서 잠수함용 셀은 미미해 투자 판단에는 참고용",
+   "tier": "보도",
+   "source_url": "https://view.asiae.co.kr/article/2024013114543339383"
+  },
+  {
+   "name": "STX엔진",
+   "ticker": "077970",
+   "market": "KOSPI",
+   "role": "부품·소재",
+   "importance": 3,
+   "parts": "선체부착형 능동·수동 소나 센서(LIG 소나체계 협력사), 디젤 발전기(MTU 계열) 국내 생산 추정",
+   "exposure": "미공개",
+   "exposure_krw_eok": null,
+   "why": "함정용 디젤 발전기·소나 업체로 캐나다 잠수함 수주 기대에 주가가 반응한 이력이 있다. 장보고-III 엔진 납품 범위는 공식 확인이 필요하다",
+   "tier": "보도",
+   "source_url": "https://www.ajunews.com/view/20230424140609778"
+  },
+  {
+   "name": "탈레스",
+   "ticker": "EPA:HO",
+   "market": "해외",
+   "role": "부품·소재",
+   "importance": 3,
+   "parts": "측면배열 소나(국산화되지 않은 수입 품목)",
+   "exposure": "미공개",
+   "exposure_krw_eok": null,
+   "why": "배치-II에서 국산화율을 약 80%로 높였지만 남은 수입 품목의 대표. 수출 시 프랑스 수출 승인이 변수가 될 수 있다",
+   "tier": "보도",
+   "source_url": "https://seaforces.org/marint/Republic-Korea-Navy/Submarine/Dosan-Ahn-Changho-class.htm"
+  },
+  {
+   "name": "밥콕 인터내셔널",
+   "ticker": "LSE:BAB",
+   "market": "해외",
+   "role": "부품·소재",
+   "importance": 3,
+   "parts": "무장취급체계(어뢰·미사일 적재·장전 장치)",
+   "exposure": "미공개",
+   "exposure_krw_eok": null,
+   "why": "수입 구성품 확인용. 한국 업체 실적과는 무관",
+   "tier": "보도",
+   "source_url": "https://seaforces.org/marint/Republic-Korea-Navy/Submarine/Dosan-Ahn-Changho-class.htm"
+  }
+ ]
 }

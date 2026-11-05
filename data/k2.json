@@ -1182,8 +1182,268 @@
    "name": "현대로템 IR자료실 실적발표",
    "url": "https://www.hyundai-rotem.co.kr/ko/invest/ir/list.do"
   },
-  "note": "2026년 2분기부터 방산 부문 이름이 디펜스솔루션에서 AD&RH(방산·항공우주·수소)로 바뀌며 과거 실적이 일부 재분류됨(예: 1Q26 매출 8,040억 → 8,196억). 1Q25는 1Q26 IR의 디펜스솔루션 기준. 현대로템 IR은 부문별 수출·내수 매출을 따로 공개하지 않음. 2024년 이전은 부문 영업이익이 공개되지 않아 제외.",
+  "note": "2026년 2분기부터 방산 부문 이름이 디펜스솔루션에서 AD&RH(방산·항공우주·수소)로 바뀌며 과거 실적이 일부 재분류됨(예: 1Q26 매출 8,040억 → 8,196억). 1Q25는 1Q26 IR의 디펜스솔루션 기준. 현대로템 IR은 부문별 수출·내수 매출을 따로 공개하지 않음. 2024년 이전은 부문 영업이익이 공개되지 않아 제외. 2020~2024년 IR 실적발표는 사업부문별 매출만 공개하고 영업이익은 회사 전체만 공개해, 방산 부문 영업이익률은 2025년 1분기부터 표시합니다(그 전 분기는 툴팁에 회사 전체 영업이익만 표시). 분기 매출은 각 분기 발표 또는 이듬해 같은 분기 발표의 전년 동기 수치.",
   "quarters": [
+   {
+    "quarter": "1Q20",
+    "revenue_eok": 1733,
+    "op_eok": null,
+    "opm_pct": null,
+    "export_eok": null,
+    "domestic_eok": null,
+    "export_share_pct": null,
+    "company_op_eok": 117,
+    "ir_doc": "현대로템 2Q21 IR (디펜스솔루션 매출, 부문 영업이익 미공개)",
+    "basis": "디펜스솔루션",
+    "tier": "확정"
+   },
+   {
+    "quarter": "2Q20",
+    "revenue_eok": 1683,
+    "op_eok": null,
+    "opm_pct": null,
+    "export_eok": null,
+    "domestic_eok": null,
+    "export_share_pct": null,
+    "company_op_eok": 256,
+    "ir_doc": "현대로템 2Q21 IR (디펜스솔루션 매출, 부문 영업이익 미공개)",
+    "basis": "디펜스솔루션",
+    "tier": "확정"
+   },
+   {
+    "quarter": "3Q20",
+    "revenue_eok": 2332,
+    "op_eok": null,
+    "opm_pct": null,
+    "export_eok": null,
+    "domestic_eok": null,
+    "export_share_pct": null,
+    "company_op_eok": 311,
+    "ir_doc": "현대로템 3Q21 IR (디펜스솔루션 매출, 부문 영업이익 미공개)",
+    "basis": "디펜스솔루션",
+    "tier": "확정"
+   },
+   {
+    "quarter": "4Q20",
+    "revenue_eok": 2477,
+    "op_eok": null,
+    "opm_pct": null,
+    "export_eok": null,
+    "domestic_eok": null,
+    "export_share_pct": null,
+    "company_op_eok": 137,
+    "ir_doc": "현대로템 4Q21 IR (디펜스솔루션 매출, 부문 영업이익 미공개)",
+    "basis": "디펜스솔루션",
+    "tier": "확정"
+   },
+   {
+    "quarter": "1Q21",
+    "revenue_eok": 1966,
+    "op_eok": null,
+    "opm_pct": null,
+    "export_eok": null,
+    "domestic_eok": null,
+    "export_share_pct": null,
+    "company_op_eok": 258,
+    "ir_doc": "현대로템 1Q22 IR (디펜스솔루션 매출, 부문 영업이익 미공개)",
+    "basis": "디펜스솔루션",
+    "tier": "확정"
+   },
+   {
+    "quarter": "2Q21",
+    "revenue_eok": 2271,
+    "op_eok": null,
+    "opm_pct": null,
+    "export_eok": null,
+    "domestic_eok": null,
+    "export_share_pct": null,
+    "company_op_eok": 158,
+    "ir_doc": "현대로템 2Q22 IR (디펜스솔루션 매출, 부문 영업이익 미공개)",
+    "basis": "디펜스솔루션",
+    "tier": "확정"
+   },
+   {
+    "quarter": "3Q21",
+    "revenue_eok": 2178,
+    "op_eok": null,
+    "opm_pct": null,
+    "export_eok": null,
+    "domestic_eok": null,
+    "export_share_pct": null,
+    "company_op_eok": 79,
+    "ir_doc": "현대로템 3Q22 IR (디펜스솔루션 매출, 부문 영업이익 미공개)",
+    "basis": "디펜스솔루션",
+    "tier": "확정"
+   },
+   {
+    "quarter": "4Q21",
+    "revenue_eok": 2550,
+    "op_eok": null,
+    "opm_pct": null,
+    "export_eok": null,
+    "domestic_eok": null,
+    "export_share_pct": null,
+    "company_op_eok": 307,
+    "ir_doc": "현대로템 4Q22 IR (디펜스솔루션 매출, 부문 영업이익 미공개)",
+    "basis": "디펜스솔루션",
+    "tier": "확정"
+   },
+   {
+    "quarter": "1Q22",
+    "revenue_eok": 1825,
+    "op_eok": null,
+    "opm_pct": null,
+    "export_eok": null,
+    "domestic_eok": null,
+    "export_share_pct": null,
+    "company_op_eok": 236,
+    "ir_doc": "현대로템 1Q23 IR (디펜스솔루션 매출, 부문 영업이익 미공개)",
+    "basis": "디펜스솔루션",
+    "tier": "확정"
+   },
+   {
+    "quarter": "2Q22",
+    "revenue_eok": 2276,
+    "op_eok": null,
+    "opm_pct": null,
+    "export_eok": null,
+    "domestic_eok": null,
+    "export_share_pct": null,
+    "company_op_eok": 314,
+    "ir_doc": "현대로템 2Q23 IR (디펜스솔루션 매출, 부문 영업이익 미공개)",
+    "basis": "디펜스솔루션",
+    "tier": "확정"
+   },
+   {
+    "quarter": "3Q22",
+    "revenue_eok": 2057,
+    "op_eok": null,
+    "opm_pct": null,
+    "export_eok": null,
+    "domestic_eok": null,
+    "export_share_pct": null,
+    "company_op_eok": 318,
+    "ir_doc": "현대로템 3Q23 IR (디펜스솔루션 매출, 부문 영업이익 미공개)",
+    "basis": "디펜스솔루션",
+    "tier": "확정"
+   },
+   {
+    "quarter": "4Q22",
+    "revenue_eok": 4434,
+    "op_eok": null,
+    "opm_pct": null,
+    "export_eok": null,
+    "domestic_eok": null,
+    "export_share_pct": null,
+    "company_op_eok": 607,
+    "ir_doc": "현대로템 4Q23 IR (디펜스솔루션 매출, 부문 영업이익 미공개)",
+    "basis": "디펜스솔루션",
+    "tier": "확정"
+   },
+   {
+    "quarter": "1Q23",
+    "revenue_eok": 2600,
+    "op_eok": null,
+    "opm_pct": null,
+    "export_eok": null,
+    "domestic_eok": null,
+    "export_share_pct": null,
+    "company_op_eok": 319,
+    "ir_doc": "현대로템 1Q24 IR (디펜스솔루션 매출, 부문 영업이익 미공개)",
+    "basis": "디펜스솔루션",
+    "tier": "확정"
+   },
+   {
+    "quarter": "2Q23",
+    "revenue_eok": 4844,
+    "op_eok": null,
+    "opm_pct": null,
+    "export_eok": null,
+    "domestic_eok": null,
+    "export_share_pct": null,
+    "company_op_eok": 672,
+    "ir_doc": "현대로템 2Q24 IR (디펜스솔루션 매출, 부문 영업이익 미공개)",
+    "basis": "디펜스솔루션",
+    "tier": "확정"
+   },
+   {
+    "quarter": "3Q23",
+    "revenue_eok": 4142,
+    "op_eok": null,
+    "opm_pct": null,
+    "export_eok": null,
+    "domestic_eok": null,
+    "export_share_pct": null,
+    "company_op_eok": 412,
+    "ir_doc": "현대로템 3Q24 IR (디펜스솔루션 매출, 부문 영업이익 미공개)",
+    "basis": "디펜스솔루션",
+    "tier": "확정"
+   },
+   {
+    "quarter": "4Q23",
+    "revenue_eok": 4195,
+    "op_eok": null,
+    "opm_pct": null,
+    "export_eok": null,
+    "domestic_eok": null,
+    "export_share_pct": null,
+    "company_op_eok": 697,
+    "ir_doc": "현대로템 4Q24 IR (디펜스솔루션 매출, 부문 영업이익 미공개)",
+    "basis": "디펜스솔루션",
+    "tier": "확정"
+   },
+   {
+    "quarter": "1Q24",
+    "revenue_eok": 3180,
+    "op_eok": null,
+    "opm_pct": null,
+    "export_eok": null,
+    "domestic_eok": null,
+    "export_share_pct": null,
+    "company_op_eok": 447,
+    "ir_doc": "현대로템 1Q24 IR (디펜스솔루션 매출, 부문 영업이익 미공개)",
+    "basis": "디펜스솔루션",
+    "tier": "확정"
+   },
+   {
+    "quarter": "2Q24",
+    "revenue_eok": 5645,
+    "op_eok": null,
+    "opm_pct": null,
+    "export_eok": null,
+    "domestic_eok": null,
+    "export_share_pct": null,
+    "company_op_eok": 1127,
+    "ir_doc": "현대로템 2Q24 IR (디펜스솔루션 매출, 부문 영업이익 미공개)",
+    "basis": "디펜스솔루션",
+    "tier": "확정"
+   },
+   {
+    "quarter": "3Q24",
+    "revenue_eok": 5846,
+    "op_eok": null,
+    "opm_pct": null,
+    "export_eok": null,
+    "domestic_eok": null,
+    "export_share_pct": null,
+    "company_op_eok": 1375,
+    "ir_doc": "현대로템 3Q24 IR (디펜스솔루션 매출, 부문 영업이익 미공개)",
+    "basis": "디펜스솔루션",
+    "tier": "확정"
+   },
+   {
+    "quarter": "4Q24",
+    "revenue_eok": 8981,
+    "op_eok": null,
+    "opm_pct": null,
+    "export_eok": null,
+    "domestic_eok": null,
+    "export_share_pct": null,
+    "company_op_eok": 1617,
+    "ir_doc": "현대로템 4Q24 IR (디펜스솔루션 매출, 부문 영업이익 미공개)",
+    "basis": "디펜스솔루션",
+    "tier": "확정"
+   },
    {
     "quarter": "1Q25",
     "revenue_eok": 6580,
@@ -1193,7 +1453,8 @@
     "domestic_eok": null,
     "export_share_pct": null,
     "ir_doc": "현대로템 1Q26 IR (디펜스솔루션 기준)",
-    "tier": "확정"
+    "tier": "확정",
+    "basis": "디펜스솔루션"
    },
    {
     "quarter": "2Q25",
@@ -1204,7 +1465,8 @@
     "domestic_eok": null,
     "export_share_pct": null,
     "ir_doc": "현대로템 2Q26 IR",
-    "tier": "확정"
+    "tier": "확정",
+    "basis": "디펜스솔루션"
    },
    {
     "quarter": "3Q25",
@@ -1215,7 +1477,8 @@
     "domestic_eok": null,
     "export_share_pct": null,
     "ir_doc": "현대로템 3Q26 IR",
-    "tier": "확정"
+    "tier": "확정",
+    "basis": "디펜스솔루션"
    },
    {
     "quarter": "4Q25",
@@ -1226,7 +1489,8 @@
     "domestic_eok": null,
     "export_share_pct": null,
     "ir_doc": "현대로템 3Q26 IR",
-    "tier": "확정"
+    "tier": "확정",
+    "basis": "디펜스솔루션"
    },
    {
     "quarter": "1Q26",
@@ -1237,7 +1501,8 @@
     "domestic_eok": null,
     "export_share_pct": null,
     "ir_doc": "현대로템 3Q26 IR",
-    "tier": "확정"
+    "tier": "확정",
+    "basis": "디펜스솔루션"
    },
    {
     "quarter": "2Q26",
@@ -1248,7 +1513,8 @@
     "domestic_eok": null,
     "export_share_pct": null,
     "ir_doc": "현대로템 3Q26 IR",
-    "tier": "확정"
+    "tier": "확정",
+    "basis": "AD&RH"
    },
    {
     "quarter": "3Q26",
@@ -1259,7 +1525,8 @@
     "domestic_eok": null,
     "export_share_pct": null,
     "ir_doc": "현대로템 3Q26 IR",
-    "tier": "확정"
+    "tier": "확정",
+    "basis": "AD&RH"
    }
   ],
   "backlog": [

@@ -931,8 +931,200 @@
    "name": "한화에어로스페이스 IR 실적발표 자료",
    "url": "https://www.hanwhaaerospace.com/kor/ir/earning-release.do"
   },
-  "note": "3Q26 IR 자료의 분기 실적표 기준. 4Q24 수출·내수 구분은 4Q25 IR 자료의 수정치를 사용. 영업이익률과 수출 비중은 IR 수치로 계산.",
+  "note": "3Q26 IR 자료의 분기 실적표 기준. 4Q24 수출·내수 구분은 4Q25 IR 자료의 수정치를 사용. 영업이익률과 수출 비중은 IR 수치로 계산. 2020~2Q22는 합병 전 자회사 한화디펜스 실적(십억원 단위를 억원으로 환산)이고, 3Q22부터는 ㈜한화 방산부문 합병 후 재분류된 지상방산 부문 실적이라 연속 비교에 주의. 2023년 분기는 1Q24 IR의 수정치.",
   "quarters": [
+   {
+    "quarter": "1Q20",
+    "revenue_eok": 2125,
+    "op_eok": 100,
+    "opm_pct": 4.7,
+    "export_eok": 497,
+    "domestic_eok": 1628,
+    "export_share_pct": 23.4,
+    "ir_doc": "한화에어로스페이스 1Q21 IR (한화디펜스 기준)",
+    "basis": "한화디펜스",
+    "tier": "확정"
+   },
+   {
+    "quarter": "2Q20",
+    "revenue_eok": 3771,
+    "op_eok": 506,
+    "opm_pct": 13.4,
+    "export_eok": 1659,
+    "domestic_eok": 2112,
+    "export_share_pct": 44.0,
+    "ir_doc": "한화에어로스페이스 2Q21 IR (한화디펜스 기준)",
+    "basis": "한화디펜스",
+    "tier": "확정"
+   },
+   {
+    "quarter": "3Q20",
+    "revenue_eok": 4352,
+    "op_eok": 328,
+    "opm_pct": 7.5,
+    "export_eok": 1424,
+    "domestic_eok": 2928,
+    "export_share_pct": 32.7,
+    "ir_doc": "한화에어로스페이스 3Q21 IR (한화디펜스 기준)",
+    "basis": "한화디펜스",
+    "tier": "확정"
+   },
+   {
+    "quarter": "4Q20",
+    "revenue_eok": 4124,
+    "op_eok": 54,
+    "opm_pct": 1.3,
+    "export_eok": 468,
+    "domestic_eok": 3656,
+    "export_share_pct": 11.3,
+    "ir_doc": "한화에어로스페이스 4Q21 IR (한화디펜스 기준)",
+    "basis": "한화디펜스",
+    "tier": "확정"
+   },
+   {
+    "quarter": "1Q21",
+    "revenue_eok": 2464,
+    "op_eok": 55,
+    "opm_pct": 2.2,
+    "export_eok": 509,
+    "domestic_eok": 1955,
+    "export_share_pct": 20.7,
+    "ir_doc": "한화에어로스페이스 1Q22 IR (한화디펜스 기준)",
+    "basis": "한화디펜스",
+    "tier": "확정"
+   },
+   {
+    "quarter": "2Q21",
+    "revenue_eok": 3577,
+    "op_eok": 126,
+    "opm_pct": 3.5,
+    "export_eok": 195,
+    "domestic_eok": 3382,
+    "export_share_pct": 5.5,
+    "ir_doc": "한화에어로스페이스 2Q22 IR (한화디펜스 기준)",
+    "basis": "한화디펜스",
+    "tier": "확정"
+   },
+   {
+    "quarter": "3Q21",
+    "revenue_eok": 3219,
+    "op_eok": 159,
+    "opm_pct": 4.9,
+    "export_eok": 343,
+    "domestic_eok": 2877,
+    "export_share_pct": 10.7,
+    "ir_doc": "한화에어로스페이스 4Q21 IR (한화디펜스 기준)",
+    "basis": "한화디펜스",
+    "tier": "확정"
+   },
+   {
+    "quarter": "4Q21",
+    "revenue_eok": 5423,
+    "op_eok": 567,
+    "opm_pct": 10.5,
+    "export_eok": 648,
+    "domestic_eok": 4775,
+    "export_share_pct": 11.9,
+    "ir_doc": "한화에어로스페이스 1Q22 IR (한화디펜스 기준)",
+    "basis": "한화디펜스",
+    "tier": "확정"
+   },
+   {
+    "quarter": "1Q22",
+    "revenue_eok": 2424,
+    "op_eok": 34,
+    "opm_pct": 1.4,
+    "export_eok": 178,
+    "domestic_eok": 2246,
+    "export_share_pct": 7.3,
+    "ir_doc": "한화에어로스페이스 2Q22 IR (한화디펜스 기준)",
+    "basis": "한화디펜스",
+    "tier": "확정"
+   },
+   {
+    "quarter": "2Q22",
+    "revenue_eok": 3327,
+    "op_eok": 151,
+    "opm_pct": 4.5,
+    "export_eok": 149,
+    "domestic_eok": 3177,
+    "export_share_pct": 4.5,
+    "ir_doc": "한화에어로스페이스 2Q22 IR (한화디펜스 기준)",
+    "basis": "한화디펜스",
+    "tier": "확정"
+   },
+   {
+    "quarter": "3Q22",
+    "revenue_eok": 3515,
+    "op_eok": 92,
+    "opm_pct": 2.6,
+    "export_eok": 714,
+    "domestic_eok": 2802,
+    "export_share_pct": 20.3,
+    "ir_doc": "한화에어로스페이스 3Q23 IR",
+    "basis": "지상방산",
+    "tier": "확정"
+   },
+   {
+    "quarter": "4Q22",
+    "revenue_eok": 11215,
+    "op_eok": 1827,
+    "opm_pct": 16.3,
+    "export_eok": 3526,
+    "domestic_eok": 7689,
+    "export_share_pct": 31.4,
+    "ir_doc": "한화에어로스페이스 3Q23 IR",
+    "basis": "지상방산",
+    "tier": "확정"
+   },
+   {
+    "quarter": "1Q23",
+    "revenue_eok": 8415,
+    "op_eok": 1770,
+    "opm_pct": 21.0,
+    "export_eok": 4731,
+    "domestic_eok": 3684,
+    "export_share_pct": 56.2,
+    "ir_doc": "한화에어로스페이스 1Q24 IR",
+    "basis": "지상방산",
+    "tier": "확정"
+   },
+   {
+    "quarter": "2Q23",
+    "revenue_eok": 6001,
+    "op_eok": 219,
+    "opm_pct": 3.6,
+    "export_eok": 1359,
+    "domestic_eok": 4642,
+    "export_share_pct": 22.6,
+    "ir_doc": "한화에어로스페이스 1Q24 IR",
+    "basis": "지상방산",
+    "tier": "확정"
+   },
+   {
+    "quarter": "3Q23",
+    "revenue_eok": 7627,
+    "op_eok": 540,
+    "opm_pct": 7.1,
+    "export_eok": 1961,
+    "domestic_eok": 5665,
+    "export_share_pct": 25.7,
+    "ir_doc": "한화에어로스페이스 1Q24 IR",
+    "basis": "지상방산",
+    "tier": "확정"
+   },
+   {
+    "quarter": "4Q23",
+    "revenue_eok": 19282,
+    "op_eok": 3198,
+    "opm_pct": 16.6,
+    "export_eok": 7145,
+    "domestic_eok": 12137,
+    "export_share_pct": 37.1,
+    "ir_doc": "한화에어로스페이스 1Q24 IR",
+    "basis": "지상방산",
+    "tier": "확정"
+   },
    {
     "quarter": "1Q24",
     "revenue_eok": 6553,
@@ -942,7 +1134,8 @@
     "domestic_eok": 3521,
     "export_share_pct": 46.3,
     "ir_doc": "1Q25 IR Presentation",
-    "tier": "확정"
+    "tier": "확정",
+    "basis": "지상방산"
    },
    {
     "quarter": "2Q24",
@@ -953,7 +1146,8 @@
     "domestic_eok": 5712,
     "export_share_pct": 57.0,
     "ir_doc": "1Q25 IR Presentation",
-    "tier": "확정"
+    "tier": "확정",
+    "basis": "지상방산"
    },
    {
     "quarter": "3Q24",
@@ -964,7 +1158,8 @@
     "domestic_eok": 6829,
     "export_share_pct": 58.8,
     "ir_doc": "3Q25 IR Presentation",
-    "tier": "확정"
+    "tier": "확정",
+    "basis": "지상방산"
    },
    {
     "quarter": "4Q24",
@@ -975,7 +1170,8 @@
     "domestic_eok": 15440,
     "export_share_pct": 54.1,
     "ir_doc": "4Q25 IR Presentation",
-    "tier": "확정"
+    "tier": "확정",
+    "basis": "지상방산"
    },
    {
     "quarter": "1Q25",
@@ -986,7 +1182,8 @@
     "domestic_eok": 4050,
     "export_share_pct": 65.0,
     "ir_doc": "4Q25 IR Presentation",
-    "tier": "확정"
+    "tier": "확정",
+    "basis": "지상방산"
    },
    {
     "quarter": "2Q25",
@@ -997,7 +1194,8 @@
     "domestic_eok": 6898,
     "export_share_pct": 61.1,
     "ir_doc": "4Q25 IR Presentation",
-    "tier": "확정"
+    "tier": "확정",
+    "basis": "지상방산"
    },
    {
     "quarter": "3Q25",
@@ -1008,7 +1206,8 @@
     "domestic_eok": 9129,
     "export_share_pct": 56.7,
     "ir_doc": "3Q26 IR Presentation",
-    "tier": "확정"
+    "tier": "확정",
+    "basis": "지상방산"
    },
    {
     "quarter": "4Q25",
@@ -1019,7 +1218,8 @@
     "domestic_eok": 14637,
     "export_share_pct": 52.7,
     "ir_doc": "3Q26 IR Presentation",
-    "tier": "확정"
+    "tier": "확정",
+    "basis": "지상방산"
    },
    {
     "quarter": "1Q26",
@@ -1030,7 +1230,8 @@
     "domestic_eok": 5697,
     "export_share_pct": 53.3,
     "ir_doc": "3Q26 IR Presentation",
-    "tier": "확정"
+    "tier": "확정",
+    "basis": "지상방산"
    },
    {
     "quarter": "2Q26",
@@ -1041,7 +1242,8 @@
     "domestic_eok": 8751,
     "export_share_pct": 58.5,
     "ir_doc": "3Q26 IR Presentation",
-    "tier": "확정"
+    "tier": "확정",
+    "basis": "지상방산"
    },
    {
     "quarter": "3Q26",
@@ -1052,7 +1254,8 @@
     "domestic_eok": 6519,
     "export_share_pct": 47.7,
     "ir_doc": "3Q26 IR Presentation",
-    "tier": "확정"
+    "tier": "확정",
+    "basis": "지상방산"
    }
   ],
   "backlog": [
@@ -1259,7 +1462,13 @@
     }
    ],
    "note": "지상방산 부문 기준. 회사는 총액과 수출 비중(%)을 공개하며, 수출·내수 금액은 총액×비중으로 계산했습니다. 각 분기 IR 실적발표 '사업부문별 실적' 페이지."
-  }
+  },
+  "basis_breaks": [
+   {
+    "from": "3Q22",
+    "label": "지상방산 부문 (한화디펜스+㈜한화 방산 합병)"
+   }
+  ]
  },
  "companies": [
   {

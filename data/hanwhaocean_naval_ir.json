@@ -6,8 +6,118 @@
   "name": "한화오션 IR자료·실적 발표",
   "url": "https://www.hanwhaocean.com/investors/ea/"
  },
- "note": "특수선 부문은 잠수함(장보고-III 등)과 수상함을 함께 다룹니다. 회사 내부 관리기준의 제품군별 손익이며, 수출·내수 구분은 공개하지 않습니다. 3Q25 영업이익은 3Q25 자료 287억, 3Q26 자료 288억으로 1억 차이가 있어 최신 자료를 따랐습니다.",
+ "note": "특수선 부문은 잠수함(장보고-III 등)과 수상함을 함께 다룹니다. 회사 내부 관리기준의 제품군별 손익이며, 수출·내수 구분은 공개하지 않습니다. 3Q25 영업이익은 3Q25 자료 287억, 3Q26 자료 288억으로 1억 차이가 있어 최신 자료를 따랐습니다. 한화오션 IR 사이트에는 2023년 3분기 이후 자료만 있어, 1Q22~4Q23 특수선 분기 실적은 4Q23 실적발표의 분기 표를 썼습니다. 대우조선해양 시절인 2020~2021년 분기 자료는 회사 사이트에 없습니다(2021년 연간 특수선 매출 6,338억·영업손실 278억, 4Q23 IR).",
  "quarters": [
+  {
+   "quarter": "1Q22",
+   "revenue_eok": 1261,
+   "op_eok": 75,
+   "opm_pct": 5.9,
+   "export_eok": null,
+   "domestic_eok": null,
+   "export_share_pct": null,
+   "ir_doc": "한화오션 4Q23 실적발표 (1Q22~4Q23 분기표)",
+   "tier": "확정"
+  },
+  {
+   "quarter": "2Q22",
+   "revenue_eok": 814,
+   "op_eok": 36,
+   "opm_pct": 4.4,
+   "export_eok": null,
+   "domestic_eok": null,
+   "export_share_pct": null,
+   "ir_doc": "한화오션 4Q23 실적발표 (1Q22~4Q23 분기표)",
+   "tier": "확정"
+  },
+  {
+   "quarter": "3Q22",
+   "revenue_eok": 1060,
+   "op_eok": -77,
+   "opm_pct": -7.3,
+   "export_eok": null,
+   "domestic_eok": null,
+   "export_share_pct": null,
+   "ir_doc": "한화오션 4Q23 실적발표 (1Q22~4Q23 분기표)",
+   "tier": "확정"
+  },
+  {
+   "quarter": "4Q22",
+   "revenue_eok": 1898,
+   "op_eok": 607,
+   "opm_pct": 32.0,
+   "export_eok": null,
+   "domestic_eok": null,
+   "export_share_pct": null,
+   "ir_doc": "한화오션 4Q23 실적발표 (1Q22~4Q23 분기표)",
+   "tier": "확정"
+  },
+  {
+   "quarter": "1Q23",
+   "revenue_eok": 1288,
+   "op_eok": -3,
+   "opm_pct": -0.2,
+   "export_eok": null,
+   "domestic_eok": null,
+   "export_share_pct": null,
+   "ir_doc": "한화오션 4Q23 실적발표 (1Q22~4Q23 분기표)",
+   "tier": "확정"
+  },
+  {
+   "quarter": "2Q23",
+   "revenue_eok": 2429,
+   "op_eok": 54,
+   "opm_pct": 2.2,
+   "export_eok": null,
+   "domestic_eok": null,
+   "export_share_pct": null,
+   "ir_doc": "한화오션 4Q23 실적발표 (1Q22~4Q23 분기표)",
+   "tier": "확정"
+  },
+  {
+   "quarter": "3Q23",
+   "revenue_eok": 2265,
+   "op_eok": -76,
+   "opm_pct": -3.4,
+   "export_eok": null,
+   "domestic_eok": null,
+   "export_share_pct": null,
+   "ir_doc": "한화오션 4Q23 실적발표 (1Q22~4Q23 분기표)",
+   "tier": "확정"
+  },
+  {
+   "quarter": "4Q23",
+   "revenue_eok": 2852,
+   "op_eok": 846,
+   "opm_pct": 29.7,
+   "export_eok": null,
+   "domestic_eok": null,
+   "export_share_pct": null,
+   "ir_doc": "한화오션 4Q23 실적발표 (1Q22~4Q23 분기표)",
+   "tier": "확정"
+  },
+  {
+   "quarter": "1Q24",
+   "revenue_eok": 1422,
+   "op_eok": 57,
+   "opm_pct": 4.0,
+   "export_eok": null,
+   "domestic_eok": null,
+   "export_share_pct": null,
+   "ir_doc": "한화오션 2Q24 실적발표",
+   "tier": "확정"
+  },
+  {
+   "quarter": "2Q24",
+   "revenue_eok": 3289,
+   "op_eok": 734,
+   "opm_pct": 22.3,
+   "export_eok": null,
+   "domestic_eok": null,
+   "export_share_pct": null,
+   "ir_doc": "한화오션 2Q24 실적발표",
+   "tier": "확정"
+  },
   {
    "quarter": "3Q24",
    "revenue_eok": 1961,

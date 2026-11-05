@@ -1423,7 +1423,8 @@
     "export_share_pct": 20.7,
     "ir_doc": "한화에어로스페이스 1Q22 IR (한화디펜스 기준)",
     "basis": "한화디펜스",
-    "tier": "확정"
+    "tier": "확정",
+    "export_src": "모델"
    },
    {
     "quarter": "2Q21",
@@ -1435,7 +1436,8 @@
     "export_share_pct": 5.5,
     "ir_doc": "한화에어로스페이스 2Q22 IR (한화디펜스 기준)",
     "basis": "한화디펜스",
-    "tier": "확정"
+    "tier": "확정",
+    "export_src": "모델"
    },
    {
     "quarter": "3Q21",
@@ -1447,7 +1449,8 @@
     "export_share_pct": 10.7,
     "ir_doc": "한화에어로스페이스 4Q21 IR (한화디펜스 기준)",
     "basis": "한화디펜스",
-    "tier": "확정"
+    "tier": "확정",
+    "export_src": "모델"
    },
    {
     "quarter": "4Q21",
@@ -1459,7 +1462,8 @@
     "export_share_pct": 11.9,
     "ir_doc": "한화에어로스페이스 1Q22 IR (한화디펜스 기준)",
     "basis": "한화디펜스",
-    "tier": "확정"
+    "tier": "확정",
+    "export_src": "모델"
    },
    {
     "quarter": "1Q22",
@@ -1471,7 +1475,8 @@
     "export_share_pct": 7.3,
     "ir_doc": "한화에어로스페이스 2Q22 IR (한화디펜스 기준)",
     "basis": "한화디펜스",
-    "tier": "확정"
+    "tier": "확정",
+    "export_src": "모델"
    },
    {
     "quarter": "2Q22",
@@ -1483,7 +1488,8 @@
     "export_share_pct": 4.5,
     "ir_doc": "한화에어로스페이스 2Q22 IR (한화디펜스 기준)",
     "basis": "한화디펜스",
-    "tier": "확정"
+    "tier": "확정",
+    "export_src": "모델"
    },
    {
     "quarter": "3Q22",
@@ -1495,7 +1501,8 @@
     "export_share_pct": 20.3,
     "ir_doc": "한화에어로스페이스 3Q23 IR",
     "basis": "지상방산",
-    "tier": "확정"
+    "tier": "확정",
+    "export_src": "모델"
    },
    {
     "quarter": "4Q22",
@@ -1507,43 +1514,47 @@
     "export_share_pct": 31.4,
     "ir_doc": "한화에어로스페이스 3Q23 IR",
     "basis": "지상방산",
-    "tier": "확정"
+    "tier": "확정",
+    "export_src": "모델"
    },
    {
     "quarter": "1Q23",
     "revenue_eok": 8415,
     "op_eok": 1770,
     "opm_pct": 21.0,
-    "export_eok": 4731,
-    "domestic_eok": 3684,
-    "export_share_pct": 56.2,
+    "export_eok": 4749,
+    "domestic_eok": 3667,
+    "export_share_pct": 56.4,
     "ir_doc": "한화에어로스페이스 1Q24 IR",
     "basis": "지상방산",
-    "tier": "확정"
+    "tier": "확정",
+    "export_src": "모델"
    },
    {
     "quarter": "2Q23",
     "revenue_eok": 6001,
     "op_eok": 219,
     "opm_pct": 3.6,
-    "export_eok": 1359,
-    "domestic_eok": 4642,
-    "export_share_pct": 22.6,
+    "export_eok": 1372,
+    "domestic_eok": 4629,
+    "export_share_pct": 22.9,
     "ir_doc": "한화에어로스페이스 1Q24 IR",
     "basis": "지상방산",
-    "tier": "확정"
+    "tier": "확정",
+    "export_src": "모델"
    },
    {
     "quarter": "3Q23",
     "revenue_eok": 7627,
     "op_eok": 540,
     "opm_pct": 7.1,
-    "export_eok": 1961,
-    "domestic_eok": 5665,
-    "export_share_pct": 25.7,
+    "export_eok": 1975,
+    "domestic_eok": 5652,
+    "export_share_pct": 25.9,
     "ir_doc": "한화에어로스페이스 1Q24 IR",
     "basis": "지상방산",
-    "tier": "확정"
+    "tier": "확정",
+    "export_src": "모델"
    },
    {
     "quarter": "4Q23",
@@ -1555,7 +1566,8 @@
     "export_share_pct": 37.1,
     "ir_doc": "한화에어로스페이스 1Q24 IR",
     "basis": "지상방산",
-    "tier": "확정"
+    "tier": "확정",
+    "export_src": "모델"
    },
    {
     "quarter": "1Q24",
@@ -1563,11 +1575,12 @@
     "op_eok": -39,
     "opm_pct": -0.6,
     "export_eok": 3031,
-    "domestic_eok": 3521,
+    "domestic_eok": 3522,
     "export_share_pct": 46.3,
     "ir_doc": "1Q25 IR Presentation",
     "tier": "확정",
-    "basis": "지상방산"
+    "basis": "지상방산",
+    "export_src": "모델"
    },
    {
     "quarter": "2Q24",
@@ -1579,7 +1592,8 @@
     "export_share_pct": 57.0,
     "ir_doc": "1Q25 IR Presentation",
     "tier": "확정",
-    "basis": "지상방산"
+    "basis": "지상방산",
+    "export_src": "모델"
    },
    {
     "quarter": "3Q24",
@@ -1591,19 +1605,21 @@
     "export_share_pct": 58.8,
     "ir_doc": "3Q25 IR Presentation",
     "tier": "확정",
-    "basis": "지상방산"
+    "basis": "지상방산",
+    "export_src": "모델"
    },
    {
     "quarter": "4Q24",
     "revenue_eok": 33654,
     "op_eok": 8720,
     "opm_pct": 25.9,
-    "export_eok": 18214,
-    "domestic_eok": 15440,
-    "export_share_pct": 54.1,
+    "export_eok": 18500,
+    "domestic_eok": 15147,
+    "export_share_pct": 55.0,
     "ir_doc": "4Q25 IR Presentation",
     "tier": "확정",
-    "basis": "지상방산"
+    "basis": "지상방산",
+    "export_src": "모델"
    },
    {
     "quarter": "1Q25",
@@ -1615,7 +1631,8 @@
     "export_share_pct": 65.0,
     "ir_doc": "4Q25 IR Presentation",
     "tier": "확정",
-    "basis": "지상방산"
+    "basis": "지상방산",
+    "export_src": "모델"
    },
    {
     "quarter": "2Q25",
@@ -1627,7 +1644,8 @@
     "export_share_pct": 61.1,
     "ir_doc": "4Q25 IR Presentation",
     "tier": "확정",
-    "basis": "지상방산"
+    "basis": "지상방산",
+    "export_src": "모델"
    },
    {
     "quarter": "3Q25",
@@ -1635,11 +1653,12 @@
     "op_eok": 5725,
     "opm_pct": 27.1,
     "export_eok": 11970,
-    "domestic_eok": 9129,
+    "domestic_eok": 9128,
     "export_share_pct": 56.7,
     "ir_doc": "3Q26 IR Presentation",
     "tier": "확정",
-    "basis": "지상방산"
+    "basis": "지상방산",
+    "export_src": "모델"
    },
    {
     "quarter": "4Q25",
@@ -1651,7 +1670,8 @@
     "export_share_pct": 52.7,
     "ir_doc": "3Q26 IR Presentation",
     "tier": "확정",
-    "basis": "지상방산"
+    "basis": "지상방산",
+    "export_src": "모델"
    },
    {
     "quarter": "1Q26",
@@ -1663,7 +1683,8 @@
     "export_share_pct": 53.3,
     "ir_doc": "3Q26 IR Presentation",
     "tier": "확정",
-    "basis": "지상방산"
+    "basis": "지상방산",
+    "export_src": "모델"
    },
    {
     "quarter": "2Q26",
@@ -1675,7 +1696,8 @@
     "export_share_pct": 58.5,
     "ir_doc": "3Q26 IR Presentation",
     "tier": "확정",
-    "basis": "지상방산"
+    "basis": "지상방산",
+    "export_src": "모델"
    },
    {
     "quarter": "3Q26",
@@ -1687,7 +1709,8 @@
     "export_share_pct": 47.7,
     "ir_doc": "3Q26 IR Presentation",
     "tier": "확정",
-    "basis": "지상방산"
+    "basis": "지상방산",
+    "export_src": "모델"
    }
   ],
   "backlog": [
@@ -1900,7 +1923,8 @@
     "from": "3Q22",
     "label": "지상방산 부문 (한화디펜스+㈜한화 방산 합병)"
    }
-  ]
+  ],
+  "model_note": "수출·내수 비중은 사용자 기업 모델(방산 부문 기준)의 실적치를 우선 적용했고, 아직 발표되지 않은 분기의 추정치는 제외했습니다."
  },
  "meta": {
   "name": "K9 자주포",

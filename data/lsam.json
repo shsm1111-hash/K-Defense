@@ -831,8 +831,7 @@
     "domestic_eok": 2929,
     "export_share_pct": 16.8,
     "ir_doc": "사용자 LIG 모델 실적치 (IR 미게시 분기)",
-    "tier": "추정",
-    "export_src": "모델"
+    "tier": "추정"
    },
    {
     "quarter": "2Q20",
@@ -843,8 +842,7 @@
     "domestic_eok": 3026,
     "export_share_pct": 13.3,
     "ir_doc": "사용자 LIG 모델 실적치 (IR 미게시 분기)",
-    "tier": "추정",
-    "export_src": "모델"
+    "tier": "추정"
    },
    {
     "quarter": "3Q20",
@@ -855,8 +853,7 @@
     "domestic_eok": 3826,
     "export_share_pct": 7.2,
     "ir_doc": "사용자 LIG 모델 실적치 (IR 미게시 분기)",
-    "tier": "추정",
-    "export_src": "모델"
+    "tier": "추정"
    },
    {
     "quarter": "4Q20",
@@ -867,8 +864,7 @@
     "domestic_eok": 4616,
     "export_share_pct": 5.2,
     "ir_doc": "사용자 LIG 모델 실적치 (IR 미게시 분기)",
-    "tier": "추정",
-    "export_src": "모델"
+    "tier": "추정"
    },
    {
     "quarter": "1Q21",
@@ -879,8 +875,7 @@
     "domestic_eok": 3211,
     "export_share_pct": 8.4,
     "ir_doc": "LIG 1Q22 실적 IR (전년동기)",
-    "tier": "확정",
-    "export_src": "모델"
+    "tier": "확정"
    },
    {
     "quarter": "2Q21",
@@ -891,8 +886,7 @@
     "domestic_eok": 4236,
     "export_share_pct": 3.7,
     "ir_doc": "LIG 2Q22 실적 IR (전년동기)",
-    "tier": "확정",
-    "export_src": "모델"
+    "tier": "확정"
    },
    {
     "quarter": "3Q21",
@@ -903,8 +897,7 @@
     "domestic_eok": 4403,
     "export_share_pct": 4.1,
     "ir_doc": "LIG 3Q22 실적 IR (전년동기)",
-    "tier": "확정",
-    "export_src": "모델"
+    "tier": "확정"
    },
    {
     "quarter": "4Q21",
@@ -915,8 +908,7 @@
     "domestic_eok": 5545,
     "export_share_pct": 3.2,
     "ir_doc": "LIG 4Q22 실적 IR (전년동기)",
-    "tier": "확정",
-    "export_src": "모델"
+    "tier": "확정"
    },
    {
     "quarter": "1Q22",
@@ -927,8 +919,7 @@
     "domestic_eok": 3803,
     "export_share_pct": 11.0,
     "ir_doc": "LIG 1Q22 실적 IR",
-    "tier": "확정",
-    "export_src": "모델"
+    "tier": "확정"
    },
    {
     "quarter": "2Q22",
@@ -939,8 +930,7 @@
     "domestic_eok": 4442,
     "export_share_pct": 9.4,
     "ir_doc": "LIG 2Q22 실적 IR",
-    "tier": "확정",
-    "export_src": "모델"
+    "tier": "확정"
    },
    {
     "quarter": "3Q22",
@@ -951,8 +941,7 @@
     "domestic_eok": 4749,
     "export_share_pct": 31.7,
     "ir_doc": "LIG 3Q22 실적 IR",
-    "tier": "확정",
-    "export_src": "모델"
+    "tier": "확정"
    },
    {
     "quarter": "4Q22",
@@ -963,8 +952,7 @@
     "domestic_eok": 5154,
     "export_share_pct": 15.2,
     "ir_doc": "LIG 4Q22 실적 IR",
-    "tier": "확정",
-    "export_src": "모델"
+    "tier": "확정"
    },
    {
     "quarter": "1Q23",
@@ -975,8 +963,7 @@
     "domestic_eok": 4402,
     "export_share_pct": 19.5,
     "ir_doc": "LIG 1Q23 실적 IR",
-    "tier": "확정",
-    "export_src": "모델"
+    "tier": "확정"
    },
    {
     "quarter": "2Q23",
@@ -987,8 +974,7 @@
     "domestic_eok": 4595,
     "export_share_pct": 15.8,
     "ir_doc": "LIG 2Q23 실적 IR",
-    "tier": "확정",
-    "export_src": "모델"
+    "tier": "확정"
    },
    {
     "quarter": "3Q23",
@@ -999,8 +985,7 @@
     "domestic_eok": 4433,
     "export_share_pct": 17.3,
     "ir_doc": "LIG 3Q23 실적 IR",
-    "tier": "확정",
-    "export_src": "모델"
+    "tier": "확정"
    },
    {
     "quarter": "4Q23",
@@ -1011,8 +996,7 @@
     "domestic_eok": 6072,
     "export_share_pct": 10.7,
     "ir_doc": "LIG 4Q23 실적 IR",
-    "tier": "확정",
-    "export_src": "모델"
+    "tier": "확정"
    },
    {
     "quarter": "1Q24",
@@ -1023,8 +1007,7 @@
     "domestic_eok": 4376,
     "export_share_pct": 42.7,
     "ir_doc": "LIG 1Q25 실적 IR (전년동기) · 2Q24 IR 누계",
-    "tier": "확정",
-    "export_src": "모델"
+    "tier": "확정"
    },
    {
     "quarter": "2Q24",
@@ -1035,8 +1018,7 @@
     "domestic_eok": 5227,
     "export_share_pct": 13.6,
     "ir_doc": "LIG 2Q24 실적 IR",
-    "tier": "확정",
-    "export_src": "모델"
+    "tier": "확정"
    },
    {
     "quarter": "3Q24",
@@ -1047,8 +1029,7 @@
     "domestic_eok": 5905,
     "export_share_pct": 20.2,
     "ir_doc": "LIG 3Q24 실적 IR",
-    "tier": "확정",
-    "export_src": "모델"
+    "tier": "확정"
    },
    {
     "quarter": "4Q24",
@@ -1059,8 +1040,7 @@
     "domestic_eok": 9517,
     "export_share_pct": 18.5,
     "ir_doc": "LIG 4Q24 실적 IR",
-    "tier": "확정",
-    "export_src": "모델"
+    "tier": "확정"
    },
    {
     "quarter": "1Q25",
@@ -1071,8 +1051,7 @@
     "domestic_eok": 7226,
     "export_share_pct": 20.4,
     "ir_doc": "LIG 1Q25 실적 IR · 수출·내수는 4Q25 IR 분기표",
-    "tier": "확정",
-    "export_src": "모델"
+    "tier": "확정"
    },
    {
     "quarter": "2Q25",
@@ -1083,8 +1062,7 @@
     "domestic_eok": 7807,
     "export_share_pct": 17.4,
     "ir_doc": "LIG 2Q25 실적 IR · 수출·내수는 4Q25 IR 분기표",
-    "tier": "확정",
-    "export_src": "모델"
+    "tier": "확정"
    },
    {
     "quarter": "3Q25",
@@ -1095,8 +1073,7 @@
     "domestic_eok": 8621,
     "export_share_pct": 17.8,
     "ir_doc": "LIG 3Q25 실적 IR · 수출·내수는 4Q25 IR 분기표",
-    "tier": "확정",
-    "export_src": "모델"
+    "tier": "확정"
    },
    {
     "quarter": "4Q25",
@@ -1107,8 +1084,7 @@
     "domestic_eok": 10199,
     "export_share_pct": 27.4,
     "ir_doc": "LIG 2025 연간 실적 IR",
-    "tier": "확정",
-    "export_src": "모델"
+    "tier": "확정"
    },
    {
     "quarter": "1Q26",
@@ -1119,8 +1095,7 @@
     "domestic_eok": 7627,
     "export_share_pct": 34.7,
     "ir_doc": "LIG 1Q26 실적 IR",
-    "tier": "확정",
-    "export_src": "모델"
+    "tier": "확정"
    },
    {
     "quarter": "2Q26",
@@ -1131,8 +1106,7 @@
     "domestic_eok": 8283,
     "export_share_pct": 25.4,
     "ir_doc": "LIG 2Q26 실적 IR",
-    "tier": "확정",
-    "export_src": "모델"
+    "tier": "확정"
    }
   ],
   "backlog": [
@@ -1332,8 +1306,7 @@
     }
    ],
    "note": "각 분기 IR '영업(잠정)실적 – 수주잔고' 표(조원). 2024년 1~3분기는 총액만 공개. 3Q26 자료는 아직 게시 전입니다."
-  },
-  "model_note": "수출·내수 비중은 사용자 기업 모델(방산 부문 기준)의 실적치를 우선 적용했고, 아직 발표되지 않은 분기의 추정치는 제외했습니다."
+  }
  },
  "companies": [
   {
@@ -1785,129 +1758,6 @@
    "사드를 이미 가진 나라는 미국과의 관계 때문에 보완용 수요에 그칠 수 있음",
    "나토 통합방공(IAMD) 연동 인증 등 상호운용성 문턱",
    "양산 초기라 생산능력·납기 실적이 아직 검증되지 않음"
-  ]
- },
- "obsidian": {
-  "items": [
-   {
-    "topic": "L-SAM 개발 논의의 계기(2016~2017)",
-    "text": "2016년 무수단 탄도미사일 측정 결과 종말단계 속도가 마하 7 이상으로 나왔는데, 패트리엇 PAC-3와 천궁 블록2의 요격 한계는 마하 7 수준이었다. 송영무 장관 때 SM-3 세종대왕급 배치와 함께 천궁 블록2 생산을 일시 중단하고 차라리 한국형 THAAD인 L-SAM(장거리 지대공 미사일)을 개발하자는 주장이 나왔고, 결국 사드 배치 긴급 허가와 PAC-3 MSE 64발 긴급 발주로 이어졌다. 독자적 다층 미사일 방어체계를 가진 나라는 미국·러시아·이스라엘·대한민국 정도다.",
-    "source": "지대공미사일.md › #천궁2=#MSAM / KAMD",
-    "date": null,
-    "tab": "history"
-   },
-   {
-    "topic": "L-SAM용 MFR 개발이 UAE 천궁-II 레이더의 밑바탕",
-    "text": "UAE가 60도 외기에 맞춘 수냉식 냉각체계와 AESA 레이더를 요구했을 때, 한화시스템은 L-SAM용 MFR과 울산-I Batch III급용 S밴드 AESA 레이더·수냉식 냉각체계를 개발하고 있었기 때문에 대응할 수 있었다. L-SAM MFR 개발이 천궁-II 수출형 레이더의 기술적 토대가 된 셈이다.",
-    "source": "지대공미사일.md › UAE용 MFR(다기능레이더) 개발",
-    "date": null,
-    "tab": "supply"
-   },
-   {
-    "topic": "한화시스템 4Q23: 2024년 기대 수주에 '엘셈 체계개발'",
-    "text": "2024년 방산 기대 수주로 K-2 4차, 철매3(천궁-III) MFR, 엘셈(L-SAM) 체계개발 사업 등을 들었다. 23년 말 총 수주잔고는 7조 2,655억원(방산 6조 8천억원대, ICT 4,175억원)이었다.",
-    "source": "한화시스템.md › #4Q23 #실적발표 Q&A",
-    "date": "2024-02",
-    "tab": "plan"
-   },
-   {
-    "topic": "LIG 미팅(2024.9): L-SAM 양산 타임라인 '국가의 명대로', 초도 물량 최소",
-    "text": "L-SAM 양산 사업 타임라인 업데이트 질문에 '국가의 명대로 따를 뿐'이며 초도 양산 물량이 제일 적어야 변수를 최소화한다고 답했다. 같은 미팅에서 천궁은 더 이상 나올 게 없고 'L-SAM이 다음 기대'라며 제품 다변화를 강조했다.",
-    "source": "LIG넥스원.md › LIG넥스원 미팅_240930",
-    "date": "2024-09",
-    "tab": "plan"
-   },
-   {
-    "topic": "한화시스템 4Q25 프리뷰: 2026년 국내 L-SAM 레이더 양산 본격화",
-    "text": "2026년 매출은 높은 10%대보다 더 높은 성장(20%?)을 전망하며, 국내 요인으로 L-SAM 레이더 양산 본격화와 KF-21 AESA 레이더를 들었다. 개발보다 양산 비중이 늘어 구조적 성장은 유지되지만 2026~27년 자체 투자비(우주·레이더 등, 24년 300억·25년 400억원 이상)가 커져 영업이익 성장은 장담하지 못한다고 했다.",
-    "source": "한화시스템.md › 20260109 #4Q25실적(프리뷰) #26년 전망",
-    "date": "2026-01",
-    "tab": "companies"
-   },
-   {
-    "topic": "한화시스템 L-SAM MFR 양산 3,573억원 수주(방사청)",
-    "text": "2025년 Business Highlight로 L-SAM MFR 양산을 방사청과 3,573억원에 수주했다고 밝혔다. 같은 해 M-SAM Block-3 레이더(ADD 2,006억원), 이라크 M-SAM MFR(LIG 8,592억원)도 수주했고, 구미 신공장(2,800억원 투자, CAPA 2배)을 준공했다. 2025년 방산 신규수주 3조 4,500억원에 L-SAM 양산이 포함된다.",
-    "source": "한화시스템.md › 260206 4Q25 실적발표 Business Highlight / 2Q26 #방산 수주 업데이트",
-    "date": "2026-02",
-    "tab": "companies"
-   },
-   {
-    "topic": "한화에어로 4Q25: 약 7천억원 국내 L-SAM 양산 계약",
-    "text": "3분기 실적 발표 이후에도 약 7천억원 국내 L-SAM 양산, 천검 2차 계약, 에스토니아 천무 발사대, 폴란드 천무 3차 실행 계약 등을 체결했다고 밝혔다. 2025년 말 지상방산 수주잔고는 약 37조 2천억원이다.",
-    "source": "한화에어로스페이스.md › 4Q25 실적발표 컨퍼런스콜_260209",
-    "date": "2026-02",
-    "tab": "companies"
-   },
-   {
-    "topic": "국방반도체 국산화: L-SAM 안테나 적용 계획",
-    "text": "2031년까지 통신용 반도체 공동개발을 진행해 이후 통신위성·무인기 등에 탑재하고, 지대공 유도무기체계인 천궁·L-SAM·AESA·SAR 등 핵심 안테나에 사용될 것이라고 했다.",
-    "source": "한화시스템.md › 1Q26 #Highlight",
-    "date": "2026-04",
-    "tab": "supply"
-   },
-   {
-    "topic": "한화시스템 2026년 수출 파이프라인에 L-SAM 포함",
-    "text": "2026년은 수출이 핵심이며 파이프라인으로 폴란드 K2 EC2 PL, 사우디 MNG, 중동 추가 MSAM, LSAM, 동남아 함정 사업, 중동 레이저 등을 열거했다. L-SAM이 회사 수출 파이프라인에 명시적으로 등장한 것이다.",
-    "source": "한화시스템.md › 2Q26 실적발표_260728 #수출",
-    "date": "2026-07",
-    "tab": "pipeline"
-   },
-   {
-    "topic": "한화에어로 2Q26: 사우디 LSAM 수주 지연은 전쟁 행정 지연, 유럽 문의 많으나 중동 우선",
-    "text": "사우디 장갑차·천궁·LSAM 등 수주가 안 나오는 이유는 전쟁 때문에 행정 절차가 지연된 것이라고 답했다. 유럽에서 천궁·LSAM 관련 기회는 구체적 국가는 말하기 어렵지만 문의가 많고, 다만 중동이 우선적으로 가시적인 지역이 될 전망이라고 했다.",
-    "source": "한화에어로스페이스.md › 2Q26 실적발표 Q&A",
-    "date": "2026-07",
-    "tab": "pipeline"
-   },
-   {
-    "topic": "LIG 2Q26: 동남아 천궁/L-SAM 수주 실적은 아직 없음",
-    "text": "말레이시아·인도네시아·필리핀 뉴스에 대해 동남아 관심은 많지만 아직 동남아에서 천궁/L-SAM 수주 실적이 나오고 있지 않으며, 중동은 인근 국가들이 쓰고 있어 더 빨리 도입될 가능성이 높다고 했다. 누가 더 빨리 도입될지는 모르겠다고 덧붙였다.",
-    "source": "LIG넥스원.md › LIG D&A 2Q26 실적발표 컨콜_260806",
-    "date": "2026-08",
-    "tab": "export"
-   },
-   {
-    "topic": "한화에어로 3Q26 프리뷰: 'UAE - L-SAM', 방공 수주 주체 변경",
-    "text": "UAE 항목에 'L-SAM'만 적혀 있어 UAE 건의 핵심이 L-SAM임을 시사한다. 사우디·이라크 MSAM은 한화가 LIG에 납품하는 체제였지만, 앞으로 한화가 수주하는 방공무기 체계는 수주 주체가 한화시스템이어서 총매출이 시스템으로 들어오고, LIG가 받던 추가 이윤이 한화로 오게 된다고 했다.",
-    "source": "한화에어로스페이스.md › 3Q26 Preview_261012 #UAE / #시스템 방공 무기체계 수주 주체 변경",
-    "date": "2026-10",
-    "tab": "export"
-   },
-   {
-    "topic": "UAE EDGE 통합대공망 텀시트(2026.9.15): 단/중/장거리 다계층, 한화시스템이 체계사업자",
-    "text": "2026년 9월 15일 UAE EDGE 그룹과 통합대공망 구축 주요조건합의서를 체결해 중장기 사업을 공유하고 구체화 기반을 마련했다. 이후 EDGE와 협력해 단/중/장거리 통합 다계층 포트폴리오와 천무 등을 포함한 체계사업자 역할을 수행하며 기술 협력·현지화를 단계적으로 진행한다. EDGE 계약조건은 전체 체계 공급과 장비 간 연동을 수주 주체로 계약하는 것으로 한화시스템이 수주 주체·체계통합업체이지만 UAE 한정이며, 통합체계에서는 C2·AI 역량이 중요 팩터가 된다. 수출 관련 자체투자 개발비(2026년 700~800억원)에 레이더가 주요 항목이다.",
-    "source": "한화시스템.md › 3Q26 실적 컨퍼런스 콜_261027 Business Highlight/Q&A",
-    "date": "2026-10",
-    "tab": "pipeline"
-   },
-   {
-    "topic": "LIG-라인메탈 JV: SHORAD 이후 장거리(LRAD)까지 생산 계획",
-    "text": "LIG와 라인메탈 JV는 단거리 방공(SHORAD)을 먼저 생산하고 이후 MRAD(중거리)와 LRAD(장거리)도 생산할 계획이다. 역할은 라인메탈이 발사대·추진체·탄두·양산, LIG가 전투체계·레이다·미사일 조립이며, SAFE 프로그램 조건을 충족해 내년 상반기 JV 설립 공식화를 추진한다. 유럽 장거리 방공 진입 경로로서 L-SAM 유럽 마케팅과 연결될 수 있는 대목이나 노트에 L-SAM이 명시된 것은 아니다.",
-    "source": "LIG넥스원.md › [LIG&라인메탈 JV]",
-    "date": null,
-    "tab": "plan"
-   }
-  ],
-  "insights": [
-   "국내 양산은 3사 계약이 노트로 확인된다: 한화시스템 MFR 3,573억원(방사청), 한화에어로 약 7천억원(ABM·발사대). 한화시스템은 2026년을 'L-SAM 레이더 양산 본격화' 해로 꼽았다.",
-   "LIG는 2024.9 시점부터 '천궁 다음은 L-SAM'이라고 했지만 양산 타임라인은 '국가의 명대로'이며 초도 물량이 가장 적다고 했다. 2026.8에도 동남아 L-SAM 수주 실적은 없다.",
-   "첫 수출 후보인 UAE 건은 한화에어로가 'UAE = L-SAM'으로 요약했고, 한화시스템이 EDGE 통합대공망의 수주 주체·체계통합업체가 된다(UAE 한정). 한화 측은 LIG가 받던 추가 이윤이 한화로 온다고 보고 있어 L-SAM 수출 시 회사별 몫은 국내 양산 비율과 다를 수 있다.",
-   "사우디 L-SAM은 2Q26 기준 전쟁에 따른 행정 지연 상태이고, 유럽은 문의는 많지만 중동이 우선이라는 게 한화에어로의 톤이다.",
-   "L-SAM MFR(S밴드 AESA·수냉식) 개발 경험이 UAE 천궁-II 수출형 레이더를 가능하게 한 기술 기반이었다."
-  ],
-  "conflicts": [
-   {
-    "field": "한화에어로 L-SAM 양산 계약금액",
-    "dashboard": "components P03·specs: 7,054억원(ABM·발사대)",
-    "note": "'약 7천억원 국내 lsam 양산'으로만 언급(라운딩, 모순 아님)",
-    "source": "한화에어로스페이스.md › 4Q25 실적발표 컨퍼런스콜_260209"
-   },
-   {
-    "field": "UAE L-SAM 수주 주체",
-    "dashboard": "meta maker: LIG넥스원 · 한화에어로스페이스 · 한화시스템 / pipeline Q1: 한화-EDGE 텀시트",
-    "note": "한화시스템이 EDGE 건의 수주 주체·체계통합업체(UAE 한정)이며, 한화에어로는 앞으로 한화가 수주하는 방공체계는 시스템이 주체라고 설명",
-    "source": "한화시스템.md › 3Q26 컨콜 / 한화에어로스페이스.md › 3Q26 Preview_261012"
-   }
   ]
  }
 }

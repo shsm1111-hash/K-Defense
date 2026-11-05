@@ -23,8 +23,7 @@
    "other_eok": 2408,
    "export_share_pct": 19.9,
    "ir_doc": "KAI 2020.11 IR 자료 (매출 비중 51/20/29% 환산)",
-   "tier": "추정",
-   "export_src": "모델"
+   "tier": "추정"
   },
   {
    "quarter": "2Q20",
@@ -36,8 +35,7 @@
    "other_eok": 1388,
    "export_share_pct": 7.8,
    "ir_doc": "KAI 2020.11 IR 자료 (비중 73/7/20% 환산), 영업이익 2Q21 IR",
-   "tier": "추정",
-   "export_src": "모델"
+   "tier": "추정"
   },
   {
    "quarter": "3Q20",
@@ -49,8 +47,7 @@
    "other_eok": 1402,
    "export_share_pct": 2.8,
    "ir_doc": "KAI 2020.11 IR 자료 (비중 70/6/24% 환산), 영업이익 3Q21 IR",
-   "tier": "추정",
-   "export_src": "모델"
+   "tier": "추정"
   },
   {
    "quarter": "4Q20",
@@ -62,8 +59,7 @@
    "other_eok": 1015,
    "export_share_pct": 9.9,
    "ir_doc": "2020 연간(4Q21 IR 수정치)에서 1~3분기 차감",
-   "tier": "추정",
-   "export_src": "모델"
+   "tier": "추정"
   },
   {
    "quarter": "1Q21",
@@ -75,8 +71,7 @@
    "other_eok": 1021,
    "export_share_pct": 16.2,
    "ir_doc": "KAI 1Q22 IR Report",
-   "tier": "확정",
-   "export_src": "모델"
+   "tier": "확정"
   },
   {
    "quarter": "2Q21",
@@ -88,8 +83,7 @@
    "other_eok": 1204,
    "export_share_pct": 5.2,
    "ir_doc": "KAI 2Q22 IR Report",
-   "tier": "확정",
-   "export_src": "모델"
+   "tier": "확정"
   },
   {
    "quarter": "3Q21",
@@ -101,8 +95,7 @@
    "other_eok": 1455,
    "export_share_pct": 4.7,
    "ir_doc": "KAI 3Q22 IR Report",
-   "tier": "확정",
-   "export_src": "모델"
+   "tier": "확정"
   },
   {
    "quarter": "4Q21",
@@ -114,8 +107,7 @@
    "other_eok": 1450,
    "export_share_pct": 7.7,
    "ir_doc": "KAI 4Q22 IR Report (영업이익은 연간-9개월 차감)",
-   "tier": "확정",
-   "export_src": "모델"
+   "tier": "확정"
   },
   {
    "quarter": "1Q22",
@@ -127,8 +119,7 @@
    "other_eok": 1797,
    "export_share_pct": 8.7,
    "ir_doc": "KAI 1Q23 IR Report",
-   "tier": "확정",
-   "export_src": "모델"
+   "tier": "확정"
   },
   {
    "quarter": "2Q22",
@@ -140,8 +131,7 @@
    "other_eok": 1741,
    "export_share_pct": 0.4,
    "ir_doc": "KAI 2Q23 IR Report",
-   "tier": "확정",
-   "export_src": "모델"
+   "tier": "확정"
   },
   {
    "quarter": "3Q22",
@@ -153,8 +143,7 @@
    "other_eok": 1718,
    "export_share_pct": 4.2,
    "ir_doc": "KAI 3Q23 IR Report",
-   "tier": "확정",
-   "export_src": "모델"
+   "tier": "확정"
   },
   {
    "quarter": "4Q22",
@@ -166,8 +155,7 @@
    "other_eok": 2377,
    "export_share_pct": 5.0,
    "ir_doc": "KAI 4Q23 IR Report (영업이익은 연간-9개월 차감)",
-   "tier": "확정",
-   "export_src": "모델"
+   "tier": "확정"
   },
   {
    "quarter": "1Q23",
@@ -179,8 +167,7 @@
    "other_eok": 1780,
    "export_share_pct": 4.8,
    "ir_doc": "KAI 1Q23 IR Report",
-   "tier": "확정",
-   "export_src": "모델"
+   "tier": "확정"
   },
   {
    "quarter": "2Q23",
@@ -192,8 +179,7 @@
    "other_eok": 1936,
    "export_share_pct": 7.3,
    "ir_doc": "KAI 2Q23 IR Report",
-   "tier": "확정",
-   "export_src": "모델"
+   "tier": "확정"
   },
   {
    "quarter": "3Q23",
@@ -205,8 +191,7 @@
    "other_eok": 1991,
    "export_share_pct": 30.9,
    "ir_doc": "KAI 3Q23 IR Report",
-   "tier": "확정",
-   "export_src": "모델"
+   "tier": "확정"
   },
   {
    "quarter": "4Q23",
@@ -218,8 +203,7 @@
    "other_eok": 2564,
    "export_share_pct": 43.4,
    "ir_doc": "KAI 4Q23 IR Report (영업이익은 연간-9개월 차감)",
-   "tier": "확정",
-   "export_src": "모델"
+   "tier": "확정"
   },
   {
    "quarter": "1Q24",
@@ -231,8 +215,7 @@
    "other_eok": 2107,
    "export_share_pct": 12.2,
    "ir_doc": "KAI 1Q25 IR Report",
-   "tier": "확정",
-   "export_src": "모델"
+   "tier": "확정"
   },
   {
    "quarter": "2Q24",
@@ -244,8 +227,7 @@
    "other_eok": 2430,
    "export_share_pct": 16.9,
    "ir_doc": "KAI 2Q25 IR Report",
-   "tier": "확정",
-   "export_src": "모델"
+   "tier": "확정"
   },
   {
    "quarter": "3Q24",
@@ -257,8 +239,7 @@
    "other_eok": 2212,
    "export_share_pct": 26.8,
    "ir_doc": "KAI 3Q25 IR Report",
-   "tier": "확정",
-   "export_src": "모델"
+   "tier": "확정"
   },
   {
    "quarter": "4Q24",
@@ -270,8 +251,7 @@
    "other_eok": 2116,
    "export_share_pct": 14.2,
    "ir_doc": "KAI 4Q25 IR Report",
-   "tier": "확정",
-   "export_src": "모델"
+   "tier": "확정"
   },
   {
    "quarter": "1Q25",
@@ -283,8 +263,7 @@
    "other_eok": 2061,
    "export_share_pct": 24.5,
    "ir_doc": "KAI 1Q26 IR Report",
-   "tier": "확정",
-   "export_src": "모델"
+   "tier": "확정"
   },
   {
    "quarter": "2Q25",
@@ -296,8 +275,7 @@
    "other_eok": 2379,
    "export_share_pct": 27.4,
    "ir_doc": "KAI 2Q26 IR Report",
-   "tier": "확정",
-   "export_src": "모델"
+   "tier": "확정"
   },
   {
    "quarter": "3Q25",
@@ -309,8 +287,7 @@
    "other_eok": 2690,
    "export_share_pct": 23.3,
    "ir_doc": "KAI 3Q26 IR Report",
-   "tier": "확정",
-   "export_src": "모델"
+   "tier": "확정"
   },
   {
    "quarter": "4Q25",
@@ -322,8 +299,7 @@
    "other_eok": 3463,
    "export_share_pct": 24.9,
    "ir_doc": "KAI 4Q25 IR Report",
-   "tier": "확정",
-   "export_src": "모델"
+   "tier": "확정"
   },
   {
    "quarter": "1Q26",
@@ -335,8 +311,7 @@
    "other_eok": 2377,
    "export_share_pct": 28.1,
    "ir_doc": "KAI 1Q26 IR Report",
-   "tier": "확정",
-   "export_src": "모델"
+   "tier": "확정"
   },
   {
    "quarter": "2Q26",
@@ -348,8 +323,7 @@
    "other_eok": 3081,
    "export_share_pct": 31.1,
    "ir_doc": "KAI 2Q26 IR Report",
-   "tier": "확정",
-   "export_src": "모델"
+   "tier": "확정"
   },
   {
    "quarter": "3Q26",
@@ -361,8 +335,7 @@
    "other_eok": 2792,
    "export_share_pct": 27.4,
    "ir_doc": "KAI 3Q26 IR Report",
-   "tier": "확정",
-   "export_src": "모델"
+   "tier": "확정"
   }
  ],
  "backlog": [
@@ -567,6 +540,5 @@
    }
   ],
   "note": "각 분기 IR Report 경영실적 표(억원). 수출 비중은 완제기 수출 잔고 기준이며, 기체구조물도 대부분 해외 항공기 제조사 납품입니다. 4Q25(27조 3,437억원)와 1Q26은 총액만 공개돼 부문 구분이 없습니다."
- },
- "model_note": "완제기 수출 금액은 사용자 KAI 모델의 실적치를 우선 적용(국내사업·기체구조물은 IR). 미발표 분기 추정치는 제외."
+ }
 }

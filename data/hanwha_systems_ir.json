@@ -270,8 +270,7 @@
    "domestic_eok": 8561,
    "export_share_pct": 19.0,
    "ir_doc": "한화시스템 4Q25 실적발표 (방산 부문)",
-   "tier": "확정",
-   "export_src": "모델"
+   "tier": "확정"
   },
   {
    "quarter": "1Q26",
@@ -282,8 +281,7 @@
    "domestic_eok": 3298,
    "export_share_pct": 30.0,
    "ir_doc": "한화시스템 1Q26 실적발표 (방산 부문)",
-   "tier": "확정",
-   "export_src": "모델"
+   "tier": "확정"
   },
   {
    "quarter": "2Q26",
@@ -294,8 +292,7 @@
    "domestic_eok": 5395,
    "export_share_pct": 23.0,
    "ir_doc": "한화시스템 2Q26 실적발표 (방산 부문)",
-   "tier": "확정",
-   "export_src": "모델"
+   "tier": "확정"
   },
   {
    "quarter": "3Q26",
@@ -307,12 +304,10 @@
    "export_share_pct": 22.0,
    "company_op_eok": 991,
    "ir_doc": "한화에어로스페이스 3Q26 IR (한화시스템 방산 매출, 부문 영업이익 미공개·방산+ICT 영업이익 991억)",
-   "tier": "확정",
-   "export_src": "모델"
+   "tier": "확정"
   }
  ],
  "backlog": [],
  "backlog_q": null,
- "backlog_note": "한화시스템 분기 실적발표 자료에는 수주잔고가 공개되지 않습니다.",
- "model_note": "수출·내수 비중은 사용자 기업 모델(방산 부문 기준)의 실적치를 우선 적용했고, 아직 발표되지 않은 분기의 추정치는 제외했습니다."
+ "backlog_note": "한화시스템 분기 실적발표 자료에는 수주잔고가 공개되지 않습니다."
 }

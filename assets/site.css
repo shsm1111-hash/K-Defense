@@ -265,13 +265,3 @@ table.tbl{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeri
 .cp-f{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px}
 .cp-f.up li::marker{color:var(--ok)}
 .cp-f.down li::marker{color:var(--c4)}
-
-/* 커버리지 노트 */
-.nt-filter{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
-.nt-btn{font:inherit;font-size:12.5px;font-weight:600;padding:4px 10px;border-radius:999px;border:1px solid var(--line);background:var(--panel);color:var(--muted);cursor:pointer}
-.nt-btn[aria-pressed="true"]{color:var(--ink);border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
-.nt-list{display:flex;flex-direction:column;gap:12px}
-.nt-item{border-top:1px solid var(--line);padding-top:10px;display:flex;flex-direction:column;gap:4px}
-.nt-item:first-child{border-top:0;padding-top:0}
-.nt-item>p{margin:0;font-size:14px;line-height:1.6}
-.nt-src{color:var(--muted);font-size:12px}

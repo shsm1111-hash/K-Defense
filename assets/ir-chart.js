@@ -55,7 +55,7 @@ window.drawIR = function drawIR(host, ir) {
       const lines = [`${r.quarter} · ${r.basis || ir.segment}`];
       if (r.op_eok != null) lines.push(`매출 ${fmt(r.revenue_eok)}억 · 영업이익 ${fmt(r.op_eok)}억`, `영업이익률 ${r.opm_pct}%`);
       else lines.push(`매출 ${fmt(r.revenue_eok)}억 · 부문 영업이익 미공개` + (r.company_op_eok != null ? ` (회사 전체 영업이익 ${fmt(r.company_op_eok)}억)` : ''));
-      if (hasSplit) { lines.push(`${lb.export} ${fmt(r.export_eok)}억 (${r.export_share_pct}%${r.export_src ? ', ' + r.export_src : ''}) · ${lb.domestic} ${fmt(r.domestic_eok)}억`); if (r.other_eok != null) lines.push(`${lb.other} ${fmt(r.other_eok)}억`); }
+      if (hasSplit) { lines.push(`${lb.export} ${fmt(r.export_eok)}억 (${r.export_share_pct}%) · ${lb.domestic} ${fmt(r.domestic_eok)}억`); if (r.other_eok != null) lines.push(`${lb.other} ${fmt(r.other_eok)}억`); }
       lines.push(`출처: ${r.ir_doc}`);
       tip.replaceChildren(...lines.map((l) => el('div', null, l))); tip.classList.remove('hidden');
       const hr = host.getBoundingClientRect(); let x = e.clientX - hr.left + 12; let yy = e.clientY - hr.top + 12;

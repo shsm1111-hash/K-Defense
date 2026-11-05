@@ -45,7 +45,7 @@ def build(sys_id):
         "segment_short": meta["segment_short"],
         "backlog_note": meta["backlog_note"],
         "ir_url": data["ir"]["source"]["url"],
-        "fin_bar_desc": ("분기별 매출(막대, 억원. 색은 아래 범례" + ("; 수출·내수는 사용자 모델 기준" if data["ir"].get("model_note") else "") + ")") if has_split else "분기별 매출(막대, 억원. 회사가 부문별 수출·내수를 따로 공개하지 않음)",
+        "fin_bar_desc": ("분기별 매출(막대, 억원. 색은 아래 범례" + ")") if has_split else "분기별 매출(막대, 억원. 회사가 부문별 수출·내수를 따로 공개하지 않음)",
     }
     out = TEMPLATE
     for key, val in values.items():

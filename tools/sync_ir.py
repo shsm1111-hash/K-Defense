@@ -10,7 +10,7 @@ for sp in (ROOT/"data").glob("*.json"):
     co = sd.get("ir", {}).get("company")
     if co in irs:
         src = irs[co]
-        for k in ("quarters","segment","source","note","labels","basis_breaks","backlog_q","backlog","backlog_note","model_note"):
+        for k in ("quarters","segment","source","note","labels","basis_breaks","backlog_q","backlog","backlog_note"):
             if k in src: sd["ir"][k] = src[k]
             elif k in sd["ir"] and k in ("labels",): del sd["ir"][k]
         sp.write_text(json.dumps(sd, ensure_ascii=False, indent=1), encoding="utf-8")

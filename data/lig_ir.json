@@ -10,7 +10,7 @@
   "export": "수출",
   "domestic": "국내(개발·양산)"
  },
- "note": "방산 전문기업이라 회사 전체 실적이 곧 방산 실적입니다. 수출·국내 구분은 4Q25부터 IR 자료에 분기 단위로 나옵니다(2025년 1~3분기는 합계만 공개). 2026년 3분기 IR 자료는 아직 홈페이지에 올라오지 않았습니다(2026.11.4 확인). 분기 잠정실적 IR은 2022년 1분기부터 게시돼 2021년 분기는 2022년 각 분기 IR의 전년동기 수치를 썼습니다. 2020년 분기는 IR 자료가 없어 사용자 모델의 실적치(매출·영업이익·수출·내수)를 넣었습니다.",
+ "note": "방산 전문기업이라 회사 전체 실적이 곧 방산 실적입니다. 수출·국내 구분은 4Q25부터 IR 자료에 분기 단위로 나옵니다(2025년 1~3분기는 합계만 공개). 2026년 3분기 IR 자료는 아직 홈페이지에 올라오지 않았습니다(2026.11.4 확인). 분기 잠정실적 IR은 2022년 1분기부터 게시돼 2021년 분기는 2022년 각 분기 IR의 전년동기 수치를 썼습니다. 2020년 분기는 IR 자료가 없어 자체 집계 실적치(매출·영업이익·수출·내수)를 넣었습니다.",
  "quarters": [
   {
    "quarter": "1Q20",
@@ -21,8 +21,7 @@
    "domestic_eok": 2929,
    "export_share_pct": 16.8,
    "ir_doc": "사용자 LIG 모델 실적치 (IR 미게시 분기)",
-   "tier": "추정",
-   "export_src": "모델"
+   "tier": "추정"
   },
   {
    "quarter": "2Q20",
@@ -33,8 +32,7 @@
    "domestic_eok": 3026,
    "export_share_pct": 13.3,
    "ir_doc": "사용자 LIG 모델 실적치 (IR 미게시 분기)",
-   "tier": "추정",
-   "export_src": "모델"
+   "tier": "추정"
   },
   {
    "quarter": "3Q20",
@@ -45,8 +43,7 @@
    "domestic_eok": 3826,
    "export_share_pct": 7.2,
    "ir_doc": "사용자 LIG 모델 실적치 (IR 미게시 분기)",
-   "tier": "추정",
-   "export_src": "모델"
+   "tier": "추정"
   },
   {
    "quarter": "4Q20",
@@ -57,8 +54,7 @@
    "domestic_eok": 4616,
    "export_share_pct": 5.2,
    "ir_doc": "사용자 LIG 모델 실적치 (IR 미게시 분기)",
-   "tier": "추정",
-   "export_src": "모델"
+   "tier": "추정"
   },
   {
    "quarter": "1Q21",
@@ -69,8 +65,7 @@
    "domestic_eok": 3211,
    "export_share_pct": 8.4,
    "ir_doc": "LIG 1Q22 실적 IR (전년동기)",
-   "tier": "확정",
-   "export_src": "모델"
+   "tier": "확정"
   },
   {
    "quarter": "2Q21",
@@ -81,8 +76,7 @@
    "domestic_eok": 4236,
    "export_share_pct": 3.7,
    "ir_doc": "LIG 2Q22 실적 IR (전년동기)",
-   "tier": "확정",
-   "export_src": "모델"
+   "tier": "확정"
   },
   {
    "quarter": "3Q21",
@@ -93,8 +87,7 @@
    "domestic_eok": 4403,
    "export_share_pct": 4.1,
    "ir_doc": "LIG 3Q22 실적 IR (전년동기)",
-   "tier": "확정",
-   "export_src": "모델"
+   "tier": "확정"
   },
   {
    "quarter": "4Q21",
@@ -105,8 +98,7 @@
    "domestic_eok": 5545,
    "export_share_pct": 3.2,
    "ir_doc": "LIG 4Q22 실적 IR (전년동기)",
-   "tier": "확정",
-   "export_src": "모델"
+   "tier": "확정"
   },
   {
    "quarter": "1Q22",
@@ -117,8 +109,7 @@
    "domestic_eok": 3803,
    "export_share_pct": 11.0,
    "ir_doc": "LIG 1Q22 실적 IR",
-   "tier": "확정",
-   "export_src": "모델"
+   "tier": "확정"
   },
   {
    "quarter": "2Q22",
@@ -129,8 +120,7 @@
    "domestic_eok": 4442,
    "export_share_pct": 9.4,
    "ir_doc": "LIG 2Q22 실적 IR",
-   "tier": "확정",
-   "export_src": "모델"
+   "tier": "확정"
   },
   {
    "quarter": "3Q22",
@@ -141,8 +131,7 @@
    "domestic_eok": 4749,
    "export_share_pct": 31.7,
    "ir_doc": "LIG 3Q22 실적 IR",
-   "tier": "확정",
-   "export_src": "모델"
+   "tier": "확정"
   },
   {
    "quarter": "4Q22",
@@ -153,8 +142,7 @@
    "domestic_eok": 5154,
    "export_share_pct": 15.2,
    "ir_doc": "LIG 4Q22 실적 IR",
-   "tier": "확정",
-   "export_src": "모델"
+   "tier": "확정"
   },
   {
    "quarter": "1Q23",
@@ -165,8 +153,7 @@
    "domestic_eok": 4402,
    "export_share_pct": 19.5,
    "ir_doc": "LIG 1Q23 실적 IR",
-   "tier": "확정",
-   "export_src": "모델"
+   "tier": "확정"
   },
   {
    "quarter": "2Q23",
@@ -177,8 +164,7 @@
    "domestic_eok": 4595,
    "export_share_pct": 15.8,
    "ir_doc": "LIG 2Q23 실적 IR",
-   "tier": "확정",
-   "export_src": "모델"
+   "tier": "확정"
   },
   {
    "quarter": "3Q23",
@@ -189,8 +175,7 @@
    "domestic_eok": 4433,
    "export_share_pct": 17.3,
    "ir_doc": "LIG 3Q23 실적 IR",
-   "tier": "확정",
-   "export_src": "모델"
+   "tier": "확정"
   },
   {
    "quarter": "4Q23",
@@ -201,8 +186,7 @@
    "domestic_eok": 6072,
    "export_share_pct": 10.7,
    "ir_doc": "LIG 4Q23 실적 IR",
-   "tier": "확정",
-   "export_src": "모델"
+   "tier": "확정"
   },
   {
    "quarter": "1Q24",
@@ -213,8 +197,7 @@
    "domestic_eok": 4376,
    "export_share_pct": 42.7,
    "ir_doc": "LIG 1Q25 실적 IR (전년동기) · 2Q24 IR 누계",
-   "tier": "확정",
-   "export_src": "모델"
+   "tier": "확정"
   },
   {
    "quarter": "2Q24",
@@ -225,8 +208,7 @@
    "domestic_eok": 5227,
    "export_share_pct": 13.6,
    "ir_doc": "LIG 2Q24 실적 IR",
-   "tier": "확정",
-   "export_src": "모델"
+   "tier": "확정"
   },
   {
    "quarter": "3Q24",
@@ -237,8 +219,7 @@
    "domestic_eok": 5905,
    "export_share_pct": 20.2,
    "ir_doc": "LIG 3Q24 실적 IR",
-   "tier": "확정",
-   "export_src": "모델"
+   "tier": "확정"
   },
   {
    "quarter": "4Q24",
@@ -249,8 +230,7 @@
    "domestic_eok": 9517,
    "export_share_pct": 18.5,
    "ir_doc": "LIG 4Q24 실적 IR",
-   "tier": "확정",
-   "export_src": "모델"
+   "tier": "확정"
   },
   {
    "quarter": "1Q25",
@@ -261,8 +241,7 @@
    "domestic_eok": 7226,
    "export_share_pct": 20.4,
    "ir_doc": "LIG 1Q25 실적 IR · 수출·내수는 4Q25 IR 분기표",
-   "tier": "확정",
-   "export_src": "모델"
+   "tier": "확정"
   },
   {
    "quarter": "2Q25",
@@ -273,8 +252,7 @@
    "domestic_eok": 7807,
    "export_share_pct": 17.4,
    "ir_doc": "LIG 2Q25 실적 IR · 수출·내수는 4Q25 IR 분기표",
-   "tier": "확정",
-   "export_src": "모델"
+   "tier": "확정"
   },
   {
    "quarter": "3Q25",
@@ -285,8 +263,7 @@
    "domestic_eok": 8621,
    "export_share_pct": 17.8,
    "ir_doc": "LIG 3Q25 실적 IR · 수출·내수는 4Q25 IR 분기표",
-   "tier": "확정",
-   "export_src": "모델"
+   "tier": "확정"
   },
   {
    "quarter": "4Q25",
@@ -297,8 +274,7 @@
    "domestic_eok": 10199,
    "export_share_pct": 27.4,
    "ir_doc": "LIG 2025 연간 실적 IR",
-   "tier": "확정",
-   "export_src": "모델"
+   "tier": "확정"
   },
   {
    "quarter": "1Q26",
@@ -309,8 +285,7 @@
    "domestic_eok": 7627,
    "export_share_pct": 34.7,
    "ir_doc": "LIG 1Q26 실적 IR",
-   "tier": "확정",
-   "export_src": "모델"
+   "tier": "확정"
   },
   {
    "quarter": "2Q26",
@@ -321,8 +296,7 @@
    "domestic_eok": 8283,
    "export_share_pct": 25.4,
    "ir_doc": "LIG 2Q26 실적 IR",
-   "tier": "확정",
-   "export_src": "모델"
+   "tier": "확정"
   }
  ],
  "backlog": [
@@ -522,6 +496,5 @@
    }
   ],
   "note": "각 분기 IR '영업(잠정)실적 – 수주잔고' 표(조원). 2024년 1~3분기는 총액만 공개. 3Q26 자료는 아직 게시 전입니다."
- },
- "model_note": "수출·내수 비중은 사용자 기업 모델(방산 부문 기준)의 실적치를 우선 적용했고, 아직 발표되지 않은 분기의 추정치는 제외했습니다."
+ }
 }

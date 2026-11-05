@@ -336,6 +336,38 @@
     $('sc-cat').replaceChildren(...(SC.catalysts || []).map((x) => { const li = el('li'); li.style.setProperty('--c', 'var(--c1)'); const b = el('div'); b.append(el('p', null, x.event)); if (x.beneficiaries) b.append(el('p', 'note', '수혜: ' + x.beneficiaries)); li.append(el('div', 'when', x.when), el('span', 'dot'), b); return li; }));
   })();
 
+
+  // 커버리지 노트 (옵시디언)
+  (() => {
+    const N = D.obsidian;
+    if (!N || !(N.items || []).length) return;
+    $('notes-tab').hidden = false;
+    $('nt-insights').replaceChildren(...(N.insights || []).map((f) => el('li', null, f)));
+    const TABN = { overview: '개요·배경', history: '연혁·버전', export: '수출', compete: '경쟁', companies: '관련 기업', supply: '공급망', cost: '단가·원가·실적', plan: '향후 계획', pipeline: '파이프라인' };
+    const items = [...N.items].sort((a, b) => String(b.date || '').localeCompare(String(a.date || '')));
+    let cur = 'all';
+    const render = () => {
+      const rows = items.filter((x) => cur === 'all' || x.tab === cur);
+      $('nt-list').replaceChildren(...rows.map((x) => {
+        const r = el('div', 'nt-item');
+        const h = el('div', 'sc-h'); h.append(el('strong', null, x.topic));
+        if (x.date) h.append(el('span', 'tk', x.date));
+        if (x.tab && TABN[x.tab]) h.append(el('span', 'chip t-note', TABN[x.tab]));
+        r.append(h, el('p', null, x.text));
+        if (x.source) r.append(el('p', 'nt-src', '출처: ' + x.source));
+        return r;
+      }));
+      $('nt-filter').querySelectorAll('button').forEach((b) => b.setAttribute('aria-pressed', b.dataset.k === cur));
+    };
+    const keys = ['all', ...Object.keys(TABN).filter((k) => items.some((x) => x.tab === k))];
+    $('nt-filter').replaceChildren(...keys.map((k) => { const b = el('button', 'nt-btn', k === 'all' ? `전체 ${items.length}` : `${TABN[k]} ${items.filter((x) => x.tab === k).length}`); b.type = 'button'; b.dataset.k = k; b.addEventListener('click', () => { cur = k; render(); }); return b; }));
+    render();
+    if ((N.conflicts || []).length) {
+      $('nt-conf-card').hidden = false;
+      $('nt-conf').replaceChildren(...N.conflicts.map((c) => { const tr = el('tr'); tr.append(td(c.field, 'strong'), td(c.dashboard), td(c.note), td(c.source)); return tr; }));
+    }
+  })();
+
   // 관련 기업 (투자자 관점)
   const CO = [...(D.companies || [])].sort((a, b) => (a.importance || 3) - (b.importance || 3));
   const IMP = { 1: '핵심', 2: '중요', 3: '참고' };
@@ -406,7 +438,7 @@
   const drawn = {};
   const drawers = { export: () => { drawOps(); drawDetail(); drawSwim(); }, cost: () => { drawUnit(); drawFin(); }, 'pipeline-tab': () => drawPipe(), companies: () => drawCoChart() };
   function route() {
-    const id = ['overview', 'history', 'export', 'compete', 'companies', 'supply', 'cost', 'plan', 'pipeline-tab'].includes(location.hash.slice(1)) ? location.hash.slice(1) : 'overview';
+    const id = ['overview', 'history', 'export', 'compete', 'companies', 'supply', 'cost', 'plan', 'pipeline-tab', 'notes'].includes(location.hash.slice(1)) ? location.hash.slice(1) : 'overview';
     document.querySelectorAll('.page').forEach((s) => s.classList.toggle('hidden', s.id !== id));
     document.querySelectorAll('.tabs a').forEach((a) => (a.dataset.tab === id ? a.setAttribute('aria-current', 'page') : a.removeAttribute('aria-current')));
     if (drawers[id]) { drawers[id](); drawn[id] = true; }

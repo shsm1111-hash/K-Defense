@@ -33,6 +33,9 @@ def apply(sid):
     cq = SYSDATA / sid / f"{sid}_competition.json"
     if cq.exists():
         d["competition"] = json.loads(cq.read_text(encoding="utf-8"))
+    ob = SYSDATA / sid / f"{sid}_obsidian.json"
+    if ob.exists():
+        d["obsidian"] = json.loads(ob.read_text(encoding="utf-8"))
     ap = SYSDATA / sid / f"{sid}_components_add.json"
     added = fixed = 0
     if ap.exists():

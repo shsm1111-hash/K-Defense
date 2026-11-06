@@ -22,36 +22,14 @@
   <section class="kpis" id="kpis" aria-label="핵심 지표"></section>
 
   <nav class="tabs" aria-label="섹션">
-    <a href="#summary" data-tab="summary">요약</a>
     <a href="#price" data-tab="price">주가</a>
     <a href="#valuation" data-tab="valuation">밸류에이션</a>
     <a href="#earnings" data-tab="earnings">실적·수주잔고</a>
     <a href="#company" data-tab="company">기업별 상세</a>
     <a href="#kmap" data-tab="kmap">K방산과의 경쟁 관계</a>
-    <a href="#guide" data-tab="guide">읽는 법·데이터 한계</a>
   </nav>
 
-  <section class="page" id="summary">
-    <article class="card">
-      <h2>지금 숫자가 말하는 것</h2>
-      <p class="note">지역별 중앙값 기준입니다. 숫자는 아래 탭의 표에서 회사별로 확인할 수 있습니다.</p>
-      <div class="card-body"><ul class="takeaways" id="takeaways"></ul></div>
-    </article>
-    <article class="card">
-      <h2>지역별 중앙값</h2>
-      <p class="note">수익률은 달러 환산 기준이라 환율 효과가 포함됩니다. Trailing PER(직전 4개 분기 실적)과 12M·24M Fwd·연도별 PER(컨센서스 EPS로 직접 계산)을 구분해 표시합니다. 잔고 배수는 수주잔고를 최근 4개 분기 매출로 나눈 값입니다.</p>
-      <div class="card-body tbl-wrap"><table class="tbl" id="grp-tbl"></table></div>
-    </article>
-    <article class="card">
-      <div class="card-h">
-        <div><h2>1년 주가 수익률 순위</h2><p class="note" id="rank-note">달러 환산, 2025년 10월 말 대비.</p></div>
-        <div class="pe-ctrl" style="margin:0"><span class="lab">기간</span><div class="seg" id="rank-period"></div><span class="lab">통화</span><div class="seg" id="rank-cur"></div></div>
-      </div>
-      <div class="card-body chart" id="rank-chart"></div>
-    </article>
-  </section>
-
-  <section class="page hidden" id="price">
+  <section class="page" id="price">
     <article class="card">
       <h2>주가 흐름 비교 (시작점 = 100)</h2>
       <p class="note">월말 종가로 그린 지수입니다. 마지막 점은 11월 5일 종가입니다. 한 번에 최대 6개 회사까지 겹쳐 볼 수 있습니다.</p>
@@ -69,9 +47,21 @@
       <div class="pe-ctrl"><span class="lab">통화</span><div class="seg" id="ret-cur"></div><span class="lab">지역</span><div class="seg" id="ret-grp"></div></div>
       <div class="card-body tbl-wrap"><table class="tbl" id="ret-tbl"></table></div>
     </article>
+    <article class="card">
+      <div class="card-h">
+        <div><h2>1년 주가 수익률 순위</h2><p class="note" id="rank-note">달러 환산, 2025년 10월 말 대비.</p></div>
+        <div class="pe-ctrl" style="margin:0"><span class="lab">기간</span><div class="seg" id="rank-period"></div><span class="lab">통화</span><div class="seg" id="rank-cur"></div></div>
+      </div>
+      <div class="card-body chart" id="rank-chart"></div>
+    </article>
   </section>
 
   <section class="page hidden" id="valuation">
+    <article class="card">
+      <h2>지역별 중앙값</h2>
+      <p class="note">수익률은 달러 환산 기준이라 환율 효과가 포함됩니다. Trailing PER(직전 4개 분기 실적)과 12M·24M Fwd·연도별 PER(컨센서스 EPS로 직접 계산)을 구분해 표시합니다. 잔고 배수는 수주잔고를 최근 4개 분기 매출로 나눈 값입니다.</p>
+      <div class="card-body tbl-wrap"><table class="tbl" id="grp-tbl"></table></div>
+    </article>
     <article class="card">
       <h2>멀티플 추이</h2>
       <p class="note" id="mh-note">분기말 기준 멀티플 시계열입니다.</p>
@@ -132,17 +122,6 @@
       <h2>무기체계별 해외 상장 경쟁사·협력사</h2>
       <p class="note">각 무기체계 페이지의 경쟁 구도와 연결됩니다. 회사 이름을 누르면 그 회사가 K방산과 어디서 맞붙는지 볼 수 있습니다.</p>
       <div class="card-body sysmap" id="sysmap"></div>
-    </article>
-  </section>
-
-  <section class="page hidden" id="guide">
-    <article class="card">
-      <h2>지표 읽는 법</h2>
-      <div class="card-body study" id="glossary"></div>
-    </article>
-    <article class="card">
-      <h2>데이터 한계와 보정</h2>
-      <div class="card-body"><ol class="guide" id="caveats"></ol></div>
     </article>
   </section>
 

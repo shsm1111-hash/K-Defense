@@ -83,7 +83,7 @@
     [`이익률은 회사 전체로 보면 낮지만 방산 부문은 다릅니다`,
       `회사 전체 영업이익률 중앙값은 K방산 ${nf(st.kr.opm_ttm)}%로 미국(${nf(st.us.opm_ttm)}%)·유럽(${nf(st.eu.opm_ttm)}%)보다 낮습니다. 하지만 방산 부문만 보면 현대로템 ${nf(BY['064350.KS'].seg?.opm)}%, 한화에어로 지상방산 ${nf(BY['012450.KS'].seg?.opm)}%로 해외 대형사보다 높습니다. 수출 비중이 높은 부문일수록 이익률이 높습니다('실적·수주잔고' 탭의 국내 방산 부문 표).`],
   ];
-  $('takeaways').replaceChildren(...take.map(([h, p]) => { const li = el('li'); li.append(el('strong', null, h), el('p', null, p)); return li; }));
+  if ($('takeaways')) $('takeaways').replaceChildren(...take.map(([h, p]) => { const li = el('li'); li.append(el('strong', null, h), el('p', null, p)); return li; }));
 
   // ── 요약: 지역 중앙값 표 ──
   (function () {
@@ -685,7 +685,7 @@
     ['고점 대비', '2021년 12월 이후 월말 종가 중 최고가 대비 현재가(현지통화). 일중 고점이 아니라 월말 기준이라 실제 고점 대비 낙폭보다 작게 나올 수 있습니다.'],
     ['목표가 괴리', '애널리스트 평균 목표가 ÷ 현재가 − 1. 주가가 급락한 직후에는 목표가 조정이 늦어 크게 나옵니다.'],
   ];
-  $('glossary').replaceChildren(...gl.map(([h, p]) => { const d = el('div'); d.append(el('strong', null, h), el('p', null, p)); return d; }));
+  if ($('glossary')) $('glossary').replaceChildren(...gl.map(([h, p]) => { const d = el('div'); d.append(el('strong', null, h), el('p', null, p)); return d; }));
   const cv = [
     ['한화에어로스페이스', '2025년부터 한화오션을 연결 반영해 회사 전체 매출·이익에 조선이 섞여 있고, 2025년 매출 성장률(+138%)도 편입 효과입니다. 방산은 지상방산 부문 표로 보세요.'],
     ['한화오션', '매출 대부분이 상선입니다. 잔고 배수는 특수선(방산) 잔고 54.8억 달러 ÷ 특수선 매출로 계산했습니다.'],
@@ -698,7 +698,7 @@
     ['멀티플 출처', 'Trailing PER·EV/EBITDA·PBR·목표가는 Yahoo Finance 집계, 연도별·12M·24M Fwd PER은 회사별 컨센서스 EPS로 직접 계산했습니다(기업별 상세에 EPS 출처 링크). 이전에 표에 있던 \'예상 PER\'(Yahoo)은 확인해 보니 다음 회계연도(FY27) EPS 기준이라 FY27E PER과 같습니다.'],
     ['컨센서스 범위', '사브·다쏘·콩스베르그·아셀산·HAL·BEL은 무료로 확인 가능한 컨센서스가 2개 연도뿐이라 FY28E와 24M Fwd가 비어 있습니다. 국내 컨센서스는 주가 급락 뒤 하향 조정이 늦을 수 있습니다.'],
   ];
-  $('caveats').replaceChildren(...cv.map(([b, t]) => { const li = el('li'); li.append(el('b', null, b + ': '), t); return li; }));
+  if ($('caveats')) $('caveats').replaceChildren(...cv.map(([b, t]) => { const li = el('li'); li.append(el('b', null, b + ': '), t); return li; }));
 
   // ── 엑셀 원자료 다운로드 ──
   if (window.XL) {
@@ -741,7 +741,7 @@
     window.XL.attach(detailCard, () => fname(`기업_${BY[cur].short}`), () => {
       const r = BY[cur];
       const kv = [['항목', '값'], ...coCols.map(([k, h]) => [h, typeof k === 'function' ? k(r) : r[k]]), ['가이던스', r.fy_guidance], ['K방산과 맞붙는 지점', r.kdefense_overlap], ['주요 프로그램', (r.key_programs || []).join(' · ')], ['2026년 주목할 점', r.notes], ['데이터 메모', [r.note, r.fin_override?.note].filter(Boolean).join(' ')]];
-      const sheets = [{ name: '요약', rows: kv },
+      const sheets = [{ name: '기업 정보', rows: kv },
         { name: '연간 실적', rows: T([...r.annual, ...(r.fin_ytd ? [{ ...r.fin_ytd, fy: r.fin_ytd.lab }] : [])], [['fy', '회계연도 말'], ['rev', `매출(${r.annual_unit})`], ['op', '영업이익'], ['ni', '순이익'], ['opm', '영업이익률(%)']]) },
         ...((r.fin_q || []).length ? [{ name: r.fin_semi ? '반기 실적' : '분기 실적', rows: T(r.fin_q.map((q) => ({ ...q, how: q.derived ? '연간−분기 차감' : q.src === 'news' ? '잠정실적 보도' : q.src === 'yahoo' ? 'Yahoo Finance' : 'stockanalysis.com' })), [['l', '기간'], ['end', '기말'], ['rev', `매출(${r.annual_unit})`], ['op', '영업이익'], ['ni', '순이익'], ['opm', '영업이익률(%)'], ['how', '출처·산출']]) }] : []),
         { name: '월말 주가', rows: [['월말', `주가(${r.cur})`, '주가(달러 환산)'], ...D.months.map((m, i) => [i === D.months.length - 1 ? '2026-11-05' : m, r.series[i], r.series_usd[i] == null ? null : +r.series_usd[i].toPrecision(6)])] }];
@@ -758,8 +758,7 @@
   // ── 그리기 (보이는 탭만, 창 크기 바뀌면 다시) ──
   function drawVisible() {
     const v = document.querySelector('section.page:not(.hidden)')?.id;
-    if (v === 'summary') drawRank();
-    if (v === 'price') drawLine();
+    if (v === 'price') { drawLine(); drawRank(); }
     if (v === 'valuation') { drawMult(); drawScatter(); }
     if (v === 'earnings') drawCov();
     if (v === 'company') drawDetail();
@@ -767,5 +766,5 @@
   let rt; window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(drawVisible, 150); });
   const [start, tk] = decodeURIComponent(location.hash.slice(1)).split('/');
   if (start === 'company' && BY[tk]) { cur = tk; selBox.value = tk; }
-  showTab(tabs.some((a) => a.dataset.tab === start) ? start : 'summary');
+  showTab(tabs.some((a) => a.dataset.tab === start) ? start : 'price');
 })();

@@ -54,7 +54,7 @@ def build(sys_id):
     assert "{{" not in out, out[out.index("{{"): out.index("{{") + 40]
     def ver(rel):
         return hashlib.md5((ROOT / rel).read_bytes()).hexdigest()[:8]
-    for rel in ["assets/site.css", "assets/system.js", "assets/ir-chart.js"]:
+    for rel in ["assets/site.css", "assets/system.js", "assets/ir-chart.js", "assets/xlsx.js", "assets/system-xl.js"]:
         out = out.replace(f'../{rel}"', f'../{rel}?v={ver(rel)}"')
     out = out.replace(f'data-data="../data/{sys_id}.json"', f'data-data="../data/{sys_id}.json?v={ver("data/" + sys_id + ".json")}"')
     target = ROOT / sys_id / "index.html"

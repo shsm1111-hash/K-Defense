@@ -329,3 +329,13 @@ table.tbl{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeri
 .sn-links a{font-size:14px;text-decoration:none;color:var(--muted);padding:6px 12px;border-radius:7px;border:1px solid transparent}
 .sn-links a:hover{color:var(--ink);background:var(--accent-soft)}
 .sn-links a[aria-current="page"]{color:var(--ink);font-weight:600;background:var(--panel);border-color:var(--line)}
+
+/* ── 엑셀 다운로드 버튼 ── */
+.xl-btn{font:inherit;font-size:12.5px;display:inline-flex;align-items:center;gap:5px;padding:4px 10px;border-radius:7px;border:1px solid var(--line);background:var(--panel);color:var(--muted);cursor:pointer;white-space:nowrap}
+.xl-btn:hover{color:var(--ok);border-color:var(--ok)}
+.xl-btn:disabled{opacity:.6;cursor:progress}
+.card.has-xl{position:relative}
+.card.has-xl > h2{padding-right:6.5rem}
+.xl-abs{position:absolute;top:16px;right:16px}
+.card-h > .xl-btn{align-self:flex-start}
+.xl-all{display:flex;flex-wrap:wrap;gap:8px;align-items:center}

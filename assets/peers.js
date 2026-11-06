@@ -585,6 +585,59 @@
   ];
   $('caveats').replaceChildren(...cv.map(([b, t]) => { const li = el('li'); li.append(el('b', null, b + ': '), t); return li; }));
 
+  // ── 엑셀 원자료 다운로드 ──
+  if (window.XL) {
+    const T = window.XL.table; const day = D.asof.replace(/-/g, '');
+    const fname = (x) => `K-Defense_Peer_${x}_${day}`;
+    const card = (id) => $(id)?.closest('article.card');
+    const SRC = [['항목', '내용'], ['기준일', D.asof], ['시세·멀티플·재무', D.source], ['멀티플 분기 이력', D.hist_source], ['이력 정리 규칙', D.hist_note], ['환율', D.fx.note], ['수주잔고·가이던스', '각 사 IR·실적 보도자료·언론 보도 (회사별 출처 열 참고)'], ['국내 방산 부문', '각 사 IR 실적발표 자료'], ['주의', '투자 권유가 아닌 공부용 자료. 데이터 제공처마다 수치가 다를 수 있음']];
+    const srcSheet = { name: '출처·설명', rows: SRC };
+    const coCols = [['t', '티커'], ['name', '회사'], [(r) => GL[r.group], '지역'], ['country', '국가'], ['focus', '주력 분야'], ['cur', '통화'], ['px', '현재가(현지통화)'],
+      ['mcap_krw_jo', '시가총액(조원)'], ['mcap_usd_bn', '시가총액($bn)'], ['ev_usd_bn', 'EV($bn)'], ['fpe', '예상 PER'], ['pe', 'PER'], [(r) => r.pe_src, 'PER 계산 기준'], ['ev_ebitda', 'EV/EBITDA'], ['ev_ebit', 'EV/EBIT(계산)'], ['pb', 'PBR'], ['ev_sales', 'EV/매출'], ['dy', '배당수익률(%)'], ['tgt_upside', '목표가 괴리(%)'], ['n_analysts', '애널리스트 수'],
+      ['ttm_label', '최근 4개 분기 기준'], ['rev_ttm_krw_jo', '매출 4개 분기(조원)'], ['rev_ttm_usd_bn', '매출 4개 분기($bn)'], ['opm_ttm', '영업이익률(%)'], ['npm', '순이익률(%)'], ['fy_last', '최근 회계연도'], ['rev_g_fy', '회계연도 매출 성장(%)'], ['rev_cagr3', '3년 매출 CAGR(%)'],
+      ['backlog_usd_bn', '수주잔고($bn)'], [(r) => r.backlog_local || (r.backlog_def_krw_jo || r.backlog_total_krw_jo ? (r.backlog_def_krw_jo || r.backlog_total_krw_jo) + ' 조원' : null), '수주잔고(원 단위)'], ['backlog_label', '잔고 범위'], ['backlog_asof', '잔고 기준'], ['backlog_yoy', '잔고 1년 증가(%)'], ['coverage', '잔고 배수(년)'], ['coverage_basis', '잔고 배수 계산'], ['defense_share_pct', '방산 비중'], ['backlog_src', '잔고 출처']];
+    const retCols = (key) => [['t', '티커'], ['name', '회사'], [(r) => GL[r.group], '지역'], ...D.periods.map((pp) => [(r) => r[key][pp.k], `${pp.label}(%) · ${pp.basis}`]), ['from_high', '고점 대비(%)'], ['high_month', '고점 월']];
+    const priceSheet = (key, nm) => ({ name: nm, rows: [['월말', ...ROWS.map((r) => `${r.short} (${r.t})`)], ...D.months.map((m, i) => [i === D.months.length - 1 ? '2026-11-05' : m, ...ROWS.map((r) => (r[key][i] == null ? null : +r[key][i].toPrecision(6)))])] });
+    const histSheet = (k) => ({ name: `추이_${MH[k].replace('/', '÷')}`, rows: [['분기', ...ROWS.map((r) => `${r.short} (${r.t})`)], ...D.hq.map((q, i) => [q === 'NOW' ? '2026-11-05' : `20${q.slice(0, 2)}-${q.slice(2)}`, ...ROWS.map((r) => (r.hist ? r.hist[k][i] : null))])] });
+    const medSheet = () => ({ name: '추이_지역 중앙값', rows: [['분기', ...D.groups.flatMap((g) => Object.keys(MH).map((k) => `${g.label} ${MH[k]}`))], ...D.hq.map((q, i) => [q === 'NOW' ? '2026-11-05' : `20${q.slice(0, 2)}-${q.slice(2)}`, ...D.groups.flatMap((g) => Object.keys(MH).map((k) => st[g.k].hist[k][i]))])] });
+    const grpSheet = () => ({ name: '지역 중앙값', rows: [['지역', '회사 수', '예상 PER', 'PER', 'EV/EBITDA', 'EV/EBIT', '영업이익률(%)', 'FY 매출 성장(%)', '3년 CAGR(%)', '잔고 배수(년)', ...D.periods.map((pp) => `${pp.label} 수익률(달러, %)`), '고점 대비(%)', '시총 합계($bn)'],
+      ...D.groups.map((g) => { const x = st[g.k]; return [g.label, x.n, x.fpe, x.pe, x.ev_ebitda, x.ev_ebit, x.opm_ttm, x.rev_g_fy, x.rev_cagr3, x.coverage, ...D.periods.map((pp) => x.ret[pp.k]), x.from_high, x.mcap_usd_bn]; })] });
+    const annualSheet = () => ({ name: '연간 실적', rows: T(ROWS.flatMap((r) => r.annual.map((a) => ({ t: r.t, name: r.name, unit: r.annual_unit, fy: a.fy, rev: a.rev, op: a.op, ni: a.ni, opm: a.opm, src: r.fin_override ? r.fin_override.src : 'Yahoo Finance' }))), [['t', '티커'], ['name', '회사'], ['unit', '단위'], ['fy', '회계연도 말'], ['rev', '매출'], ['op', '영업이익'], ['ni', '순이익'], ['opm', '영업이익률(%)'], ['src', '출처']]) });
+    const segSheet = () => ({ name: '국내 방산 부문 분기', rows: T(ROWS.filter((r) => r.seg).flatMap((r) => r.seg.quarters.map((q) => ({ t: r.t, name: r.name, seg: r.seg.name, q: q.q, rev: q.rev, op: q.op, opm: q.opm, ex: q.ex }))), [['t', '티커'], ['name', '회사'], ['seg', '부문'], ['q', '분기'], ['rev', '매출(억원)'], ['op', '영업이익(억원)'], ['opm', '영업이익률(%)'], ['ex', '수출 비중(%)']]) });
+    const segSum = () => ({ name: '국내 방산 부문 요약', rows: T(ROWS.filter((r) => r.seg), [['t', '티커'], ['name', '회사'], [(r) => r.seg.name, '부문'], [(r) => r.seg.label, '기간'], [(r) => r.seg.rev_eok, '부문 매출(억원)'], [(r) => r.seg.op_eok, '부문 영업이익(억원)'], [(r) => r.seg.opm, '부문 영업이익률(%)'], [(r) => r.seg.export_pct, '수출 비중(%)'], [(r) => r.backlog_def_krw_jo || r.backlog_total_krw_jo, '부문 수주잔고(조원)'], ['backlog_asof', '잔고 기준'], ['coverage', '잔고 배수(년)'], ['opm_ttm', '회사 전체 영업이익률(%)']]) });
+    const qualSheet = () => ({ name: '가이던스·경쟁 관계', rows: T(ROWS, [['t', '티커'], ['name', '회사'], [(r) => GL[r.group], '지역'], [(r) => (r.systems || []).map((x) => SYS[x]).join(', '), '관련 K방산 체계'], ['kdefense_overlap', 'K방산과 맞붙는 지점'], ['key_programs', '주요 프로그램'], ['fy_guidance', '가이던스'], ['fy_guidance_source_url', '가이던스 출처'], [(r) => r.recent_quarter?.label, '최근 실적 기간'], [(r) => r.recent_quarter?.highlight, '최근 실적 요약'], [(r) => r.recent_quarter?.source_url, '최근 실적 출처'], ['notes', '2026년 주목할 점'], ['notes_source_url', '출처'], ['note', '데이터 메모']]) });
+    const mapSheet = () => ({ name: '체계별 경쟁사', rows: [['무기체계', '페이지', '국내 상장사', '해외 상장 경쟁·협력사'], ...Object.entries(SYS).map(([k, nm]) => [nm, `https://shsm1111-hash.github.io/K-Defense/${k}/`, ROWS.filter((r) => r.group === 'kr' && r.systems.includes(k)).map((r) => r.name).join(', '), ROWS.filter((r) => r.group !== 'kr' && r.systems.includes(k)).map((r) => `${r.name}(${r.t})`).join(', ')])] });
+    const coSheet = () => ({ name: '회사별 지표', rows: T(ROWS, coCols) });
+
+    window.XL.attach(card('grp-tbl'), fname('지역중앙값'), () => [grpSheet(), coSheet(), srcSheet]);
+    window.XL.attach(card('rank-chart'), () => fname('수익률'), () => [{ name: '수익률(달러)', rows: T(ROWS, retCols('ret_usd')) }, { name: '수익률(현지통화)', rows: T(ROWS, retCols('ret')) }, srcSheet]);
+    window.XL.attach(card('line-chart'), fname('월말주가'), () => [priceSheet('series', '월말 주가(현지통화)'), priceSheet('series_usd', '월말 주가(달러 환산)'), { name: '통화', rows: T(ROWS, [['t', '티커'], ['name', '회사'], ['cur', '통화']]) }, srcSheet]);
+    window.XL.attach(card('ret-tbl'), fname('기간별수익률'), () => [{ name: '수익률(달러)', rows: T(ROWS, retCols('ret_usd')) }, { name: '수익률(현지통화)', rows: T(ROWS, retCols('ret')) }, srcSheet]);
+    window.XL.attach(card('mh-chart'), fname('멀티플추이'), () => [medSheet(), ...Object.keys(MH).map(histSheet), srcSheet]);
+    window.XL.attach(card('sc-chart'), fname('멀티플_성장_이익률'), () => [coSheet(), srcSheet]);
+    window.XL.attach(card('val-tbl'), fname('밸류에이션'), () => [coSheet(), grpSheet(), srcSheet]);
+    window.XL.attach(card('cov-chart'), fname('수주잔고배수'), () => [coSheet(), segSum(), srcSheet]);
+    window.XL.attach(card('earn-tbl'), fname('실적_수주잔고'), () => [coSheet(), annualSheet(), srcSheet]);
+    window.XL.attach(card('seg-tbl'), fname('국내방산부문'), () => [segSum(), segSheet(), srcSheet]);
+    window.XL.attach(card('sysmap'), fname('체계별경쟁사'), () => [mapSheet(), qualSheet(), srcSheet]);
+    // 기업별 상세: 지금 고른 회사 한 곳
+    const detailCard = card('dt-body');
+    window.XL.attach(detailCard, () => fname(`기업_${BY[cur].short}`), () => {
+      const r = BY[cur];
+      const kv = [['항목', '값'], ...coCols.map(([k, h]) => [h, typeof k === 'function' ? k(r) : r[k]]), ['가이던스', r.fy_guidance], ['K방산과 맞붙는 지점', r.kdefense_overlap], ['주요 프로그램', (r.key_programs || []).join(' · ')], ['2026년 주목할 점', r.notes], ['데이터 메모', [r.note, r.fin_override?.note].filter(Boolean).join(' ')]];
+      const sheets = [{ name: '요약', rows: kv },
+        { name: '연간 실적', rows: T(r.annual, [['fy', '회계연도 말'], ['rev', `매출(${r.annual_unit})`], ['op', '영업이익'], ['ni', '순이익'], ['opm', '영업이익률(%)']]) },
+        { name: '월말 주가', rows: [['월말', `주가(${r.cur})`, '주가(달러 환산)'], ...D.months.map((m, i) => [i === D.months.length - 1 ? '2026-11-05' : m, r.series[i], r.series_usd[i] == null ? null : +r.series_usd[i].toPrecision(6)])] }];
+      if (r.hist) sheets.push({ name: '멀티플 추이', rows: [['분기', ...Object.values(MH)], ...D.hq.map((q, i) => [q === 'NOW' ? '2026-11-05' : `20${q.slice(0, 2)}-${q.slice(2)}`, ...Object.keys(MH).map((k) => r.hist[k][i])])] });
+      if (r.seg) sheets.push({ name: `${r.seg.name} 분기`, rows: T(r.seg.quarters, [['q', '분기'], ['rev', '매출(억원)'], ['op', '영업이익(억원)'], ['opm', '영업이익률(%)'], ['ex', '수출 비중(%)']]) });
+      sheets.push(srcSheet); return sheets;
+    }, '이 회사 엑셀');
+    // 머리말: 전체 데이터 한 번에
+    const all = el('div', 'xl-all');
+    all.append(window.XL.button(() => [coSheet(), grpSheet(), { name: '수익률(달러)', rows: T(ROWS, retCols('ret_usd')) }, { name: '수익률(현지통화)', rows: T(ROWS, retCols('ret')) }, priceSheet('series', '월말 주가(현지통화)'), priceSheet('series_usd', '월말 주가(달러)'), medSheet(), ...Object.keys(MH).map(histSheet), annualSheet(), segSum(), segSheet(), qualSheet(), mapSheet(), srcSheet], fname('전체'), '전체 데이터 엑셀로 받기'), el('span', 'note', '28개사 지표·주가·멀티플 추이·실적·출처를 시트별로 담은 파일'));
+    $('glegend').after(all);
+  }
+
   // ── 그리기 (보이는 탭만, 창 크기 바뀌면 다시) ──
   function drawVisible() {
     const v = document.querySelector('section.page:not(.hidden)')?.id;

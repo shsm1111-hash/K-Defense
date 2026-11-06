@@ -252,6 +252,9 @@ for m in meta:
         if t in KR_IR:
             seg = ir_ttm(*KR_IR[t][:1])
             seg["name"] = KR_IR[t][1]
+            _ir = json.loads((D / KR_IR[t][0]).read_text(encoding="utf-8"))
+            seg["ir"] = {k: _ir[k] for k in ("company", "segment", "labels", "basis_breaks", "backlog_q", "backlog_note") if k in _ir}
+            seg["ir"]["quarters"] = [{k: v for k, v in q.items() if k != "export_src"} for q in _ir["quarters"]]
             r["seg"] = seg
             if key:
                 r["coverage"] = round(key * 1e4 / seg["rev_eok"], 1)
@@ -446,6 +449,24 @@ for r in rows:
         r["rev_g_fy"] = round((ann[-1]["rev"] / ann[-2]["rev"] - 1) * 100, 1)
         r["fy_last"] = ann[-1]["fy"]
         r["rev_cagr3"] = round(((ann[-1]["rev"] / ann[-4]["rev"]) ** (1 / 3) - 1) * 100, 1)
+    # 진행 중인 회계연도 누적(YTD): 마지막 연간 결산 뒤 발표된 분기 합
+    last = r["annual"][-1]["fy"]
+    ly, lm = map(int, last.split("-"))
+    cur_q = [x for x in fb["q"] if x["end"] > last]
+    if cur_q and all(x["rev"] is not None for x in cur_q):
+        n = len(cur_q)
+        op = sum(x["op"] for x in cur_q) if all(x["op"] is not None for x in cur_q) else None
+        ni = sum(x["ni"] for x in cur_q) if all(x["ni"] is not None for x in cur_q) else None
+        rev = sum(x["rev"] for x in cur_q)
+        ytd_note = None
+        if r["t"] == "7011.T":  # 연간이 결산단신 사업이익 기준이라 YTD도 회사 1Q 사업이익으로 맞춘다
+            op, ytd_note = 159600, "2026년 4~6월 사업이익(회사 공시)"
+        span = (f"{'1H' if n == 1 else '연간'}" if fb["semi"] else f"{n}Q 누적")
+        fy_end = f"{ly + 1}-{lm:02d}"
+        lab = (f"{ly + 1} {span}" if lm == 12 else f"FY{str(ly + 1)[2:]}.{lm:02d} {span}")
+        r["fin_ytd"] = {"fy": fy_end, "lab": lab, "n": n, "upto": cur_q[-1]["l"], "rev": rev, "op": op, "ni": ni,
+                        "opm": round(op / rev * 100, 1) if op is not None else None, "note": ytd_note,
+                        "news": any(x["src"] == "news" for x in cur_q)}
 
 
 def med(vals):
@@ -524,7 +545,7 @@ def h(p):
 
 
 page = (ROOT / "tools" / "peers.template.html").read_text(encoding="utf-8")
-page = page.replace("{{css}}", h("assets/site.css")).replace("{{js}}", h("assets/peers.js")).replace("{{data}}", h("data/peers.json")).replace("{{xl}}", h("assets/xlsx.js"))
+page = page.replace("{{css}}", h("assets/site.css")).replace("{{js}}", h("assets/peers.js")).replace("{{data}}", h("data/peers.json")).replace("{{xl}}", h("assets/xlsx.js")).replace("{{ir}}", h("assets/ir-chart.js"))
 (ROOT / "peers").mkdir(exist_ok=True)
 (ROOT / "peers" / "index.html").write_text(page, encoding="utf-8")
 print("peers/index.html 생성")

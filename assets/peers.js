@@ -530,13 +530,13 @@
     const tip = tipFor(host); const pts = [];
     data.forEach((d, i) => {
       const cx = ml + band * i + band / 2; const g = S('g');
-      const bar = (v, x, col) => { if (v == null) return; const a = y(Math.max(0, v)); const b = y(Math.min(0, v)); const rc = S('rect', { x, y: a, width: bw, height: Math.max(1, b - a), rx: 2, fill: d.raw.derived ? 'url(#hatch-fin)' : col }); if (d.raw.derived) { rc.setAttribute('style', `color:${col}`); rc.setAttribute('stroke', col); } g.append(rc); };
+      const bar = (v, x, col) => { if (v == null) return; const a = y(Math.max(0, v)); const b = y(Math.min(0, v)); const rc = S('rect', { x, y: a, width: bw, height: Math.max(1, b - a), rx: 2, fill: d.raw.derived ? 'url(#hatch-fin)' : col }); if (d.raw.ytd) { rc.setAttribute('fill-opacity', '0.45'); rc.setAttribute('stroke', col); rc.setAttribute('stroke-dasharray', '3 2'); } if (d.raw.derived) { rc.setAttribute('style', `color:${col}`); rc.setAttribute('stroke', col); } g.append(rc); };
       bar(d.rev, cx - bw - gap / 2, 'var(--c1)'); bar(d.op, cx + gap / 2, 'var(--c2)');
       if (d.rev == null) { const t = S('text', { x: cx, y: y(0) - 6, 'text-anchor': 'middle', class: 'axis-t' }); t.textContent = '—'; g.append(t); }
       if (!opt.isQ || band >= 44) { const vt = S('text', { x: cx - bw / 2 - gap / 2, y: y(Math.max(0, d.rev || 0)) - 5, 'text-anchor': 'middle', class: 'vlab small' }); if (d.rev != null) vt.textContent = dec(d.rev); g.append(vt); }
       if (i % every === 0 || i === data.length - 1) { const t = S('text', { x: cx, y: H - 8, 'text-anchor': 'middle', class: 'axis-t' }); t.textContent = d.l; g.append(t); }
       g.append(S('rect', { x: cx - band / 2, y: mt, width: band, height: H - mt - mb, fill: 'transparent' }));
-      g.addEventListener('mousemove', (e) => placeTip(tip, host, e, [el('div', null, d.l + (d.raw.derived ? ' · 연간−분기 차감' : d.raw.src === 'news' ? ' · 잠정실적 보도' : '')), tl('매출', d.rev == null ? '—' : dec(d.rev) + ' ' + opt.unit, 'var(--c1)'), tl('영업이익', d.op == null ? '—' : dec(d.op) + ' ' + opt.unit, 'var(--c2)'), tl('영업이익률', d.opm == null ? '—' : nf(d.opm) + '%', 'var(--c4)')]));
+      g.addEventListener('mousemove', (e) => placeTip(tip, host, e, [el('div', null, d.l + (d.raw.ytd ? ` · ${d.raw.upto}까지 누적` : d.raw.derived ? ' · 연간−분기 차감' : d.raw.src === 'news' ? ' · 잠정실적 보도' : '')), tl('매출', d.rev == null ? '—' : dec(d.rev) + ' ' + opt.unit, 'var(--c1)'), tl('영업이익', d.op == null ? '—' : dec(d.op) + ' ' + opt.unit, 'var(--c2)'), tl('영업이익률', d.opm == null ? '—' : nf(d.opm) + '%', 'var(--c4)')]));
       g.addEventListener('mouseleave', () => tip.classList.add('hidden'));
       svg.append(g);
       if (d.opm != null) pts.push([cx, yp(d.opm), d.opm, i, d.rev == null ? null : y(Math.max(0, d.rev)) - 5, cx - bw / 2 - gap / 2]);
@@ -591,7 +591,8 @@
       const isQ = finMode === 'q';
       const dv = isQ ? qDiv : bigDiv;
       const src = isQ ? r.fin_q.slice(r.fin_semi ? -10 : -16) : r.annual;
-      const data = src.map((a) => ({ l: isQ ? a.l : fyL(a.fy), rev: a.rev == null ? null : a.rev / dv[0], op: a.op == null ? null : a.op / dv[0], opm: a.opm, ni: a.ni, raw: a }));
+      const y0 = !isQ && r.fin_ytd ? [{ ...r.fin_ytd, ytd: true }] : [];
+      const data = [...src, ...y0].map((a) => ({ l: a.ytd ? a.lab : isQ ? a.l : fyL(a.fy), rev: a.rev == null ? null : a.rev / dv[0], op: a.op == null ? null : a.op / dv[0], opm: a.opm, ni: a.ni, raw: a }));
       ft.textContent = `${isQ ? halfW : '연간'} 매출·영업이익 (${dv[1]}) · 영업이익률`;
       combo(fhost, data, { dec: (v) => (Math.abs(v) >= 100 ? 0 : Math.abs(v) >= 10 ? 1 : 2), unit: dv[1], isQ });
       const der = isQ ? data.filter((d) => d.raw.derived).map((d) => d.l) : [];
@@ -603,6 +604,7 @@
       if (r.fin_semi && isQ) parts.push('이 회사는 반기 단위로만 실적을 공시합니다.');
       if (der.length) parts.push(`${der.join(', ')}는 연간 합계에서 나머지 분기를 빼서 구했습니다(막대 빗금).`);
       if (news.length) parts.push(`${news.join(', ')}는 잠정실적 보도 기준입니다.`);
+      if (y0.length) parts.push(`${y0[0].lab}은 진행 중인 회계연도의 ${y0[0].upto}까지 누적이라 옅게 표시했습니다${y0[0].news ? '(최근 분기는 잠정실적 보도)' : ''}${y0[0].note ? `, 영업이익은 ${y0[0].note}` : ''}.`);
       if (r.fin_note) parts.push(r.fin_note); else if (gaps.length) parts.push(`${gaps.join(', ')}는 공개 자료가 없어 비워 두었습니다.`);
       if (r.t === '7011.T' && isQ) parts.push('분기 영업이익은 회계상 영업이익이라 회사가 쓰는 사업이익과 다를 수 있습니다.');
       fnote.textContent = parts.join(' ');
@@ -610,12 +612,32 @@
     seg(fsg, hasQ ? [['a', '연간'], ['q', halfW]] : [['a', '연간']], finMode, (v) => { finMode = v; window.__finMode = v; drawFinDt(); });
     requestAnimationFrame(drawFinDt);
 
-    if (r.seg) {
+    if (r.seg && r.seg.ir) {
+      const ir = r.seg.ir; const lb = ir.labels || { export: '수출 매출', domestic: '내수 매출' };
+      const hasSplit = ir.quarters.some((q) => q.export_eok != null && q.domestic_eok != null);
+      const sw = (c, t, line) => { const s2 = el('span'); const i = el('i'); i.style.background = `var(--${c})`; if (line) i.style.height = '3px'; s2.append(i, t); return s2; };
       const sc = el('article', 'card'); sc.style.cssText = 'background:var(--bg);margin-top:16px';
-      sc.append(el('h3', null, `${r.seg.name} 분기 실적 (IR)`));
-      const h = el('div', 'chart'); sc.append(h); body.append(sc);
-      requestAnimationFrame(() => vbars(h, r.seg.quarters.map((q2) => ({ l: q2.q, v: q2.rev / 1e4 })), { aria: '부문 분기 매출', group: r.group, fmt: (v) => nf(v, 2) }));
-      const p = el('p', 'note'); p.textContent = `막대 값은 분기 매출(조원). 최근 4개 분기 영업이익률 ${r.seg.opm == null ? '미공개' : nf(r.seg.opm) + '%'}, 수출 비중 ${r.seg.export_pct == null ? '—' : nf(r.seg.export_pct) + '%'}.`; sc.append(p);
+      const sh = el('div', 'card-h'); sh.append(el('h3', null, `${r.seg.name} 분기 실적 (IR, 억원)`)); sc.append(sh);
+      sc.append(el('p', 'note', `${hasSplit ? `막대는 ${lb.export}·${lb.domestic}${lb.other ? '·' + lb.other : ''}` : '막대는 부문 매출'}, 영업이익률(실선)${hasSplit ? '과 수출 비중(점선)' : ''}은 오른쪽 % 축. 무기체계 도감의 실적 차트와 같은 자료입니다. 막대에 올리면 수치와 출처 자료가 보입니다.`));
+      const lg = el('div', 'swatches');
+      if (hasSplit) { lg.append(sw('c1', lb.export), sw('c2', lb.domestic)); if (lb.other) lg.append(sw('c5', lb.other)); lg.append(sw('c3', '수출 비중(%, 오른쪽 축·점선)')); } else lg.append(sw('c1', '부문 매출'));
+      lg.append(sw('c4', '영업이익률', true)); sc.append(lg);
+      const h = el('div', 'chart'); h.style.position = 'relative'; sc.append(h);
+      const p = el('p', 'note'); p.textContent = `최근 4개 분기(${r.seg.label}) 영업이익률 ${r.seg.opm == null ? '미공개' : nf(r.seg.opm) + '%'}, 수출 비중 ${r.seg.export_pct == null ? '—' : nf(r.seg.export_pct) + '%'}.`; sc.append(p);
+      body.append(sc);
+      requestAnimationFrame(() => window.drawIR(h, ir));
+      const bc = el('article', 'card'); bc.style.cssText = 'background:var(--bg);margin-top:16px';
+      const bh = el('div', 'card-h'); bh.append(el('h3', null, '분기별 수주잔고 (IR)')); bc.append(bh);
+      const bs = ir.backlog_q;
+      if (bs) {
+        bc.append(el('p', 'note', `${bs.title} · 단위 ${bs.unit}. ${bs.note || ''}`));
+        const bl = el('div', 'swatches'); bs.segments.forEach((g) => bl.append(sw(g.color, g.label))); if (bs.rows.some((x) => x.export_pct != null)) bl.append(sw('c3', '수출 비중(%, 오른쪽 축·점선)')); bc.append(bl);
+        const bhost = el('div', 'chart'); bhost.style.position = 'relative'; bc.append(bhost);
+        requestAnimationFrame(() => window.drawBacklog(bhost, bs));
+      } else bc.append(el('p', 'note', ir.backlog_note || '회사 IR 자료에 수주잔고가 공개되지 않습니다.'));
+      body.append(bc);
+      window.XL.attach(sc, `${r.short}_${r.seg.name}_분기실적`, () => [{ name: '분기 실적', rows: window.XL.table(ir.quarters, [['quarter', '분기'], ['revenue_eok', '매출(억원)'], ['export_eok', '수출(억원)'], ['domestic_eok', '내수(억원)'], ['other_eok', '기타(억원)'], ['op_eok', '영업이익(억원)'], ['opm_pct', '영업이익률(%)'], ['export_share_pct', '수출 비중(%)'], ['ir_doc', '출처 자료']]) }]);
+      if (bs) window.XL.attach(bc, `${r.short}_수주잔고`, () => [{ name: '수주잔고', rows: window.XL.table(bs.rows, [['period', '시점'], ['total', `합계(${bs.unit})`], ...bs.segments.map((g) => [(x) => (x.values ? x.values[g.key] : null), g.label]), ['export_pct', '수출 비중(%)']]) }]);
     }
 
     const sec = (title, content, src) => { const d = el('div', 'dt-sec'); d.append(el('h3', null, title)); if (typeof content === 'string') d.append(el('p', null, content)); else d.append(content); if (src) { const s = el('div', 'srcs'); s.append(link(src, '출처')); d.append(s); } body.append(d); };
@@ -696,7 +718,7 @@
     const grpSheet = () => ({ name: '지역 중앙값', rows: [['지역', '회사 수', 'Trailing PER', '12M Fwd PER', '24M Fwd PER', 'FY26E PER', 'FY27E PER', 'FY28E PER', 'EPS CAGR FY26→28(%)', 'EV/EBITDA', 'EV/EBIT', '영업이익률(%)', 'FY 매출 성장(%)', '3년 CAGR(%)', '잔고 배수(년)', ...D.periods.map((pp) => `${pp.label} 수익률(달러, %)`), '고점 대비(%)', '시총 합계($bn)'],
       ...D.groups.map((g) => { const x = st[g.k]; return [g.label, x.n, x.pe, x.per_12m, x.per_24m, x.per_fy['2026'], x.per_fy['2027'], x.per_fy['2028'], x.eps_cagr, x.ev_ebitda, x.ev_ebit, x.opm_ttm, x.rev_g_fy, x.rev_cagr3, x.coverage, ...D.periods.map((pp) => x.ret[pp.k]), x.from_high, x.mcap_usd_bn]; })] });
     const qSheet = () => ({ name: '분기 실적', rows: T(ROWS.flatMap((r) => (r.fin_q || []).map((q) => ({ t: r.t, name: r.name, unit: r.annual_unit, l: q.l, end: q.end, rev: q.rev, op: q.op, ni: q.ni, opm: q.opm, how: q.derived ? '연간−분기 차감' : q.src === 'news' ? '잠정실적 보도' : q.src === 'yahoo' ? 'Yahoo Finance' : 'stockanalysis.com' }))), [['t', '티커'], ['name', '회사'], ['unit', '단위'], ['l', '기간'], ['end', '기말'], ['rev', '매출'], ['op', '영업이익'], ['ni', '순이익'], ['opm', '영업이익률(%)'], ['how', '출처·산출']]) });
-    const annualSheet = () => ({ name: '연간 실적', rows: T(ROWS.flatMap((r) => r.annual.map((a) => ({ t: r.t, name: r.name, unit: r.annual_unit, fy: a.fy, rev: a.rev, op: a.op, ni: a.ni, opm: a.opm, src: r.fin_override ? r.fin_override.src : 'stockanalysis.com' }))), [['t', '티커'], ['name', '회사'], ['unit', '단위'], ['fy', '회계연도 말'], ['rev', '매출'], ['op', '영업이익'], ['ni', '순이익'], ['opm', '영업이익률(%)'], ['src', '출처']]) });
+    const annualSheet = () => ({ name: '연간 실적', rows: T(ROWS.flatMap((r) => [...r.annual, ...(r.fin_ytd ? [{ ...r.fin_ytd, fy: r.fin_ytd.lab }] : [])].map((a) => ({ t: r.t, name: r.name, unit: r.annual_unit, fy: a.fy, rev: a.rev, op: a.op, ni: a.ni, opm: a.opm, src: r.fin_override ? r.fin_override.src : 'stockanalysis.com' }))), [['t', '티커'], ['name', '회사'], ['unit', '단위'], ['fy', '회계연도 말'], ['rev', '매출'], ['op', '영업이익'], ['ni', '순이익'], ['opm', '영업이익률(%)'], ['src', '출처']]) });
     const segSheet = () => ({ name: '국내 방산 부문 분기', rows: T(ROWS.filter((r) => r.seg).flatMap((r) => r.seg.quarters.map((q) => ({ t: r.t, name: r.name, seg: r.seg.name, q: q.q, rev: q.rev, op: q.op, opm: q.opm, ex: q.ex }))), [['t', '티커'], ['name', '회사'], ['seg', '부문'], ['q', '분기'], ['rev', '매출(억원)'], ['op', '영업이익(억원)'], ['opm', '영업이익률(%)'], ['ex', '수출 비중(%)']]) });
     const segSum = () => ({ name: '국내 방산 부문 요약', rows: T(ROWS.filter((r) => r.seg), [['t', '티커'], ['name', '회사'], [(r) => r.seg.name, '부문'], [(r) => r.seg.label, '기간'], [(r) => r.seg.rev_eok, '부문 매출(억원)'], [(r) => r.seg.op_eok, '부문 영업이익(억원)'], [(r) => r.seg.opm, '부문 영업이익률(%)'], [(r) => r.seg.export_pct, '수출 비중(%)'], [(r) => r.backlog_def_krw_jo || r.backlog_total_krw_jo, '부문 수주잔고(조원)'], ['backlog_asof', '잔고 기준'], ['coverage', '잔고 배수(년)'], ['opm_ttm', '회사 전체 영업이익률(%)']]) });
     const qualSheet = () => ({ name: '가이던스·경쟁 관계', rows: T(ROWS, [['t', '티커'], ['name', '회사'], [(r) => GL[r.group], '지역'], [(r) => (r.systems || []).map((x) => SYS[x]).join(', '), '관련 K방산 체계'], ['kdefense_overlap', 'K방산과 맞붙는 지점'], ['key_programs', '주요 프로그램'], ['fy_guidance', '가이던스'], ['fy_guidance_source_url', '가이던스 출처'], [(r) => r.recent_quarter?.label, '최근 실적 기간'], [(r) => r.recent_quarter?.highlight, '최근 실적 요약'], [(r) => r.recent_quarter?.source_url, '최근 실적 출처'], ['notes', '2026년 주목할 점'], ['notes_source_url', '출처'], ['note', '데이터 메모']]) });
@@ -720,7 +742,7 @@
       const r = BY[cur];
       const kv = [['항목', '값'], ...coCols.map(([k, h]) => [h, typeof k === 'function' ? k(r) : r[k]]), ['가이던스', r.fy_guidance], ['K방산과 맞붙는 지점', r.kdefense_overlap], ['주요 프로그램', (r.key_programs || []).join(' · ')], ['2026년 주목할 점', r.notes], ['데이터 메모', [r.note, r.fin_override?.note].filter(Boolean).join(' ')]];
       const sheets = [{ name: '요약', rows: kv },
-        { name: '연간 실적', rows: T(r.annual, [['fy', '회계연도 말'], ['rev', `매출(${r.annual_unit})`], ['op', '영업이익'], ['ni', '순이익'], ['opm', '영업이익률(%)']]) },
+        { name: '연간 실적', rows: T([...r.annual, ...(r.fin_ytd ? [{ ...r.fin_ytd, fy: r.fin_ytd.lab }] : [])], [['fy', '회계연도 말'], ['rev', `매출(${r.annual_unit})`], ['op', '영업이익'], ['ni', '순이익'], ['opm', '영업이익률(%)']]) },
         ...((r.fin_q || []).length ? [{ name: r.fin_semi ? '반기 실적' : '분기 실적', rows: T(r.fin_q.map((q) => ({ ...q, how: q.derived ? '연간−분기 차감' : q.src === 'news' ? '잠정실적 보도' : q.src === 'yahoo' ? 'Yahoo Finance' : 'stockanalysis.com' })), [['l', '기간'], ['end', '기말'], ['rev', `매출(${r.annual_unit})`], ['op', '영업이익'], ['ni', '순이익'], ['opm', '영업이익률(%)'], ['how', '출처·산출']]) }] : []),
         { name: '월말 주가', rows: [['월말', `주가(${r.cur})`, '주가(달러 환산)'], ...D.months.map((m, i) => [i === D.months.length - 1 ? '2026-11-05' : m, r.series[i], r.series_usd[i] == null ? null : +r.series_usd[i].toPrecision(6)])] }];
       if (r.hist) sheets.push({ name: '멀티플 추이', rows: [['분기', ...Object.values(MH)], ...D.hq.map((q, i) => [q === 'NOW' ? '2026-11-05' : `20${q.slice(0, 2)}-${q.slice(2)}`, ...Object.keys(MH).map((k) => r.hist[k][i])])] });

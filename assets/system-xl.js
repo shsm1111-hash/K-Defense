@@ -7,7 +7,7 @@
   const fname = (x) => `K-Defense_${name}_${x}_${String(D.updated || '').replace(/[^0-9]/g, '')}`;
   const card = (id) => document.getElementById(id)?.closest('article.card');
   const TIER = (r) => r.tier;
-  const src = { name: '출처·설명', rows: [['항목', '내용'], ['무기체계', M.name], ['기준일', D.updated], ['신뢰도', '확정=공시·정부 발표 / 보도=언론·리포트 / 추정=계산·추산 / 해설=맥락 설명'], ['실적 출처', D.ir?.source || ''], ['페이지', location.href.split('#')[0]], ['주의', '투자 권유가 아닌 공부용 자료']] };
+  const src = { name: '출처·설명', rows: [['항목', '내용'], ['무기체계', M.name], ['기준일', D.updated], ['신뢰도', '확정=공시·정부 발표 / 보도=언론·업계 자료 / 추정=계산·추산 / 해설=맥락 설명'], ['실적 출처', D.ir?.source || ''], ['페이지', location.href.split('#')[0]], ['주의', '투자 권유가 아닌 공부용 자료']] };
 
   const specs = () => ({ name: '제원·규모', rows: T(D.specs, [['group', '구분'], ['item', '항목'], ['value', '값'], ['num', '숫자'], [TIER, '신뢰도']]) });
   const timeline = () => ({ name: '개발 연혁', rows: T(D.timeline, [['date', '시기'], ['category', '분류'], ['title', '내용'], ['detail', '설명'], [TIER, '신뢰도']]) });

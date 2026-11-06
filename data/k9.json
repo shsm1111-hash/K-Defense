@@ -291,7 +291,7 @@
    "scope": "완성 자주포가 아닌 차체만 공급",
    "unit_comparable": false,
    "tier": "보도",
-   "source_name": "증권사 리포트(2025.11)",
+   "source_name": "업계 자료(2025.11)",
    "source_url": ""
   },
   {
@@ -307,7 +307,7 @@
    "scope": "완성 자주포가 아닌 차체만 공급",
    "unit_comparable": false,
    "tier": "보도",
-   "source_name": "증권사 리포트(2025.11)",
+   "source_name": "업계 자료(2025.11)",
    "source_url": ""
   },
   {
@@ -371,7 +371,7 @@
    "scope": "핀란드와 공동 구매",
    "unit_comparable": true,
    "tier": "보도",
-   "source_name": "증권사 리포트(2025.11)",
+   "source_name": "업계 자료(2025.11)",
    "source_url": ""
   },
   {
@@ -403,7 +403,7 @@
    "scope": "AS10 탄약운반차 15대, 질롱 현지 공장 포함",
    "unit_comparable": true,
    "tier": "보도",
-   "source_name": "증권사 리포트(2025.11)",
+   "source_name": "업계 자료(2025.11)",
    "source_url": ""
   },
   {
@@ -1080,7 +1080,7 @@
    "scale": "미정",
    "stage": "협의",
    "updated": "2025.09",
-   "note": "증권사 리포트에서 협의 중인 대형 계약으로 언급",
+   "note": "업계 자료에서 협의 중인 대형 계약으로 언급",
    "tier": "보도",
    "value_krw_eok": null,
    "value_usd_eok": null,
@@ -2565,7 +2565,7 @@
     "result": "수주",
     "winner": "AS9 Huntsman",
     "competitors": "단독 협상 (2012 경쟁 결과 승계)",
-    "value": "AS9 30문 + AS10 15대, 약 $7.3억 (한화 수주액 9,320억원은 증권사 자료 기준)",
+    "value": "AS9 30문 + AS10 15대, 약 $7.3억 (한화 수주액 9,320억원은 업계 자료 기준)",
     "reasons": "과거 평가 결과를 바탕으로 한화와 단독 협상했고, 질롱(H-ACE) 현지 공장 건설을 약속했다. 이 공장이 2023년 레드백 수주의 기반이 됐다.",
     "lesson": "현지 공장 = 후속 체계(레드백) 수주의 플랫폼",
     "tier": "확정",

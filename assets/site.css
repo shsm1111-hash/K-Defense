@@ -321,3 +321,11 @@ table.tbl{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeri
 .tip b{font-weight:600}
 .tip .row{display:flex;justify-content:space-between;gap:14px}
 .tip .row i{width:8px;height:8px;border-radius:50%;display:inline-block;margin-right:6px}
+
+/* ── 사이트 공통 카테고리 메뉴 ── */
+.sitenav{display:flex;align-items:center;gap:6px 20px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:12px}
+.sitenav .brand{font-weight:800;font-size:15px;letter-spacing:-.01em;text-decoration:none;color:var(--ink);margin-right:4px}
+.sn-links{display:flex;gap:4px;flex-wrap:wrap}
+.sn-links a{font-size:14px;text-decoration:none;color:var(--muted);padding:6px 12px;border-radius:7px;border:1px solid transparent}
+.sn-links a:hover{color:var(--ink);background:var(--accent-soft)}
+.sn-links a[aria-current="page"]{color:var(--ink);font-weight:600;background:var(--panel);border-color:var(--line)}

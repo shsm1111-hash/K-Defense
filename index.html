@@ -6,10 +6,11 @@
 <title>K방산 무기체계 도감</title>
 <meta name="description" content="K방산 무기체계별 개발 연혁, 양산 단계, 수출국과 도입 배경, 단가, 구성품 업체, 향후 계획을 정리한 공부용 도감">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-<link rel="stylesheet" href="assets/site.css?v=6d1abbde">
+<link rel="stylesheet" href="assets/site.css?v=a1a40a50">
 </head>
 <body>
 <div class="wrap">
+  <nav class="sitenav" aria-label="카테고리"><a class="brand" href="./">K-Defense</a><div class="sn-links"><a href="./" aria-current="page">무기체계 도감</a><a href="peers/">글로벌 Peer 비교</a></div></nav>
   <header style="display:flex;flex-direction:column;gap:10px">
     <div class="eyebrow">Korea Defense · Weapon Systems</div>
     <h1>K방산 무기체계 도감</h1>
@@ -24,11 +25,6 @@
   <ul class="grid" id="grid"></ul>
   <p class="empty hidden" id="empty">조건에 맞는 무기체계가 없습니다. 분류나 검색어를 바꿔 보세요.</p>
 
-  <section aria-labelledby="ana-h" style="display:flex;flex-direction:column;gap:12px;border-top:1px solid var(--line);padding-top:20px">
-    <div><div class="eyebrow">Analysis</div><h2 id="ana-h" style="font-size:22px;font-weight:700;margin-top:4px">분석 대시보드</h2>
-    <p class="desc" style="margin-top:4px">무기체계를 가로질러 기업·시장 단위로 보는 화면입니다.</p></div>
-    <ul class="grid" id="ana-grid"></ul>
-  </section>
 
   <footer class="site">
     <p>공개 보도·공시·증권사 리포트를 바탕으로 정리했고, 모든 수치에 확정·보도·추정 신뢰도를 표시합니다. 새 무기체계는 같은 구성으로 계속 추가됩니다.</p>
@@ -63,11 +59,6 @@ const SYSTEMS = [
    photo:{f:"Hanwha laser anti-aircraft weapon.webp", by:"독서하는 자", lic:"CC BY-SA 4.0"}},
   {code:"KSS-III", name:"장보고-III", alias:"도산안창호급", cat:"해상", sub:"잠수함", maker:"한화오션 · HD현대중공업", desc:"수직발사관을 갖춘 3,000톤급 국산 잠수함.", href:"kss3/", updated:"2026.11.4", facts:["6척 건조","척당 약 1.1조원","캐나다·폴란드 경쟁"],
    photo:{f:"260621-N-DP708-1007 ROKS Dosan ahn Chang-ho (SS-083) arrives at Pearl Harbor-Hickam for RIMPAC 2026.jpg", by:"U.S. Navy", lic:"Public domain"}}
-];
-const ANALYSIS = [
-  {code:"PEERS", name:"글로벌 방산 Peer 비교", alias:"주가 · 멀티플 · 실적", href:"peers/", updated:"2026.11.5",
-   desc:"국내 방산 7사와 미국·유럽·아시아 21사의 주가 수익률, 예상 PER·EV/EBITDA, 이익률, 수주잔고 배수를 같은 기준으로 비교합니다.",
-   meta:[["대상","국내 7사 · 해외 21사"],["기준","2026.11.5 종가"]], facts:["28개사","달러·현지통화 수익률","잔고 배수"]}
 ];
 const CATS = ["전체","지상","항공","해상","유도무기"];
 let cat = "전체", q = "";
@@ -124,16 +115,6 @@ function render() {
   document.getElementById("empty").classList.toggle("hidden", rows.length > 0);
 }
 render();
-document.getElementById("ana-grid").replaceChildren(...ANALYSIS.map(a => {
-  const li = el("li", "scard is-live");
-  const top = el("div", "scard-top"); top.append(el("div", "code", a.code), el("span", "state", "공개"));
-  const body = el("div", "scard-body"); const h = el("h2", null, a.name); h.append(el("span", null, a.alias));
-  const meta = el("dl", "meta"); a.meta.forEach(([k, v]) => meta.append(el("dt", null, k), el("dd", null, v)));
-  const f = el("div", "facts"); a.facts.forEach(x => f.append(el("span", null, x)));
-  body.append(h, el("p", "desc", a.desc), meta, f);
-  const foot = el("div", "scard-foot"); foot.append(el("span", null, a.updated + " 기준")); const ln = el("a", null, "자세히 보기"); ln.href = a.href; foot.append(ln);
-  li.append(top, body, foot); return li;
-}));
 document.getElementById("credits").replaceChildren(...SYSTEMS.filter(s => s.photo).map(s => {
   const li = el("li"); li.append(s.name + ": ");
   const a = el("a", null, s.photo.by); a.href = PG(s.photo.f); a.target = "_blank"; a.rel = "noopener";

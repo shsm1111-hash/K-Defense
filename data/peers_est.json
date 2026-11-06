@@ -1,0 +1,41 @@
+{
+  "asof": "2026-11-06",
+  "note": "애널리스트 컨센서스 EPS(평균). 국내는 네이버증권·와이즈리포트 컨센서스(지배주주 EPS), 미국 6사는 MarketWatch(FactSet), 유럽·이스라엘·일본·싱가포르는 finanzen.net(FactSet, 조정 EPS), 사브·다쏘·콩스베르그·아셀산·HAL·BEL은 Yahoo Finance(2개 연도만). 2026-11-06 수집.",
+  "sources": {
+    "wisereport": "https://navercomp.wisereport.co.kr/v2/company/c1050001.aspx?cmp_cd=",
+    "marketwatch": "https://www.marketwatch.com/investing/stock/{t}/analystestimates",
+    "finanzen": "https://www.finanzen.net/schaetzungen/{slug}",
+    "yahoo": "https://finance.yahoo.com/quote/{t}/analysis"
+  },
+  "data": {
+    "012450.KS": {"src": "wisereport", "fye": 12, "eps_unit": "KRW", "fy": {"2026": 34539, "2027": 51066, "2028": 58653}, "actual": {"2025": 28573}},
+    "064350.KS": {"src": "wisereport", "fye": 12, "eps_unit": "KRW", "fy": {"2026": 7327, "2027": 8068, "2028": 10048}, "actual": {"2025": 7055}},
+    "047810.KS": {"src": "wisereport", "fye": 12, "eps_unit": "KRW", "fy": {"2026": 2130, "2027": 4129, "2028": 5545}, "actual": {"2025": 1907}},
+    "079550.KS": {"src": "wisereport", "fye": 12, "eps_unit": "KRW", "fy": {"2026": 16127, "2027": 22289, "2028": 30198}, "actual": {"2025": 11516}},
+    "272210.KS": {"src": "wisereport", "fye": 12, "eps_unit": "KRW", "fy": {"2026": 627, "2027": 2044, "2028": 2516}, "actual": {"2025": 1282}},
+    "042660.KS": {"src": "wisereport", "fye": 12, "eps_unit": "KRW", "fy": {"2026": 5385, "2027": 5575, "2028": 6607}, "actual": {"2025": 4066}},
+    "003570.KS": {"src": "wisereport", "fye": 12, "eps_unit": "KRW", "fy": {"2026": 2893, "2027": 4394, "2028": 5049}, "actual": {"2025": 1852}},
+    "LMT": {"src": "marketwatch", "fye": 12, "eps_unit": "USD", "fy": {"2026": 30.66, "2027": 33.31, "2028": 36.07}, "actual": {"2025": 21.62}},
+    "RTX": {"src": "marketwatch", "fye": 12, "eps_unit": "USD", "fy": {"2026": 7.69, "2027": 8.11, "2028": 9.03}, "actual": {"2025": 6.21}},
+    "NOC": {"src": "marketwatch", "fye": 12, "eps_unit": "USD", "fy": {"2026": 29.68, "2027": 29.88, "2028": 32.57}, "actual": {"2025": 26.06}},
+    "GD": {"src": "marketwatch", "fye": 12, "eps_unit": "USD", "fy": {"2026": 17.26, "2027": 18.82, "2028": 20.45}, "actual": {"2025": 15.40}},
+    "LHX": {"src": "marketwatch", "fye": 12, "eps_unit": "USD", "fy": {"2026": 12.17, "2027": 13.58, "2028": 15.66}, "actual": {"2025": 10.65}},
+    "HII": {"src": "marketwatch", "fye": 12, "eps_unit": "USD", "fy": {"2026": 19.71, "2027": 20.40, "2028": 23.92}, "actual": {"2025": 15.10}},
+    "RHM.DE": {"src": "finanzen", "slug": "rheinmetall", "fye": 12, "eps_unit": "EUR", "fy": {"2026": 37.19, "2027": 53.76, "2028": 74.65}},
+    "BA.L": {"src": "finanzen", "slug": "bae_systems", "fye": 12, "eps_unit": "GBP", "fy": {"2026": 0.84, "2027": 0.96, "2028": 1.09}},
+    "LDO.MI": {"src": "finanzen", "slug": "leonardo", "fye": 12, "eps_unit": "EUR", "fy": {"2026": 2.38, "2027": 2.88, "2028": 3.39}},
+    "SAAB-B.ST": {"src": "yahoo", "fye": 12, "eps_unit": "SEK", "fy": {"2026": 14.88, "2027": 19.27}},
+    "HO.PA": {"src": "finanzen", "slug": "thales", "fye": 12, "eps_unit": "EUR", "fy": {"2026": 10.76, "2027": 12.34, "2028": 13.98}},
+    "HAG.DE": {"src": "finanzen", "slug": "hensoldt", "fye": 12, "eps_unit": "EUR", "fy": {"2026": 1.87, "2027": 2.46, "2028": 3.21}},
+    "AM.PA": {"src": "yahoo", "fye": 12, "eps_unit": "EUR", "fy": {"2026": 15.50, "2027": 18.83}},
+    "KOG.OL": {"src": "yahoo", "fye": 12, "eps_unit": "NOK", "fy": {"2026": 7.32, "2027": 11.42}},
+    "R3NK.DE": {"src": "finanzen", "slug": "renk", "fye": 12, "eps_unit": "EUR", "fy": {"2026": 1.62, "2027": 2.07, "2028": 2.65}},
+    "ESLT": {"src": "finanzen", "slug": "elbit_systems", "fye": 12, "eps_unit": "USD", "fy": {"2026": 14.70, "2027": 17.59, "2028": 20.30}},
+    "7011.T": {"src": "finanzen", "slug": "mitsubishi_heavy_industries", "fye": 3, "eps_unit": "JPY", "fy": {"2026": 130.69, "2027": 152.76, "2028": 178.83}},
+    "ASELS.IS": {"src": "yahoo", "fye": 12, "eps_unit": "TRY", "fy": {"2026": 12.34, "2027": 20.87}},
+    "HAL.NS": {"src": "yahoo", "fye": 3, "eps_unit": "INR", "fy": {"2026": 149.46, "2027": 172.72}},
+    "BEL.NS": {"src": "yahoo", "fye": 3, "eps_unit": "INR", "fy": {"2026": 9.56, "2027": 11.18}},
+    "S63.SI": {"src": "finanzen", "slug": "singapore_technologies_engineering", "fye": 12, "eps_unit": "SGD", "fy": {"2026": 0.34, "2027": 0.39, "2028": 0.43}}
+  },
+  "fy_rule": "fy 키 '2026'은 2026년에 시작하는 회계연도. 12월 결산은 2026년 12월 결산, 3월 결산(미쓰비시중공·HAL·BEL)은 2027년 3월 결산(일본 FY2026, 인도 FY27)."
+}

@@ -289,6 +289,58 @@ for m in meta:
 
 GROUPS = [("kr", "K방산"), ("us", "미국"), ("eu", "유럽"), ("as", "아시아·기타")]
 
+# ── 연도별 컨센서스 EPS → FY26·27·28 PER, 12M·24M Fwd PER ──
+import datetime as _dt
+est = json.loads((D / "peers_est.json").read_text(encoding="utf-8"))
+ASOF = _dt.date.fromisoformat(mk["asof"])
+SRC_NAME = {"wisereport": "네이버증권·와이즈리포트", "marketwatch": "MarketWatch(FactSet)", "finanzen": "finanzen.net(FactSet)", "yahoo": "Yahoo Finance"}
+
+
+def fy_period(fy, fye):
+    # fy '2026' = 2026년에 시작하는 회계연도
+    if fye == 12:
+        return _dt.date(fy, 1, 1), _dt.date(fy, 12, 31)
+    return _dt.date(fy, fye + 1, 1), _dt.date(fy + 1, fye, 31 if fye in (1, 3, 5, 7, 8, 10, 12) else 30)
+
+
+def fwd_eps(e, years):
+    # [오늘, 오늘+years년) 구간에서 각 회계연도가 차지하는 날짜 비율로 가중한 연평균 EPS
+    end = _dt.date(ASOF.year + years, ASOF.month, ASOF.day)
+    tot = (end - ASOF).days
+    acc, w = 0.0, {}
+    for fy in range(ASOF.year - 1, ASOF.year + years + 1):
+        a, b = fy_period(fy, e["fye"])
+        days = (min(b + _dt.timedelta(days=1), end) - max(a, ASOF)).days
+        if days <= 0:
+            continue
+        v = e["fy"].get(str(fy))
+        if v is None:
+            return None, None
+        acc += v * days
+        w[str(fy)] = round(days / tot, 3)
+    return acc / tot, w
+
+
+for r in rows:
+    e = est["data"].get(r["t"])
+    if not e:
+        continue
+    px = r["px"] / 100 if r["cur"] == "GBp" else r["px"]  # BAE: 주가 펜스, EPS 파운드
+    per = lambda eps: round(px / eps, 1) if eps and eps > 0 else None
+    r["est_src"] = SRC_NAME[e["src"]]
+    r["est_url"] = (est["sources"][e["src"]] + (r["t"][:6] if e["src"] == "wisereport" else "")).replace("{slug}", e.get("slug", "")).replace("{t}", r["t"].lower())
+    r["fye"] = e["fye"]
+    r["eps_unit"] = e["eps_unit"]
+    r["eps"] = {k: e["fy"].get(k) for k in ("2026", "2027", "2028")}
+    r["per_fy"] = {k: per(v) for k, v in r["eps"].items()}
+    f12, w12 = fwd_eps(e, 1)
+    f24, w24 = fwd_eps(e, 2)
+    r["eps_12m"], r["eps_24m"] = (round(f12, 4) if f12 else None), (round(f24, 4) if f24 else None)
+    r["per_12m"], r["per_24m"] = per(f12), per(f24)
+    r["w12"], r["w24"] = w12, w24
+    a, b = e["fy"].get("2026"), e["fy"].get("2028")
+    r["eps_cagr"] = round(((b / a) ** 0.5 - 1) * 100, 1) if a and b and a > 0 and b > 0 else None
+
 # ── 멀티플 분기 이력 (stockanalysis.com) ──
 hist_raw = json.loads((D / "peers_hist.json").read_text(encoding="utf-8"))
 HQ = [f"{y % 100:02d}Q{q}" for y in range(2021, 2027) for q in range(1, 5)]
@@ -314,6 +366,10 @@ for g, _ in GROUPS:
     stats[g] = {
         "n": len(gr),
         "fpe": med([r["fpe"] for r in gr]),
+        "per_12m": med([r.get("per_12m") for r in gr]),
+        "per_24m": med([r.get("per_24m") for r in gr]),
+        "per_fy": {k: med([r.get("per_fy", {}).get(k) for r in gr]) for k in ("2026", "2027", "2028")},
+        "eps_cagr": med([r.get("eps_cagr") for r in gr]),
         "pe": med([r["pe"] for r in gr]),
         "ev_ebitda": med([r["ev_ebitda"] for r in gr]),
         "ev_ebit": med([r["ev_ebit"] for r in gr]),
@@ -352,6 +408,8 @@ out = {
     "hq": HQ,
     "hist_source": hist_raw["source"],
     "hist_note": hist_raw["note"],
+    "est_note": est["note"],
+    "est_rule": est["fy_rule"],
     "periods": [{"k": k, "base": b, "label": l, "basis": n} for k, b, l, n in PERIODS],
     "groups": [{"k": g, "label": l} for g, l in GROUPS],
     "stats": stats,
@@ -361,7 +419,7 @@ out = {
 print(f"peers.json: {len(rows)}개사, {len(months)}개월")
 for g, l in GROUPS:
     s = stats[g]
-    print(f"  {l}: Fwd PER {s['fpe']} · EV/EBITDA {s['ev_ebitda']} · OPM {s['opm_ttm']} · 1Y(USD) {s['ret']['y1']} · 잔고배수 {s['coverage']}")
+    print(f"  {l}: 12M {s['per_12m']} 24M {s['per_24m']} FY {s['per_fy']} | Yahoo Fwd {s['fpe']} · EV/EBITDA {s['ev_ebitda']} · OPM {s['opm_ttm']} · 1Y(USD) {s['ret']['y1']} · 잔고배수 {s['coverage']}")
 
 # ── 페이지 생성 (CSS·JS·데이터 캐시 무효화 해시) ──
 import hashlib

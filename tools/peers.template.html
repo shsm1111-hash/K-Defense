@@ -39,7 +39,7 @@
     </article>
     <article class="card">
       <h2>지역별 중앙값</h2>
-      <p class="note">수익률은 달러 환산 기준이라 환율 효과가 포함됩니다. 멀티플은 Yahoo Finance 집계(예상 PER은 애널리스트 컨센서스)이고, 잔고 배수는 수주잔고를 최근 4개 분기 매출로 나눈 값입니다.</p>
+      <p class="note">수익률은 달러 환산 기준이라 환율 효과가 포함됩니다. Trailing PER(직전 4개 분기 실적)과 12M·24M Fwd·연도별 PER(컨센서스 EPS로 직접 계산)을 구분해 표시합니다. 잔고 배수는 수주잔고를 최근 4개 분기 매출로 나눈 값입니다.</p>
       <div class="card-body tbl-wrap"><table class="tbl" id="grp-tbl"></table></div>
     </article>
     <article class="card">
@@ -84,14 +84,14 @@
       <p class="note" id="mh-foot"></p>
     </article>
     <article class="card">
-      <h2>성장·이익률 대비 예상 PER</h2>
+      <h2>성장·이익률 대비 PER</h2>
       <p class="note">점 하나가 한 회사입니다. 오른쪽 위로 갈수록 성장(또는 이익률)도 높고 비싸게 거래된다는 뜻입니다. 가로축 지표를 바꿔 볼 수 있습니다.</p>
       <div class="pe-ctrl"><span class="lab">가로축</span><div class="seg" id="sc-x"></div><span class="lab">세로축</span><div class="seg" id="sc-y"></div></div>
       <div class="card-body chart" id="sc-chart"></div>
     </article>
     <article class="card">
       <h2>밸류에이션 멀티플</h2>
-      <p class="note">시가총액은 원화 환산(조원)입니다. 회색 줄은 지역 중앙값입니다. '—'는 값이 없거나 적자라 의미가 없는 경우입니다.</p>
+      <p class="note">Trailing은 직전 4개 분기 실적, 12M·24M Fwd와 FY26E~28E는 컨센서스 EPS 기준입니다(열 제목에 마우스를 올리면 계산 방법). 시가총액은 원화 환산(조원)입니다. 회색 줄은 지역 중앙값입니다. '—'는 값이 없거나 적자라 의미가 없는 경우입니다.</p>
       <div class="pe-ctrl"><span class="lab">지역</span><div class="seg" id="val-grp"></div></div>
       <div class="card-body tbl-wrap tall"><table class="tbl" id="val-tbl"></table></div>
     </article>

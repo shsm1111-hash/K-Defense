@@ -317,6 +317,91 @@
   seg('sc-x', Object.entries(XOPT).map(([k, v]) => [k, v[0]]), scX, (v) => { scX = v; drawScatter(); });
   seg('sc-y', Object.entries(YOPT).map(([k, v]) => [k, v[0]]), scY, (v) => { scY = v; drawScatter(); });
 
+  // ── 밸류에이션: 멀티플 추이 ──
+  const MH = { fpe: '예상 PER', pe: 'PER', eve: 'EV/EBITDA', pb: 'PBR', evs: 'EV/매출' };
+  let mhK = 'fpe'; let mhMode = 'group';
+  let mhSel = new Map(['012450.KS', '064350.KS', 'RHM.DE', 'LMT'].map((t, i) => [t, SLOTS[i]]));
+  const qLabel = (q) => (q === 'NOW' ? '11.5' : `'${q.slice(0, 2)} ${q.slice(2)}`);
+  function renderMhPick() {
+    const box = $('mh-pick'); box.replaceChildren(); box.classList.toggle('hidden', mhMode !== 'co');
+    if (mhMode !== 'co') return;
+    D.groups.forEach((g) => {
+      const row = el('div', 'pick-row'); const h = el('b'); const i = el('i'); i.style.background = GC(g.k); h.append(i, g.label); row.append(h);
+      ROWS.filter((r) => r.group === g.k).forEach((r) => {
+        const has = r.hist && r.hist[mhK].some((v) => v != null);
+        const b = el('button'); b.type = 'button'; const dot = el('i'); const on = mhSel.has(r.t);
+        if (on) dot.style.background = `var(${mhSel.get(r.t)})`;
+        b.append(dot, r.short); b.setAttribute('aria-pressed', String(on));
+        b.disabled = !has || (!on && mhSel.size >= 6); if (!has) b.title = `${MH[mhK]} 이력 없음`;
+        b.addEventListener('click', () => {
+          if (mhSel.has(r.t)) { if (mhSel.size > 1) mhSel.delete(r.t); } else if (mhSel.size < 6) { const used = new Set(mhSel.values()); mhSel.set(r.t, SLOTS.find((x) => !used.has(x))); }
+          renderMhPick(); drawMult();
+        });
+        row.append(b);
+      });
+      box.append(row);
+    });
+  }
+  function drawMult() {
+    const box = $('mh-chart'); const W = box.clientWidth || 800; const H = 360; const mt = 16; const mb = 28; const ml = 44;
+    const hq = D.hq;
+    let series;
+    if (mhMode === 'group') series = D.groups.map((g) => ({ key: g.k, label: g.label, color: GC(g.k), vals: st[g.k].hist[mhK], n: st[g.k].hist_n[mhK] }));
+    else series = [...mhSel.entries()].map(([t, slot]) => ({ key: t, label: BY[t].short, color: `var(${slot})`, vals: (BY[t].hist || {})[mhK] || hq.map(() => null) }));
+    const all = series.flatMap((s) => s.vals.filter((v) => v != null));
+    const svg = S('svg', { viewBox: `0 0 ${W} ${H}`, height: H, role: 'img', 'aria-label': `${MH[mhK]} 추이` });
+    box.replaceChildren(svg); const tip = tipFor(box);
+    if (!all.length) { const t = S('text', { x: W / 2, y: H / 2, 'text-anchor': 'middle' }); t.textContent = '선택한 회사의 이력이 없습니다'; svg.append(t); return; }
+    // 단일 회사면 5년 평균 ±1표준편차 밴드
+    let band = null;
+    if (series.length === 1) {
+      const v = series[0].vals.filter((x) => x != null); const m = v.reduce((a, b) => a + b, 0) / v.length;
+      const sd = Math.sqrt(v.reduce((a, b) => a + (b - m) ** 2, 0) / v.length); band = { m, sd };
+      all.push(m + sd, Math.max(0, m - sd));
+    }
+    const hi = Math.max(...all) * 1.05; const lo = 0;
+    const mr = Math.max(...series.map((s) => textW(svg, `${s.label} 00.0배`, 'lbl-end'))) + 14;
+    const x = (i) => ml + (W - ml - mr) * (i / (hq.length - 1));
+    const y = (v) => mt + (H - mt - mb) * (1 - (v - lo) / (hi - lo));
+    niceTicks(lo, hi, 5).forEach((v) => { svg.append(S('line', { x1: ml, x2: W - mr, y1: y(v), y2: y(v), class: v === 0 ? 'zero' : 'grid' })); const t = S('text', { x: ml - 6, y: y(v), 'text-anchor': 'end', 'dominant-baseline': 'middle', class: 'axis-t' }); t.textContent = v + '배'; svg.append(t); });
+    hq.forEach((q, i) => { if (q.endsWith('Q4') || q === 'NOW') { const t = S('text', { x: x(i), y: H - 8, 'text-anchor': q === 'NOW' ? 'end' : 'middle', class: 'axis-t' }); t.textContent = q === 'NOW' ? '11.5' : (q.endsWith('Q4') ? '20' + q.slice(0, 2) + '말' : qLabel(q)); svg.append(t); } });
+    if (band) {
+      const s0 = series[0];
+      svg.append(S('rect', { x: ml, y: y(band.m + band.sd), width: W - ml - mr, height: Math.max(0, y(Math.max(0, band.m - band.sd)) - y(band.m + band.sd)), fill: s0.color, opacity: 0.1 }));
+      svg.append(S('line', { x1: ml, x2: W - mr, y1: y(band.m), y2: y(band.m), stroke: s0.color, 'stroke-dasharray': '5 4', 'stroke-width': 1.5 }));
+      const t = S('text', { x: ml + 4, y: y(band.m) - 5, class: 'axis-t' }); t.textContent = `평균 ${nf(band.m)}배 · 음영 ±1표준편차`; svg.append(t);
+    }
+    // 빈 분기는 건너뛰고 이어 그림 (반기 보고·자료 공백)
+    series.forEach((s) => {
+      let d = ''; s.vals.forEach((v, i) => { if (v == null) return; d += (d ? 'L' : 'M') + x(i).toFixed(1) + ',' + y(v).toFixed(1); });
+      svg.append(S('path', { d, fill: 'none', stroke: s.color, 'stroke-width': mhMode === 'group' && s.key === 'kr' ? 2.75 : 2, 'stroke-linejoin': 'round', 'stroke-linecap': 'round' }));
+      s.vals.forEach((v, i) => { if (v != null && (s.vals[i - 1] == null || s.vals[i + 1] == null)) svg.append(S('circle', { cx: x(i), cy: y(v), r: 2.5, fill: s.color })); });
+    });
+    const ends = series.map((s) => { let i = s.vals.length - 1; while (i >= 0 && s.vals[i] == null) i--; return i < 0 ? null : { s, i, v: s.vals[i], yy: y(s.vals[i]) }; }).filter(Boolean).sort((a, b) => a.yy - b.yy);
+    for (let i = 1; i < ends.length; i++) if (ends[i].yy - ends[i - 1].yy < 15) ends[i].yy = ends[i - 1].yy + 15;
+    ends.forEach((e) => {
+      svg.append(S('circle', { cx: x(e.i), cy: y(e.v), r: 4, fill: e.s.color, stroke: 'var(--panel)', 'stroke-width': 2 }));
+      const t = S('text', { x: x(hq.length - 1) + 8, y: e.yy, 'dominant-baseline': 'middle', class: 'lbl-end', fill: 'var(--ink)' }); t.textContent = `${e.s.label} ${nf(e.v)}배`; svg.append(t);
+    });
+    const cross = S('line', { y1: mt, y2: H - mb, stroke: 'var(--muted)', 'stroke-dasharray': '3 3', visibility: 'hidden' }); svg.append(cross);
+    const hit = S('rect', { x: ml, y: mt, width: W - ml - mr, height: H - mt - mb, fill: 'transparent' }); svg.append(hit);
+    hit.addEventListener('mousemove', (e) => {
+      const r = svg.getBoundingClientRect(); const px = (e.clientX - r.left) * (W / r.width);
+      const i = Math.max(0, Math.min(hq.length - 1, Math.round(((px - ml) / (W - ml - mr)) * (hq.length - 1))));
+      cross.setAttribute('x1', x(i)); cross.setAttribute('x2', x(i)); cross.setAttribute('visibility', 'visible');
+      const head = hq[i] === 'NOW' ? '2026.11.5' : `20${hq[i].slice(0, 2)}년 ${hq[i].slice(3)}분기 말`;
+      placeTip(tip, box, e, [el('div', null, `${head} · ${MH[mhK]}`), ...series.slice().sort((a, b) => (b.vals[i] ?? -1) - (a.vals[i] ?? -1)).map((s) => tl(s.label + (s.n ? ` (${s.n[i]}사)` : ''), s.vals[i] == null ? '—' : nf(s.vals[i]) + '배', s.color))]);
+    });
+    hit.addEventListener('mouseleave', () => { tip.classList.add('hidden'); cross.setAttribute('visibility', 'hidden'); });
+    $('mh-note').textContent = mhMode === 'group'
+      ? `지역별 ${MH[mhK]} 중앙값의 분기말 추이입니다. 같은 시점에 값이 있는 회사가 3곳 이상일 때만 중앙값을 냅니다(툴팁에 회사 수). 개별 회사의 밴드(5년 평균 ±1표준편차)는 '회사 비교'에서 한 회사만 고르면 나옵니다.`
+      : `회사별 ${MH[mhK]}의 분기말 추이입니다. 하나만 고르면 5년 평균과 ±1표준편차 범위(밴드)를 함께 보여 줍니다. 최대 6개.`;
+  }
+  $('mh-foot').textContent = `출처: ${D.hist_source}. ${D.hist_note} 마지막 점(11.5)도 같은 출처라 아래 표의 Yahoo 수치와 조금 다를 수 있습니다. PER·EV/EBITDA는 이익이 급변하는 시기(한화오션 흑자전환, 한화에어로 한화오션 연결)에 크게 튀므로 예상 PER과 함께 보세요.`;
+  seg('mh-metric', Object.entries(MH), mhK, (v) => { mhK = v; renderMhPick(); drawMult(); });
+  seg('mh-mode', [['group', '지역 중앙값'], ['co', '회사 비교']], mhMode, (v) => { mhMode = v; renderMhPick(); drawMult(); });
+  renderMhPick();
+
   // 밸류에이션 표
   let valG = 'all';
   const valCols = [NAMECOL,
@@ -505,7 +590,7 @@
     const v = document.querySelector('section.page:not(.hidden)')?.id;
     if (v === 'summary') drawRank();
     if (v === 'price') drawLine();
-    if (v === 'valuation') drawScatter();
+    if (v === 'valuation') { drawMult(); drawScatter(); }
     if (v === 'earnings') drawCov();
     if (v === 'company') drawDetail();
   }

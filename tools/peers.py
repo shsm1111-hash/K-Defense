@@ -289,6 +289,19 @@ for m in meta:
 
 GROUPS = [("kr", "K방산"), ("us", "미국"), ("eu", "유럽"), ("as", "아시아·기타")]
 
+# ── 멀티플 분기 이력 (stockanalysis.com) ──
+hist_raw = json.loads((D / "peers_hist.json").read_text(encoding="utf-8"))
+HQ = [f"{y % 100:02d}Q{q}" for y in range(2021, 2027) for q in range(1, 5)]
+HQ = HQ[HQ.index("21Q3"):HQ.index("26Q3") + 1] + ["NOW"]
+HK = ["fpe", "pe", "eve", "pb", "evs"]
+for r in rows:
+    h = hist_raw["data"].get(r["t"])
+    if not h:
+        continue
+    pos = {b: i for i, b in enumerate(h["b"])}
+    r["hist"] = {k: [h[k][pos[q]] if q in pos and pos[q] < len(h[k]) else None for q in HQ] for k in HK}
+    r["hist_semi"] = sum(1 for b in h["b"] if b.endswith(("Q1", "Q3"))) == 0
+
 
 def med(vals):
     v = [x for x in vals if x is not None]
@@ -311,13 +324,34 @@ for g, _ in GROUPS:
         "ret": {k: med([r["ret_usd"][k] for r in gr]) for k, *_ in PERIODS},
         "from_high": med([r["from_high"] for r in gr]),
         "mcap_usd_bn": round(sum(r["mcap_usd_bn"] for r in gr), 1),
+        "hist": {},
     }
+    # 반기 보고 회사(BAE·탈레스·다쏘·ST엔지니어링)는 다음 분기에 직전 값을 한 번 이어 붙여 중앙값 구성이 흔들리지 않게 함
+    for k in HK:
+        series = []
+        for i in range(len(HQ)):
+            vals = []
+            for r in gr:
+                a = r.get("hist", {}).get(k)
+                if not a:
+                    continue
+                v = a[i]
+                if v is None and r.get("hist_semi") and i > 0:
+                    v = a[i - 1]
+                if v is not None:
+                    vals.append(v)
+            series.append(round(statistics.median(vals), 1) if len(vals) >= 3 else None)
+        stats[g]["hist"][k] = series
+        stats[g].setdefault("hist_n", {})[k] = [sum(1 for r in gr if r.get("hist", {}).get(k) and r["hist"][k][i] is not None) for i in range(len(HQ))]
 
 out = {
     "asof": mk["asof"],
     "source": mk["source"],
     "fx": {"KRW": KRW, "note": "달러 환산은 각 월말 환율, 원화 환산은 2026-11-05 환율(1달러 = %.1f원)" % KRW},
     "months": months,
+    "hq": HQ,
+    "hist_source": hist_raw["source"],
+    "hist_note": hist_raw["note"],
     "periods": [{"k": k, "base": b, "label": l, "basis": n} for k, b, l, n in PERIODS],
     "groups": [{"k": g, "label": l} for g, l in GROUPS],
     "stats": stats,

@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>글로벌 방산 Peer 비교 · K방산 무기체계 도감</title>
+<meta name="description" content="한국 방산 7사와 미국·유럽·아시아 방산 21사의 주가 수익률, 밸류에이션 멀티플, 실적, 수주잔고 비교">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../assets/site.css?v={{css}}">
+</head>
+<body data-data="../data/peers.json?v={{data}}">
+<div class="wrap">
+  <nav class="topnav" aria-label="경로"><a href="../">← K방산 무기체계 도감</a><span>/</span><span>글로벌 방산 Peer 비교</span></nav>
+
+  <header style="display:flex;flex-direction:column;gap:10px">
+    <div class="eyebrow">Global Defense Peers · 주가 · 멀티플 · 실적 · 수주잔고</div>
+    <h1>글로벌 방산 Peer 비교</h1>
+    <p class="lede">국내 방산 7사와 미국·유럽·아시아 주요 방산 21사를 같은 기준으로 놓고 주가 흐름, 밸류에이션, 이익률, 수주잔고를 비교합니다. 시세는 <b id="asof">—</b> 종가 기준입니다.</p>
+    <div class="glegend" id="glegend" aria-label="지역 색 구분"></div>
+  </header>
+
+  <section class="kpis" id="kpis" aria-label="핵심 지표"></section>
+
+  <nav class="tabs" aria-label="섹션">
+    <a href="#summary" data-tab="summary">요약</a>
+    <a href="#price" data-tab="price">주가</a>
+    <a href="#valuation" data-tab="valuation">밸류에이션</a>
+    <a href="#earnings" data-tab="earnings">실적·수주잔고</a>
+    <a href="#company" data-tab="company">기업별 상세</a>
+    <a href="#kmap" data-tab="kmap">K방산과의 경쟁 관계</a>
+    <a href="#guide" data-tab="guide">읽는 법·데이터 한계</a>
+  </nav>
+
+  <section class="page" id="summary">
+    <article class="card">
+      <h2>지금 숫자가 말하는 것</h2>
+      <p class="note">지역별 중앙값 기준입니다. 숫자는 아래 탭의 표에서 회사별로 확인할 수 있습니다.</p>
+      <div class="card-body"><ul class="takeaways" id="takeaways"></ul></div>
+    </article>
+    <article class="card">
+      <h2>지역별 중앙값</h2>
+      <p class="note">수익률은 달러 환산 기준이라 환율 효과가 포함됩니다. 멀티플은 Yahoo Finance 집계(예상 PER은 애널리스트 컨센서스)이고, 잔고 배수는 수주잔고를 최근 4개 분기 매출로 나눈 값입니다.</p>
+      <div class="card-body tbl-wrap"><table class="tbl" id="grp-tbl"></table></div>
+    </article>
+    <article class="card">
+      <div class="card-h">
+        <div><h2>1년 주가 수익률 순위</h2><p class="note" id="rank-note">달러 환산, 2025년 10월 말 대비.</p></div>
+        <div class="pe-ctrl" style="margin:0"><span class="lab">기간</span><div class="seg" id="rank-period"></div><span class="lab">통화</span><div class="seg" id="rank-cur"></div></div>
+      </div>
+      <div class="card-body chart" id="rank-chart"></div>
+    </article>
+  </section>
+
+  <section class="page hidden" id="price">
+    <article class="card">
+      <h2>주가 흐름 비교 (시작점 = 100)</h2>
+      <p class="note">월말 종가로 그린 지수입니다. 마지막 점은 11월 5일 종가입니다. 한 번에 최대 6개 회사까지 겹쳐 볼 수 있습니다.</p>
+      <div class="pe-ctrl">
+        <span class="lab">기간</span><div class="seg" id="line-period"></div>
+        <span class="lab">통화</span><div class="seg" id="line-cur"></div>
+        <button type="button" class="seg" style="padding:4px 11px;font-size:12.5px;cursor:pointer;background:transparent;color:var(--muted)" id="line-reset">기본 비교로 되돌리기</button>
+      </div>
+      <div class="pick" id="line-pick"></div>
+      <div class="card-body chart" id="line-chart"></div>
+    </article>
+    <article class="card">
+      <h2>기간별 수익률</h2>
+      <p class="note">열 제목을 누르면 정렬됩니다. 회사 이름을 누르면 기업별 상세로 이동합니다.</p>
+      <div class="pe-ctrl"><span class="lab">통화</span><div class="seg" id="ret-cur"></div><span class="lab">지역</span><div class="seg" id="ret-grp"></div></div>
+      <div class="card-body tbl-wrap"><table class="tbl" id="ret-tbl"></table></div>
+    </article>
+  </section>
+
+  <section class="page hidden" id="valuation">
+    <article class="card">
+      <h2>성장·이익률 대비 예상 PER</h2>
+      <p class="note">점 하나가 한 회사입니다. 오른쪽 위로 갈수록 성장(또는 이익률)도 높고 비싸게 거래된다는 뜻입니다. 가로축 지표를 바꿔 볼 수 있습니다.</p>
+      <div class="pe-ctrl"><span class="lab">가로축</span><div class="seg" id="sc-x"></div><span class="lab">세로축</span><div class="seg" id="sc-y"></div></div>
+      <div class="card-body chart" id="sc-chart"></div>
+    </article>
+    <article class="card">
+      <h2>밸류에이션 멀티플</h2>
+      <p class="note">시가총액은 원화 환산(조원)입니다. 회색 줄은 지역 중앙값입니다. '—'는 값이 없거나 적자라 의미가 없는 경우입니다.</p>
+      <div class="pe-ctrl"><span class="lab">지역</span><div class="seg" id="val-grp"></div></div>
+      <div class="card-body tbl-wrap tall"><table class="tbl" id="val-tbl"></table></div>
+    </article>
+  </section>
+
+  <section class="page hidden" id="earnings">
+    <article class="card">
+      <div class="card-h">
+        <div><h2>수주잔고 배수 (잔고 ÷ 연간 매출)</h2><p class="note">지금 잔고가 몇 년 치 매출인지 보여 줍니다. 국내 회사는 방산 부문 잔고 ÷ 방산 부문 매출로 계산했습니다(KAI·LIG는 회사 전체).</p></div>
+      </div>
+      <div class="card-body chart" id="cov-chart"></div>
+    </article>
+    <article class="card">
+      <h2>실적·수주잔고 비교</h2>
+      <p class="note">매출·이익률은 최근 4개 분기 합산입니다. 국내 6사는 10월 말 발표된 3분기 잠정실적까지 넣었고, 해외는 회사마다 마지막 분기가 다릅니다(기업별 상세에 기준 시점 표시).</p>
+      <div class="pe-ctrl"><span class="lab">지역</span><div class="seg" id="earn-grp"></div></div>
+      <div class="card-body tbl-wrap tall"><table class="tbl" id="earn-tbl"></table></div>
+    </article>
+    <article class="card">
+      <h2>국내 방산 부문만 떼어 보면</h2>
+      <p class="note">한화에어로스페이스·현대로템·한화시스템·한화오션은 회사 전체에 방산 외 사업이 섞여 있어, 대시보드 실적 탭에 입력한 IR 부문 실적으로 다시 계산했습니다.</p>
+      <div class="card-body tbl-wrap"><table class="tbl" id="seg-tbl"></table></div>
+    </article>
+  </section>
+
+  <section class="page hidden" id="company">
+    <article class="card">
+      <div class="card-h">
+        <div><h2 id="dt-title">기업별 상세</h2><p class="note" id="dt-sub">—</p></div>
+        <select class="pe-sel" id="dt-sel" aria-label="회사 선택"></select>
+      </div>
+      <div class="card-body" id="dt-body"></div>
+    </article>
+  </section>
+
+  <section class="page hidden" id="kmap">
+    <article class="card">
+      <h2>무기체계별 해외 상장 경쟁사·협력사</h2>
+      <p class="note">각 무기체계 페이지의 경쟁 구도와 연결됩니다. 회사 이름을 누르면 그 회사가 K방산과 어디서 맞붙는지 볼 수 있습니다.</p>
+      <div class="card-body sysmap" id="sysmap"></div>
+    </article>
+  </section>
+
+  <section class="page hidden" id="guide">
+    <article class="card">
+      <h2>지표 읽는 법</h2>
+      <div class="card-body study" id="glossary"></div>
+    </article>
+    <article class="card">
+      <h2>데이터 한계와 보정</h2>
+      <div class="card-body"><ol class="guide" id="caveats"></ol></div>
+    </article>
+  </section>
+
+  <footer class="site">
+    <p id="foot-src">—</p>
+    <p>투자 권유가 아니라 공부용 비교 자료입니다. 멀티플·컨센서스는 데이터 제공처마다 다를 수 있습니다.</p>
+  </footer>
+</div>
+<script src="../assets/peers.js?v={{js}}"></script>
+</body>
+</html>

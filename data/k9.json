@@ -291,8 +291,8 @@
    "scope": "완성 자주포가 아닌 차체만 공급",
    "unit_comparable": false,
    "tier": "보도",
-   "source_name": "키움증권 리포트(2025.11)",
-   "source_url": "https://bbn.kiwoom.com/rfCR11734"
+   "source_name": "증권사 리포트(2025.11)",
+   "source_url": ""
   },
   {
    "id": "C03",
@@ -307,8 +307,8 @@
    "scope": "완성 자주포가 아닌 차체만 공급",
    "unit_comparable": false,
    "tier": "보도",
-   "source_name": "키움증권 리포트(2025.11)",
-   "source_url": "https://bbn.kiwoom.com/rfCR11734"
+   "source_name": "증권사 리포트(2025.11)",
+   "source_url": ""
   },
   {
    "id": "C04",
@@ -371,8 +371,8 @@
    "scope": "핀란드와 공동 구매",
    "unit_comparable": true,
    "tier": "보도",
-   "source_name": "키움증권 리포트(2025.11)",
-   "source_url": "https://bbn.kiwoom.com/rfCR11734"
+   "source_name": "증권사 리포트(2025.11)",
+   "source_url": ""
   },
   {
    "id": "C08",
@@ -403,8 +403,8 @@
    "scope": "AS10 탄약운반차 15대, 질롱 현지 공장 포함",
    "unit_comparable": true,
    "tier": "보도",
-   "source_name": "키움증권 리포트(2025.11)",
-   "source_url": "https://bbn.kiwoom.com/rfCR11734"
+   "source_name": "증권사 리포트(2025.11)",
+   "source_url": ""
   },
   {
    "id": "C10",
@@ -2118,7 +2118,7 @@
    "exposure_krw_eok": null,
    "why": "폴란드 국영 그룹 소속. 폴란드 3차 실행계약 이후 현지화가 늘면 한화 몫 일부가 HSW로 넘어갈 수 있어 한화 마진에 영향.",
    "tier": "보도",
-   "source_url": "https://bbn.kiwoom.com/rfCR11734"
+   "source_url": ""
   },
   {
    "name": "롤스로이스 파워시스템즈(MTU)",

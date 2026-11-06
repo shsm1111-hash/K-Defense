@@ -21,7 +21,6 @@
 
   $('asof').textContent = D.asof.replace(/-/g, '.').replace(/\.0/g, '.');
   $('glegend').append(...D.groups.map((g) => { const s = el('span'); const i = el('i', 'gdot'); i.style.background = GC(g.k); s.append(i, `${g.label} ${D.stats[g.k].n}사`); return s; }));
-  $('foot-src').textContent = `시세·멀티플·재무: ${D.source}. 컨센서스 EPS(12M·24M Fwd·연도별 PER 계산): ${D.est_note} 수주잔고·가이던스·최근 분기: 각 사 IR·실적 보도자료와 언론 보도(기업별 상세에 출처 링크). 국내 방산 부문 실적: 각 사 IR 실적발표 자료. ${D.fx.note}.`;
 
   // ── 탭 ──
   const tabs = [...document.querySelectorAll('.tabs a')];

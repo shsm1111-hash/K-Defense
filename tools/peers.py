@@ -355,6 +355,99 @@ for r in rows:
     r["hist_semi"] = sum(1 for b in h["b"] if b.endswith(("Q1", "Q3"))) == 0
 
 
+# ── 분기·연간 실적 (stockanalysis.com, 현지통화 백만) ──
+FIN = json.loads((D / "peers_fin_raw.json").read_text(encoding="utf-8"))
+SEMI = {"BA.L", "HO.PA", "AM.PA", "S63.SI"}
+FIN_NOTE = {
+    "RHM.DE": "2024년 분기까지는 민수(자동차) 부문을 포함한 옛 기준이고, 연간 2024~2025년과 2025년 이후 분기는 민수를 뺀 계속사업 기준입니다. 두 기준이 섞이는 4Q24는 비웠습니다. 영업이익은 회사가 쓰는 Operating result가 아니라 회계상 영업이익입니다.",
+    "KOG.OL": "2024년 분기까지는 해양(Kongsberg Maritime) 분할 전 기준이고, 연간 2024년부터와 2025년 이후 분기는 분할 뒤 기준이라 매출 수준이 낮아집니다. 4Q24는 기준이 섞여 비웠습니다.",
+    "003570.KS": "2Q22·4Q22는 공개 분기 자료가 없어 비웠습니다.",
+}
+MHI_JUN25 = {"rev": 1034109, "op": 93261, "ni": 68227}  # Yahoo 분기 재무 (stockanalysis 값이 로지스넥스트 포함 기준이라 교체)
+
+
+def norm_end(d):
+    """52/53주 회계연도(LHX·GD 등)의 분기말을 달 말로 맞춘다: 1~7일이면 전월, 그 외는 해당 월."""
+    y, m, dd = map(int, d.split("-"))
+    if dd <= 7:
+        m -= 1
+        if m == 0:
+            y, m = y - 1, 12
+    return y, m
+
+
+def fin_block(t):
+    raw = FIN.get(t)
+    if not raw:
+        return None
+    q, a = raw["q"], raw["a"]
+    qs = [{"end": d, "rev": q["rev"][i], "op": q["op"][i], "ni": q["ni"][i], "src": "sa"} for i, d in enumerate(q["d"])]
+    if t in kr_3q and not any(x["end"] >= "2026-09-01" for x in qs):
+        k3 = kr_3q[t]
+        qs.append({"end": "2026-09-30", "rev": k3["rev"], "op": k3["op"], "ni": None, "src": "news", "url": k3["src"]})
+    if t == "7011.T":
+        for x in qs:
+            if x["end"] == "2025-06-30":
+                x.update(MHI_JUN25, src="yahoo")
+    ann = [{"end": d, "rev": a["rev"][i], "op": a["op"][i], "ni": a["ni"][i]} for i, d in enumerate(a["d"])]
+    n_per = 2 if t in SEMI else 4
+    # 한 회계연도에 한 분기만 빠졌으면 연간 − 나머지 분기로 채운다
+    for an in ann:
+        ae = _dt.date.fromisoformat(an["end"])
+        st = ae - _dt.timedelta(days=360)
+        inq = [x for x in qs if st < _dt.date.fromisoformat(x["end"]) <= ae + _dt.timedelta(days=7)]
+        miss = [x for x in inq if x["rev"] is None]
+        if len(inq) != n_per or len(miss) != 1:
+            continue
+        m = miss[0]
+        got = {}
+        for k in ("rev", "op", "ni"):
+            others = [x[k] for x in inq if x is not m]
+            if an[k] is None or any(v is None for v in others):
+                got[k] = None
+            else:
+                got[k] = an[k] - sum(others)
+        if got["rev"] is None or got["rev"] <= 0 or got["rev"] > an["rev"] * 0.6:
+            continue
+        # 연간과 분기의 기준(사업 매각·재작성)이 다르면 차감값이 튄다 → 이익률이 같은 해 다른 분기와 15%p 넘게 벌어지면 버린다
+        oth = [x["op"] / x["rev"] * 100 for x in inq if x is not m and x["op"] is not None and x["rev"]]
+        if got["op"] is not None and oth:
+            om = got["op"] / got["rev"] * 100
+            if om > max(oth) + 15 or om < min(oth) - 15:
+                continue
+        m.update(got, src="derived")
+    out_q = []
+    for x in qs:
+        y, mth = norm_end(x["end"])
+        lab = (f"{'1H' if mth <= 6 else '2H'}{str(y)[2:]}" if n_per == 2 else f"{(mth - 1) // 3 + 1}Q{str(y)[2:]}")
+        out_q.append({"l": lab, "end": f"{y}-{mth:02d}", "rev": x["rev"], "op": x["op"], "ni": x["ni"],
+                      "opm": round(x["op"] / x["rev"] * 100, 1) if x["rev"] and x["op"] is not None else None,
+                      "derived": x["src"] == "derived", "src": x["src"], **({"url": x["url"]} if x.get("url") else {})})
+    out_a = []
+    for an in ann:
+        y, mth = norm_end(an["end"])
+        out_a.append({"fy": f"{y}-{mth:02d}", "rev": an["rev"], "op": an["op"], "ni": an["ni"],
+                      "opm": round(an["op"] / an["rev"] * 100, 1) if an["rev"] and an["op"] is not None else None})
+    return {"semi": n_per == 2, "q": out_q, "a": out_a}
+
+
+for r in rows:
+    fb = fin_block(r["t"])
+    if not fb:
+        continue
+    r["fin_q"] = fb["q"]
+    if r["t"] in FIN_NOTE:
+        r["fin_note"] = FIN_NOTE[r["t"]]
+    r["fin_semi"] = fb["semi"]
+    if not r.get("fin_override"):
+        # 연간도 같은 출처(5개 회계연도)로 통일
+        r["annual"] = fb["a"]
+        ann = r["annual"]
+        r["rev_g_fy"] = round((ann[-1]["rev"] / ann[-2]["rev"] - 1) * 100, 1)
+        r["fy_last"] = ann[-1]["fy"]
+        r["rev_cagr3"] = round(((ann[-1]["rev"] / ann[-4]["rev"]) ** (1 / 3) - 1) * 100, 1)
+
+
 def med(vals):
     v = [x for x in vals if x is not None]
     return round(statistics.median(v), 1) if v else None
@@ -410,6 +503,7 @@ out = {
     "hist_note": hist_raw["note"],
     "est_note": est["note"],
     "est_rule": est["fy_rule"],
+    "fin_source": "stockanalysis.com 재무제표 개요(분기·연간), 2026-11-06 수집, 현지통화 백만. 한국 6사 3Q26은 잠정실적 보도",
     "periods": [{"k": k, "base": b, "label": l, "basis": n} for k, b, l, n in PERIODS],
     "groups": [{"k": g, "label": l} for g, l in GROUPS],
     "stats": stats,

@@ -323,12 +323,12 @@ table.tbl{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeri
 .tip .row i{width:8px;height:8px;border-radius:50%;display:inline-block;margin-right:6px}
 
 /* ── 사이트 공통 카테고리 메뉴 ── */
-.sitenav{display:flex;align-items:center;gap:6px 20px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:12px}
-.sitenav .brand{font-weight:800;font-size:15px;letter-spacing:-.01em;text-decoration:none;color:var(--ink);margin-right:4px}
-.sn-links{display:flex;gap:4px;flex-wrap:wrap}
-.sn-links a{font-size:14px;text-decoration:none;color:var(--muted);padding:6px 12px;border-radius:7px;border:1px solid transparent}
-.sn-links a:hover{color:var(--ink);background:var(--accent-soft)}
-.sn-links a[aria-current="page"]{color:var(--ink);font-weight:600;background:var(--panel);border-color:var(--line)}
+.sitenav{display:flex;align-items:center;gap:8px 20px;flex-wrap:wrap;border-bottom:2px solid var(--accent);padding-bottom:12px}
+.sitenav .brand{font-weight:800;font-size:16px;letter-spacing:-.01em;text-decoration:none;color:var(--accent);margin-right:4px}
+.sn-links{display:flex;gap:8px;flex-wrap:wrap}
+.sn-links a{font-size:15px;font-weight:600;text-decoration:none;color:var(--accent);padding:8px 16px;border-radius:8px;border:1.5px solid color-mix(in srgb,var(--accent) 45%,transparent);background:var(--accent-soft);transition:background .15s,color .15s}
+.sn-links a:hover{background:color-mix(in srgb,var(--accent) 22%,var(--accent-soft));border-color:var(--accent)}
+.sn-links a[aria-current="page"]{background:var(--accent);color:var(--bg);border-color:var(--accent);box-shadow:0 2px 8px color-mix(in srgb,var(--accent) 35%,transparent)}
 
 /* ── 엑셀 다운로드 버튼 ── */
 .xl-btn{font:inherit;font-size:12.5px;display:inline-flex;align-items:center;gap:5px;padding:4px 10px;border-radius:7px;border:1px solid var(--line);background:var(--panel);color:var(--muted);cursor:pointer;white-space:nowrap}

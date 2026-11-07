@@ -545,7 +545,7 @@ def h(p):
 
 
 page = (ROOT / "tools" / "peers.template.html").read_text(encoding="utf-8")
-page = page.replace("{{css}}", h("assets/site.css")).replace("{{js}}", h("assets/peers.js")).replace("{{data}}", h("data/peers.json")).replace("{{xl}}", h("assets/xlsx.js")).replace("{{ir}}", h("assets/ir-chart.js"))
+page = page.replace("{{css}}", h("assets/site.css")).replace("{{js}}", h("assets/peers.js")).replace("{{data}}", h("data/peers.json")).replace("{{xl}}", h("assets/xlsx.js")).replace("{{ir}}", h("assets/ir-chart.js")).replace("{{visits}}", h("assets/visits.js"))
 (ROOT / "peers").mkdir(exist_ok=True)
 (ROOT / "peers" / "index.html").write_text(page, encoding="utf-8")
 print("peers/index.html 생성")

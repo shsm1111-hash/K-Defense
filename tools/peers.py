@@ -129,8 +129,8 @@ OVERRIDE = {
     "7011.T": {  # 미쓰비시중공업 2025년도 결산(2026-05-12), 미쓰비시 로지스넥스트 제외 기준. 영업이익 자리는 사업이익
         "annual": [["2024-03", 3955800, 235500, 222000], ["2025-03", 4361100, 354900, 245400],
                    ["2026-03", 4974100, 432200, 332100]],
-        "ttm": [5134100, 495100],  # FY25 + 1Q FY26 − 1Q FY25 (1Q FY26 매출 1조 1,942억·사업이익 1,596억, 전년 대비 +1,600억·+629억)
-        "ttm_label": "2025.7~2026.6 (회사 공시 계산)",
+        "ttm": [5383600, 510000],  # FY25 + 1H FY26 − 1H FY25 (1H FY26 매출 2조 5,232억·사업이익 2,493억, 전년 2조 1,137억·1,715억)
+        "ttm_label": "2025.10~2026.9 (회사 공시 계산)",
         "src": "https://www.mhi.com/jp/finance/library/result/pdf/fy20254q/kessan_tansin.pdf",
         "note": "Yahoo 연간 재무의 연도 표기가 회사 공시와 어긋나 결산단신 수치로 바꿨습니다. 영업이익 대신 회사 기준 '사업이익'입니다.",
     },
@@ -366,6 +366,15 @@ FIN_NOTE = {
     "KOG.OL": "2024년 분기까지는 해양(Kongsberg Maritime) 분할 전 기준이고, 연간 2024년부터와 2025년 이후 분기는 분할 뒤 기준이라 매출 수준이 낮아집니다. 4Q24는 기준이 섞여 비웠습니다.",
     "003570.KS": "2Q22·4Q22는 공개 분기 자료가 없어 비웠습니다.",
 }
+# stockanalysis에 아직 없는 최근 분기(회사 발표)
+EXTRA_Q = {
+    # 미쓰비시중공업 2026.7~9월 = 상반기(매출 2조 5,232억엔·사업이익 2,493억엔·순이익 2,032억엔) − 1분기
+    "7011.T": [{"end": "2026-09-30", "rev": 2523200 - 1194203, "op": 249300 - 159600, "ni": 203200 - 134680, "src": "company",
+                "url": "https://www.mhi.com/news/26110601.html"}],
+    # HAL 2Q FY27: 연결 매출 ₹7,613.25크로르, 순이익 ₹1,935.64크로르(영업이익은 EBITDA만 공시돼 비움)
+    "HAL.NS": [{"end": "2026-09-30", "rev": 76133, "op": None, "ni": 19356, "src": "company",
+                "url": "https://www.kotakneo.com/news/stocks/hal-share-price-in-focus-after-q2-fy27-results/"}],
+}
 MHI_JUN25 = {"rev": 1034109, "op": 93261, "ni": 68227}  # Yahoo 분기 재무 (stockanalysis 값이 로지스넥스트 포함 기준이라 교체)
 
 
@@ -387,7 +396,10 @@ def fin_block(t):
     qs = [{"end": d, "rev": q["rev"][i], "op": q["op"][i], "ni": q["ni"][i], "src": "sa"} for i, d in enumerate(q["d"])]
     if t in kr_3q and not any(x["end"] >= "2026-09-01" for x in qs):
         k3 = kr_3q[t]
-        qs.append({"end": "2026-09-30", "rev": k3["rev"], "op": k3["op"], "ni": None, "src": "news", "url": k3["src"]})
+        qs.append({"end": "2026-09-30", "rev": k3["rev"], "op": k3["op"], "ni": k3.get("ni"), "src": "news", "url": k3["src"]})
+    for x in EXTRA_Q.get(t, []):
+        if not any(y["end"][:7] == x["end"][:7] for y in qs):
+            qs.append(dict(x))
     if t == "7011.T":
         for x in qs:
             if x["end"] == "2025-06-30":
@@ -460,7 +472,7 @@ for r in rows:
         rev = sum(x["rev"] for x in cur_q)
         ytd_note = None
         if r["t"] == "7011.T":  # 연간이 결산단신 사업이익 기준이라 YTD도 회사 1Q 사업이익으로 맞춘다
-            op, ytd_note = 159600, "2026년 4~6월 사업이익(회사 공시)"
+            op, ytd_note = 249300, "2026년 4~9월 사업이익(회사 공시)"
         span = (f"{'1H' if n == 1 else '연간'}" if fb["semi"] else f"{n}Q 누적")
         fy_end = f"{ly + 1}-{lm:02d}"
         lab = (f"{ly + 1} {span}" if lm == 12 else f"FY{str(ly + 1)[2:]}.{lm:02d} {span}")

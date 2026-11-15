@@ -6,7 +6,7 @@
   "name": "한화시스템 IR 실적발표",
   "url": "https://www.hanwhasystems.com/kr/investment/financial-info.do#실적발표"
  },
- "note": "한화시스템 분기 실적발표의 '사업부문별 실적 – 방산 부문' 표 기준(1Q20~2Q26). 수출·내수 구분은 공개하지 않습니다. 3Q26은 한화시스템 자료가 아직 게시되지 않아 한화에어로스페이스 3Q26 IR의 방산 매출만 반영했고 부문 영업이익은 비어 있습니다.",
+ "note": "한화시스템 분기 실적발표의 '사업부문별 실적 – 방산 부문' 표 기준(1Q20~3Q26). 3Q26 방산 매출 6,174억·영업이익 760억(이익률 12.3%). 수출·내수 금액은 회사가 나눠 공개하지 않아 수출 비중으로 환산했습니다.",
  "quarters": [
   {
    "quarter": "1Q20",
@@ -297,17 +297,192 @@
   {
    "quarter": "3Q26",
    "revenue_eok": 6174,
-   "op_eok": null,
-   "opm_pct": null,
+   "op_eok": 760,
+   "opm_pct": 12.3,
    "export_eok": 1358,
    "domestic_eok": 4816,
    "export_share_pct": 22.0,
-   "company_op_eok": 991,
-   "ir_doc": "한화에어로스페이스 3Q26 IR (한화시스템 방산 매출, 부문 영업이익 미공개·방산+ICT 영업이익 991억)",
+   "ir_doc": "한화시스템 3Q26 실적발표 (방산 부문)",
    "tier": "확정"
   }
  ],
- "backlog": [],
- "backlog_q": null,
- "backlog_note": "한화시스템 분기 실적발표 자료에는 수주잔고가 공개되지 않습니다."
+ "backlog": [
+  {
+   "period": "4Q23",
+   "backlog_jo": 6.87,
+   "export_pct": null
+  },
+  {
+   "period": "1Q24",
+   "backlog_jo": 6.69,
+   "export_pct": null
+  },
+  {
+   "period": "2Q24",
+   "backlog_jo": 6.63,
+   "export_pct": null
+  },
+  {
+   "period": "3Q24",
+   "backlog_jo": 7.63,
+   "export_pct": null
+  },
+  {
+   "period": "4Q24",
+   "backlog_jo": 8.34,
+   "export_pct": null
+  },
+  {
+   "period": "1Q25",
+   "backlog_jo": 8.43,
+   "export_pct": null
+  },
+  {
+   "period": "2Q25",
+   "backlog_jo": 8.46,
+   "export_pct": null
+  },
+  {
+   "period": "3Q25",
+   "backlog_jo": 8.19,
+   "export_pct": null
+  },
+  {
+   "period": "4Q25",
+   "backlog_jo": 9.3,
+   "export_pct": null
+  },
+  {
+   "period": "1Q26",
+   "backlog_jo": 9.25,
+   "export_pct": null
+  },
+  {
+   "period": "2Q26",
+   "backlog_jo": 8.52,
+   "export_pct": null
+  },
+  {
+   "period": "3Q26",
+   "backlog_jo": 8.4,
+   "export_pct": null
+  }
+ ],
+ "backlog_q": {
+  "unit": "조원",
+  "title": "한화시스템 부문별 수주잔고",
+  "segments": [
+   {
+    "key": "def",
+    "label": "방산",
+    "color": "c1"
+   },
+   {
+    "key": "ict",
+    "label": "ICT",
+    "color": "c2"
+   }
+  ],
+  "export_keys": [],
+  "focus": "def",
+  "rows": [
+   {
+    "period": "4Q23",
+    "total": 7.29,
+    "values": {
+     "def": 6.87,
+     "ict": 0.42
+    }
+   },
+   {
+    "period": "1Q24",
+    "total": 7.05,
+    "values": {
+     "def": 6.69,
+     "ict": 0.36
+    }
+   },
+   {
+    "period": "2Q24",
+    "total": 6.97,
+    "values": {
+     "def": 6.63,
+     "ict": 0.34
+    }
+   },
+   {
+    "period": "3Q24",
+    "total": 7.92,
+    "values": {
+     "def": 7.63,
+     "ict": 0.29
+    }
+   },
+   {
+    "period": "4Q24",
+    "total": 8.56,
+    "values": {
+     "def": 8.34,
+     "ict": 0.22
+    }
+   },
+   {
+    "period": "1Q25",
+    "total": 8.64,
+    "values": {
+     "def": 8.43,
+     "ict": 0.21
+    }
+   },
+   {
+    "period": "2Q25",
+    "total": 8.8,
+    "values": {
+     "def": 8.46,
+     "ict": 0.34
+    }
+   },
+   {
+    "period": "3Q25",
+    "total": 8.54,
+    "values": {
+     "def": 8.19,
+     "ict": 0.36
+    }
+   },
+   {
+    "period": "4Q25",
+    "total": 9.65,
+    "values": {
+     "def": 9.3,
+     "ict": 0.35
+    }
+   },
+   {
+    "period": "1Q26",
+    "total": 9.66,
+    "values": {
+     "def": 9.25,
+     "ict": 0.42
+    }
+   },
+   {
+    "period": "2Q26",
+    "total": 8.95,
+    "values": {
+     "def": 8.52,
+     "ict": 0.44
+    }
+   },
+   {
+    "period": "3Q26",
+    "total": 8.87,
+    "values": {
+     "def": 8.4,
+     "ict": 0.47
+    }
+   }
+  ],
+  "note": "회사가 공시한 분기말 수주잔고(방산·ICT). 3Q26 방산 8조 3,956억·ICT 4,697억원. 방산 잔고의 수출·내수 구분은 공개하지 않습니다."
+ }
 }
